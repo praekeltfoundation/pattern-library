@@ -1,0 +1,47 @@
+.DoubleTitle {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    %doubletitle-structure {
+        display: block;
+
+        @include breakpoint($bp-gamma) {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    &-primary {
+        @extend %doubletitle-structure;
+        @include text-variant("2a");
+        line-height: 1;
+    }
+
+    &-secondary {
+        @extend %doubletitle-structure;
+        @include text-variant("2b");
+        line-height: 1;
+    }
+
+    &--large {
+        #{$scoped-block-name}-primary {
+            @include text-variant("4a");
+        }
+
+        #{$scoped-block-name}-secondary {
+            @include text-variant("4b");
+        }
+    }
+
+    &--inverted {
+        color: $color-greyscale-white;
+    }
+}

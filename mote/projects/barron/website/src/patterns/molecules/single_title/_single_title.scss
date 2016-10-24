@@ -1,0 +1,57 @@
+.SingleTitle {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    &-primary {
+        @extend %title-structure;
+        @include text-variant("2b");
+        display: block;
+        margin-bottom: ms(-1);
+        font-size: ms(0);
+        line-height: 1.25;
+
+        @include breakpoint($bp-beta) {
+            display: block;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 !important;
+            -webkit-line-clamp: 2;
+            height: 1.25rem * 2;
+
+            //&:after {
+            //    @supports (-webkit-line-clamp: 1){
+            //        //display: none !important
+            //    }
+            //    display: block;
+            //    position: absolute;
+            //    height: 1.25rem * 2;
+            //    right: 0;
+            //    bottom: 0;
+            //    width: 25%;
+            //    background-color: inherited;
+            //    text-align: right;
+            //    content: "...";
+            //}
+        }
+    }
+
+    &--large {
+        #{$scoped-block-name}-primary {
+            @include text-variant("4b");
+        }
+    }
+
+    &--inverted {
+        color: $color-greyscale-white;
+    }
+}

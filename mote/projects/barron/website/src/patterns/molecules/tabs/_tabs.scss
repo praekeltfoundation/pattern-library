@@ -1,0 +1,50 @@
+[role="tabpanel"] {
+    &[aria-hidden="true"] {
+        display: none;
+    }
+
+    &[aria-hidden="false"] {
+        display: block;
+    }
+}
+
+.Tabs {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    @include container;
+
+    &-button {
+        display: block;
+        padding: ms(-3) ms(3);
+        float: left;
+        background-color: $color-brand-green-oracle-tint;
+        color: $color-greyscale-white;
+
+        &.is-active {
+            background-color: $color-brand-green-cyprus;
+        }
+    }
+
+    &-buttonText {
+        @include font-baseline-fix;
+        @include text-variant("0b");
+    }
+
+    &-panel {
+        padding: ms(3);
+        background-color: $color-brand-green-cyprus;
+        color: $color-greyscale-white;
+    }
+
+    & + &-panel {
+        @include container;
+    }
+}

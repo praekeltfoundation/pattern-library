@@ -1,0 +1,51 @@
+.SwatchGroup {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $color-inverted-background: $color-brand-green-cyprus;
+    display: block;
+    padding-bottom: ms(2);
+
+    &-legend {
+        @include text-variant("0b");
+        display: block;
+        padding-top: ms(2);
+    }
+
+    &-catagoryTitle {
+        @include text-variant("-1b");
+        margin-top: ms(-1);
+    }
+
+    &-selection {
+        @include text-variant("-1c");
+        display: inline-block;
+        padding-left: ms(-1);
+        font-style: italic;
+        text-transform: capitalize;
+        opacity: .5;
+    }
+
+    // Block specific styles
+    &--inverted {
+        background-color: $color-inverted-background;
+
+        #{$scoped-block-name}-legend {
+            color: $color-greyscale-white;
+        }
+
+        #{$scoped-block-name}-catagoryTitle {
+            color: $color-greyscale-white;
+        }
+
+        #{$scoped-block-name}-selection {
+            color: $color-greyscale-white;
+        }
+    }
+}

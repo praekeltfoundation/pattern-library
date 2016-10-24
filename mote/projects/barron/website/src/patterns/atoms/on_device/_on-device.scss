@@ -1,0 +1,17 @@
+.OnDevice {
+    display: block;
+    color: $color-brand-yellow-buttercup;
+    font-family: nth($font-bold, 2);
+    font-size: 1.25em;
+    line-height: 1;
+    text-transform: uppercase;
+
+    &:after {
+        display: block;
+        height: .12em;
+        margin-top: -.05em;
+        margin-bottom: .2em;
+        background-color: $color-brand-yellow-buttercup;
+        content: "";
+    }
+}

@@ -1,0 +1,14 @@
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+
+.lazyloaded {
+    transition: opacity anim(6);
+    opacity: 1;
+}
+
+[data-sizes="auto"] {
+    display: block;
+    width: 100%;
+}

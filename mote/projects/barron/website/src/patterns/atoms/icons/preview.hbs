@@ -1,0 +1,23 @@
+{% load mote_tags %}
+
+<div style="background-color: #f5f5f5; padding: 5%; float: left;">
+    <style>
+        .tile {
+            float: left;
+            width: 25%;
+            padding: 2.5%;
+        }
+
+        .Icon {
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
+    {{#each icons}}
+        {{#with this}}
+            <div class="tile">
+                <pre><code>.Icon .Icon-{{name}}:</code></pre><i class="Icon Icon-{{name}}" style="width: {{width}}px; height: {{height}}px; display: block;" ></i>
+            </div>
+        {{/with}}
+    {{/each}}
+</div>

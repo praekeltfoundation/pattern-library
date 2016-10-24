@@ -1,0 +1,128 @@
+.LinksDropdown {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    position: relative;
+
+    // Block specific styles
+    &-label {
+        display: block;
+        position: relative;
+        width: 100%;
+        min-height: 14px;
+        padding: 1.5rem 0 .5rem;
+        border-bottom: 1px solid $color-brand-green-cyprus;
+        border-radius: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        &-text {
+            display: block;
+            padding: .25em 30px 0 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        & i {
+            display: block;
+            position: absolute;
+            top: rem(16);
+            right: rem(7);
+            bottom: 0;
+            width: rem(16);
+            height: rem(10);
+            margin: auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: rem(10);
+        }
+    }
+
+    &-checkbox {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+        &:checked + #{$scoped-block-name}-label + #{$scoped-block-name}-options {
+            display: block;
+        }
+
+        &:disabled + #{$scoped-block-name}-label  {
+            cursor: not-allowed;
+            opacity: .3;
+        }
+    }
+
+    &-options {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        background-color: $color-greyscale-white-smoke;
+        list-style: none;
+        overflow: auto;
+        z-index: z(1);
+
+        &-item {
+            border-bottom: 1px solid alpha-color-fallback(rgba($color-brand-green-cyprus, .5), $color-greyscale-white-smoke);
+            border-bottom: 1px solid rgba($color-brand-green-cyprus, .5);
+            border-radius: 0;
+
+            &:last-child {
+                border-bottom: 1px solid transparent;
+            }
+
+            &:hover {
+                background-color: $color-brand-yellow-buttercup;
+                color: $color-greyscale-white;
+            }
+
+            &-link {
+                display: block;
+                width: 100%;
+                //position: relative;
+                padding: ms(0) ms(4);
+                color: inherit;
+                text-decoration: none;
+
+                &-text {
+                    @include font-baseline-fix;
+                    display: block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    cursor: pointer;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    &--inverted {
+        #{$scoped-block-name}-options {
+            background-color: $color-greyscale-white-smoke;
+            color: $color-brand-green-cyprus;
+        }
+
+        #{$scoped-block-name}-label {
+            border-bottom: 1px solid $color-greyscale-white;
+            background-color: $color-brand-green-cyprus;
+            color: $color-greyscale-white;
+        }
+    }
+}

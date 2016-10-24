@@ -1,0 +1,115 @@
+.ContentWithSidebar {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    @include container;
+
+    .no-flexbox & {
+        display: table;
+        width: 100%;
+    }
+
+    &-wrapper {
+        @include breakpoint($bp-gamma) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: stretch;
+
+            .no-flexbox & {
+                display: table-row;
+            }
+        }
+    }
+
+    &-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: z(0);
+    }
+
+    &-sidebar {
+        $scoped-block-name: unquote(".Sidebar");
+
+        position: relative;
+        background-color: $color-brand-green-cyprus-tint;
+
+        @include breakpoint($bp-gamma) {
+            width: 33%;
+        }
+
+        @include breakpoint($bp-delta) {
+            width: 25%;
+
+            .no-flexbox & {
+                display: table-cell;
+                width: 300px;
+                vertical-align: top;
+            }
+        }
+
+        #{$scoped-block-name}-heading {
+
+            @include breakpoint($bp-gamma) {
+                margin-bottom: ms(5);
+            }
+        }
+
+        #{$scoped-block-name}-filters {
+            top: 0;
+            background-color: $color-brand-green-cyprus;
+            color: $color-greyscale-white;
+            z-index: z(3);
+
+            &.fixedsticky-on {
+                .flexbox & {
+                    @include breakpoint($bp-gamma) {
+                        width: 33%;
+                    }
+
+                    @include breakpoint($bp-delta) {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+
+        #{$scoped-block-name}-heading,
+        #{$scoped-block-name}-filters {
+            position: relative;
+            padding: ms(3) ms(3) ms(4) ms(3);
+            z-index: z(1);
+
+            @include breakpoint($bp-gamma) {
+                padding: ms(4) ms(4) ms(5) ms(4);
+            }
+        }
+    }
+
+    &-body {
+        @include breakpoint($bp-gamma) {
+            width: 67%;
+        }
+
+        @include breakpoint($bp-delta) {
+            width: 75%;
+
+            .no-flexbox & {
+                display: table-cell;
+                width: 700px;
+                vertical-align: top;
+            }
+        }
+    }
+}

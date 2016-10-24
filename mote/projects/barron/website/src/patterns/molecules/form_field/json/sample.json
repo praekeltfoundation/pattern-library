@@ -1,0 +1,19 @@
+{
+    "FormField": {
+        "tag": "div",
+        "modifiers": ""
+    },
+    "FieldInput": {
+        "placeholder": "form field placeholder text",
+        "type": "text",
+        "element_id": "form-field-input-id"
+    },
+    "FieldLabel": {
+        "for_element": "form-input1",
+        "labeltext": "form field label"
+    },
+    "FieldMsg": {
+        "for_element": "form-input1",
+        "labeltext": "form field msg"
+    }
+}

@@ -1,0 +1,25 @@
+.OnTitle {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    @include text-variant("4a");
+    display: inline-block;
+    line-height: 1;
+
+    &--inverted {
+        color: $color-greyscale-white;
+    }
+
+    &--massive {
+        @include breakpoint($bp-gamma) {
+            @include text-variant("6a");
+        }
+    }
+}

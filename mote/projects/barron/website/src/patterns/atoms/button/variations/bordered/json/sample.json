@@ -1,0 +1,7 @@
+{
+    "Button": {
+        "tag": "button",
+        "modifiers": "Button--bordered",
+        "text": "Lorem ipsum"
+    }
+}

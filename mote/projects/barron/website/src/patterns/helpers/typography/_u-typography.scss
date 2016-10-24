@@ -1,0 +1,20 @@
+.u-typography {
+    p,
+    ul,
+    ol {
+        margin-top: ms(1);
+        margin-bottom: ms(1);
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &--inverted {
+        color: $color-greyscale-white;
+    }
+}

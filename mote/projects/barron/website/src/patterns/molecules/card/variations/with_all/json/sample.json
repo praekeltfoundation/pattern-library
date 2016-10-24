@@ -1,0 +1,20 @@
+{
+    "Card": {
+        "SquareImage": {
+            "modifiers": "Card-background"
+        },
+        "ProductTitle": {
+            "primary": "card Lorem ipsum",
+            "secondary": "card dolor sit"
+        },
+        "Ribbon": {
+            "text": "New Card"
+        },
+        "code": "card VBN412",
+        "meta": {
+            "section": "Lorem",
+            "collection": "Ipsum",
+            "icon": "Icon-male-greenCyprus"
+        }
+    }
+}

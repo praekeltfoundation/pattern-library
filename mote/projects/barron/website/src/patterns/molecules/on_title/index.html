@@ -1,0 +1,62 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        On Title Base
+    </h4>
+    <div class="description">
+        Adds an On Device atom above a heading. Treated as an inline block to ensure that the line never extends past the length of the text. It has two modifiers, both of which can be used simultaneously.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.on_title %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+<div class="sg-code-block">
+    <h4 class="title">
+        On Title Inverted
+    </h4>
+    <div class="description">
+        By adding <code>OnTitle--inverted</code> the colors flip to make it easier to read on a dark background.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.on_title.inverted %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+<div class="sg-code-block">
+    <h4 class="title">
+        On Title Massive
+    </h4>
+    <div class="description">
+        By adding <code>OnTitle--massive</code> we get a larger text, as seen in the Hero Banner.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.on_title.massive %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

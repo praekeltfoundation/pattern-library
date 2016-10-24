@@ -1,0 +1,19 @@
+{% load mote_tags %}
+
+<!-- ORGANISM Search Start -->
+{# style="display: none;"#}
+<div class="Search {% resolve search.modifiers element.json.sample.Search.modifiers %}" >
+    {% if search %}
+        {% render_element element.aspect.molecules.search_field search_field=search.SearchField%}
+    {% else %}
+        {% render_element element.aspect.molecules.search_field search_field=element.json.sample.Search.SearchField %}
+    {% endif %}
+
+    <button class="Search-close">
+        <i class="Icon Icon-close-whiteGainsboro" data-grunticon-embed></i>
+    </button>
+</div>
+<!-- ORGANISM Search End -->
+<script>
+
+</script>

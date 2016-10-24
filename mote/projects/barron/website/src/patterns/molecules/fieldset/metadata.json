@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Fieldset",
+    "description": "The &lt;fieldset&gt; element is a convenient way to create groups of widgets that share the same purpose. A &lt;fieldset&gt; element can be labeled with a &lt;legend&gt; element."
+}

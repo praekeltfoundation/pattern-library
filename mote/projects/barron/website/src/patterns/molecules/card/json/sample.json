@@ -1,0 +1,12 @@
+{
+    "Card": {
+        "SquareImage": {
+            "modifiers": "Card-background"
+        },
+        "ProductTitle": {
+            "primary": "card Lorem ipsum DEFAULT",
+            "secondary": "card dolor sit"
+        },
+        "code": "card VBN412"
+    }
+}

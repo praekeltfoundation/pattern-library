@@ -1,0 +1,31 @@
+{% load mote_tags %}
+
+<!-- ORGANISM ContentPanel Start -->
+<form class="ContentPanel {% resolve content_panel.modifiers element.json.sample.ContentPanel.modifiers %}">
+    <header class="ContentPanel-header">
+        <h1 class="ContentPanel-title">{% resolve content_panel.title element.json.sample.ContentPanel.title %}
+            <a
+            href="#"
+            class="ContentPanel-iconLink"
+            href="http://www.placehold.it/560x800"
+            data-modal-content="image"
+            >
+                <i class=" Icon Icon-catalogue-greenCyprus"></i>
+            </a>
+        </h1>
+    </header>
+    <div class="ContentPanel-content">
+        {% render_element element.aspect.molecules.fieldset fieldset=element.json.sample.ContentPanel.Fieldset %}
+        {% render_element element.aspect.molecules.sizing_chart %}
+        {% render_element element.aspect.molecules.sizing_chart %}
+        <div class="">
+            <div  id="form-modal-email" action="#" class="Modal-element Modal-element--inverted Fieldset-defaultElement">
+                {% render_element element.aspect.molecules.fieldset fieldset=element.json.sample.ContentPanel.EmailFieldset %}
+            </div>
+        </div>
+    </div>
+    <footer class="ContentPanel-footer">
+        {% render_element element.aspect.atoms.button button=element.json.sample.ContentPanel.EmailButton %}
+    </footer>
+</form>
+<!-- ORGANISM ContentPanel End -->

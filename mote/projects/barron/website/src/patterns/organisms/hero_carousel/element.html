@@ -1,0 +1,11 @@
+{% load mote_tags %}
+
+<!-- ORGANISM Hero Carousel Start -->
+<section class="Carousel" role="complementary">
+    {% for hero in element.json.hero_carousel.items %}
+    <div class="Carousel-item">
+        {% render_element element.aspect.molecules.hero_banner headline=hero.content.title imageSrcset=hero.content.image.srcset imageBase=hero.content.image.base %}
+    </div>
+    {% endfor %}
+</section>
+<!-- ORGANISM Hero Carousel Start -->

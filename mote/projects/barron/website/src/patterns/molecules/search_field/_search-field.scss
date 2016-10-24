@@ -1,0 +1,183 @@
+.SearchField {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $color-alpha: rgba($color-brand-green-cyprus, .3);
+    $color-inverted-alpha: rgba($color-greyscale-white, .6);
+    $color-inverted-background: $color-brand-green-cyprus;
+    $base-input-size: 0;
+    $base-label-size: -1;
+    $base-icon-size: 1;
+
+    // Block specific styles
+    @include clearfix;
+    position: relative;
+    padding-top: ms(-1);
+
+    &-link {
+        @include text-variant("0c");
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: ms(0) 0;
+        transition: anim(3);
+        color: $color-brand-green-cyprus;
+        text-decoration: underline;
+
+        &:hover {
+            color: $color-brand-yellow-buttercup;
+        }
+    }
+
+    &-searchButton {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: ms(-1) + ms($base-label-size)/2;
+        z-index: z(1);
+
+        @include breakpoint($bp-beta) {
+            margin-top: ms(-1) + ms($base-label-size + 1)/2;
+        }
+
+        @include breakpoint($bp-delta) {
+            margin-top: ms(-1) + ms($base-label-size + 3)/2;
+        }
+
+        .Icon {
+            position: relative;
+            width: ms($base-icon-size + 1);
+            height: 100%;
+            margin: auto;
+            background-position: center bottom;
+            background-size: contain;
+
+            @include breakpoint($bp-beta) {
+                width: ms($base-icon-size + 2);
+            }
+
+            @include breakpoint($bp-gamma) {
+                width: ms($base-icon-size + 3);
+            }
+
+            @include breakpoint($bp-delta) {
+                width: ms($base-icon-size + 4);
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+
+            * {
+                transition: fill anim(3);
+            }
+        }
+
+        &:hover,
+        &.is-active {
+            svg {
+                * {
+                    fill: $color-brand-yellow-buttercup;
+                }
+            }
+        }
+    }
+
+    .FieldInput {
+        padding-right: ms($base-icon-size + 1);
+        border-bottom: 2px solid $color-brand-green-cyprus;
+
+        @include placeholder {
+            color: alpha-background-color($color-alpha, $color-greyscale-white);
+            color: $color-alpha;
+        }
+
+        @include breakpoint($bp-beta) {
+            padding-right: ms($base-icon-size + 2);
+            font-size: ms($base-input-size + 2);
+        }
+
+        @include breakpoint($bp-gamma) {
+            padding-right: ms($base-icon-size + 3);
+            font-size: ms($base-input-size + 3);
+        }
+
+        @include breakpoint($bp-delta) {
+            padding-right: ms($base-icon-size + 4);
+            font-size: ms($base-input-size + 4);
+        }
+    }
+
+    .FieldLabel,
+    .FieldMsg {
+        @include breakpoint($bp-beta) {
+            font-size: ms($base-label-size + 1);
+        }
+
+        @include breakpoint($bp-delta) {
+            font-size: ms($base-label-size + 3);
+        }
+    }
+
+    // Block state styles
+    &.is-valid {
+        .FieldLabel,
+        .FieldInput {
+            color: $color-secondary-green-celery;
+        }
+
+        .FieldInput {
+            border-bottom: 2px solid $color-secondary-green-celery;
+        }
+    }
+
+    &.is-invalid {
+        .FieldLabel,
+        .FieldInput {
+            color: $color-secondary-orange-trinidad;
+        }
+
+        .FieldInput {
+            border-bottom: 2px solid $color-secondary-orange-trinidad;
+        }
+
+        .FieldMsg {
+            display: block;
+        }
+    }
+
+    &.js-hide-label {
+        .FieldLabel {
+            opacity: 0;
+            //transform: translatey(100%);
+        }
+    }
+
+    &--inverted {
+        background: $color-inverted-background;
+
+        .FieldLabel {
+            color: alpha-background-color($color-inverted-alpha, $color-inverted-background);
+            color: $color-inverted-alpha;
+        }
+
+        .FieldInput {
+            border-bottom: 2px solid $color-greyscale-white;
+            color: $color-greyscale-white;
+
+            @include placeholder {
+                color: alpha-color-fallback($color-inverted-alpha, $color-inverted-background);
+                color: $color-inverted-alpha;
+            }
+        }
+    }
+}

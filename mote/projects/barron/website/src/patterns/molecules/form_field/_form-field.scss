@@ -1,0 +1,69 @@
+.FormField {
+    // Block specific styles
+    @include clearfix;
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $color-inverted-alpha: rgba($color-greyscale-white, .6);
+    $color-inverted-background: $color-brand-green-cyprus;
+    padding-top: ms(-1);
+
+    // Block state styles
+    &.is-valid {
+        .FieldLabel,
+        .FieldInput {
+            color: $color-secondary-green-celery;
+        }
+
+        .FieldInput {
+            border-bottom: 1px solid $color-secondary-green-celery;
+        }
+    }
+
+    &.is-invalid {
+        .FieldLabel,
+        .FieldInput {
+            color: $color-secondary-orange-trinidad;
+        }
+
+        .FieldInput {
+            border-bottom: 1px solid $color-secondary-orange-trinidad;
+        }
+
+        .FieldMsg {
+            display: block;
+        }
+    }
+
+    &.js-hide-label{
+        .FieldLabel{
+            opacity: 0;
+            //transform: translatey(100%);
+        }
+    }
+
+
+    &--inverted {
+        background: $color-inverted-background;
+
+        .FieldLabel {
+            color: alpha-background-color($color-inverted-alpha, $color-inverted-background);
+            color: $color-inverted-alpha;
+        }
+
+        .FieldInput {
+            @include placeholder {
+                color: alpha-color-fallback($color-inverted-alpha, $color-inverted-background);
+                color: $color-inverted-alpha;
+            }
+            border-bottom: 1px solid $color-greyscale-white;
+            color: $color-greyscale-white;
+        }
+    }
+}

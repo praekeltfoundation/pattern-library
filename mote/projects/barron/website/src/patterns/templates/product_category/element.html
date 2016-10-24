@@ -1,0 +1,13 @@
+{% load mote_tags %}
+
+<!-- TEMPLATE Product Category Start -->
+{% if product_catagory %}
+    {% render_element element.aspect.organisms.masthead masthead=product_catagory.Masthead %}
+    {% render_element element.aspect.organisms.content_with_sidebar content_with_sidebar=product_catagory.ContentWithSidebar %}
+    {% render_element element.aspect.organisms.footer %}
+{% else %}
+    {% render_element element.aspect.organisms.masthead masthead=element.json.sample.ProductCatagory.Masthead %}
+    {% render_element element.aspect.organisms.content_with_sidebar content_with_sidebar=element.json.sample.ProductCatagory.ContentWithSidebar  %}
+    {% render_element element.aspect.organisms.footer %}
+{% endif %}
+<!-- TEMPLATE Product Category Start -->

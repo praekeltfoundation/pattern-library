@@ -1,0 +1,34 @@
+{% extends "mote/element/index.html" %}
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+     Picture
+    </h4>
+    <div class="description">
+        This atom indicates the use of the HTML5 <code>&lt;picture&gt;</code> tag, with IE9 fix, noscript fallback, and LazySizes integration. No classes are necessary. structure is to be noted.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+<!-- picture tag with fallback -->
+<picture>
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  <source data-srcset="
+      http://www.placehold.it/800x500 800w,
+      http://www.placehold.it/1600x500 1600w
+      ">
+  <!--[if IE 9]></video><![endif]-->
+  <img alt="Alt Text Goes Here" class="lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+  <noscript>
+      <img src="http://www.placehold.it/800x500" alt="Alt Text Goes Here">
+  </noscript>
+</picture>
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+    <!-- sg-code-block -->
+{% endblock %}

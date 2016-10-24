@@ -1,0 +1,65 @@
+{% extends "mote/element/index.html" %} {% load mote_tags %} {% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Home Page
+    </h4>
+    <div class="description">
+        The home page template. Includes masthead, navigation, footer, no-js nav and carousel.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.templates.home %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+
+    <div class="description">
+        refer to molecules/tooltip for explanation of how tooltip works
+
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-javascript">
+                <xmp>
+Barron.mastheadTooltip = {
+    'breakpoint': 1024,
+    'trigger': 'toggle',
+
+    'desktopOptions': {
+        'classes': 'Tooltip u-typography--inverted ',
+        'position': 'left middle',
+        'openOn': 'click',
+        'tetherOptions': {
+            'offset': '0 54px',
+            'constraints': [{
+                'to': 'scrollParent',
+                'attachment': 'together'
+            }]
+        }
+    },
+
+    'mobileOptions': {
+        'classes': 'Tooltip u-typography--inverted ',
+        'position': 'bottom center',
+        'openOn': 'click',
+        'tetherOptions': {
+            'offset': '-54px 0',
+            'constraints': [{
+                'to': 'scrollParent',
+                'attachment': 'together'
+            }]
+        }
+    }
+}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

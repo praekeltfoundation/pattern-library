@@ -1,0 +1,41 @@
+{% load mote_tags %}
+
+<!-- ATOM Swatch Start -->
+<{% resolve swatch.tag element.json.sample.Swatch.tag %} class="Swatch {% resolve swatch.modifiers element.json.sample.Swatch.modifiers %}">
+    <input
+    class="Swatch-input"
+    name="{% resolve swatch.name element.json.sample.Swatch.name %}"
+    type="{% resolve swatch.type element.json.sample.Swatch.type %}"
+    value="x"
+    id="{% resolve swatch.element_id element.json.sample.Swatch.element_id %}" />
+    <label class="Swatch-label" for="{% resolve swatch.element_id element.json.sample.Swatch.element_id %}" title="{% resolve swatch.element_id element.json.sample.Swatch.element_id %}">
+        <span class="Swatch-checkBox">
+        {% if swatch %}
+            {% if  swatch.colors|length == 1  %}
+                <i style="border-top-color: {{ swatch.colors.0 }}; border-right-color: {{ swatch.colors.0 }}; border-left-color: {{ swatch.colors.0 }}; border-bottom-color: {{ swatch.colors.0 }};"></i>
+            {% elif swatch.colors|length == 2 %}
+                <i style="border-top-color: {{ swatch.colors.0 }}; border-right-color: {{ swatch.colors.0 }}; border-left-color: {{ swatch.colors.1 }}; border-bottom-color: {{ swatch.colors.1 }};"></i>
+            {% elif swatch.colors|length == 3 %}
+                <i style="border-top-color: {{ swatch.colors.0 }}; border-right-color: {{ swatch.colors.0 }}; border-left-color: {{ swatch.colors.1 }}; border-bottom-color: {{ swatch.colors.2 }};"></i>
+            {% elif swatch.colors|length == 4 %}
+                <i style="border-top-color: {{ swatch.colors.0 }}; border-right-color: {{ swatch.colors.1 }}; border-left-color: {{ swatch.colors.2 }}; border-bottom-color: {{ swatch.colors.3 }};"></i>
+            {% else %}
+                error in inherited data!!!!!
+            {% endif %}
+        {% else %}
+            {% if  element.json.sample.Swatch.colors|length == 1  %}
+                <i style="border-top-color: {{ element.json.sample.Swatch.colors.0 }}; border-right-color: {{ element.json.sample.Swatch.colors.0 }}; border-left-color: {{ element.json.sample.Swatch.colors.0 }}; border-bottom-color: {{ element.json.sample.Swatch.colors.0 }};"></i>
+            {% elif element.json.sample.Swatch.colors|length == 2 %}
+                <i style="border-top-color: {{ element.json.sample.Swatch.colors.0 }}; border-right-color: {{ element.json.sample.Swatch.colors.0 }}; border-left-color: {{ element.json.sample.Swatch.colors.1 }}; border-bottom-color: {{ element.json.sample.Swatch.colors.1 }};"></i>
+            {% elif element.json.sample.Swatch.colors|length == 3 %}
+                <i style="border-top-color: {{ element.json.sample.Swatch.colors.0 }}; border-right-color: {{ element.json.sample.Swatch.colors.0 }}; border-left-color: {{ element.json.sample.Swatch.colors.1 }}; border-bottom-color: {{ element.json.sample.Swatch.colors.2 }};"></i>
+            {% elif element.json.sample.Swatch.colors|length == 4 %}
+                <i style="border-top-color: {{ element.json.sample.Swatch.colors.0 }}; border-right-color: {{ element.json.sample.Swatch.colors.1 }}; border-left-color: {{ element.json.sample.Swatch.colors.2 }}; border-bottom-color: {{ element.json.sample.Swatch.colors.3 }};"></i>
+            {% else %}
+                error in data!!!!!
+            {% endif %}
+        {% endif %}
+        </span>
+    </label>
+</{% resolve swatch.tag element.json.sample.Swatch.tag %}>
+<!-- ATOM Swatch End -->

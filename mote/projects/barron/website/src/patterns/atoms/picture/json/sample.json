@@ -1,0 +1,18 @@
+{
+    "Picture": {
+        "block-class": "",
+        "modifiers": "",
+        "image": {
+            "element-class": "",
+            "modifiers": "",
+            "alt-text": "Alt Text",
+            "noscriptsrc": "http://www.placehold.it/800x500 "
+        },
+        "srcsets": [
+            {
+                "set": "http://www.placehold.it/800x500 800w, http://www.placehold.it/1600x500 1600w",
+                "media": ""
+            }
+        ]
+    }
+}

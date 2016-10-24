@@ -1,0 +1,13 @@
+{% load mote_tags %}
+
+<!-- MOLECULE CategoryCard Start -->
+<a href="#" class="CategoryCard {% resolve block-modifiers element.json.category_card.block-modifiers %}">
+    <div class="CategoryCard-graphic">
+        {% render_element element.aspect.molecules.square_image %}
+    </div>
+
+    <span class="CategoryCard-title">
+        {% resolve card-title element.json.category_card.card-title %}
+    </span>
+</a>
+<!-- MOLECULE CategoryCard End -->

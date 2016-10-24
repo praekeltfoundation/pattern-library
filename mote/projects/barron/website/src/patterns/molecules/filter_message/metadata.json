@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Filter Message",
+    "description": "The message seen if filter returns no items. Used on advanced search and product category pages."
+}

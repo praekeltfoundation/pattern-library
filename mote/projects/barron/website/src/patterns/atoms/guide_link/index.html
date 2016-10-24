@@ -1,0 +1,25 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Guide Link
+    </h4>
+    <div class="description">
+        <code>.GuideLink</code> is used as a call to action link. Can be found in Hero Banner.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.atoms.guide_link %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+
+<!-- sg-code-block -->
+{% endblock %}

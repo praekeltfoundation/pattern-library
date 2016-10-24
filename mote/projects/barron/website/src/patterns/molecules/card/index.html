@@ -1,0 +1,81 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Card Base
+    </h4>
+    <div class="description">
+        The Card molecule has no modifiers or states (excluding hover states). It is a glorified anchor tag that contains a Square Image and a Product Title.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.card %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+<div class="sg-code-block">
+    <h4 class="title">
+        Card with Ribbon
+    </h4>
+    <div class="description">
+        This is an example of a card with a Ribbon atom added to it.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.card.with_ribbon %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+<div class="sg-code-block">
+    <h4 class="title">
+        Card with Meta
+    </h4>
+    <div class="description">
+        This is an example of a card with a meta information that sits below the details. (Used in Advanced Search).
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.card.with_meta %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+<div class="sg-code-block">
+    <h4 class="title">
+        Card with All Additional Elements
+    </h4>
+    <div class="description">
+        This is an example of a card with both a ribbon and meta information.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.card.with_all %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

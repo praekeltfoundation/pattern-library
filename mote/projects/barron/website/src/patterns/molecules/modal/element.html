@@ -1,0 +1,80 @@
+{% load mote_tags %}
+<!-- image modals -->
+This modal will append the image to the div.
+<a class="Button Button--solid Button--yellowButtercup" href="http://www.placehold.it/300x300" data-modal-content="image" data-modal-appendto-group="image1-modal">Nested Image</a>
+<div data-modal-group="image1-modal" style="width: 800px; height: 800px; background-color: red; position: relative;"></div>
+
+
+
+This modal will append the image to the body.
+<a class="Button Button--solid Button--greenCyprus" href="http://www.placehold.it/300x300" data-modal-content="image">Body Image</a>
+
+
+
+<!-- element modals -->
+<!-- form examples -->
+This modal will append a form to itself, and append itself to the div below.
+<a class="Button Button--solid Button--greenOracle" href="#form-modal2" data-modal-content="element" data-modal-appendto-group="form-modal2">Nested with Form</a>
+
+<form id="form-modal2" action="#" class="Modal-element">
+    <p>I am a form that has been appended to the modal and nested within the blue div.</p>
+    <input type="text" value="Test">
+</form>
+
+<div data-modal-group="form-modal2" style="width: 800px; height: 800px; background-color: blue; position: relative;"></div>
+
+
+This modal will append a form to itself, and append itself to the body.
+<a class="Button Button--solid Button--greenOracle" href="#form-modal1" data-modal-content="element">Body with Form</a>
+
+<form id="form-modal1" action="#" class="Modal-element">
+    <p>I am a form that has been appended to the modal and overlaying the body.</p>
+    <input type="text" value="Test">
+</form>
+
+<!-- msg examples -->
+This modal will append a notification to itself, and append itself to the body.
+<a class="Button Button--solid Button--yellowButtercup" href="#confirmation-modal1" data-modal-content="element">Body with confirmation tick</a>
+
+<div id="confirmation-modal1" class="Modal-element">
+    <div class="u-typography u-typography--inverted">
+        <i class="Modal-indicatorIcon Icon Icon-notificationtick-yellowButtercup"></i>
+        <h6 class="Modal-title">
+            Popup title
+        </h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+</div>
+
+This modal will append a notification to itself, and append itself to the body.
+<a class="Button Button--solid Button--yellowButtercup" href="#confirmation-modal2" data-modal-content="element">Body with confirmation exclamation</a>
+
+<div id="confirmation-modal2" class="Modal-element">
+    <div class="u-typography u-typography--inverted">
+        <i class="Modal-indicatorIcon Icon Icon-notificationexclamation-orangeSmoketree"></i>
+        <h6 class="Modal-title">
+            Popup title
+        </h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+</div>
+
+This modal will append a notification to itself, and append itself to the body.
+<a class="Button Button--solid Button--yellowButtercup" href="#confirmation-modal3" data-modal-content="element">Body with confirmation cross</a>
+
+<div id="confirmation-modal3" class="Modal-element">
+    <div class="u-typography u-typography--inverted">
+        <i class="Modal-indicatorIcon Icon Icon-notificationcross-redFirebrick"></i>
+        <h6 class="Modal-title">
+            Popup title
+        </h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+</div>
+
+<!-- video modal -->
+This modal will append the video to the body.
+<a class="Button Button--solid Button--greenCyprus" href="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=true" data-modal-content="youtube">Body with video</a>

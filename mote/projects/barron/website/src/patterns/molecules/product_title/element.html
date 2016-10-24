@@ -1,0 +1,13 @@
+{% load mote_tags %}
+
+<!-- MOLECULE ProductTitle Start -->
+<div class="ProductTitle">
+    {% if product_title %}
+        {% render_element element.aspect.molecules.single_title title=product_title.primary %}
+        {% render_element element.aspect.atoms.meta_label %}
+    {% else %}
+        {% render_element element.aspect.molecules.single_title title=element.json.sample.ProductTitle.primary %}
+        {% render_element element.aspect.atoms.meta_label %}
+    {% endif %}
+</div>
+<!-- MOLECULE ProductTitle End -->

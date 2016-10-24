@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Ribbon",
+    "description": "Element used to denote information such as 'New'. Used in the card molecules."
+}

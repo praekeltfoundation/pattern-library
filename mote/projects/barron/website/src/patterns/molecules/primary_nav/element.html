@@ -1,0 +1,19 @@
+{% load mote_tags %}
+
+<!-- MOLECULE PrimaryNav Start -->
+<ul class="PrimaryNav {% resolve block-modifiers element.json.sample.menu.block-modifiers %}" role="menu">
+    {% if menuitems %}
+        {% for menuitem in menuitems %}
+        <li class="PrimaryNav-item {% resolve element-modifiers menuitem.element-modifiers %} {% resolve state menuitem.state %}" role="menuitem">
+            <a href="{% resolve href menuitem.href %}" class="PrimaryNav-link">{% resolve title menuitem.title %}</a>
+        </li>
+        {% endfor %}
+    {% else %}
+        {% for menuitem in element.json.primary_nav.menu.menuitems %}
+        <li class="PrimaryNav-item {% resolve element-modifiers menuitem.element-modifiers %} {% resolve state menuitem.state %}" role="menuitem">
+            <a href="{% resolve href menuitem.href %}" class="PrimaryNav-link">{% resolve title menuitem.title %}</a>
+        </li>
+        {% endfor %}
+    {% endif %}
+</ul>
+<!-- MOLECULE PrimaryNav End -->

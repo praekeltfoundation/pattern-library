@@ -1,0 +1,77 @@
+// ==========================================
+// ** Checkbox's & Radio Buttons
+// ==========================================
+//    checkbox's and radio buttons
+.Swatch {
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    display: inline-block;
+    margin: 2px;
+
+
+    &-label {
+        color: $color-greyscale-black;
+        cursor: pointer;
+
+        &:hover #{$scoped-block-name}-checkBox {
+            border: 1px solid $color-brand-yellow-buttercup;
+        }
+    }
+
+    // passive state for checkbox
+    &-checkBox {
+        display: inline-block;
+        position: relative;
+        padding: 4px;
+        transition: border anim(3);
+        border: 1px solid transparent;
+        background-color: transparent;
+        cursor: pointer;
+        vertical-align: middle;
+
+        i {
+            display: block;
+            margin: auto;
+            border-width: 12px;
+            content: "";
+        }
+
+        &:hover {
+            border: 1px solid $color-brand-yellow-buttercup;
+        }
+    }
+
+    &-input {
+        display: none;
+
+        // active state for checkbox
+        &:checked + #{$scoped-block-name}-label {
+            #{$scoped-block-name}-checkBox {
+                border: 1px solid $color-brand-green-cyprus;
+            }
+        }
+    }
+
+    &--inverted {
+        #{$scoped-block-name}-label {
+            color: $color-greyscale-white;
+        }
+
+        // passive state for checkbox inverted
+        #{$scoped-block-name}-checkBox {
+            border: 1px solid transparent;
+        }
+
+        #{$scoped-block-name}-input {
+
+            // active state for checkbox inverted
+            &:checked + #{$scoped-block-name}-label {
+                #{$scoped-block-name}-checkBox {
+                    border: 1px solid $color-greyscale-white;
+                }
+            }
+        }
+    }
+}

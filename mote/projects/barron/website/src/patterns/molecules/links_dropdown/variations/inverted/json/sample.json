@@ -1,0 +1,19 @@
+{
+    "LinksDropdown": {
+        "modifiers": "LinksDropdown--inverted",
+        "items": [
+            {
+                "title": "Lorem ipsum",
+                "href": "#"
+            },
+            {
+                "title": "Lorem ipsum",
+                "href": "#"
+            },
+            {
+                "title": "Lorem ipsum",
+                "href": "#"
+            }
+        ]
+    }
+}

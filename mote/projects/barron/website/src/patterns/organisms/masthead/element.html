@@ -1,0 +1,30 @@
+{% load mote_tags %}
+
+<!-- ORGANISM Masthead Start -->
+<header class="Masthead {% resolve masthead.modifiers element.json.sample.Masthead.modifiers %}" role="banner">
+    <div class="Masthead-primary">
+        <a href="#" class="Masthead-logo">
+            {% if masthead %}
+                {% render_element element.aspect.atoms.logo block-modifiers=masthead.children.logo.modifiers %}
+            {% else %}
+                {% render_element element.aspect.atoms.logo block-modifiers=element.json.sample.Masthead.children.logo.modifiers %}
+            {% endif %}
+        </a>
+        <a href="#" class="Masthead-searchButton">
+            <i class="Icon Icon-search-whiteGainsboro" data-grunticon-embed></i>
+        </a>
+        <nav class="Masthead-primaryNav" role="menugroup">
+            {% render_element element.aspect.molecules.primary_nav menuitems=element.json.sample.Masthead.children.menu.menuitems %}
+        </nav>
+    </div>
+    <div class="Masthead-secondary">
+        {% if masthead %}
+            {% render_element element.aspect.organisms.menu_carousel menu_carousel=masthead.MenuCarousel %}
+            {% render_element element.aspect.organisms.search search=masthead.Search %}
+        {% else %}
+            {% render_element element.aspect.organisms.menu_carousel menu_carousel=element.json.sample.Masthead.MenuCarousel %}
+            {% render_element element.aspect.organisms.search search=element.json.sample.Masthead.Search %}
+        {% endif %}
+    </div>
+</header>
+<!-- ORGANISM Masthead End -->

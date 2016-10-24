@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "List (Ordered & Unordered)",
+    "description": "By default, lists have no list style as a safe baseline for use in modules. Therefore, we use this pattern to create lists in text where necessary."
+}

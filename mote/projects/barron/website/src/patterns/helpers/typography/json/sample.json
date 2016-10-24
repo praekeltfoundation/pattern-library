@@ -1,0 +1,48 @@
+{
+    "Typography": {
+        "field_type": "typography",
+        "modifiers": "",
+        "items": [
+            {
+                "tag": "h1",
+                "content": "Lorem ipsum dolor.",
+                "class": ""
+            },
+            {
+                "tag": "h2",
+                "content": "Lorem ipsum dolor.",
+                "class": ""
+            },
+            {
+                "tag": "h3",
+                "content": "Lorem ipsum dolor.",
+                "class": ""
+            },
+            {
+                "tag": "h4",
+                "content": "Lorem ipsum dolor.",
+                "class": ""
+            },
+            {
+                "tag": "h5",
+                "content": "Lorem ipsum dolor.",
+                "class": ""
+            },
+            {
+                "tag": "h6",
+                "content": "Lorem ipsum dolor.",
+                "class": ""
+            },
+            {
+                "tag": "p",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat facilis, quisquam est iusto maxime labore?",
+                "class": ""
+            },
+            {
+                "tag": "p",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam rerum facere at enim, dolor porro illo dicta, vitae sapiente qui perferendis, inventore vel repellat. Quasi, ipsa nemo recusandae repellat blanditiis!",
+                "class": ""
+            }
+        ]
+    }
+}

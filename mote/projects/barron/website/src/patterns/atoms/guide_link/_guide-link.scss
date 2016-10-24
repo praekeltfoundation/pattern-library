@@ -1,0 +1,56 @@
+.GuideLink {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $guidelink-padding: strip-units(ms(1));
+    display: block;
+    position: relative;
+    //padding-right: unquote("#{$guidelink-padding}em");
+    transition: opacity anim(3);
+    color: $color-brand-yellow-buttercup;
+
+    &:hover,
+    &:focus {
+        opacity: .8;
+    }
+
+    &-icon,
+    &-iconLeft,
+    &-text {
+        @include font-baseline-fix;
+        display: inline-block;
+    }
+
+    &-text {
+        @include text-variant("0b");
+        font-size: 1em;
+    }
+
+    &-icon {
+        width: .75em;
+        height: 1.25em;
+        margin-left: ms(-1)/2;
+        vertical-align: top;
+    }
+
+    &-iconLeft {
+        //position: absolute;
+        //top: 0;
+        //bottom: 0;
+        //left: 0;
+        width: .75em;
+        height: 1.25em;
+        vertical-align: top;
+
+        & + #{$scoped-block-name}-text {
+            margin-left: ms(1)/3;
+        }
+
+    }
+}

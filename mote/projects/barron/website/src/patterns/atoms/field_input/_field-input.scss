@@ -1,0 +1,44 @@
+.FieldInput {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $color-alpha: rgba($color-brand-green-cyprus, .5);
+    $color-inverted-alpha: rgba($color-greyscale-white, .6);
+    $color-inverted-background: $color-brand-green-cyprus;
+    // Block specific styles
+    display: block;
+    width: 100%;
+    padding: .25rem 0;
+    border: 0;
+    border-bottom: 1px solid $color-brand-green-cyprus;
+    font-size: ms(0);
+    line-height: 1em;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        opacity: .5;
+    }
+
+    @include placeholder {
+        color: alpha-background-color($color-alpha, $color-greyscale-white);
+        color: $color-alpha;
+    }
+
+    //&--inverted {
+    //    @include placeholder {
+    //        color: alpha-color-fallback($color-inverted-alpha, $color-inverted-background);
+    //        color: $color-inverted-alpha;
+    //    }
+    //    border-bottom: 1px solid $color-greyscale-white;
+    //    color: $color-greyscale-white;
+    //}
+}

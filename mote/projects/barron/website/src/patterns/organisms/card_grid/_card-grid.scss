@@ -1,0 +1,71 @@
+.CardGrid {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    @include container;
+    padding: ms(3) ms(3) 0;
+
+    &-header {
+        @include container;
+        display: block;
+        flex-basis: 100%;
+        margin-bottom: ms(3);
+    }
+
+    &-title {
+        @include text-variant("2b");
+    }
+
+    &-item {
+        @include span(12);
+        margin-bottom: ms(3);
+
+        @include breakpoint($bp-beta) {
+            margin-right: gutter();
+            margin-bottom: gutter();
+        }
+
+        @include breakpoint($bp-beta $bp-delta) {
+            @include span(6);
+
+            &:nth-of-type(2n) {
+                @include last;
+            }
+        }
+
+        @include breakpoint($bp-delta) {
+            @include span(4);
+
+            &:nth-of-type(3n) {
+                @include last;
+            }
+        }
+    }
+
+    &--fullWidth {
+        #{$scoped-block-name}-item {
+            @include breakpoint($bp-beta $bp-delta) {
+                @include span(4);
+
+                &:nth-of-type(3n) {
+                    @include last;
+                }
+            }
+
+            @include breakpoint($bp-delta) {
+                @include span(3);
+
+                &:nth-of-type(4n) {
+                    @include last;
+                }
+            }
+        }
+    }
+}

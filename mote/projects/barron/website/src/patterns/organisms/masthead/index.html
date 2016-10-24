@@ -1,0 +1,24 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Masthead
+    </h4>
+    <div class="description">
+        The masthead contains the Primary Nav, Logo, Search and Menu Carousel. It is very important to note that by default the Primary Nav contains only a single link ("Menu") which anchors to the <code>#menu-fallback</code> DOM node, which is the <code>Fallback Nav</code>. Once the JS kicks in, the Menu Carousel items will be contructed in their entirety on the client-side based on the structure of the Fallback Nav.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.organisms.masthead %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

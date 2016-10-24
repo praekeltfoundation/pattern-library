@@ -1,0 +1,30 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+     Option Buttons
+    </h4>
+    <div class="description">
+        This is the molecule is used to construct a option button . The Block level class is <code>OptionButton</code> which is present on the container, this has a modifier <code>OptionButton--inverted</code> for dark backgrounds. This is used in conjuction with Element classes on the input fields  <code>OptionButton-input</code> and the label field <code>OptionButton-label</code> and the 2nested <code>&lt;span&gt;</code> in the label <code>OptionButton-checkBox</code> and <code>OptionButton-title</code>.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+<!-- option button -->
+{% render_element element.aspect.molecules.option_button %}
+
+<!-- inverted option button -->
+{% render_element element.aspect.molecules.option_button.inverted %}
+
+<!-- option button with image -->
+{% render_element element.aspect.molecules.option_button.with_image %}                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+    <!-- sg-code-block -->
+{% endblock %}

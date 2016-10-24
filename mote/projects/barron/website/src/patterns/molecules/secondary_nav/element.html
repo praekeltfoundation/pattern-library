@@ -1,0 +1,11 @@
+{% load mote_tags %}
+
+<!-- MOLECULE SecondaryNav Start -->
+<ul class="SecondaryNav {{ element.json.sample.menu.modifiers }}" role="menu">
+    {% for menuitem in element.json.sample.menu.menuitems %}
+    <li class="SecondaryNav-item {{ menuitem.state }}" role="menuitem">
+        <a href="{{ menuitem.href }}" class="SecondaryNav-link">{{ menuitem.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+<!-- MOLECULE SecondaryNav End -->

@@ -1,0 +1,21 @@
+{% load mote_tags %}
+
+<!-- ATOM Picture Start -->
+<picture class="{% resolve picture.block-class element.json.sample.Picture.block-class %} {% resolve picture.modifiers element.json.sample.Picture.modifiers %}">
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    {% if picture.srcsets %}
+        {% for srcset in picture.srcsets %}
+        <source data-srcset="{{ static_root }}{{ srcset.set }}">
+        {% endfor %}
+    {% else %}
+        {% for srcset in element.json.sample.Picture.srcsets %}
+        <source data-srcset="{{ srcset.set }}">
+        {% endfor %}
+    {% endif %}
+    <!--[if IE 9]></video><![endif]-->
+    <img alt="{% resolve picture.image.alt-text element.json.sample.Picture.image.alt-text %}" class="{% resolve picture.image.element-class element.json.sample.Picture.image.element-class %} {% resolve picture.image.modifiers element.json.sample.Picture.image.element-modifiers %} lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <noscript>
+        <img class="{% resolve picture.image.element-class element.json.sample.Picture.image.element-class %} {% resolve picture.image.modifiers element.json.sample.Picture.image.element-modifiers %}" src="{% resolve picture.image.noscriptsrc element.json.sample.Picture.image.noscriptsrc %}" alt="{% resolve picture.image.alt-text element.json.sample.Picture.image.alt-text %}">
+    </noscript>
+</picture>
+<!-- ATOM Picture End -->

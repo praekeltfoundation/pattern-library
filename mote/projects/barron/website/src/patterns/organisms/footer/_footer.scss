@@ -1,0 +1,17 @@
+.Footer {
+    padding: ms(3) ms(4);
+    background-color: $color-brand-green-cyprus;
+
+    &-primaryNav {
+        @include text-variant("-1a");
+        margin-bottom: ms(0);
+        color: $color-greyscale-white;
+    }
+
+    &-copyright {
+        @include text-variant("-1b");
+        display: block;
+        color: tint($color-brand-green-cyprus, 50%);
+        font-style: italic;
+    }
+}

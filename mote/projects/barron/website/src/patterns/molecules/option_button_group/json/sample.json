@@ -1,0 +1,38 @@
+{
+    "OptionButtonGroup": {
+        "field_type": "option_button_group",
+        "modifiers": "",
+        "items": [
+            {
+                "field_type": "option_button",
+                "tag": "div",
+                "modifiers": "",
+                "type": "radio",
+                "element_id": "option1",
+                "name": "option_button_group",
+                "value": "option1",
+                "Picture": ""
+            },
+            {
+                "field_type": "option_button",
+                "tag": "div",
+                "modifiers": "",
+                "type": "radio",
+                "element_id": "option2",
+                "name": "option_button_group",
+                "value": "option2",
+                "Picture": ""
+            },
+            {
+                "field_type": "option_button",
+                "tag": "div",
+                "modifiers": "",
+                "type": "radio",
+                "element_id": "option3",
+                "name": "option_button_group",
+                "value": "option3",
+                "Picture": ""
+            }
+        ]
+    }
+}

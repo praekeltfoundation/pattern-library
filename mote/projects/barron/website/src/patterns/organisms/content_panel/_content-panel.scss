@@ -1,0 +1,115 @@
+.ContentPanel {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $content-block-padding: ms(3);
+    $color-background: $color-greyscale-white-smoke;
+    $color-inverted-background: $color-brand-green-cyprus;
+
+    display: block;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+    background-color: $color-background;
+    overflow: hidden;
+
+    .no-flexbox {
+        min-height: rem(450);
+    }
+
+    @include breakpoint($bp-gamma) {
+        height: 100%;
+    }
+
+    &--inverted {
+        background-color: $color-inverted-background;
+        color: $color-greyscale-white;
+    }
+
+    &-header,
+    &-footer {
+        display: block;
+    }
+
+    &-header {
+        padding: $content-block-padding;
+    }
+
+    &-footer {
+        .no-flexbox & {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &-content {
+        flex-grow: 2;
+        padding: 0 $content-block-padding ($content-block-padding * 2);
+
+        .no-flexbox & {
+            position: absolute;
+            top: ms(7);
+            right: 0;
+            bottom: ms(7);
+            left: 0;
+            margin: auto;
+        }
+
+        @include breakpoint($bp-gamma) {
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        &[aria-hidden="true"] + #{$scoped-block-name}-footer {
+            display: none;
+        }
+    }
+
+    &-toggler {
+        padding: 0 $content-block-padding;
+    }
+
+    &-toggler ~ &-content {
+        .no-flexbox & {
+            top: ms(10);
+        }
+    }
+
+    & .Fieldset-defaultElement {
+        .js & {
+            display: none;
+        }
+    }
+
+    & .Fieldset-element {
+        display: none;
+    }
+
+    &-title {
+        @include text-variant("2b");
+    }
+
+    &-iconLink {
+        //position: absolute;
+        display: inline-block;
+        width: ms(3);
+        height: ms(3);
+        margin-left: ms(-1);
+        transition: opacity anim(3);
+        outline: none;
+        vertical-align: top;
+        z-index: z(6);
+    }
+}

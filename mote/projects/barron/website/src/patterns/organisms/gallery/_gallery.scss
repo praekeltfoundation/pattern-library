@@ -1,0 +1,144 @@
+.Gallery {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    position: relative;
+    // Mixins
+    @mixin gallery-thumbnails-mobile {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: ms(3) ms(3) (ms(3) + ms(6)) ms(3);
+        transition: anim(3);
+        background-color: rgba($color-brand-green-cyprus, .9);
+        opacity: 0;
+        visibility: hidden;
+        z-index: z(-1);
+    }
+
+    @mixin gallery-thumbnail-mobile {
+        @include span(4);
+        margin-bottom: gutter();
+
+        &:nth-child(3n) {
+            @include last;
+        }
+    }
+
+    &-image {
+        .SquareImage-graphic--product {
+            //padding: .5rem;
+            background-color: $color-greyscale-white-gainsboro;
+            object-fit: contain;
+
+            @include breakpoint($bp-beta) {
+                padding: 3rem 1.5rem 0;
+            }
+        }
+    }
+
+    &-iconLink {
+        position: absolute;
+        width: ms(5);
+        height: ms(5);
+        transition: opacity anim(3);
+        outline: none;
+        z-index: z(6);
+
+        &--bottomRight {
+            right: ms(3);
+            bottom: ms(3);
+        }
+    }
+
+    &-thumbnails,
+    &-thumbnailsToggler {
+        position: absolute;
+        bottom: ms(3);
+        left: ms(3);
+    }
+
+    &-thumbnailsToggler {
+        display: none;
+        width: ms(5);
+        height: ms(5);
+        transition: opacity anim(3);
+        outline: none;
+        opacity: .4;
+        z-index: z(6);
+
+        &:hover {
+            opacity: .8;
+        }
+
+        #{$scoped-block-name}-closer {
+            display: none;
+        }
+
+        &.is-active {
+            #{$scoped-block-name}-opener {
+                display: none;
+            }
+
+            #{$scoped-block-name}-closer {
+                display: block;
+            }
+        }
+    }
+
+    &-thumbnail {
+        display: block;
+        width: ms(7);
+        padding: 2px;
+        transition: opacity anim(3), border anim(3);
+        border: 1px solid transparent;
+        opacity: .4;
+
+        // States
+        &.is-active,
+        &:hover {
+            border: 1px solid $color-greyscale-white;
+            opacity: 1;
+        }
+    }
+
+    &-thumbnail + &-thumbnail {
+        margin-top: ms(0);
+    }
+
+    // States
+    &-thumbnails {
+        &.is-minimised {
+            & {
+                @include gallery-thumbnails-mobile;
+            }
+
+            & + #{$scoped-block-name}-thumbnailsToggler {
+                display: block;
+            }
+
+            #{$scoped-block-name}-thumbnail {
+                @include gallery-thumbnail-mobile;
+            }
+
+            #{$scoped-block-name}-thumbnail + #{$scoped-block-name}-thumbnail {
+                margin-top: 0;
+            }
+        }
+
+        &.is-open {
+            & {
+                opacity: 1;
+                visibility: visible;
+                z-index: z(5);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Code Block Title
+    </h4>
+    <div class="description">
+        <p>The modal is constructed by a javascript function on click of an element with the following attributes. <code>data-modal-content</code> to specify the type of modal <code>image</code>, <code>youtube</code> and <code>element</code> respectfully.  The element type requires a id reference in the <code>href</code> the others point to a image or youtube asset repectfully.</p>
+
+        <p>There are three variations of the modal. <b>Image</b>, <b>Element</b> and <b>Video</b>. Use<code>data-modal-appendto-group</code> to specify a target to append the modal too other than the <code>body</code> element.
+         the image and video modals work in a similar way. they both construct there content areas with a link to the respective image or youtube video.</p>
+
+        <p>For the Video it is important to use the url that one gets from the embed link on a youtube page. its url structure is different from a standard youtube url. If you want the view to play automatically append <code>?autoplay=true</code> to the end of the url string.</p>
+
+        <p>For type element the javascript has the following behaviour. when the Modal is triggered the <b >element</b> targeted by your <code>href</code> will be detached from the DOM flow and appended to the Modal context. When the Modal closes it is once again removed from the flow and reappended to its original parrent container. To control exactly where it get re-appended refer to how it has been implemented in <b>organisms/content-panel</b></p>
+
+
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.modal %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

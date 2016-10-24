@@ -1,0 +1,20 @@
+{% load mote_tags %}
+
+<!-- MOLECULE HeroBanner Start -->
+<div class="HeroBanner">
+    <div class="HeroBanner-background">
+        {% render_element element.aspect.atoms.picture block-class=element.json.hero_banner.content.picture.block-class image-element-class=element.json.hero_banner.content.picture.image.element-class %}
+    </div>
+
+    <div class="HeroBanner-foreground">
+        {% if headline %}
+            {% render_element element.aspect.molecules.on_title block-modifiers="OnTitle--inverted OnTitle--massive" title=headline %}
+        {% else  %}
+            {% render_element element.aspect.molecules.on_title block-modifiers="OnTitle--inverted OnTitle--massive" title=element.json.hero_banner.content.title %}
+        {% endif %}
+        <div class="HeroBanner-callToAction">
+            {% render_element element.aspect.atoms.guide_link %}
+        </div>
+    </div>
+</div>
+<!-- MOLECULE HeroBanner End -->

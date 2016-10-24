@@ -1,0 +1,113 @@
+@import "../../../globals/vendor-manifest";
+@import "../../../globals/config";
+@import "../../../utils/functions";
+@import "../../../globals/variables";
+
+
+
+.Carousel {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $nav-size: ms(4);
+
+    position: relative;
+
+    // Owl Carousel is a DICK. I've been forced to up the specificity of this style in order to prevent images from warping when cards are applied in carousels. Bah.
+    .no-objectfit &.owl-carousel .owl-item img {
+        width: auto;
+    }
+
+    &-item {
+        position: relative;
+    }
+
+    &-navContainer {
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: ms(4);
+            height: ms(6);
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: $color-brand-green-cyprus;
+            transition: anim(3);
+            background-position: 50%;
+            background-size: 40%;
+            transition: anim(3);
+            cursor: pointer;
+            opacity: 1;
+            z-index: z(2);
+
+            &:hover {
+                height: 100%;
+            }
+
+            &.disabled {
+                opacity: 0;
+            }
+
+            // @include breakpoint($bp-gamma) {
+            //     width: ms(6);
+            //     margin: 0 ms(-1);
+            // }
+        }
+
+        .owl-prev {
+            left: 0;
+        }
+
+        .owl-next {
+            right: 0;
+        }
+    }
+
+    &-dotsContainer {
+        position: absolute;
+        right: $nav-size;
+        bottom: $nav-size;
+        left: $nav-size;
+        line-height: 0;
+        text-align: center;
+        z-index: z(2);
+
+        .owl-dot {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            transition: .3s ease-in-out;
+            border: 3px solid $color-greyscale-white;
+            border-radius: 50%;
+
+            &.active,
+            &:hover {
+                background-color: $color-greyscale-white;
+            }
+        }
+
+        .owl-dot + .owl-dot {
+            margin-left: ms(0);
+        }
+    }
+
+    // &-dotsContainer,
+    // &-navContainer {
+    //     transition: opacity anim(3);
+    //     opacity: 0;
+    // }
+    //
+    // &:hover {
+    //     #{$scoped-block-name}-dotsContainer,
+    //     #{$scoped-block-name}-navContainer {
+    //         opacity: 1;
+    //     }
+    // }
+}

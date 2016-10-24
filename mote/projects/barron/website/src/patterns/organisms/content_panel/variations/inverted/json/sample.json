@@ -1,0 +1,293 @@
+{
+    "ContentPanel": {
+        "modifiers": "ContentPanel--inverted",
+        "title": "Tools",
+        "LinksDropdown": {
+            "modifiers": "LinksDropdown--inverted",
+            "items": [
+                {
+                    "title": "Create a Spec Sheet",
+                    "href": "#content-form-specsheet"
+                },
+                {
+                    "title": "Build your own Catalogue",
+                    "href": "#content-form-catalogue"
+                },
+                {
+                    "title": "Create a Virtual Sample",
+                    "href": "#content-form-virtual-sample"
+                }
+            ]
+        },
+        "SpecSheetButton": {
+            "field_type": "button",
+            "tag": "button",
+            "modifiers": "Button--solid Button--greenOracle",
+            "text": "Create a Spec Sheet",
+            "attributes": ""
+        },
+        "CatalogueButton": {
+            "field_type": "button",
+            "tag": "button",
+            "modifiers": "Button--solid Button--greenOracle",
+            "text": "Create a Catalogue",
+            "attributes": ""
+        },
+        "BrandingOptionsButton": {
+            "field_type": "button",
+            "tag": "button",
+            "modifiers": "Button--solid Button--greenOracle",
+            "text": "View Branding Options",
+            "attributes": ""
+        },
+        "VirtualSampleButton": {
+            "field_type": "button",
+            "tag": "button",
+            "modifiers": "Button--solid Button--greenOracle",
+            "text": "Create a Virtual Sample",
+            "attributes": ""
+        },
+        "Fieldset1": {
+            "legend": "",
+            "modifiers": "Fieldset--inverted",
+            "items": [
+                {
+                    "field_type": "option_button_group",
+                    "modifiers": "OptionButtonGroup--inverted",
+                    "items": [
+                        {
+                            "field_type": "option_button",
+                            "tag": "div",
+                            "modifiers": "OptionButton--inverted",
+                            "type": "radio",
+                            "element_id": "Template1",
+                            "name": "option_button_group",
+                            "value": "Template1",
+                            "Picture": {
+                                "block-class": "",
+                                "modifiers": "",
+                                "image": {
+                                    "element-class": "",
+                                    "modifiers": "",
+                                    "alt-text": "specsheet1",
+                                    "noscriptsrc": "images/misc/specsheet1.png"
+                                },
+                                "srcsets": [
+                                    {
+                                        "set": "images/misc/specsheet1.png 212w",
+                                        "media": ""
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "field_type": "option_button",
+                            "tag": "div",
+                            "modifiers": "OptionButton--inverted",
+                            "type": "radio",
+                            "element_id": "Template2",
+                            "name": "option_button_group",
+                            "value": "Template2",
+                            "Picture": {
+                                "block-class": "",
+                                "modifiers": "",
+                                "image": {
+                                    "element-class": "",
+                                    "modifiers": "",
+                                    "alt-text": "specsheet1",
+                                    "noscriptsrc": "images/misc/specsheet2.png"
+                                },
+                                "srcsets": [
+                                    {
+                                        "set": "images/misc/specsheet2.png 212w",
+                                        "media": ""
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "field_type": "option_button",
+                            "tag": "div",
+                            "modifiers": "OptionButton--inverted",
+                            "type": "radio",
+                            "element_id": "Template3",
+                            "name": "option_button_group",
+                            "value": "Template3",
+                            "Picture": {
+                                "block-class": "",
+                                "modifiers": "",
+                                "image": {
+                                    "element-class": "",
+                                    "modifiers": "",
+                                    "alt-text": "specsheet1",
+                                    "noscriptsrc": "images/misc/specsheet3.png"
+                                },
+                                "srcsets": [
+                                    {
+                                        "set": "images/misc/specsheet3.png 212w",
+                                        "media": ""
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "Fieldset2": {
+            "legend": "",
+            "modifiers": "Fieldset--inverted",
+            "items": [
+                {
+                    "field_type": "typography",
+                    "modifiers": "u-typography--inverted",
+                    "items": [
+                        {
+                            "tag": "p",
+                            "content": "This is an introduction to how the build your catalogue tool workds. Lorem ipsum dolar sit amet, consectetur adipisicing elit, se do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        }
+                    ]
+                }
+            ]
+        },
+        "Fieldset3": {
+            "legend": "Select the logo to upload",
+            "modifiers": "Fieldset--inverted",
+            "items": [
+                {
+                    "field_type": "typography",
+                    "modifiers": "u-typography--inverted",
+                    "items": [
+                        {
+                            "tag": "p",
+                            "content": "Once selected, click the Upload Logo button."
+                        }
+                    ]
+                },
+                {
+                    "field_type": "button",
+                    "tag": "input",
+                    "modifiers": "Button--bordered",
+                    "text": "choose file",
+                    "attributes": [
+                        "type=file"
+                        ]
+                },
+                {
+                    "field_type": "dropdown",
+                    "tag": "select",
+                    "attributes": {
+                        "disabled": "disabled"
+                    },
+                    "modifiers": "Dropdown--inverted",
+                    "items": [
+                        {
+                            "title": "Remove all white",
+                            "value": "1"
+                        },
+                        {
+                            "title": "Lorem ipsum 2",
+                            "value": "2"
+                        },
+                        {
+                            "title": "Lorem ipsum 3",
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "field_type": "button",
+                    "tag": "button",
+                    "modifiers": "Button--bordered",
+                    "text": "upload logo",
+                    "attributes": {
+                        "disabled": "disabled"
+                    }
+                },
+                {
+                    "field_type": "button",
+                    "tag": "button",
+                    "modifiers": "Button--ghost",
+                    "text": "remove logo",
+                    "attributes": {
+                        "disabled": "disabled"
+                    }
+                },
+                {
+                    "field_type": "typography",
+                    "modifiers": "u-typography--inverted",
+                    "items": [
+                        {
+                            "tag": "h2",
+                            "content": "send product sample:",
+                            "class": "Fieldset-descriptionHeading"
+                        }
+                    ]
+                },
+                {
+                    "field_type": "form_field",
+                    "modifiers": "FormField--inverted",
+                    "label": "From email field",
+                    "FieldInput": {
+                        "attributes": {
+                            "disabled": "disabled"
+                        },
+                        "placeholder": "Form email",
+                        "type": "text",
+                        "element_id": "from-email"
+                    },
+                    "FieldLabel": {
+                        "for_element": "from-email",
+                        "labeltext": "Form email"
+                    },
+                    "FieldMsg": {
+                        "for_element": "from-email",
+                        "labeltext": "that is not a valid email address."
+                    }
+                },
+                {
+                    "field_type": "form_field",
+                    "modifiers": "FormField--inverted",
+                    "label": "To email field",
+                    "FieldInput": {
+                        "attributes": {
+                            "disabled": "disabled"
+                        },
+                        "placeholder": "To email",
+                        "type": "text",
+                        "element_id": "to-email"
+                    },
+                    "FieldLabel": {
+                        "for_element": "to-email",
+                        "labeltext": "To email"
+                    },
+                    "FieldMsg": {
+                        "for_element": "to-email",
+                        "labeltext": "that is not a valid email address."
+                    }
+                },
+                {
+                    "field_type": "form_field",
+                    "modifiers": "FormField--inverted",
+                    "label": "To name field",
+                    "FieldInput": {
+                        "attributes": {
+                            "disabled": "disabled"
+                        },
+                        "placeholder": "To name",
+                        "type": "text",
+                        "element_id": "to-name"
+                    },
+                    "FieldLabel": {
+                        "for_element": "to-name",
+                        "labeltext": "To name"
+                    },
+                    "FieldMsg": {
+                        "for_element": "to-name",
+                        "labeltext": "please enter a valid name."
+                    }
+                }
+            ]
+        }
+    }
+}

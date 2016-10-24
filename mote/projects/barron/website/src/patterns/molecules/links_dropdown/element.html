@@ -1,0 +1,30 @@
+{% load mote_tags %}
+
+<!-- MOLECULE LinksDropdown Start -->
+<div class="LinksDropdown {% resolve links_dropdown.modifiers element.json.sample.LinksDropdown.modifiers %}">
+    <input class="LinksDropdown-checkbox" type="checkbox" id="links-dropdown-1"/>
+    <label class="LinksDropdown-label" for="links-dropdown-1">
+        <span class="LinksDropdown-label-text">Do Something</span>
+        <i class="Icon Icon-chevronbottom-greenCyprus"></i>
+    </label>
+    <ul class="LinksDropdown-options">
+        {% if links_dropdown %}
+            {% for item in links_dropdown.items %}
+                <li class="LinksDropdown-options-item">
+                    <a class="LinksDropdown-options-item-link" href="{{ item.href }}">
+                        <span class="LinksDropdown-options-item-link-text">{{ item.title }}</span>
+                    </a>
+                </li>
+            {% endfor %}
+        {% else %}
+            {% for item in element.json.sample.LinksDropdown.items %}
+                <li class="LinksDropdown-options-item">
+                    <a class="LinksDropdown-options-item-link" href="{{ item.href }}">
+                        <span class="LinksDropdown-options-item-link-text">{{ item.title }}</span>
+                    </a>
+                </li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+</div>
+<!-- MOLECULE LinksDropdown End -->

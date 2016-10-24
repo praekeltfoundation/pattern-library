@@ -1,0 +1,18 @@
+{% load mote_tags %}
+
+<!-- TEMPLATE Home Start -->
+{% render_element element.aspect.organisms.masthead masthead=element.json.sample.HomeStart.Masthead %}
+{% render_element element.aspect.organisms.hero_carousel %}
+{% render_element element.aspect.organisms.footer %}
+<!-- TEMPLATE Home End -->
+<div id="mastheadTooltip"
+     class="Tooltip-content"
+     data-tooltip-target=".owl-item.active.center .CategoryCard-graphic"
+     data-tooltip-config="mastheadTooltip"
+    >
+    <i class="Tooltip-closer Icon Icon-close-white"></i>
+    <h6 class="Tooltip-title">tooltip title</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+</div>

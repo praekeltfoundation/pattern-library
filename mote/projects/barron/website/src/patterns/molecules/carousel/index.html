@@ -1,0 +1,43 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Carousel Single Item
+    </h4>
+    <div class="description">
+        The Carousel's markup is straight forward. Owl Carousel will kick in and wrap all the items in the appropriate way, else they will stack one above the other.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.carousel %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<div class="sg-code-block">
+    <h4 class="title">
+        Carousel Mutli-Item
+    </h4>
+    <div class="description">
+        The only modifier that the Carousel has is <code>Carousel--multiple</code>, which will trigger the multiple-item layout seen in the Menu Carousel.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.carousel.multiple-items %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+
+<!-- sg-code-block -->
+{% endblock %}

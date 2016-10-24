@@ -1,0 +1,20 @@
+{% load mote_tags %}
+
+<!-- MOLECULE SearchField Start -->
+<{{ element.json.sample.SearchField.tag }} class="SearchField {% resolve search_field.modifiers element.json.sample.SearchField.modifiers %}">
+<a href="#" class="SearchField-searchButton">
+    <i class="Icon Icon-search-whiteGainsboro" data-grunticon-embed></i>
+</a>
+    {% if search_field %}
+        {% render_element element.aspect.atoms.field_label for_element=search_field.FieldLabel.for_element text=search_field.FieldLabel.labeltext %}
+        {% render_element element.aspect.atoms.field_input placeholder=search_field.FieldInput.placeholder type=search_field.FieldInput.type element_id=search_field.FieldInput.element_id %}
+    {% else %}
+        {% render_element element.aspect.atoms.field_label for_element=element.json.sample.SearchField.FieldLabel.for_element text=element.json.sample.SearchField.FieldLabel.labeltext %}
+        {% render_element element.aspect.atoms.field_input placeholder=element.json.sample.SearchField.FieldInput.placeholder type=element.json.sample.SearchField.FieldInput.type element_id=element.json.sample.SearchField.FieldInput.element_id %}
+    {% endif %}
+
+    {% render_element element.aspect.atoms.field_msg for_element=element.json.sample.SearchField.FieldMsg.for_element text=element.json.sample.SearchField.FieldMsg.labeltext %}
+
+    <a href="#" class="SearchField-link">Advanced Search</a>
+</{{ element.json.sample.SearchField.tag }}>
+<!-- MOLECULE SearchField End -->

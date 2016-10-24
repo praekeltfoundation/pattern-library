@@ -1,0 +1,55 @@
+.ContentPage {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $size: ms(3)*2;
+    
+    min-height: calc(100vh - #{$size});
+    margin: ms(3);
+    padding: ms(3);
+    background-color: $color-greyscale-white;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @include text-variant("2a") font-weight: normal;
+    }
+
+    h1 {
+        font-size: ms(3);
+    }
+
+    h2 {
+        font-size: ms(2);
+    }
+
+    h3 {
+        font-size: ms(1);
+    }
+
+    h4 {
+        font-size: ms(0);
+    }
+
+    h5 {
+        font-size: ms(-1);
+    }
+
+    h6 {
+        font-size: ms(-2);
+    }
+
+    b,
+    strong {
+        font-family: $font-bold;
+    }
+}

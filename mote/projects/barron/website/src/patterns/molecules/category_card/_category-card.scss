@@ -1,0 +1,35 @@
+.CategoryCard {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    display: block;
+
+    &-graphic {
+        transition: opacity anim(3);
+        opacity: .6;
+    }
+
+    &-title {
+        @include text-variant("-1a");
+        display: block;
+        padding-top: ms(3);
+        padding-bottom: ms(-3);
+        color: $color-brand-green-cyprus;
+        text-align: center;
+    }
+
+    &.is-active,
+    &:focus,
+    &:hover {
+        #{$scoped-block-name}-graphic {
+            opacity: 1;
+        }
+    }
+}

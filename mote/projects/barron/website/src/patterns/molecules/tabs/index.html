@@ -1,0 +1,43 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Tabs
+    </h4>
+    <div class="description">
+        Tabs are, at their very simplest, constructed from the below markup. Relevant ARIA attributes are assigned to the tabs and their targeted panels. This approach allows for the tab panels to exist anywhere in the DOM and still be toggled.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.tabs %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+<div class="sg-code-block">
+    <h4 class="title">
+        Tabs Styled
+    </h4>
+    <div class="description">
+        If needed, the following styles can be applied for a basic styled tab system with matching panels.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.tabs.styled %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

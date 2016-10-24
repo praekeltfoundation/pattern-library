@@ -1,0 +1,7 @@
+{
+    "Button": {
+        "tag": "button",
+        "modifiers": "Button--ghost",
+        "text": "Lorem ipsum"
+    }
+}

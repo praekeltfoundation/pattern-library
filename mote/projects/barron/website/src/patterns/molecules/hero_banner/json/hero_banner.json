@@ -1,0 +1,25 @@
+{
+    "content": {
+        "title": "Lorem ipsum dolor<br/>sit amet",
+        "href": "#",
+        "on_title": {
+            "block-modifiers": "OnTitle--inverted"
+        },
+        "picture": {
+            "block-class": "HeroBanner-background",
+            "block-modifiers": "",
+            "image": {
+                "element-class": "HeroBanner-backgroundImage",
+                "element-modifiers": "",
+                "alt-text": "Alt Text",
+                "noscriptsrc": "http://www.placehold.it/800x500"
+            },
+            "srcsets": [
+                {
+                    "set": "http://www.placehold.it/800x500 800w, http://www.placehold.it/1600x500 1600w",
+                    "media": ""
+                }
+            ]
+        }
+    }
+}
