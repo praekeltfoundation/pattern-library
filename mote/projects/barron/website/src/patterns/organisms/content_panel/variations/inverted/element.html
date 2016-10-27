@@ -1,0 +1,59 @@
+{% load mote_tags %}
+
+<!-- ORGANISM ContentPanel Start -->
+<section action="" class="ContentPanel {% resolve content_panel.modifiers element.json.sample.ContentPanel.modifiers %}">
+    <header class="ContentPanel-header">
+        <h1 class="ContentPanel-title">{% resolve content_panel.title element.json.sample.ContentPanel.title %}</h1>
+    </header>
+    
+    <div class="ContentPanel-toggler">
+        <!-- MOLECULE LinksDropdown Start -->
+        <div class="LinksDropdown LinksDropdown--inverted">
+            <input class="LinksDropdown-checkbox" type="checkbox" id="links-dropdown-1"/>
+            <label class="LinksDropdown-label" for="links-dropdown-1">
+                <span class="LinksDropdown-label-text">Create a Spec Sheet</span>
+                <i class="Icon Icon-chevronbottom-whiteGainsboro"></i>
+            </label>
+            <ul class="LinksDropdown-options" role="tablist" data-panel-active="#content-form-specsheet">
+                <li class="LinksDropdown-options-item">
+                    <a class="LinksDropdown-options-item-link" href="#content-form-specsheet" role="tab" id="specsheet-tab">
+                        <span class="LinksDropdown-options-item-link-text">Create a Spec Sheet</span>
+                    </a>
+                </li>
+                <li class="LinksDropdown-options-item">
+                    <a class="LinksDropdown-options-item-link" href="#content-form-catalogue" role="tab" id="catalogue-tab">
+                        <span class="LinksDropdown-options-item-link-text">Build your own Catalogue</span>
+                    </a>
+                </li>
+                <li class="LinksDropdown-options-item">
+                    <a class="LinksDropdown-options-item-link" href="#content-form-virtual-sample" role="tab" id="sample-tab">
+                        <span class="LinksDropdown-options-item-link-text">Create a Virtual Sample</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- MOLECULE LinksDropdown End -->
+    </div>
+
+    <div class="ContentPanel-content" id="content-form-specsheet">
+        {% render_element element.aspect.molecules.fieldset fieldset=element.json.sample.ContentPanel.Fieldset1 %}
+    </div>
+    <footer class="ContentPanel-footer">
+        {% render_element element.aspect.atoms.button button=element.json.sample.ContentPanel.SpecSheetButton %}
+    </footer>
+
+    <div class="ContentPanel-content" id="content-form-catalogue">
+        {% render_element element.aspect.molecules.fieldset fieldset=element.json.sample.ContentPanel.Fieldset2 %}
+    </div>
+    <footer class="ContentPanel-footer">
+        {% render_element element.aspect.atoms.button button=element.json.sample.ContentPanel.CatalogueButton%}
+    </footer>
+
+    <div class="ContentPanel-content" id="content-form-virtual-sample">
+        {% render_element element.aspect.molecules.fieldset fieldset=element.json.sample.ContentPanel.Fieldset3 %}
+    </div>
+    <footer class="ContentPanel-footer">
+        {% render_element element.aspect.atoms.button button=element.json.sample.ContentPanel.VirtualSampleButton %}
+    </footer>
+</section>
+<!-- ORGANISM ContentPanel End -->

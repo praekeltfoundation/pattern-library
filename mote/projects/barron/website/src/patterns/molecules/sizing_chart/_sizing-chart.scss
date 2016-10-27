@@ -1,0 +1,79 @@
+.SizingChart {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $sizing-chart-color: $color-brand-green-cyprus;
+    $sizing-chart-divider-color: tint($color-brand-green-cyprus, 80%);
+    $sizing-chart-border-width: 2px;
+    $sizing-chart-padding: ms(-1) ms(1);
+
+    margin-top: ms(1);
+    margin-bottom: ms(1);
+    border: $sizing-chart-border-width solid $sizing-chart-color;
+
+    %sizing-chart-padding {
+        padding: $sizing-chart-padding;
+    }
+
+    &-title {
+        @extend %sizing-chart-padding;
+        @include text-variant("1a");
+        border-bottom: $sizing-chart-border-width solid $sizing-chart-color;
+    }
+
+    &-titleText {
+        @include font-baseline-fix;
+        display: block;
+    }
+
+    &-group {
+        padding-bottom: ms(0);
+    }
+
+    &-group + &-group {
+        border-top: $sizing-chart-border-width solid $sizing-chart-color;
+    }
+
+    &-groupTitle {
+        @extend %sizing-chart-padding;
+        @include text-variant("-1a");
+        border-bottom: $sizing-chart-border-width solid $sizing-chart-divider-color;
+    }
+
+    &-groupList {
+        @include container;
+        text-align: justify;
+    }
+
+    &-groupCaption,
+    &-groupItem {
+        @extend %sizing-chart-padding;
+        display: block;
+        width: 25%;
+        margin-bottom: -(ms(0));
+        float: left;
+        text-align: left;
+
+        @include breakpoint($bp-alpha) {
+            width: 20%;
+        }
+
+        @include breakpoint($bp-gamma) {
+            width: 10%;
+        }
+    }
+
+    &-groupCaption {
+        @include text-variant("-1a");
+    }
+
+    &-groupItem {
+        @include text-variant("-1b");
+    }
+}

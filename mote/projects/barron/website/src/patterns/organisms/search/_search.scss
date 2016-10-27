@@ -1,0 +1,137 @@
+.Search {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    @include container;
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 0 (ms(2) + ms(3));
+    padding: 0 0 ms(2);
+    background-color: $color-greyscale-white;
+    visibility: hidden;
+    z-index: z(-1);
+
+    @include breakpoint($bp-gamma) {
+        width: 100%;
+        margin: 0 0  (ms(2) + ms(3));
+        padding: 0 0 ms(10);
+    }
+
+    &.is-open {
+        display: block;
+        visibility: visible;
+        z-index: z(1);
+    }
+
+    .no-js & {
+        display: none;
+    }
+
+    .SearchField {
+        width: 85%;
+        margin: 0 auto;
+        z-index: z(1);
+    }
+
+    &-close {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -(ms(4));
+        left: 0;
+        width: ms(3);
+        height: ms(3);
+        min-height: auto;
+        margin: 0 auto;
+        transition: opacity anim(3);
+
+        svg {
+            * {
+                transition: fill anim(3);
+            }
+        }
+
+        &:hover,
+        &.is-active {
+            svg {
+                * {
+                    fill: $color-brand-yellow-buttercup;
+                }
+            }
+        }
+
+        .Icon {
+            width: ms(1);
+            height: ms(1);
+            margin: auto;
+        }
+    }
+
+    .awesomplete {
+        $color-border-bottom: rgba($color-greyscale-black, .2);
+        //display: inline-block;
+        position: relative;
+        font-size: ms(1);
+
+        .visually-hidden {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+        }
+
+        mark {
+            border-bottom: 1px solid;
+            background-color: transparent;
+            color: inherit;
+            font-family: nth($font-bold, 2);
+            //font-family: $font-medium;
+        }
+
+        ul {
+            display: block;
+            position: absolute;
+            left: 0;
+            min-width: 100%;
+            //margin: .2em 0 0;
+            padding: 0;
+            transition: anim(3);
+            background: $color-greyscale-white-smoke;
+            list-style: none;
+            opacity: 1;
+
+            //box-sizing: border-box;
+
+            &[hidden],
+            &:empty {
+                display: none;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            li {
+                position: relative;
+                padding: (ms(0)+.25rem) .5em ms(0);
+                border-bottom: 2px solid alpha-color-fallback($color-border-bottom, $color-greyscale-white-smoke);
+                //border-bottom: 2px solid rgba($color-greyscale-black, .2);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $color-brand-yellow-buttercup;
+                    color: $color-greyscale-white;
+                }
+
+                &[aria-selected="true"] {
+                    background-color: $color-brand-yellow-buttercup;
+                    color: $color-greyscale-white;
+                }
+            }
+        }
+    }
+}

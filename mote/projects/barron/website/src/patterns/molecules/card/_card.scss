@@ -1,0 +1,235 @@
+.Card {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    @include container;
+    display: block;
+    position: relative;
+    background-color: $color-greyscale-white-gainsboro;
+    overflow: hidden;
+
+    @include breakpoint($bp-alpha $bp-beta) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    &-background,
+    &-foreground {
+        @include breakpoint($bp-alpha $bp-beta) {
+            .flexbox & {
+                width: 50%;
+                min-width: rem(150);
+            }
+        }
+
+        @include breakpoint($bp-beta) {
+            width: 100%;
+        }
+    }
+
+    &-background {
+        padding: .5rem .5rem 0;
+
+        @include breakpoint($bp-alpha $bp-beta) {
+            .flexbox & {
+                min-height: 10rem;
+
+                .SquareImage-viewbox {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    padding-top: 0;
+                }
+            }
+        }
+
+        @include breakpoint($bp-beta) {
+            padding: ms(0) ms(0) 0;
+
+            .SquareImage-viewbox {
+                position: relative;
+                width: 100%;
+                padding-top: 100%;
+            }
+        }
+    }
+
+    &-foreground {
+        transition: anim(3);
+        background-color: $color-greyscale-white;
+        color: $color-brand-green-cyprus;
+
+        @include breakpoint($bp-beta) {
+            display: block;
+        }
+
+        @include breakpoint($bp-alpha $bp-beta) {
+            .flexbox & {
+                .Ribbon {
+                    position: absolute;
+                    right: 50%;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    &-meta {
+        position: relative;
+        padding-right: ms(2);
+        border-top: 1px solid $color-greyscale-white-smoke;
+    }
+
+    &-taxonomy {
+        @include container;
+        @include text-variant("0b");
+        padding-right: ms(2);
+    }
+
+    &-crumb {
+        @include font-baseline-fix;
+        display: inline-block;
+        position: relative;
+        padding-right: ms(3);
+        float: left;
+
+        &:last-child {
+            #{$scoped-block-name}-crumbArrow {
+                display: none;
+            }
+        }
+    }
+
+    &-crumbArrow {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        width: ms(3);
+        height: ms(-1);
+        transform: translatey(-50%);
+    }
+
+    &-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: ms(2);
+        width: ms(2);
+        height: ms(2);
+        transform: translatey(-50%);
+
+        svg {
+            overflow: visible;
+        }
+    }
+
+    &-crumbArrow,
+    &-icon {
+        svg {
+            * {
+                transition: fill anim(3);
+            }
+        }
+    }
+
+    &:hover {
+        #{$scoped-block-name}-icon,
+        #{$scoped-block-name}-crumbArrow {
+            svg {
+                * {
+                    fill: $color-greyscale-white;
+                }
+            }
+        }
+    }
+
+    &-meta {
+        padding: ms(0) ms(1);
+    }
+
+    &-details {
+        padding: ms(1);
+    }
+
+    &-details + &-meta {
+        margin-top: -(ms(1) / 2);
+    }
+
+    &:hover {
+        #{$scoped-block-name}-foreground {
+            background-color: $color-brand-green-cyprus;
+            color: $color-greyscale-white;
+
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    @include breakpoint($bp-beta) {
+        &-background {
+            position: relative;
+        }
+
+        &-foreground {
+            position: relative;
+            //margin-top: -(ms(7));
+        }
+
+        &-meta {
+            padding: ms(0) ms(2);
+        }
+
+        &-details {
+            padding: ms(2);
+        }
+
+        .Ribbon {
+            position: absolute;
+            right: 0;
+            left: 0;
+            transform: translatey(-100%);
+            transform: translate3d(0, -100%, 0);
+        }
+    }
+
+    &-pseudoButton {
+        @include text-variant("1a");
+        display: none;
+        position: absolute;
+        top: 15%;
+        right: 15%;
+        left: 15%;
+        padding: ms(1) ms(3);
+        transition: opacity anim(3);
+        border: 1px solid $color-greyscale-white;
+        color: $color-greyscale-white;
+        text-align: center;
+        opacity: 0;
+
+        @include breakpoint($bp-gamma) {
+            display: block;
+        }
+    }
+
+    &-pseudoButtonText {
+        @include font-baseline-fix;
+        display: block;
+    }
+
+    &:hover {
+        #{$scoped-block-name}-pseudoButton {
+            opacity: 1;
+        }
+    }
+}

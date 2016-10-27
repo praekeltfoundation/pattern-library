@@ -1,0 +1,71 @@
+{% load mote_tags %}
+
+<!-- ORGANISM ContentWithSidebar Start -->
+<main class="ContentWithSidebar" role="main">
+    <div class="ContentWithSidebar-wrapper">
+        <aside class="ContentWithSidebar-sidebar" role="complementary">
+            <picture class="ContentWithSidebar-background">
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source data-srcset="
+                    http://www.placehold.it/800x500 800w
+                    " media="(max-width: 48em)">
+                <source data-srcset="
+                    http://www.placehold.it/500x1920 500w
+                    " media="(min-width: 48em)">
+                <!--[if IE 9]></video><![endif]-->
+
+                <img alt="Alt Text Goes Here" class="ContentWithSidebar-image lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                <noscript>
+                    <img class="ContentWithSidebar-image" src="http://www.placehold.it/800x500" alt="Alt Text Goes Here">
+                </noscript>
+            </picture>
+
+            {% render_element element.aspect.molecules.on_title title="Fleece" block-modifiers="Sidebar-heading" %}
+
+            <form action="" class="Sidebar-filters">
+                {% if content_with_sidebar.sidebar_form %}
+                    {% render_element element.aspect.molecules.fieldset fieldset=content_with_sidebar.sidebar_form.fieldset_1 %}
+                    <button type="submit" class="Button Button--bordered">
+                        <span class="Button-text">
+                            Search
+                        </span>
+                    </button>
+                    <button type="reset" class="Button Button--ghost">
+                        <span class="Button-text">
+                            Reset
+                        </span>
+                    </button>
+                {% else %}
+                    {% render_element element.aspect.molecules.fieldset fieldset=element.json.sample.ContentWithSidebar.sidebar_form.fieldset_1 %}
+                    <button type="submit" class="Button Button--bordered">
+                        <span class="Button-text">
+                            Search
+                        </span>
+                    </button>
+                    <button type="reset" class="Button Button--ghost">
+                        <span class="Button-text">
+                            Reset
+                        </span>
+                    </button>
+                {% endif %}
+            </form>
+        </aside>
+
+        <div class="ContentWithSidebar-body">
+            {% if content_with_sidebar %}
+                {% if content_with_sidebar.ContentArea.content_block_element == "card_grid" %}
+                    {% render_element element.aspect.organisms.card_grid card_grid=content_with_sidebar.ContentArea %}
+                {% else %}
+                    {% render_element element.aspect.organisms.card_grid  %}
+                {% endif %}
+            {% else %}
+                {% if  element.json.sample.ContentWithSidebar.ContentArea %}
+                    {% render_element element.aspect.organisms.card_grid card_grid=element.json.sample.ContentWithSidebar.ContentArea %}
+                {% else %}
+                {% render_element element.aspect.organisms.card_grid  %}
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</main>
+<!-- ORGANISM ContentWithSidebar End -->

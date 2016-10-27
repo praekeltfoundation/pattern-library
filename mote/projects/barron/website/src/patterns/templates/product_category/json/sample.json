@@ -1,0 +1,518 @@
+{
+
+    "ProductCatagory": {
+        "Masthead": {
+            "modifiers": "",
+            "children": {
+                "logo": {
+                    "modifiers": "Logo--inverted"
+                },
+                "menu": {
+                    "menuitems": [
+                        {
+                            "title": "Menu",
+                            "href": "#menu-fallback",
+                            "state": "is-active"
+                        }
+                    ]
+                }
+            },
+            "MenuCarousel": {
+                "modifiers": ""
+            },
+            "Search": {
+                "modifiers": "",
+                "SearchField": {
+                    "tag": "div",
+                    "modifiers": "",
+                    "FieldInput": {
+                        "placeholder": "Search placeholder text",
+                        "type": "text",
+                        "element_id": "search-field-input-id1"
+                    },
+                    "FieldLabel": {
+                        "for_element": "search-field-input-id1",
+                        "labeltext": "Search label text"
+                    },
+                    "FieldMsg": {
+                        "for_element": "search-field-input-id1",
+                        "labeltext": "Search msg"
+                    }
+                }
+            }
+        },
+        "ContentWithSidebar": {
+            "sidebar_form": {
+                "fieldset_1": {
+                    "legend": "fieldset labeltext",
+                    "modifiers": "Fieldset--inverted",
+                    "items": [
+                        {
+                            "field_type": "form_field",
+                            "modifiers": "FormField--inverted",
+                            "label": "calalogue",
+                            "FieldInput": {
+                                "placeholder": "Enter a Keyword",
+                                "type": "text",
+                                "element_id": "form-field-input-id"
+                            },
+                            "FieldLabel": {
+                                "for_element": "form-input1",
+                                "labeltext": "Enter a Keyword"
+                            },
+                            "FieldMsg": {
+                                "for_element": "form-input1",
+                                "labeltext": "fs form field msg"
+                            }
+                        },
+                        {
+                            "field_type": "dropdown",
+                            "tag": "select",
+                            "modifiers": "Dropdown--inverted",
+                            "items": [
+                                {
+                                    "title": "Select a catalogue",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "-- All catalogues --",
+                                    "value": "1"
+                                },
+                                {
+                                    "title": "Barron Clothing",
+                                    "value": "2"
+                                },
+                                {
+                                    "title": "Barron Gifting",
+                                    "value": "3"
+                                }
+                            ]
+                        },
+                        {
+                            "field_type": "form_field",
+                            "modifiers": "FormField--inverted",
+                            "label": "calalogue",
+                            "FieldInput": {
+                                "placeholder": "Page number",
+                                "type": "text",
+                                "element_id": "form-field-input-id"
+                            },
+                            "FieldLabel": {
+                                "for_element": "form-input1",
+                                "labeltext": "Page number"
+                            },
+                            "FieldMsg": {
+                                "for_element": "form-input1",
+                                "labeltext": "form field msg"
+                            }
+                        },
+                        {
+                            "field_type": "dropdown",
+                            "tag": "select",
+                            "modifiers": "Dropdown--inverted",
+                            "items": [
+                                {
+                                    "title": "Select a Category",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Gifting",
+                                    "value": "2"
+                                },
+                                {
+                                    "title": "Sport",
+                                    "value": "3"
+                                }
+                            ]
+                        },
+                        {
+                            "field_type": "dropdown",
+                            "tag": "select",
+                            "modifiers": "Dropdown--inverted",
+                            "items": [
+                                {
+                                    "title": "Select a Category",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Novelties",
+                                    "value": "2"
+                                },
+                                {
+                                    "title": "Tools",
+                                    "value": "3"
+                                }
+                            ]
+                        },
+                        {
+                            "field_type": "swatch_group",
+                            "legend": "Color",
+                            "modifiers": "SwatchGroup--inverted",
+                            "type": "radio",
+                            "name": "colors",
+                            "items": [
+                                {
+                                    "catagory": "",
+                                    "items": [
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch1",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#a81e37"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch2",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#7e7f7d"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch3",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#becbcc"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch4",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#db9e28"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch5",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#5d3266"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch5",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#3e5b19"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch6",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#5b4419"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch7",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#5b1939"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch8",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#f9ad81"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch9",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#ed145b"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch10",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#8dc63f"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch11",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#c4df9b"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch12",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#5378bb"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch13",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#00395d"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch14",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#7da7d9"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch15",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#c7b299"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch16",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#ffffff"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch17",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#f04e23"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch18",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#00968c"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch19",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#b9d4c1"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch20",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#ffce34"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch21",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#beb7a6"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch22",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#004b45"
+                                            ]
+                                        },
+                                        {
+                                            "field_type": "swatch",
+                                            "element_id": "swatch23",
+                                            "name": "colors",
+                                            "tag": "div",
+                                            "type": "radio",
+                                            "modifiers": "Swatch--inverted",
+                                            "colors": [
+                                                "#bd8cbf"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "ContentArea": {
+                "content_block_element": "card_grid",
+                "blockModifiers": "",
+                "items": [
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        },
+                        "code": "ABC098"
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        },
+                        "ribbon": {
+                            "text": "Lorem"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        },
+                        "ribbon": {
+                            "text": "Lorem"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "testtest"
+                        },
+                        "ribbon": {
+                            "text": "Lorem"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        }
+                    },
+                    {
+                        "ProductTitle": {
+                            "primary": "template lorem ipsum",
+                            "secondary": "test"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

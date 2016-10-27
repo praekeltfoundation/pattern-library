@@ -1,0 +1,24 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Menu Carousel
+    </h4>
+    <div class="description">
+        The Menu Carousel sits empty until <code>FallbackNav</code> is traversed and all the relevant DOM nodes created based on that structure.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.organisms.menu_carousel %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

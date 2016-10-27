@@ -1,0 +1,22 @@
+{% load mote_tags %}
+
+<div class="u-typography {% resolve typography.modifiers element.json.sample.Typography.modifiers %}">
+    {% if typography %}
+        {% for item in typography.items %}
+            <{{ item.tag }}
+            {% if item.class %}
+            class="{{ item.class }}"
+            {% endif %}
+            >{{ item.content }}</{{ item.tag }}>
+        {% endfor %}
+    {% else %}
+        {% for item in element.json.sample.Typography.items %}
+            <{{ item.tag }}
+            {% if item.class %}
+                class="{{ item.class }}"
+            {% endif %}
+            >{{ item.content }}</{{ item.tag }}>
+        {% endfor %}
+        {% render_element element.aspect.atoms.list.unordered %}
+    {% endif %}
+</div>

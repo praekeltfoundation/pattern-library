@@ -1,0 +1,24 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Filter Message
+    </h4>
+    <div class="description">
+        This molecule has no modifiers. The icon can be any of the available icons, and the message can be whatever is appropriate for the page it appears on.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.filter_message %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

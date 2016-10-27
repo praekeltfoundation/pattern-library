@@ -1,0 +1,11 @@
+{
+    "OptionButton": {
+        "field_type": "option_button",
+        "tag": "div",
+        "modifiers": "OptionButton--inverted",
+        "type": "checkbox",
+        "element_id": "swatch1",
+        "name": "options",
+        "value": "option"
+    }
+}

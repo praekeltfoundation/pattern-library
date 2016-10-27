@@ -1,0 +1,35 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+     Fieldset
+    </h4>
+    <div class="description">
+        This is the molecule is used to construct a group of option buttons. The Block level class is <code>OptionButtonGroup</code> which is present on the container, this has a modifiers <code>Fieldset--inverted</code> for dark backgrounds and <code>Fieldset--nested</code> for nested Fieldsets. This is used in conjuction with Element classes on the item fields  <code>Fieldset-legend</code> and <code>Fieldset-descriptionHeading</code> for descriptive text headings.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+<!-- Fieldset -->
+{% render_element element.aspect.molecules.fieldset %}
+
+<!-- Fieldset inverted -->
+{% render_element element.aspect.molecules.fieldset.inverted %}
+
+<!-- Fieldset with OptionButtonGroup-->
+{% render_element element.aspect.molecules.fieldset.with_option_button_group %}
+
+<!-- Fieldset with Typography-->
+{% render_element element.aspect.molecules.fieldset.with_typography %}
+
+</xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+    <!-- sg-code-block -->
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "mote/element/index.html" %}
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Lists
+    </h4>
+    <div class="description">
+        This is the atom for lists. The Block level class is <code>List</code> which is used in conjuction with one of the following modifier classes: <code>List--ordered</code> or <code>List--unordered</code>.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+<!-- Ordered list -->
+<ul class="List List--ordered">
+    <li>Lorem ipsum</li>
+</ul>
+<!-- Ordered list -->
+<ul class="List List--unordered">
+    <li>Lorem ipsum</li>
+</ul>
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+    <!-- sg-code-block -->
+{% endblock %}

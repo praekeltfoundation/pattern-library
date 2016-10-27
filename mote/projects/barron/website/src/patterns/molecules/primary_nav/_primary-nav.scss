@@ -1,0 +1,86 @@
+.PrimaryNav {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    @include container;
+
+    .flexbox & {
+        padding-right: ms(3);
+        padding-left: ms(3);
+        text-align: center;
+
+        @include breakpoint(max-width $bp-gamma) {
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: ms(1);
+            content: "";
+        }
+
+        &:before {
+            left: 0;
+            background-image: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 7%, rgba(255,255,255,0.01) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#03ffffff',GradientType=1 );
+        }
+
+        &:after {
+            right: 0;
+            background-image: linear-gradient(to right, rgba(255,255,255,0.01) 0%, rgba(255,255,255,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#ffffff',GradientType=1 );
+        }
+    }
+
+    &-link {
+        @include font-baseline-fix(.25em, false);
+        display: block;
+        transition: .3s ease-in-out;
+        color: inherit;
+        font-family: inherit;
+        font-size: 1em;
+        line-height: inherit;
+    }
+
+    &-item {
+        display: inline-block;
+        margin-right: ms(4);
+        color: $color-greyscale-grey;
+        opacity: .5;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover,
+        &:active,
+        &.is-active {
+            color: $color-brand-yellow-buttercup;
+        }
+
+        // element modifiers
+        &--noJs {
+            .js & {
+                display: none;
+            }
+        }
+
+        &--js {
+            .no-js & {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{% extends "mote/element/index.html" %}
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+     Colour Swatch
+    </h4>
+    <div class="description">
+        This is the atom is used to construct a colour swatch. The Block level class is <code>Swatch</code> which is present on the container, this has a modifier <code>Swatch--inverted</code> for dark backgrounds. This is used in conjuction with Element classes on the input fields  <code>Swatch-input</code> and the label field <code>Swatch-label</code> and the nested <code>&lt;span&gt;</code> in the label <code>Swatch-checkBox</code>.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+<!-- radio option buttons -->
+<div class="Swatch">
+    <input class="Swatch-input" type="checkbox" name="thing1" value="1" id="thing1">
+    <label class="Swatch-label" for="thing1"><span class="Swatch-checkBox"></span></label>
+</div>
+<!-- inverted option buttons -->
+<div class="Swatch Swatch--inverted">
+    <input class="Swatch-input" type="checkbox" name="thing1" value="1" id="thing1">
+    <label class="Swatch-label" for="thing1"><span class="Swatch-checkBox"></span></label>
+</div>
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+    <!-- sg-code-block -->
+{% endblock %}

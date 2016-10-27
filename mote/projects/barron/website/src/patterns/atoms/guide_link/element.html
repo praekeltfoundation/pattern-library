@@ -1,0 +1,12 @@
+{% load mote_tags %}
+
+<!-- ATOM Guide Link Start -->
+<a class="GuideLink" href="{% resolve guidelink.href element.json.sample.GuideLink.href %}">
+    <span class="GuideLink-text">
+        {% resolve guidelink.text element.json.sample.GuideLink.text %}
+    </span>
+    <span class="GuideLink-icon">
+        <i class="Icon Icon-chevronright-yellowButtercup"></i>
+    </span>
+</a>
+<!-- ATOM Guide Link End -->

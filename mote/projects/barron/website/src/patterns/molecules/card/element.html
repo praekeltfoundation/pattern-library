@@ -1,0 +1,48 @@
+{% load mote_tags %}
+
+{% mask element.json.sample.Card as "card" %}
+
+<!-- MOLECULE Card Start -->
+{% with element.aspect.molecules as molecules %}
+<a href="#" class="Card" role="gridcell" title="{{ card.ProductTitle.primary }}">
+    {% if card.SquareImage %}
+        {% render_element molecules.square_image square_image=card.SquareImage %}
+    {% else %}
+        {% render_element molecules.square_image %}
+    {% endif %}
+
+    <div class="Card-pseudoButton">
+        <span class="Card-pseudoButtonText">Lorem Ipsum</span>
+    </div>
+    <div class="Card-foreground">
+        {% if card.ribbon %}
+            {% render_element element.aspect.atoms.ribbon text=card.ribbon %}
+        {% endif %}
+        <div class="Card-details">
+            {% render_element molecules.product_title product_title=card.ProductTitle  %}
+        </div>
+        {% if card.meta %}
+            <div class="Card-meta">
+                <ul class="Card-taxonomy">
+                    <li class="Card-crumb">
+                        {{ card.meta.section }}
+                        <span class="Card-crumbArrow">
+                            <i class="Icon Icon-chevronright-greenCyprus" data-grunticon-embed></i>
+                        </span>
+                    </li>
+                    <li class="Card-crumb">
+                        {{ card.meta.collection }}
+                        <span class="Card-crumbArrow">
+                            <i class="Icon Icon-chevronright-greenCyprus" data-grunticon-embed></i>
+                        </span>
+                    </li>
+                </ul>
+                <span class="Card-icon">
+                    <i class="Icon {{ card.meta.icon }}" data-grunticon-embed></i>
+                </span>
+            </div>
+        {% endif %}
+    </div>
+</a>
+{% endwith %}
+<!-- MOLECULE Card End -->

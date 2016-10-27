@@ -1,0 +1,81 @@
+.FallbackNav {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    @include container;
+    margin-bottom: ms(3);
+
+    &.is-hidden {
+        display: none;
+    }
+
+    &-group {
+        display: inline-block;
+        margin-top: ms(1);
+        margin-right: ms(3);
+        margin-bottom: ms(1);
+        vertical-align: top;
+
+        &--subcategories {
+            display: inline;
+            margin: 0;
+
+            #{$scoped-block-name}-item {
+                &:before {
+                    display: inline-block;
+                    padding-left: ms(1);
+                    color: $color-brand-yellow-buttercup;
+                    content: "-";
+                }
+            }
+        }
+    }
+
+    &-title {
+        @include text-variant("4a");
+        color: $color-brand-yellow-buttercup;
+    }
+
+    &-titleLink {
+        color: inherit;
+        text-decoration: underline;
+        transition: anim(3);
+
+        &:hover {
+            opacity: .8;
+        }
+
+        &.is-active {
+            font-family: $font-bold;
+            color: $color-brand-yellow-buttercup;
+        }
+    }
+
+    &-groupTitle {
+        @include text-variant("0b");
+        color: tint($color-brand-green-cyprus, 55%);
+    }
+
+    &-item {
+        @include text-variant("-1a");
+        transition: color anim(3);
+        color: $color-greyscale-white;
+
+        &:hover,
+        &.is-active {
+            color: $color-brand-yellow-buttercup;
+        }
+    }
+
+    &-link {
+        transition: inherit;
+        color: inherit;
+    }
+}

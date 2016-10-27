@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Square Image",
+    "description": "The picture tag, wrapped in a figure which forces the image to be a 1:1 square."
+}

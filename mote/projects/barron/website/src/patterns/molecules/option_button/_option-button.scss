@@ -1,0 +1,88 @@
+// ==========================================
+// ** Checkbox's & Radio Buttons
+// ==========================================
+//    checkbox's and radio buttons
+
+.OptionButton {
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $size: 1.25rem;
+
+    &-label {
+        display: block;
+        position: relative;
+        color: $color-greyscale-black;
+        cursor: pointer;
+
+        &:hover #{$scoped-block-name}-checkBox {
+            border: 1px solid $color-brand-yellow-buttercup;
+        }
+    }
+
+    &-title {
+        padding-left: $size * $ms-ratio;
+    }
+
+    &-checkBox {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        width: $size;
+        height: $size;
+        transition: border anim(3);
+        border: 1px solid $color-greyscale-black;
+        background-color: transparent;
+        cursor: pointer;
+        vertical-align: middle;
+
+        // passive state for checkbox
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transition: background-color anim(3);
+            background-color: transparent;
+            content: "";
+        }
+
+        &:hover {
+            border: 1px solid $color-brand-yellow-buttercup;
+        }
+    }
+
+    &-input {
+        display: none;
+
+        // active state for checkbox
+        &:checked + #{$scoped-block-name}-label {
+            #{$scoped-block-name}-checkBox {
+                &:before {
+                    display: inline-block;
+                    width: 60%;
+                    height: 60%;
+                    background-color: $color-brand-yellow-buttercup;
+                }
+            }
+        }
+    }
+
+    &--inverted {
+        #{$scoped-block-name}-label {
+            color: $color-greyscale-white;
+        }
+
+        #{$scoped-block-name}-checkBox {
+            border: 1px solid $color-greyscale-white;
+        }
+    }
+
+    //Fixme: this is not a good way to set this
+    img {
+        margin-top: 1rem;
+    }
+
+}

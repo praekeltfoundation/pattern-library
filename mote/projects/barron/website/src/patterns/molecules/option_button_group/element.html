@@ -1,0 +1,14 @@
+{% load mote_tags %}
+
+<!-- ATOM OptionButtonGroup Start -->
+<div class="OptionButtonGroup {% resolve option_button_group.modifiers element.json.sample.OptionButtonGroup.modifiers %}">
+    {% if option_button_group %}
+        {% for item in option_button_group.items %}
+            <div class="OptionButtonGroup-item">{% render_element element.aspect.molecules.option_button option_button=item %}</div>
+        {% endfor %}
+    {% else %}
+        {% for item in element.json.sample.OptionButtonGroup.items %}
+            <div class="OptionButtonGroup-item">{% render_element element.aspect.molecules.option_button option_button=item %}</div>
+        {% endfor %}
+    {% endif %}
+</div><!-- ATOM OptionButtonGroup End -->

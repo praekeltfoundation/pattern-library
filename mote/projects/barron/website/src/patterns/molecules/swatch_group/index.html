@@ -1,0 +1,25 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Swatch Group
+    </h4>
+    <div class="description">
+        A custom fieldset for grouping swatches block Class is <code>SwatchGroup</code> with modifier <code>SwatchGroup--inverted</code>
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.swatch_group %}
+{% render_element element.aspect.molecules.swatch_group.inverted %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

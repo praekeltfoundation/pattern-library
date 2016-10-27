@@ -1,0 +1,13 @@
+{% load mote_tags %}
+
+<!-- MOLECULE SquareImage Start -->
+<figure class="SquareImage {% resolve square_image.modifiers element.json.sample.SquareImage.modifiers %}">
+    <div class="SquareImage-viewbox">
+        {% if  square_image.Picture %}
+            {% render_element element.aspect.atoms.picture picture=square_image.Picture %}
+        {% else %}
+            {% render_element element.aspect.atoms.picture picture=element.json.sample.SquareImage.Picture %}
+        {% endif %}
+    </div>
+</figure>
+<!-- MOLECULE SquareImage End -->

@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Picture",
+    "description": "The HTML5 &lt;picture&gt; tag, with IE9 fix, noscript fallback, and LazySizes integration."
+}

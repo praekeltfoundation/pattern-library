@@ -1,0 +1,84 @@
+.HeroBanner {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    position: relative;
+
+    &:before {
+        display: block;
+        min-height: rem(500);
+        max-height: rem(1000);
+        padding-top: rem(500);
+        padding-top: 50vh;
+        content: "";
+    }
+
+    &-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: z(0);
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: 50% 50%;
+
+            .objectfit & {
+                width: 100%;
+                height: 100%;
+            }
+
+            .no-objectfit & {
+                left: 50%;
+                transform: translateX(-50%);
+                transform: translate3d(-50%, 0, 0);
+            }
+
+            &.is-stretchedToWidth {
+                width: 100%;
+                height: auto;
+
+                .no-objectfit .owl-carousel .owl-item & {
+                    width: 100%;
+                }
+            }
+
+            &.is-stretchedToHeight {
+                width: auto;
+                max-width: inherit !important;
+                height: 100%;
+            }
+        }
+    }
+
+    &-foreground {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        padding: ms(6);
+        transform: translateY(-50%);
+        transform: translate3d(0, -50%, 0);
+        padding: ms(6);
+        z-index: z(1);
+    }
+
+    &-callToAction {
+        padding-top: ms(0);
+        font-size: ms(1);
+    }
+}

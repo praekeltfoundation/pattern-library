@@ -1,0 +1,89 @@
+{
+    "Gallery": {
+        "block-class": "",
+        "modifiers": "",
+        "SquareImage": {
+            "Picture": {
+                "block-class": "",
+                "modifiers": "",
+                "image": {
+                    "element-class": "SquareImage-graphic SquareImage-graphic--product",
+                    "modifiers": "",
+                    "alt-text": "Alt Text",
+                    "noscriptsrc": "images/product_images/170g-Slim-Fit-V-Neck-T-Shirt.png"
+                },
+                "srcsets": [
+                    {
+                        "set": "images/product_images/170g-Slim-Fit-V-Neck-T-Shirt.png 700w",
+                        "media": ""
+                    }
+                ]
+            }
+        },
+        "thumbnails": [
+            {
+                "modifiers": "is-active",
+                "SquareImage": {
+                    "Picture": {
+                        "block-class": "",
+                        "modifiers": "",
+                        "image": {
+                            "element-class": "SquareImage-graphic SquareImage-graphic--product",
+                            "modifiers": "",
+                            "alt-text": "Alt Text",
+                            "noscriptsrc": "images/product_images/170g-Slim-Fit-V-Neck-T-Shirt.png"
+                        },
+                        "srcsets": [
+                            {
+                                "set": "images/product_images/170g-Slim-Fit-V-Neck-T-Shirt.png 700w",
+                                "media": ""
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "modifiers": "",
+                "SquareImage": {
+                    "Picture": {
+                        "block-class": "",
+                        "modifiers": "",
+                        "image": {
+                            "element-class": "SquareImage-graphic SquareImage-graphic--product",
+                            "modifiers": "",
+                            "alt-text": "Alt Text",
+                            "noscriptsrc": "images/product_images/Bib-Apron.png"
+                        },
+                        "srcsets": [
+                            {
+                                "set": "images/product_images/Bib-Apron.png 700w",
+                                "media": ""
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "modifiers": "",
+                "SquareImage": {
+                    "Picture": {
+                        "block-class": "",
+                        "modifiers": "",
+                        "image": {
+                            "element-class": "SquareImage-graphic SquareImage-graphic--product",
+                            "modifiers": "",
+                            "alt-text": "Alt Text",
+                            "noscriptsrc": "images/product_images/450ml-Mug.png"
+                        },
+                        "srcsets": [
+                            {
+                                "set": "images/product_images/450ml-Mug.png 700w",
+                                "media": ""
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

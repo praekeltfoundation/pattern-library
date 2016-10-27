@@ -1,0 +1,31 @@
+{% load mote_tags %}
+
+<!-- MOLECULE Dropdown Start -->
+<div class="Dropdown {% resolve dropdown.modifiers element.json.sample.Dropdown.modifiers %}" >
+    {% if dropdown.attributes %}
+    <select name="select"
+        {% for attribute in dropdown.attributes %}
+        {{ attribute }}
+        {% endfor %}
+    >
+    {% elif element.json.sample.Dropdown.attributes %}
+    <select name="select"
+        {% for attribute in element.json.sample.Dropdown.attributes %}
+        {{ attribute }}
+        {% endfor %}
+    >
+    {% else %}
+    <select name="select" disabled>
+    {% endif %}
+        {% if dropdown %}
+            {% for item in dropdown.items %}
+                <option value="{{ item.value }}">{{ item.title }}</option>
+            {% endfor %}
+        {% else %}
+            {% for item in element.json.sample.Dropdown.items %}
+                <option value="{{ item.value }}">{{ item.title }}</option>
+            {% endfor %}
+        {% endif %}
+    </select>
+<div>
+<!-- MOLECULE Dropdown End -->

@@ -1,0 +1,34 @@
+{% load mote_tags %}
+
+<!-- MOLECULE SwatchGroup Start -->
+<fieldset class="SwatchGroup {% resolve swatch_group.modifiers element.json.sample.SwatchGroup.modifiers %}" name="{% resolve swatch_group.name element.json.sample.SwatchGroup.name %}">
+    <legend class="SwatchGroup-legend">{% resolve swatch_group.legend for_element element.json.sample.SwatchGroup.legend %}<small class="SwatchGroup-selection"></small></legend >
+    {% if swatch_group %}
+        {% for item in swatch_group.items %}
+            {% if item.catagory == "" %}
+                <h6 class="SwatchGroup-catagoryTitle"></h6>
+            {% elif item.catagory == "new" %}
+                <h6 class="SwatchGroup-catagoryTitle">new</h6>
+            {% elif item.catagory == "last buy" %}
+                <h6 class="SwatchGroup-catagoryTitle">last buy</h6>
+            {% endif %}
+            {% for color in item.items %}
+                {% render_element element.aspect.atoms.swatch swatch=color %}
+            {% endfor %}
+        {% endfor %}
+    {% else %}
+        {% for item in element.json.sample.SwatchGroup.items %}
+            {% if item.catagory == "" %}
+                <h6 class="SwatchGroup-catagoryTitle"></h6>
+            {% elif item.catagory == "new" %}
+                <h6 class="SwatchGroup-catagoryTitle">new</h6>
+            {% elif item.catagory == "last buy" %}
+                <h6 class="SwatchGroup-catagoryTitle">last buy</h6>
+            {% endif %}
+            {% for color in item.items %}
+                {% render_element element.aspect.atoms.swatch swatch=color %}
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+</fieldset>
+<!-- MOLECULE SwatchGroup End -->

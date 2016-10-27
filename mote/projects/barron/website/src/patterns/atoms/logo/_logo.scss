@@ -1,0 +1,59 @@
+.Logo {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    display: block;
+    animation: logo-fade anim(6);
+
+    .no-flexbox & {
+        max-width: ms(8);
+    }
+
+    * {
+        fill: $color-brand-yellow-buttercup;
+    }
+
+    &-prefix {
+        .js.flexbox & {
+            transition: anim(2);
+            opacity: 0;
+        }
+    }
+
+    &-suffix {
+        .js.flexbox & {
+            transform: translate3d(-200px, 0, 0);
+            transition: anim(3);
+        }
+    }
+
+    &--inverted {
+        * {
+            fill: $color-brand-green-cyprus;
+        }
+    }
+
+    &.is-expanded {
+        #{$scoped-block-name}-prefix {
+            transition: anim(5);
+            opacity: 1;
+        }
+
+        #{$scoped-block-name}-suffix {
+            transform: translatex(0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+@keyframes logo-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

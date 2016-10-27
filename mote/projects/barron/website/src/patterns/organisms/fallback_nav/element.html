@@ -1,0 +1,49 @@
+{% load mote_tags %}
+
+<!-- ORGANISM FallbackNav Start -->
+<nav id="menu-fallback" class="FallbackNav {% resolve block-modifiers element.json.fallback_nav.block-modifiers %}">
+    <h2 class="FallbackNav-title">Menu</h2>
+    {% for group in element.json.fallback_nav.groups %}
+    <div class="FallbackNav-group {% resolve element-modifiers group.element-modifiers %}">
+
+        {% if group.titlehref %}
+        <h3 class="FallbackNav-groupTitle">
+            <a class="FallbackNav-titleLink {% resolve element-modifiers group.element-modifiers %}" href="{% resolve titlehref group.titlehref %}">{% resolve group-title group.title %}</a>
+        </h3>
+        {% else %}
+        <h3 class="FallbackNav-groupTitle">
+            {% resolve group-title group.title %}
+        </h3>
+        {% endif %}
+
+        {% if group.children %}
+        <ul class="FallbackNav-items" role="menu">
+            {% for menuitem in group.items %}
+            <li class="FallbackNav-item {% resolve element-modifiers menuitem.element-modifiers %}" role="menuitem">
+                <a href="{% resolve href menuitem.href %}"
+                    class="FallbackNav-link"
+                    data-carousel-image-srcset="{% resolve carousel-image-srcset menuitem.carousel-image-srcset %}"
+                    data-carousel-image-noscript="{% resolve carousel-image-noscript menuitem.carousel-image-noscript %}"
+                    data-carousel-image-alt="{% resolve carousel-image-alt menuitem.carousel-image-alt %}">
+                    {% resolve title menuitem.title %}
+                </a>
+
+                {% if menuitem.subcategories %}
+                <ul class="FallbackNav-group FallbackNav-group--subcategories" role="menu">
+                    {% for subcategory in menuitem.subcategories %}
+                    <li class="FallbackNav-item {% resolve element-modifiers subcategory.element-modifiers %}" role="menuitem">
+                        <a href="{% resolve href subcategory.href %}" class="FallbackNav-link">
+                            {% resolve title subcategory.title %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    {% endfor %}
+</nav>
+<!-- ORGANISM FallbackNav End -->

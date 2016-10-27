@@ -1,0 +1,24 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Fallback Nav
+    </h4>
+    <div class="description">
+        The Fallback Nav sits in the footer, and is the <b>core</b> navigation structure for the website. NB: The masthead navigation will be constructed on the client-side based on the structure of the Fallback Nav.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.organisms.fallback_nav %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Fallback Navigation",
+    "description": "No-js navigation that sits in the footer."
+}

@@ -1,0 +1,13 @@
+{
+    "Swatch": {
+        "tag": "div",
+        "type": "checkbox",
+        "element_id": "checkbox1",
+        "name": "colors",
+        "modifiers": "",
+        "colors": [
+            "blue",
+            "red"
+        ]
+    }
+}

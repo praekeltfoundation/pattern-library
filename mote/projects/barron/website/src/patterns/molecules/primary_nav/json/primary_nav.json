@@ -1,0 +1,23 @@
+{
+    "menu": {
+        "block-modifiers": "",
+        "menuitems": [
+            {
+                "title": "Lorem ipsum",
+                "href": "#",
+                "state": "is-active",
+                "element-modifiers": ""
+            },
+            {
+                "title": "Lorem ipsum",
+                "href": "#",
+                "element-modifiers": ""
+            },
+            {
+                "title": "Lorem ipsum",
+                "href": "#",
+                "element-modifiers": ""
+            }
+        ]
+    }
+}

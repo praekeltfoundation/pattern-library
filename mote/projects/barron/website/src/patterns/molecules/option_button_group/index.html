@@ -1,0 +1,30 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+     Option Buttons Group
+    </h4>
+    <div class="description">
+        This is the molecule is used to construct a group of option buttons. The Block level class is <code>OptionButtonGroup</code> which is present on the container, this has a modifier <code>OptionButton--inverted</code> for dark backgrounds. This is used in conjuction with Element classes on the item fields  <code>OptionButtonGroup-item</code>.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+<!-- option button group -->
+{% render_element element.aspect.molecules.option_button_group %}
+
+<!-- inverted option button group -->
+{% render_element element.aspect.molecules.option_button_group.inverted %}
+
+<!-- option button with image group -->
+{% render_element element.aspect.molecules.option_button_group.with_image %}                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+    <!-- sg-code-block -->
+{% endblock %}

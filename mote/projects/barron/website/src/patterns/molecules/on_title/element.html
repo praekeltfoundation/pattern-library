@@ -1,0 +1,8 @@
+{% load mote_tags %}
+
+<!-- MOLECULE OnTitle Start -->
+<h1 class="OnTitle {% resolve block-modifiers element.json.on_title.block-modifiers %}">
+    {% render_element element.aspect.atoms.on_device %}
+    {% resolve title element.json.on_title.title %}
+</h1>
+<!-- MOLECULE OnTitle End -->

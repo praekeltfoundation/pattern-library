@@ -1,0 +1,43 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Double Title Base
+    </h4>
+    <div class="description">
+        The Double Title is used anywhere a heading contains both Medium and Light typeface variants. EG. Card.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.double_title %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+<div class="sg-code-block">
+    <h4 class="title">
+        Double Title Large
+    </h4>
+    <div class="description">
+        The Large variant can be used by adding <code>DoubleTitle--large</code> to the block class.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.double_title.large %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

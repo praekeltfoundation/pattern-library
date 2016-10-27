@@ -1,0 +1,19 @@
+{% load mote_tags %}
+
+<!-- ATOM OptionButton Start -->
+<{% resolve option_button.tag element.json.sample.OptionButton.tag %} class="OptionButton {% resolve option_button.modifiers element.json.sample.OptionButton.modifiers %}">
+    <input
+    class="OptionButton-input"
+    type="{% resolve option_button.type element.json.sample.OptionButton.type %}"
+    name="{% resolve option_button.name element.json.sample.OptionButton.name %}"
+    value="{% resolve option_button.value element.json.sample.OptionButton.value %}"
+    id="{% resolve option_button.element_id element.json.sample.OptionButton.element_id %}"/>
+    <label class="OptionButton-label" for="{% resolve option_button.element_id element.json.sample.OptionButton.element_id %}">
+        <span class="OptionButton-checkBox"></span>
+        <span class="OptionButton-title">test</span>
+        {% if option_button.Picture %}
+        {% render_element element.aspect.atoms.picture picture=option_button.Picture %}
+        {% endif %}
+        </label>
+</{% resolve option_button.tag element.json.sample.OptionButton.tag %}>
+<!-- ATOM OptionButton End -->

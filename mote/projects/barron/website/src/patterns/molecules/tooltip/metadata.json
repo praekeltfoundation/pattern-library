@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Tooltip",
+    "description": "this tooltip is used on the carosal atm and is coded specifically for this usecase. future iterations should be more generic"
+}

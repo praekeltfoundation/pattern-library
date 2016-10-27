@@ -1,0 +1,202 @@
+.ProductGrid {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    @include container;
+    position: relative;
+    height: auto;
+
+    &-gallery,
+    &-details,
+    &-tools {
+        @include span(12);
+    }
+
+    &-gallery {
+        @include breakpoint($bp-gamma $bp-delta) {
+            @include span(50% no-gutter);
+        }
+
+        @include breakpoint($bp-delta) {
+            @include span(50% no-gutter);
+        }
+    }
+
+    &-tabs {
+        display: none;
+
+        .js & {
+            & ~ #{$scoped-block-name}-details,
+            & ~ #{$scoped-block-name}-tools {
+                display: block;
+            }
+
+            @include breakpoint($bp-gamma $bp-delta) {
+                @include span(50% no-gutter);
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: ms(1) * 3;
+
+                & ~ #{$scoped-block-name}-details,
+                & ~ #{$scoped-block-name}-tools {
+                    top: ms(1) * 3;
+                }
+            }
+
+            @include breakpoint(max-width $bp-delta) {
+                display: block;
+                z-index: z(2);
+
+                [role="tab"] {
+                    width: 50%;
+                    float: left;
+                    transition: anim(3);
+                    background-color: $color-brand-green-cyprus;
+                    color: tint($color-brand-green-cyprus, 70%);
+                    opacity: .5;
+
+                    &[aria-selected="true"] {
+                        color: $color-greyscale-white;
+                        opacity: 1;
+                    }
+                }
+
+                & ~ #{$scoped-block-name}-details,
+                & ~ #{$scoped-block-name}-tools {
+                    &[aria-hidden="true"] {
+                        display: none;
+                    }
+
+                    &[aria-hidden="false"] {
+                        display: initial;
+                    }
+                }
+            }
+        }
+    }
+
+    &-details,
+    &-tools {
+        .js & {
+            @include breakpoint($bp-gamma $bp-delta) {
+                @include span(50% no-gutter);
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        @include breakpoint($bp-delta) {
+            @include span(25% no-gutter);
+        }
+    }
+
+    &-details {
+        @include breakpoint($bp-gamma $bp-delta) {
+            .no-js & {
+                @include span(50% no-gutter);
+                @include last;
+            }
+        }
+
+        @include breakpoint($bp-delta) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+        }
+    }
+
+    &-tools {
+        @include breakpoint($bp-gamma $bp-delta) {
+            @include span(100% no-gutter);
+
+            .no-js & {
+                @include span(50% no-gutter);
+            }
+        }
+
+        @include breakpoint($bp-delta) {
+            @include last;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    &-header {
+        padding: ms(3);
+
+        @include breakpoint(max-width $bp-beta) {
+            background-color: $color-greyscale-white-gainsboro;
+        }
+
+        @include breakpoint($bp-beta) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            z-index: z(2);
+        }
+
+        @include breakpoint($bp-gamma) {
+            width: 23%;
+        }
+    }
+
+    &-title {
+        @include text-variant("4b");
+        display: inline;
+        padding-top: .25em;
+        font-size: ms(1);
+        line-height: 1.3;
+
+        @include breakpoint($bp-beta) {
+            background-color: rgba($color-greyscale-white-gainsboro, .5);
+            font-size: 3vw;
+        }
+
+        @include breakpoint($bp-gamma) {
+            font-size: 2vw;
+        }
+
+        small {
+            display: block;
+            margin-top: ms(1);
+            font-size: 50%;
+        }
+    }
+
+    .Gallery-image {
+        .SquareImage-viewbox {
+            .objectfit.csscalc.cssvhunit & {
+                // If viewport is minimum $bp-gamma width and between 767 and 900 high, apply caclulated padding to viewbox with the content below slightly visible.
+                @include breakpoint($bp-gamma (height em(767) em(900))) {
+                    @include calc(padding-top, "100vh - #{(map-get($masthead, "height") + (map-get($masthead, "padding") * 2) * 3)}");
+                }
+
+                // If viewport is minimum $bp-gamma width and between 900 and 2047 high, apply caclulated padding to viewbox with the content below slightly visible.
+                @include breakpoint($bp-delta (height em(900) em(2047))) {
+                    @include calc(padding-top, "100vh - #{(map-get($masthead, "height") + (map-get($masthead, "padding") * 2))}");
+                }
+            }
+        }
+
+        .SquareImage-graphic {
+            .objectfit.csscalc.cssvhunit & {
+                // Position image to center on X axis and bottom on Y axis.
+                object-position: 50% 100%;
+            }
+        }
+    }
+}

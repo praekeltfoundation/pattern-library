@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Carousel",
+    "description": "The carousels are based off Owl Carousel. They can either have a single item, or multiple items. Used in Menu Carousel and Hero Carousel"
+}

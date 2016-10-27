@@ -1,0 +1,44 @@
+{
+    "HomeStart": {
+        "Masthead": {
+            "modifiers": "is-open",
+            "children": {
+                "logo": {
+                    "modifiers": "Logo--inverted is-expanded"
+                },
+                "menu": {
+                    "menuitems": [
+                        {
+                            "title": "Menu",
+                            "href": "#menu-fallback",
+                            "state": "is-active"
+                        }
+                    ]
+                }
+            },
+            "MenuCarousel": {
+                "modifiers": "is-open"
+            },
+            "Search": {
+                "modifiers": "",
+                "SearchField": {
+                    "tag": "div",
+                    "modifiers": "",
+                    "FieldInput": {
+                        "placeholder": "Search placeholder text",
+                        "type": "text",
+                        "element_id": "search-field-input-id1"
+                    },
+                    "FieldLabel": {
+                        "for_element": "search-field-input-id1",
+                        "labeltext": "Search label text"
+                    },
+                    "FieldMsg": {
+                        "for_element": "search-field-input-id1",
+                        "labeltext": "Search msg"
+                    }
+                }
+            }
+        }
+    }
+}

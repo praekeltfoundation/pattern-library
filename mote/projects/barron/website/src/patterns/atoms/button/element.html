@@ -1,0 +1,61 @@
+{% load mote_tags %}
+
+{% if button %}
+    {% if  button.tag == "a" %}
+        <a href="{% resolve button.href element.json.sample.Button.href %}" class="Button {% resolve button.modifiers element.json.sample.Button.modifiers %}"
+        {% if button.attributes %}
+            {% for attribute in button.attributes %}
+            {{ attribute }}
+            {% endfor %}
+        {% endif %}>
+            <span class="Button-text">{% resolve button.text element.json.sample.Button.text %}</span>
+        </a>
+    {% elif button.tag == "button" %}
+        <button class="Button {% resolve button.modifiers element.json.sample.Button.modifiers %}"
+        {% if button.attributes %}
+            {% for attribute in button.attributes %}
+            {{ attribute }}
+            {% endfor %}
+        {% endif %}>
+            <span class="Button-text">{% resolve button.text element.json.sample.Button.text %}</span>
+        </button>
+    {% elif button.tag == "input" %}
+        <label class="Button {% resolve button.modifiers element.json.sample.Button.modifiers %}" >
+        <input class="Button-input" type="submit" value="{% resolve button.text element.json.sample.Button.text %}"
+        {% if button.attributes %}
+            {% for attribute in button.attributes %}
+                {{ attribute }}
+            {% endfor %}
+        {% endif %}/>
+        <span class="Button-text">{% resolve button.text element.json.sample.Button.text %}</span></label>
+    {% endif %}
+{% else  %}
+    {% if element.json.sample.Button.tag == "a" %}
+        <a href="{% resolve button.href element.json.sample.Button.href %}" class="Button {% resolve button.modifiers element.json.sample.Button.modifiers %}"
+        {% if button.attributes %}
+            {% for attribute in button.attributes %}
+            {{ attribute }}
+            {% endfor %}
+        {% endif %}>
+            <span class="Button-text">{% resolve button.text element.json.sample.Button.text %}</span>
+        </a>
+    {% elif element.json.sample.Button.tag == "button" %}
+        <button class="Button {% resolve button.modifiers element.json.sample.Button.modifiers %}"
+        {% if button.attributes %}
+            {% for attribute in button.attributes %}
+            {{ attribute }}
+            {% endfor %}
+        {% endif %}>
+            <span class="Button-text">{% resolve button.text element.json.sample.Button.text %}</span>
+        </button>
+    {% elif element.json.sample.Button.tag == "input" %}
+        <label class="Button {% resolve button.modifiers element.json.sample.Button.modifiers %}" >
+        <input class="Button-input" type="submit" value="{% resolve button.text element.json.sample.Button.text %}"
+        {% if button.attributes %}
+            {% for attribute in button.attributes %}
+                {{ attribute }}
+            {% endfor %}
+        {% endif %}/>
+        <span class="Button-text">{% resolve button.text element.json.sample.Button.text %}</span></label>
+    {% endif %}
+{% endif %}

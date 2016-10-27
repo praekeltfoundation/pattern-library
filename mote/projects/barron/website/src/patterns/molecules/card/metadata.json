@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Card",
+    "description": "The Card molecule is used in the Card Grid organism. It derives it's scale from the nested Square Image which ensures that all Cards on a page will be square, regardless of the length of the content."
+}

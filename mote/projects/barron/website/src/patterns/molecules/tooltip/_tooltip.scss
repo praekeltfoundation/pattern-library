@@ -1,0 +1,227 @@
+.Tooltip {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $background-color: $color-brand-green-cyprus;
+    z-index: z(8);
+
+    &-content {
+        display: none;
+        width: rem(220);
+        overflow: auto;
+        @include breakpoint($bp-beta) {
+            width: rem(320);
+        }
+    }
+
+    &-closer {
+        position: absolute;
+        top: ms(1);
+        right: ms(1);
+        width: ms(1);
+        height: ms(1);
+    }
+
+    &-title {
+        font-size: ms(1);
+        text-transform: uppercase;
+    }
+
+    & .drop-content {
+        position: relative;
+        padding: ms(4);
+        background: $background-color;
+        font-family: inherit;
+        opacity: .9;
+
+        &:before {
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-width: rem(12);
+            border-style: solid;
+            border-color: transparent;
+            content: "";
+        }
+
+        #{$scoped-block-name}-content {
+            display: block;
+        }
+    }
+
+    &.drop-element {
+        display: none;
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        transform: translateZ(0);
+        transition: opacity anim(4);
+        opacity: 0;
+    }
+
+    &.drop-element.drop-open-transitionend {
+        display: block;
+    }
+
+    &.drop-element.drop-after-open {
+        transition: none;
+        opacity: 1;
+    }
+
+    &.drop-element.drop-after-open .drop-content {
+        transform: scale(1) translateZ(0);
+    }
+
+    &.drop-element .drop-content {
+        transform: scale(0) translateZ(0);
+        transition: transform anim(4);
+    }
+
+    &.drop-element.drop-element-attached-bottom.drop-element-attached-center .drop-content {
+        margin-bottom: rem(12);
+    }
+
+    &.drop-element.drop-element-attached-bottom.drop-element-attached-center .drop-content {
+        &:before {
+            top: 100%;
+            left: 50%;
+            margin-left: rem(-12);
+            border-top-color: $background-color;
+        }
+    }
+
+    &.drop-element.drop-element-attached-top.drop-element-attached-center .drop-content {
+        margin-top: rem(12);
+    }
+
+    &.drop-element.drop-element-attached-top.drop-element-attached-center .drop-content,
+    &.drop-element.drop-element-attached-top.drop-element-attached-left.drop-target-attached-bottom .drop-content,
+    &.drop-element.drop-element-attached-top.drop-element-attached-right.drop-target-attached-bottom .drop-content,
+    &.drop-element.drop-element-attached-top.drop-element-attached-right.drop-target-attached-left .drop-content {
+        &:before {
+            bottom: 100%;
+            left: 50%;
+            margin-left: rem(-12);
+            border-bottom-color: $background-color;
+        }
+    }
+
+    &.drop-element.drop-element-attached-right.drop-element-attached-middle .drop-content {
+        margin-right: rem(12);
+    }
+
+    &.drop-element.drop-element-attached-right.drop-element-attached-middle .drop-content {
+        &:before {
+            top: 50%;
+            left: 100%;
+            margin-top: rem(-12);
+            border-left-color: $background-color;
+        }
+    }
+
+    &.drop-element.drop-element-attached-left.drop-element-attached-middle .drop-content {
+        margin-left: rem(12);
+    }
+
+    &.drop-element.drop-element-attached-left.drop-element-attached-middle .drop-content {
+        &:before {
+            top: 50%;
+            right: 100%;
+            margin-top: rem(-12);
+            border-right-color: $background-color;
+        }
+    }
+
+    &.drop-element.drop-element-attached-top.drop-element-attached-left.drop-target-attached-bottom .drop-content {
+        margin-top: rem(12);
+        transform-origin: 0 rem(-12);
+    }
+
+    &.drop-element.drop-element-attached-top.drop-element-attached-right.drop-target-attached-bottom .drop-content {
+        margin-top: rem(12);
+        transform-origin: 100% rem(-12);
+    }
+
+    &.drop-element.drop-element-attached-bottom.drop-element-attached-left.drop-target-attached-top .drop-content {
+        margin-bottom: rem(12);
+        transform-origin: 0 calc(100% + rem(12));
+
+        &:before {
+            top: 100%;
+            left: rem(12);
+            border-top-color: $background-color;
+        }
+    }
+
+    &.drop-element.drop-element-attached-bottom.drop-element-attached-right.drop-target-attached-top .drop-content {
+        margin-bottom: rem(12);
+        transform-origin: 100% calc(100% + rem(12));
+
+        &:before {
+            top: 100%;
+            right: rem(12);
+            border-top-color: $background-color;
+        }
+    }
+
+    &.drop-element.drop-element-attached-top.drop-element-attached-right.drop-target-attached-left .drop-content {
+        margin-right: rem(12);
+        transform-origin: calc(100% + rem(12)) 0;
+    }
+
+    &.drop-element.drop-element-attached-top.drop-element-attached-left.drop-target-attached-right .drop-content {
+        margin-left: rem(12);
+        transform-origin: rem(-12) 0;
+
+        &:before {
+            top: rem(12);
+            right: 100%;
+            border-right-color: $background-color;
+        }
+    }
+
+    &.drop-element.drop-element-attached-bottom.drop-element-attached-right.drop-target-attached-left .drop-content {
+        margin-right: rem(12);
+        transform-origin: calc(100% + rem(12)) 100%;
+
+        &:before {
+            bottom: rem(12);
+            left: 100%;
+            border-left-color: $background-color;
+        }
+    }
+
+    &.drop-element.drop-element-attached-bottom.drop-element-attached-left.drop-target-attached-right .drop-content {
+        margin-left: rem(12);
+        transform-origin: rem(-12) 100%;
+
+        &:before {
+            right: 100%;
+            bottom: rem(12);
+            border-right-color: $background-color;
+        }
+    }
+
+    &.drop-element.drop-element-attached-bottom.drop-element-attached-center .drop-content {
+        transform-origin: 50% calc(100% + rem(12));
+    }
+
+    &.drop-element.drop-element-attached-top.drop-element-attached-center .drop-content {
+        transform-origin: 50% rem(-12);
+    }
+
+    &.drop-element.drop-element-attached-right.drop-element-attached-middle .drop-content {
+        transform-origin: calc(100% + rem(12)) 50%;
+    }
+
+    &.drop-element.drop-element-attached-left.drop-element-attached-middle .drop-content {
+        transform-origin: rem(-12) 50%;
+    }
+}

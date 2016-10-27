@@ -1,0 +1,41 @@
+{% load mote_tags %}
+
+<!-- ORGANISM Viewport Grid START -->
+<section class="ProductGrid">
+    <header class="ProductGrid-header">
+        <!-- ATOM Guide Link Start -->
+        <a class="GuideLink" href="#">
+            <span class="GuideLink-iconLeft">
+                <i class="Icon Icon-chevronleft-yellowButtercup"></i>
+            </span>
+            <span class="GuideLink-text">
+                Lorem ipsum
+            </span>
+        </a>
+        <!-- ATOM Guide Link End -->
+        <h1 class="ProductGrid-title">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum.
+            <small class="MetaLabel">
+                ABC123
+            </small>
+        </h1>
+    </header>
+    <div class="ProductGrid-column ProductGrid-gallery">
+        {% render_element element.aspect.organisms.gallery %}
+    </div>
+    <nav class="ProductGrid-tabs" role="tablist" data-panel-active="#product-details">
+        <a class="Button Button--solid" href="#product-details" role="tab" id="product-details-tab">
+            <span class="Button-text">Details</span>
+        </a>
+        <a class="Button Button--solid" href="#product-functional" role="tab" id="product-functions-tab">
+            <span class="Button-text">Tools</span>
+        </a>
+    </nav>
+    <div id="product-details" class="ProductGrid-column ProductGrid-details" role="tabpanel">
+        {% render_element element.aspect.organisms.content_panel %}
+    </div>
+    <div id="product-functional" class="ProductGrid-column ProductGrid-tools" role="tabpanel">
+        {% render_element element.aspect.organisms.content_panel.inverted %}
+    </div>
+</section>
+<!-- ORGANISM Viewport Grid END -->

@@ -1,0 +1,14 @@
+{% load mote_tags %}
+
+<!-- MOLECULE FormField Start -->
+<{{ element.json.sample.FormField.tag }} class="FormField {% resolve form_field.modifiers element.json.sample.FormField.modifiers %}">
+    {% if form_field %}
+        {% render_element element.aspect.atoms.field_label for_element=form_field.FieldLabel.for_element text=form_field.FieldLabel.labeltext %}
+        {% render_element element.aspect.atoms.field_input field_input=form_field.FieldInput %}
+    {% else %}
+        {% render_element element.aspect.atoms.field_label for_element=element.json.sample.FieldLabel.for_element text=element.json.sample.FieldLabel.labeltext %}
+        {% render_element element.aspect.atoms.field_input placeholder=element.json.sample.FieldInput.placeholder type=element.json.sample.FieldInput.type element_id=element.json.sample.FieldInput.element_id %}
+    {% endif %}
+    {% render_element element.aspect.atoms.field_msg for_element=element.json.sample.FieldMsg.for_element text=element.json.sample.FieldMsg.labeltext %}
+</{{ element.json.sample.FormField.tag }}>
+<!-- MOLECULE FormField End -->

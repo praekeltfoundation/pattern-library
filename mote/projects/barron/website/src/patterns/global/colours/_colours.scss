@@ -1,0 +1,138 @@
+// ==========================================
+// >> COLOURS
+// ==========================================
+//    These will primarily be visible in the
+//    style guide.
+
+%colour-brick { //obscure name to lessen the chance of conflicts
+    width: 50%;
+    padding: ms(1);
+    float: left;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-brand-yellow-buttercup {
+    @extend %colour-brick;
+    background: $color-brand-yellow-buttercup;
+}
+
+.colour-brick-brand-yellow-buttercup-tint {
+    @extend %colour-brick;
+    background: $color-brand-yellow-buttercup-tint;
+}
+
+.colour-brick-brand-green-cyprus {
+    @extend %colour-brick;
+    background: $color-brand-green-cyprus;
+}
+
+.colour-brick-brand-green-cyprus-tint {
+    @extend %colour-brick;
+    background: $color-brand-green-cyprus-tint;
+}
+
+.colour-brick-brand-green-oracle {
+    @extend %colour-brick;
+    background: $color-brand-green-oracle;
+}
+
+.colour-brick-brand-green-oracle-tint {
+    @extend %colour-brick;
+    background: $color-brand-green-oracle-tint;
+}
+
+.colour-brick-secondary-red-firebrick {
+    @extend %colour-brick;
+    background: $color-secondary-red-firebrick;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-red-lipstick {
+    @extend %colour-brick;
+    background: $color-secondary-red-lipstick;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-red-flame {
+    @extend %colour-brick;
+    background: $color-secondary-red-flame;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-orange-smoketree {
+    @extend %colour-brick;
+    background: $color-secondary-orange-smoketree;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-brown-cigar {
+    @extend %colour-brick;
+    background: $color-secondary-brown-cigar;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-yellow-sundance {
+    @extend %colour-brick;
+    background: $color-secondary-yellow-sundance;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-yellow-chino {
+    @extend %colour-brick;
+    background: $color-secondary-yellow-chino;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-green-parsley {
+    @extend %colour-brick;
+    background: $color-secondary-green-parsley;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-green-celery {
+    @extend %colour-brick;
+    background: $color-secondary-green-celery;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-blue-matisse {
+    @extend %colour-brick;
+    background: $color-secondary-blue-matisse;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-secondary-blue-bayoux {
+    @extend %colour-brick;
+    background: $color-secondary-blue-bayoux;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-greyscale-black {
+    @extend %colour-brick;
+    background: $color-greyscale-black;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-greyscale-grey {
+    @extend %colour-brick;
+    background: $color-greyscale-grey;
+    color: $color-greyscale-white;
+}
+
+.colour-brick-greyscale-white-smoke {
+    @extend %colour-brick;
+    background: $color-greyscale-white-smoke;
+    color: $color-greyscale-black;
+}
+
+.colour-brick-greyscale-white-gainsboro {
+    @extend %colour-brick;
+    background: $color-greyscale-white-gainsboro;
+    color: $color-greyscale-black;
+}
+
+.colour-brick-greyscale-white {
+    @extend %colour-brick;
+    background: $color-greyscale-white;
+    color: $color-greyscale-black;
+}

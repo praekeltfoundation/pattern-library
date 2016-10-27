@@ -1,0 +1,32 @@
+{% load mote_tags %}
+
+<!-- ORGANISM ContentWithSidebar Start -->
+<main class="ContentWithSidebar" role="main">
+    <div class="ContentWithSidebar-wrapper">
+        <aside class="ContentWithSidebar-sidebar" role="complementary">
+            <picture class="ContentWithSidebar-background">
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source data-srcset="
+                    http://www.placehold.it/800x500 800w
+                    " media="(max-width: 48em)">
+                <source data-srcset="
+                    http://www.placehold.it/500x1920 500w
+                    " media="(min-width: 48em)">
+                <!--[if IE 9]></video><![endif]-->
+
+                <img alt="Alt Text Goes Here" class="ContentWithSidebar-image lazyload" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                <noscript>
+                    <img class="ContentWithSidebar-image" src="http://www.placehold.it/800x500" alt="Alt Text Goes Here">
+                </noscript>
+            </picture>
+
+            {% render_element element.aspect.molecules.on_title title="about barron" block-modifiers="Sidebar-heading OnTitle--inverted "  %}
+
+        </aside>
+
+        <div class="ContentWithSidebar-body">
+                {% render_element element.aspect.molecules.content_page  %}
+        </div>
+    </div>
+</main>
+<!-- ORGANISM ContentWithSidebar End -->

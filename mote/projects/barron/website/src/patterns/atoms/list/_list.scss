@@ -1,0 +1,22 @@
+.List {
+    list-style: none;
+
+    li & {
+        padding-left: ms(3);
+    }
+
+    &--ordered,
+    &--unordered {
+        li {
+            list-style-position: inside;
+        }
+    }
+
+    &--ordered {
+        list-style: decimal;
+    }
+
+    &--unordered {
+        list-style: disc;
+    }
+}

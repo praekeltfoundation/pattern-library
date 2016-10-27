@@ -1,0 +1,20 @@
+{
+    "Dropdown": {
+        "tag": "select",
+        "modifiers": "",
+        "items": [
+            {
+                "title": "Lorem ipsum 1",
+                "value": "1"
+            },
+            {
+                "title": "Lorem ipsum 2",
+                "value": "2"
+            },
+            {
+                "title": "Lorem ipsum 3",
+                "value": "3"
+            }
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{% load mote_tags %}
+
+<!-- ORGANISM CardGrid Start -->
+<section class="CardGrid {% resolve card_grid.modifiers element.json.sample.CardGrid.modifiers %}" role="grid">
+{% if card_grid %}
+    {% if card_grid.header %}
+    <header class="CardGrid-header">
+        <h1 class="CardGrid-title">{{ card_grid.header.title }}</h1>
+    </header>
+    {% endif %}
+    {% for card in card_grid.items %}
+        <div class="CardGrid-item">
+                {% render_element element.aspect.molecules.card card=card %}
+        </div>
+    {% endfor %}
+{% else %}
+    {% if element.json.sample.CardGrid.header %}
+    <header class="CardGrid-header">
+        <h1 class="CardGrid-title">{{ element.json.sample.CardGrid.header.title }}</h1>
+    </header>
+    {% endif %}
+    {% for card in element.json.sample.CardGrid.items %}
+        <div class="CardGrid-item">
+                {% render_element element.aspect.molecules.card card=card %}
+        </div>
+    {% endfor %}
+{% endif %}
+</section>
+<!-- ORGANISM CardGrid End -->

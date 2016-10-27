@@ -1,0 +1,20 @@
+{
+    "menu": {
+        "modifiers": "",
+        "menuitems": [
+            {
+                "title": "Lorem ipsum",
+                "href": "#",
+                "state": "is-active"
+            },
+            {
+                "title": "Lorem ipsum",
+                "href": "#"
+            },
+            {
+                "title": "Lorem ipsum",
+                "href": "#"
+            }
+        ]
+    }
+}

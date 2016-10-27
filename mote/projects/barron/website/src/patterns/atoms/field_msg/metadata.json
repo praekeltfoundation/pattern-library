@@ -1,0 +1,7 @@
+{
+    "flags": {
+        "busy": "Still needs testing."
+    },
+    "title": "Field Error Message",
+    "description": "The message that displays when a field is invalid"
+}

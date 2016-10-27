@@ -1,0 +1,61 @@
+{
+    "CardGrid": {
+        "modifiers": "",
+        "items": [
+            {
+                "ProductTitle": {
+                    "primary": "CardGrid Lorem ONE",
+                    "secondary": "dolor sit ONE"
+                },
+                "code": "ABC098"
+            },
+            {
+                "ribbon": {
+                    "text": "Lorem TWO"
+                }
+            },
+            {
+                "ProductTitle": {
+                    "primary": "CardGrid Lorem",
+                    "secondary": "dolor"
+                },
+                "ribbon": {
+                    "text": "Lorem"
+                }
+            },
+            {
+                "ProductTitle": {
+                    "primary": "CardGrid Lorem ipsum dolor",
+                    "secondary": "dolor"
+                }
+            },
+            {
+                "ProductTitle": {
+                    "primary": "CardGrid Lorem ipsum",
+                    "secondary": "dolor sit"
+                },
+                "ribbon": {
+                    "text": "Lorem"
+                }
+            },
+            {
+                "ProductTitle": {
+                    "primary": "CardGrid Lorem ipsum",
+                    "secondary": "dolor sit"
+                }
+            },
+            {
+                "ProductTitle": {
+                    "primary": "CardGrid Lorem ipsum",
+                    "secondary": "dolor sit"
+                }
+            },
+            {
+                "ProductTitle": {
+                    "primary": "CardGrid Lorem ipsum",
+                    "secondary": "dolor sit"
+                }
+            }
+        ]
+    }
+}

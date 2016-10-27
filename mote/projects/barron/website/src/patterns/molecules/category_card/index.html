@@ -1,0 +1,25 @@
+{% extends "mote/element/index.html" %}
+{% load mote_tags %}
+
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Category Card Base
+    </h4>
+    <div class="description">
+        The Category Card is used in the Menu Carousel to depict specific product categories. It has no modifiers or variations. It can have a <code>.is-active</code> state class applied to it.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+{% render_element element.aspect.molecules.category_card %}
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+
+<!-- sg-code-block -->
+{% endblock %}

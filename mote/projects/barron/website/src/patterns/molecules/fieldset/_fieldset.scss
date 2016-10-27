@@ -1,0 +1,60 @@
+.Fieldset {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    $color-inverted-background: $color-brand-green-cyprus;
+
+    // Block specific styles
+    &--inverted {
+        background: $color-inverted-background;
+
+        #{$scoped-block-name}-legend {
+            background: $color-inverted-background;
+            color: $color-greyscale-white;
+        }
+    }
+
+    &--nested {
+
+        #{$scoped-block-name}-legend {
+            text-transform: capitalize;
+        }
+    }
+
+    .Dropdown + .Button {
+        margin-top: ms(4);
+    }
+
+    .Button + :not(.Button) {
+        margin-top: ms(2);
+    }
+
+    .u-typography + .Button {
+        margin-top: ms(2);
+    }
+
+    .FormField + :not(.FormField) {
+        margin-top: ms(4);
+    }
+
+    &-descriptionHeading {
+        @include text-variant("0b");
+    }
+
+    // Element specific styles
+    &-legend {
+        @include text-variant("0b");
+        width: 100%;
+        padding: 1.25rem 0 1rem;
+    }
+    // Block state styles
+    //&.is-stateType {
+    //    #{$scoped-block-name}-element {}
+    //}
+}

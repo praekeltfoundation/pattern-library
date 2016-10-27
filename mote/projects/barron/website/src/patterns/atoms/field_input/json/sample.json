@@ -1,0 +1,7 @@
+{
+    "FieldInput": {
+        "placeholder": "placeholder text",
+        "type": "text",
+        "element_id": "field-input-id"
+    }
+}

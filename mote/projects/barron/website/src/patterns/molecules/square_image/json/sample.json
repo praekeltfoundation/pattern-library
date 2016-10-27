@@ -1,0 +1,10 @@
+{
+    "SquareImage": {
+        "modifiers": "",
+        "Picture": {
+            "image": {
+                "element-class": "SquareImage-graphic"
+            }
+        }
+    }
+}

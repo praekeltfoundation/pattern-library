@@ -1,0 +1,25 @@
+{% extends "mote/element/index.html" %}
+{% block codeblock %}
+<div class="sg-code-block">
+    <h4 class="title">
+        Field Label
+    </h4>
+    <div class="description">
+        This is the atom for an <code>&lt;label&gt;</code> tag. The Block level class is <code>FieldLabel</code> which can be used in conjuction with the class modiefier <code>FieldLabel--inverted</code> when the input is present on the dark background.
+    </div>
+    <div class="code-example">
+        <pre>
+            <code class="language-markup">
+                <xmp>
+<!-- field label -->
+<label class="FieldLabel" >label text goes here</label>
+<!-- field label inverted -->
+<label class="FieldLabel FieldLabel--inverted" >label text goes here</label>
+                </xmp>
+            </code>
+        </pre>
+    </div>
+    <!-- code-example -->
+</div>
+<!-- sg-code-block -->
+{% endblock %}

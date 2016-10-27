@@ -1,0 +1,31 @@
+{
+    "block-modifiers": "",
+    "items": [
+        {
+            "content": {
+                "image": {
+                    "base": "http://www.placehold.it/1920x1080",
+                    "srcset": "http://www.placehold.it/1920x1080 1920w, http://www.placehold.it/800x600 800w"
+                },
+                "title": "Lorem ipsum<br/>dolor sit.",
+                "href": "#",
+                "on_title": {
+                    "block-modifiers": "OnTitle--inverted"
+                }
+            }
+        },
+        {
+            "content": {
+                "image": {
+                    "base": "http://www.placehold.it/1920x1080",
+                    "srcset": "http://www.placehold.it/1920x1080 1920w, http://www.placehold.it/800x600 800w"
+                },
+                "title": "Sed ut perspiciatis<br/>unde omnis.",
+                "href": "#",
+                "on_title": {
+                    "block-modifiers": "OnTitle--inverted"
+                }
+            }
+        }
+    ]
+}

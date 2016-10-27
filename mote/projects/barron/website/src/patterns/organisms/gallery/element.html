@@ -1,0 +1,54 @@
+{% load mote_tags %}
+<!-- ORGANISM Gallery Start -->
+<div class="Gallery">
+    <div class="Gallery-image" data-modal-group="gallery-image" >
+        {% if gallery.SquareImage %}
+            <a target="_blank" class="Gallery-imageLink" href="{{ static_root }}{{ gallery.SquareImage.Picture.image.noscriptsrc }}" data-modal-content="image">
+                {% render_element element.aspect.molecules.square_image square_image=gallery.SquareImage %}
+            </a>
+        {% else %}
+            <a target="_blank" class="Gallery-imageLink" href="{{ static_root }}{{ element.json.sample.Gallery.SquareImage.Picture.image.noscriptsrc }}" data-modal-content="image">
+                {% render_element element.aspect.molecules.square_image square_image=element.json.sample.Gallery.SquareImage %}
+            </a>
+        {% endif %}
+    </div>
+    <div class="Gallery-thumbnails">
+        {% if gallery.thumbnails %}
+            {% for thumbnail in gallery.thumbnails %}
+            <a
+                href="{{ static_root }}{{ thumbnail.SquareImage.Picture.image.noscriptsrc }}"
+                target="_blank"
+                class="Gallery-thumbnail {{ thumbnail.modifiers }}"
+                data-gallery-image-srcset="
+                {% for set in thumbnail.SquareImage.Picture.srcsets %}
+                    {{ static_root }}{{ set.set }}
+                {% endfor %}
+                ">
+                {% render_element element.aspect.molecules.square_image square_image=thumbnail.SquareImage %}
+            </a>
+            {% endfor %}
+        {% elif element.json.sample.Gallery.thumbnails %}
+            {% for thumbnail in element.json.sample.Gallery.thumbnails %}
+            <a
+                href="{{ static_root }}{{ thumbnail.SquareImage.Picture.image.noscriptsrc }}"
+                target="_blank"
+                class="Gallery-thumbnail {{ thumbnail.modifiers }}"
+                data-gallery-image-srcset="
+                {% for set in thumbnail.SquareImage.Picture.srcsets %}
+                    {{ static_root }}{{ set.set }}
+                {% endfor %}
+                ">
+                {% render_element element.aspect.molecules.square_image square_image=thumbnail.SquareImage %}
+            </a>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <button class="Gallery-thumbnailsToggler">
+        <i class="Gallery-opener Icon Icon-thumbnails-greenCyprus"></i>
+        <i class="Gallery-closer Icon Icon-close-white"></i>
+    </button>
+    <a href="#" class="Gallery-iconLink Gallery-iconLink--bottomRight">
+        <i class=" Icon Icon-360-greenCyprus"></i>
+    </a>
+</div>
+<!-- ORGANISM Gallery End -->

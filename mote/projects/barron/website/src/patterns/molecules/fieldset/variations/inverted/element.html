@@ -1,0 +1,47 @@
+{% load mote_tags %}
+<!-- MOLECULE Fieldset Start -->
+<fieldset class="Fieldset {% resolve fieldset.modifiers element.json.sample.Fieldset.modifiers %}">
+<legend class="Fieldset-legend">{% resolve fieldset.legend for_element element.json.sample.Fieldset.legend %}</legend>
+{% if fieldset %}
+{% for field in fieldset.items %}
+    {% if field.field_type == "form_field"  %}
+        {% render_element element.aspect.molecules.form_field form_field=field %}
+    {% elif field.field_type == "swatch"  %}
+        {% render_element element.aspect.atoms.swatch swatch=field %}
+    {% elif field.field_type == "dropdown" %}
+        {% render_element element.aspect.molecules.dropdown dropdown=field %}
+    {% elif field.field_type == "links_dropdown" %}
+        {% render_element element.aspect.molecules.dropdown links_dropdown=field %}
+    {% elif field.field_type == "swatch_group" %}
+        {% render_element element.aspect.molecules.swatch_group swatch_group=field %}
+    {% elif field.field_type == "typography" %}
+        {% render_element element.aspect.helpers.typography typography=field %}
+    {% elif field.field_type == "option_button_group" %}
+        {% render_element element.aspect.molecules.option_button_group option_button_group=field %}
+    {% elif field.field_type == "fieldset" %}
+        {% render_element element.aspect.molecules.fieldset fieldset=field %}
+    {% endif %}
+{% endfor %}
+{% else %}
+    {% for field in element.json.sample.Fieldset.items %}
+        {% if field.field_type == "form_field"  %}
+            {% render_element element.aspect.molecules.form_field form_field=field %}
+        {% elif field.field_type == "swatch"  %}
+            {% render_element element.aspect.atoms.swatch swatch=field %}
+        {% elif field.field_type == "dropdown" %}
+            {% render_element element.aspect.molecules.dropdown dropdown=field %}
+        {% elif field.field_type == "links_dropdown" %}
+            {% render_element element.aspect.molecules.dropdown links_dropdown=field %}
+        {% elif field.field_type == "swatch_group" %}
+            {% render_element element.aspect.molecules.swatch_group swatch_group=field %}
+        {% elif field.field_type == "typography" %}
+            {% render_element element.aspect.helpers.typography typography=field %}
+        {% elif field.field_type == "option_button_group" %}
+            {% render_element element.aspect.molecules.option_button_group option_button_group=field %}
+        {% elif field.field_type == "fieldset" %}
+            {% render_element element.aspect.molecules.fieldset fieldset=field %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+</fieldset>
+<!-- MOLECULE Fieldset End -->

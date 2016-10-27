@@ -1,0 +1,14 @@
+{% load mote_tags %}
+
+<!-- ATOM FieldInput Start -->
+<input
+id="{% resolve field_input.element_id element.json.sample.FieldInput.element_id %}" class="FieldInput {% resolve field_input.modifiers element.json.sample.linksdropdown.modifiers %}" type="{% resolve field_input.type element.json.sample.FieldInput.type %}"
+placeholder="{% resolve field_input.placeholder element.json.sample.FieldInput.placeholder %}" name='namex'/
+{{ field_input }}
+{% if field_input.attributes %}
+    {% for attribute in field_input.attributes %}
+    {{ attribute }}
+    {% endfor %}
+{% endif %}
+>
+<!-- ATOM FieldInput End -->

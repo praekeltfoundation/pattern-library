@@ -1,0 +1,224 @@
+{
+    "block-modifiers": "",
+    "groups": [
+        {
+            "element-modifiers": "",
+            "title": "Lorem ipsum 1",
+            "children": true,
+            "items": [
+                {
+                    "title": "Ipsum dolor 1a",
+                    "href": "/lorem1a",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "title": "Ipsum dolor 1b",
+                    "href": "/lorem1b",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum",
+                    "subcategories": [
+                        {
+                            "title": "Lorem 1b1",
+                            "href": "/lorem1b1"
+                        },
+                        {
+                            "title": "Lorem 1b2",
+                            "href": "/lorem1b2"
+                        }
+                    ]
+                },
+                {
+                    "element-modifiers": "is-active",
+                    "title": "Ipsum dolor 1c",
+                    "href": "#",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                }
+            ]
+        },
+        {
+            "element-modifiers": "",
+            "title": "Lorem ipsum 2",
+            "children": true,
+            "items": [
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 2a",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 2b",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 2b",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 2b",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 2b",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 2b",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 2b",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                }
+            ]
+        },
+        {
+            "element-modifiers": "",
+            "title": "Lorem ipsum 3",
+            "children": true,
+            "items": [
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 3a",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 3b",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                }
+            ]
+        },
+        {
+            "element-modifiers": "",
+            "title": "Lorem ipsum 4",
+            "children": true,
+            "items": [
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 4a",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "href": "#",
+                    "title": "Ipsum dolor 4b",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                }
+            ]
+        },
+        {
+            "element-modifiers": "",
+            "title": "Lorem ipsum 5",
+            "children": true,
+            "items": [
+                {
+                    "title": "Ipsum dolor 5a",
+                    "href": "#",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "title": "Ipsum dolor 5b",
+                    "href": "#",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum",
+                    "subcategories": [
+                        {
+                            "title": "Lorem 5b1",
+                            "href": "#"
+                        },
+                        {
+                            "title": "Lorem 5b2",
+                            "href": "#"
+                        }
+                    ]
+                },
+                {
+                    "title": "Ipsum dolor 5c",
+                    "href": "#",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                }
+            ]
+        },
+        {
+            "element-modifiers": "",
+            "title": "Lorem ipsum 6",
+            "children": true,
+            "items": [
+                {
+                    "title": "Ipsum dolor 6a",
+                    "href": "#",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                },
+                {
+                    "title": "Ipsum dolor 6b",
+                    "href": "#",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum",
+                    "subcategories": [
+                        {
+                            "title": "Lorem 6b1",
+                            "href": "#"
+                        },
+                        {
+                            "title": "Lorem 6b2",
+                            "href": "#"
+                        }
+                    ]
+                },
+                {
+                    "title": "Ipsum dolor 6c",
+                    "href": "#",
+                    "carousel-image-srcset": "http://www.placehold.it/400x200 400w, http://www.placehold.it/800x400 800w",
+                    "carousel-image-noscript": "http://www.placehold.it/400x200",
+                    "carousel-image-alt": "Lorem Altsum"
+                }
+            ]
+        },
+        {
+            "element-modifiers": "",
+            "title": "Contact Us",
+            "titlehref": "/contact",
+            "children": false
+        }
+    ]
+}

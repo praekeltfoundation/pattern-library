@@ -1,0 +1,32 @@
+.FilterMessage {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+    
+    max-width: ms(16);
+    margin: 0 auto;
+    padding-top: ms(10);
+    padding-bottom: ms(10);
+    text-align: center;
+
+    &-graphic {
+        width: ms(10);
+        height: ms(10);
+        margin: 0 auto;
+    }
+
+    &-description {
+        @include text-variant("2b");
+        color: $color-greyscale-grey;
+    }
+
+    &-graphic + &-description {
+        margin-top: ms(3);
+    }
+}

@@ -1,0 +1,71 @@
+.SecondaryNav {
+    // This variable contains the root element class, for
+    // appending to children that are scoped within a modifier.
+    // This is due to the unfortunate fact that node-sass has
+    // a bug with the @at-root directive, and sass-lint explodes
+    // as well. Ugh. Double whammy.
+    //
+    // @TODO: Refactor this to use the @at-root directive as soon
+    // as a fix becomes available.
+    $scoped-block-name: unquote("#{&}");
+
+    @include container;
+
+    &-link {
+        @include font-baseline-fix;
+        display: block;
+        transition: .3s ease-in-out;
+        color: inherit;
+        font-family: inherit;
+        font-size: 1em;
+    }
+
+    &-item {
+        display: block;
+
+        &:hover,
+        &:active,
+        &.is-active {
+            color: $color-brand-yellow-buttercup;
+        }
+
+        @include breakpoint(max-width $bp-beta) {
+            position: relative;
+            margin-top: ms(1);
+            padding-top: ms(1);
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: ms(3);
+                height: 1px;
+                background-color: $color-brand-yellow-buttercup;
+                content: "";
+            }
+
+            &:first-child {
+                margin-top: 0;
+                padding-top: 0;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        @include breakpoint($bp-beta) {
+            margin-right: ms(2);
+            padding-right: ms(2);
+            float: left;
+            border-right: 1px solid $color-brand-yellow-buttercup;
+
+            &:last-child {
+                margin-right: 0;
+                padding-right: 0;
+                border-right: 0;
+            }
+        }
+    }
+}
