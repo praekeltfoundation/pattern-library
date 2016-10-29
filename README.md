@@ -1,4 +1,4 @@
-# pattern-library
+# Pattern-library
 Pattern Library - help build cohesive, consistent user experience
 - We will set our team’s workflow
 - Establish common vocabulary between disciplines
@@ -49,3 +49,5 @@ Note:
 2. Prefix filenames
 3. Partials get a underscore as a prefix
 4. One single file for importing all partials like application.scss
+
+# Pattern-library Hosting and Versioned Releases 
