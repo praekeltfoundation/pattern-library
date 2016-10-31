@@ -71,7 +71,7 @@ gulp.task('pl-sass', function(){
   .pipe(sass().on('error', sass.logError))
   .pipe(cleanCSSMinify())
   .pipe(sourcemaps.write('/maps'))
-  .pipe(gulp.dest(path.resolve(paths().source.css,'build')))
+  .pipe(gulp.dest(path.resolve(paths().source.css)))
   .pipe(browserSync.stream());
 });
 
