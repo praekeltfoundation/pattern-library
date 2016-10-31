@@ -1,0 +1,1 @@
+{"version":3,"sources":["_base.scss"],"names":[],"mappings":"AAAA,eAEI,OAAQ,IAAA,MAAA","file":"../style.css","sourcesContent":["body {\n  .sg-tools {\n    border: 1px solid red;\n  }\n}\n"]}

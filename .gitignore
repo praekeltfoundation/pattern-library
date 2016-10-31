@@ -1,0 +1,10 @@
+node_modules/
+!node_modules/styleguidekit-assets-default/
+
+.DS_Store
+patternlab.json
+.sass-cache/*
+/sass-cache
+Thumbs.db
+.idea/
+public
