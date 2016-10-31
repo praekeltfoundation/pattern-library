@@ -42,7 +42,7 @@ gulp.task('pl-copy:font', function(){
 
 // CSS Copy
 gulp.task('pl-copy:css', function(){
-  return gulp.src(path.resolve(paths().source.css, '*.css'))
+  return gulp.src(path.resolve(paths().source.css, '**/*.css'))
     .pipe(gulp.dest(path.resolve(paths().public.css)))
     .pipe(browserSync.stream());
 });
@@ -71,7 +71,7 @@ gulp.task('pl-sass', function(){
   .pipe(sass().on('error', sass.logError))
   .pipe(cleanCSSMinify())
   .pipe(sourcemaps.write('/maps'))
-  .pipe(gulp.dest(path.resolve(paths().source.css)))
+  .pipe(gulp.dest(path.resolve(paths().source.css, 'dist')))
   .pipe(browserSync.stream());
 });
 
