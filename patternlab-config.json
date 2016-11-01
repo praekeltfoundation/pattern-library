@@ -11,7 +11,7 @@
       "js" : "./source/js",
       "images" : "./source/images",
       "fonts" : "./source/fonts",
-      "css" : "./source/styles/dist" 
+      "css" : "./source/styles/"
     },
     "public" : {
       "root" : "./public/",
@@ -38,7 +38,7 @@
     "s": false,
     "m": false,
     "l": false,
-    "full": true,
+    "full": false,
     "random": true,
     "disco": true,
     "hay": true,

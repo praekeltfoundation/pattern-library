@@ -1,6 +1,47 @@
 {
-  "title": "Feature Phones",
+  "title": "Designing for Feature Phones",
+  "headline": {
+    "medium": "Feature phones have limited capability compared to smartphones. This principle discusses how these limitations affect the services we provide, as well as guidelines on how to make the best of our services despite these limitations."
+  },
   "excerpt": {
     "medium":"Feature phones either won't understand or will incorrectly implement the fancy CSS and design, especially the low-end feature phones. The best approach is to send feature phone users a very simple design, using typography, vertical spacing, and a little colouring."
+  },
+  "body_content": {
+    "content_0": {
+      "topic": "We shouldn’t design with widths bigger than ~320 pixels",
+      "discussion": "Feature phone screens start at about 128 x 160 and only go up to about 240 x 320."
+    },
+    "content_1": {
+      "topic": "We should use a simple one column layout.",
+      "discussion": "Feature phones have tiny screens that would make your columns too small, even if they understood the code to make the grid layout in the first place. Floating text and images often results in a broken layout."
+    },
+    "content_2": {
+      "topic": "We should use as few images as we can.",
+      "discussion": "Each image we add costs the user time (to download the image) and money (for data). On top of that, some browsers have an image quota or a page size quota: when they reach it they either stop loading the page immediately, or reject the whole page and load nothing. Images should be small, and displayed inline, or on a row of their own, for example, should be always above or below the texts. No fancy positioning or floating is possible. 72dpi resolution ideally."
+    },
+    "content_3": {
+      "topic": "We shouldn’t use background colours and try to use less colour in the feature phone design.",
+      "discussion": "Feature phone support for applying background colours is widely variable and can't be trusted. You might end up with text and background colours being the same, rendering the text invisible. Low-end feature phones don’t show the colours and texts will appear black. Over-riding link colours in specific sections aren’t always supported on feature phones, and they often add underlines to all links."
+    },
+    "content_4": {
+      "topic": "We shouldn’t make links as buttons.",
+      "discussion": "On low-end feature phones they won’t show the background colour and borders so it’s better to keep the link as a text link. Also, links should have a specific URL. For example, we shouldn’t have a back link that doesn’t have a specific URL because this requires some code that either won’t work on feature phones or even if it works, sometimes it directs the user to the wrong page. Hence it should be back to article or back to homepage so that we can give it a URL."
+    }
+  },
+  "body_content_1": {
+    "topic": "Buttons should have short one word text.",
+    "discussion": "The feature phone screens are small, and buttons will be smaller than the smartphone templates; if the text is long it will go under the buttons.",
+    "discussion_points": {
+      "discussion_topic":"Plus other points",
+      "points": {
+        "point_0": "Feature phone friendly font e.g. Arial",
+        "point_1": "Left align everything - including buttons",
+        "point_2": "Form fields with text above the field (not inline)",
+        "point_3": "Use the word Menu instead of a hamburger icon"
+      }
+    }
   }
+
+
+
 }
