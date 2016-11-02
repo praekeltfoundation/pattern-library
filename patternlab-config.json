@@ -10,8 +10,10 @@
       "patternlabFiles" : "./node_modules/styleguidekit-mustache-default/views/",
       "js" : "./source/js",
       "images" : "./source/images",
+      "icons" : "./source/images/icons",
       "fonts" : "./source/fonts",
-      "css" : "./source/styles/"
+      "css" : "./source/styles/",
+      "bundleCss" : "./source/styles/00-dist"
     },
     "public" : {
       "root" : "./public/",
@@ -21,6 +23,7 @@
       "styleguide" : "./public/styleguide/",
       "js" : "./public/js",
       "images" : "./public/images",
+      "icons" : "./public/images/icons",
       "fonts" : "./public/fonts",
       "css" : "./public/css"
     }

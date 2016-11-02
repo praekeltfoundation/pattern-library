@@ -10,6 +10,7 @@ var gulp = require('gulp'),
   cleanCSSMinify = require('gulp-clean-css'),
   rename = require('gulp-rename'),
   sourcemaps = require('gulp-sourcemaps'),
+  svgSprites = require('gulp-svg-sprite'),
   browserSync = require('browser-sync').create(),
   argv = require('minimist')(process.argv.slice(2));
 
@@ -42,7 +43,7 @@ gulp.task('pl-copy:font', function(){
 
 // CSS Copy
 gulp.task('pl-copy:css', function(){
-  return gulp.src(path.resolve(paths().source.css, '**/*.css'))
+  return gulp.src(path.resolve(paths().source.bundleCss, '**/*.css'))
     .pipe(gulp.dest(path.resolve(paths().public.css)))
     .pipe(browserSync.stream());
 });
@@ -71,8 +72,36 @@ gulp.task('pl-sass', function(){
   .pipe(sass().on('error', sass.logError))
   .pipe(cleanCSSMinify())
   .pipe(sourcemaps.write('/maps'))
-  .pipe(gulp.dest(path.resolve(paths().source.css, 'dist')))
+  .pipe(gulp.dest(path.resolve(paths().source.bundleCss)))
   .pipe(browserSync.stream());
+});
+
+config                  = {
+    shape               : {
+        dimension       : {         // Set maximum dimensions
+            maxWidth    : 32,
+            maxHeight   : 32
+        },
+        spacing         : {         // Add padding
+            padding     : 10
+        },
+        dest            : 'out/intermediate-svg'    // Keep the intermediate files
+    },
+    mode                : {
+        view            : {         // Activate the «view» mode
+            bust        : false,
+            render      : {
+                scss    : true      // Activate Sass output (with default options)
+            }
+        },
+        symbol          : true      // Activate the «symbol» mode
+    }
+};
+
+gulp.task('svg-sprites', function() {
+    return gulp.src(path.resolve(paths().source.icons))
+    .pipe(svgSprites(config))
+    .pipe(gulp.dest(path.resolve(paths().source.icons)));
 });
 
 /******************************************************
