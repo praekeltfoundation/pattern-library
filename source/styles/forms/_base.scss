@@ -1,12 +1,14 @@
 
-
 fieldset {
+  font-family: 'Quicksand', sans-serif;
   border: none;
 }
 
 label {
   display: block;
   padding: 5px 0 10px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 input[type="text"],
@@ -14,9 +16,9 @@ input[type="number"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-input[type="search"] {
+input[type="search"],
+textarea {
   display: block;
-  font-family: 'Quicksand', sans-serif;
   font-size: 15px;
   margin: 10px 0;
   padding: 10px;
