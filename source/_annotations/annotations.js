@@ -5,5 +5,12 @@
       "title" : "Annotation title",
       "comment": "Annotation description"
     }
+  ],
+  "breadcrumbs" : [
+    {
+      "el" : ".breadcrumbs",
+      "title" : "When to use breadcrumbs",
+      "comment" : "Breadcrumbs are used withing an article to server directional navigation"
+    }
   ]
 }

@@ -1,4 +1,5 @@
 {
+
   "key": "value",
   "key2": "use this for variables you want to load globally",
   "title": "Nullizzle shizznit velizzle, hizzle, suscipit own yo', gravida vizzle, arcu.",
@@ -14,23 +15,23 @@
   },
   "img": {
     "article-thumb": {
-      "src": "http://placeimg.com/100/100/people",
+      "src": "",
       "alt": "Avatar"
     },
     "square": {
-      "src": "http://placeimg.com/300/300/nature",
+      "src": "",
       "alt": "Square"
     },
     "rectangle": {
-      "src": "http://placeimg.com/400/300/tech",
+      "src": "",
       "alt": "Rectangle"
     },
     "landscape-4x3": {
-      "src": "http://placeimg.com/400/300/tech",
+      "src": "",
       "alt": "4x3 Image"
     },
     "landscape-16x9": {
-      "src": "http://placeimg.com/640/360/tech",
+      "src": "",
       "alt": "16x9 Image"
     }
   },

@@ -41,10 +41,10 @@
     "s": false,
     "m": false,
     "l": false,
-    "full": false,
+    "full": true,
     "random": true,
     "disco": true,
-    "hay": true,
+    "hay": false,
     "mqs": false,
     "find": false,
     "views-all": false,
@@ -55,7 +55,7 @@
     "tools-docs": false
   },
   "ishMinimum": "240",
-  "ishMaximum": "2600",
+  "ishMaximum": "897",
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternStates": {
   },
