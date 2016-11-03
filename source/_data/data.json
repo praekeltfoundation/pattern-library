@@ -4,14 +4,26 @@
   "key2": "use this for variables you want to load globally",
   "title": "Nullizzle shizznit velizzle, hizzle, suscipit own yo', gravida vizzle, arcu.",
   "breadcrumbs_list": {
-      "link_1":{
-        "title":"",
-        "src":""
-      },
-      "link_2": {
-        "title":"",
-        "src":""
-      }
+    "link_0": {
+      "title":"Home",
+      "src":"/home"
+    },
+    "link_1": {
+      "title":"Section name",
+      "src":"/section-name"
+    },
+    "link_2": {
+      "title":"Subsection name",
+      "src":"/subsection-name"
+    },
+    "link_3": {
+      "title":"Article name",
+      "src":"/article-name"
+    },
+    "link_4": {
+      "title":"Other page name",
+      "src":"/other-page-name"
+    }
   },
   "img": {
     "article-thumb": {
