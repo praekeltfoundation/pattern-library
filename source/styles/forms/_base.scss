@@ -7,8 +7,41 @@ fieldset {
 label {
   display: block;
   padding: 5px 0 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
+}
+
+label.error {
+  .label__required-asterisk,
+  .label__required--info {
+      color: red;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="search"] {
+    border: 1px solid red;
+  }
+}
+
+.label__required-asterisk {
+  color: #909497;
+  font-size: 13px;
+}
+.label__required--info {
+  color: #909497;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 5px 0;
+}
+
+.label__hint-text {
+  color: #909497;
+  font-weight: normal;
 }
 
 input[type="text"],
@@ -18,6 +51,7 @@ input[type="email"],
 input[type="tel"],
 input[type="search"],
 textarea {
+  border: 1px solid rgba(0, 0, 0, 0.5);
   display: block;
   font-size: 15px;
   margin: 10px 0;
