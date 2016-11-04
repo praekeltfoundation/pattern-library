@@ -1,23 +1,7 @@
-.call-to-action__submit {
-  color: rgba(0, 0, 0, 0.5);
-  border: none;
-  font-size: 14px;
-  padding: 10px 25px 10px 10px;
-  text-decoration: underline;
-  text-transform: uppercase;
-  @media screen and (min-width: 320px) {
-    background:  url('/images/icons/search.svg') no-repeat 0 0 / auto 100%;
-    text-indent: -99em;
 
-    height: 21px;
-    width: 21px;
+/**
+* IMPORT ALL BASIC BUTTONS STYLES
+*/
 
-    position: absolute;
-    right: 6%;
-    top: 45%;
-  }
-
-  @media screen and (min-width: 700px) {
-      right: 8%;
-  }
-}
+@import "call-to-action";
+@import "call-to-action-submit";
