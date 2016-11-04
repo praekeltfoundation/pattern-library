@@ -68,5 +68,11 @@
     "rawTemplate": "",
     "markupOnly": ".markup-only"
   },
-  "cleanOutputHtml": true
+  "cleanOutputHtml": true,
+  "plugin":{
+    "plugin-node-tab": {
+      "enabled": true,
+      "initialized": false
+    }
+  }
 }
