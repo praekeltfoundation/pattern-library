@@ -1,0 +1,1 @@
+{"version":3,"sources":["images/banner.scss"],"names":[],"mappings":"AAGA,mBACE,QAAS,MAEX,cACE,UAAW,MACX,MAAO","file":"../../images/banner.css","sourcesContent":["\n@import \"mixin\";\n\n.banner__item-link {\n  display: block;\n}\n.banner__item {\n  max-width: 640px;\n  width: 100%;\n}\n"]}
