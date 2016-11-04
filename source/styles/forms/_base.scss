@@ -9,6 +9,7 @@ label {
   padding: 5px 0 10px;
   font-size: 16px;
   font-weight: 700;
+  position: relative;
 }
 
 label.error {
@@ -42,6 +43,11 @@ label.error {
 .label__hint-text {
   color: #909497;
   font-weight: normal;
+}
+
+.label__search-icon {
+  font-size:12px;
+  color: #909497;
 }
 
 input[type="text"],
