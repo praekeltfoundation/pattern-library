@@ -1,0 +1,16 @@
+{
+  "title":"Molo Design System",
+  "headline": {
+    "medium": "Molo design system is a code guide and documentation for our mobile-websites code patterns in-order to keep designs and code base inline fore reuse and consistency across multiple devices."
+  },
+  "excerpt":{
+    "short": "Pattern Library will help guide us to build cohesive, consistent user experience"
+  },
+  "orderedList": [
+    {"text":"We will set our team’s workflow"},
+    {"text":"Establish common vocabulary between disciplines"},
+    {"text":"Establish browser, device, performance, and accessibility testing"},
+    {"text":"Encourage design and functionality familiarity withing the teams to speed up team production and QA"},
+    {"text":"Using a combination of BEM & SMACSS Methodology"}
+  ]
+}

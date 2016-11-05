@@ -50,4 +50,53 @@ Note:
 3. Partials get a underscore as a prefix
 4. One single file for importing all partials like application.scss
 
-# Pattern-library Hosting and Versioned Releases 
+# Pattern-library Hosting and Versioned Releases
+
+
+
+  PATTERN LIBRARY - APPROACH
+
+  - Describe problem []
+  - Chosen solution and rational
+  - Related patterns
+  - QA instructions
+  - User testing results
+
+  WHAT IS CURRENTLY ON PATTERN LAB - PATTERN LIBRARY
+  - LIVE VISUAL UI
+  - HTML,CSS AND NOTES ON EACH PATTERN
+
+  PATTERN LIBRARY
+  - NAVIGATION FLOW
+    - LAYER BLOCK NAME - BLOCK REORDERING [INCREASE ON 5 NUMBER IN-BETWEEN TO ALLOW FOR NEW BLOCKS IN FUTURE]
+      - SUBLAYER BLOCKS
+        - PATTERN NAME
+        - HTML BLOCK STRUCTURE - CLASS NAMES
+        - CSS STYLE
+
+  REASON TO USE PATTERN LAB
+  - Easy to setup and establish our pattern library footprint
+  - Easily setup patterns and their relationship
+  - Establish naming methodology [FUNCTION BABED NAME]
+  - Establish CSS independent rules   
+
+  FUTURE PLANS - TO DO
+  - A way of dealing with obsolete code
+  - Git releases and versioning
+  - Set up config rules that patterns should adhere to to prevent patterns from being changed and enforce modularity
+    - We will add new patterns only when existing ones are no longer satisfactory
+    - Because PATTERNS are not dogma - we will consistently review and change patterns based on:
+      - A standard functionality in the market
+      - Changed behavior in user testing or A/M testing result
+    - We need to stuck a balance between stability and change
+
+  Idea - Version Pattern Library
+       - Projects include latest release - a ways to import/include/extend individual components
+       - Tag old and new code implementation
+
+  CURRENT ISSUES FACED
+  - Customizing and theming Pattern Lap
+  - Lack of Django-integration for Django template source-code beyond HTML [We need to investigate further]
+
+  LESSON
+  IT WILL TAKE FURTHER ITERATIONS TO PRODUCE WORKABLE LEAN - THAT IS MORE MODULAR AND AGILE
