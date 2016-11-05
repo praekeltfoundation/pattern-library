@@ -1,0 +1,14 @@
+
+.default-ordered-list {
+  list-style: disc;
+  padding-left: 20px;
+  .default-ordered-list__item {
+    list-style: disc;
+  }
+}
+
+.default-unordered-list {
+  .default-unordered-list__item {
+    list-style: decimal;
+  }
+}
