@@ -43,8 +43,8 @@
       "alt": "4x3 Image"
     },
     "landscape-16x9": {
-      "src": "",
-      "alt": "16x9 Image"
+      "src": "/images/full-width-image.png",
+      "alt": "16x9 Full Image"
     }
   },
   "headline": {

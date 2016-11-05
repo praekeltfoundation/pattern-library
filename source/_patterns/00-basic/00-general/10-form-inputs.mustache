@@ -1,22 +1,22 @@
 <fieldset>
   <label>Name
-    <input name="name" type="text" placeholder="Name" value="Name">
-  </label>
-
-  <label>Number
-    <input name="phone-number" type="number" placeholder="Phone No." value="Phone No.">
+    <input name="name" type="text" placeholder="Name" value="Name" required="required" maxlength="100">
   </label>
 
   <label>Password
-    <input name="password" type="password" placeholder="Password" value="Password">
+    <input name="password" type="password" placeholder="Password" value="Password" required="required">
   </label>
 
   <label>Email
-    <input name="email" type="email" placeholder="Email Address" value="Email Address">
+    <input name="email" type="email" placeholder="Email Address" value="Email Address" required="required">
+  </label>
+
+  <label>Number
+    <input name="phone-number" type="number" placeholder="Phone No." value="Phone No." required="required" maxlength="10">
   </label>
 
   <label>Telephone
-    <input name="telephone" type="tel" placeholder="Telephone" value="Telephone">
+    <input name="telephone" type="tel" placeholder="Telephone" value="Telephone" required="required" maxlength="10">
   </label>
 
   <label>Search
@@ -25,5 +25,34 @@
 
   <label>Multi-line message
       <textarea name="multiline-message" rows="5" wrap="hard"></textarea>
+  </label>
+
+  <h3 class="heading heading--small">Choice between listed</h3>
+  <label>Choice One
+    <input name="choice" type="checkbox" value="1"/>
+  </label>
+  <label>Choice Two
+    <input name="choice" type="checkbox" value="2"/>
+  </label>
+  <label>Choice Three
+    <input name="choice" type="checkbox" value="3"/>
+  </label>
+
+  <label>Choice only one
+    <input name="choice-one" type="radio" value="1"/>
+  </label>
+  <label>Choice only one
+    <input name="choice-one" type="radio" value="2"/>
+  </label>
+
+  <label>
+    Select Dropdown
+    <select name="select-drown">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <output></output>
+    <optgroup></optgroup>
   </label>
 </fieldset>

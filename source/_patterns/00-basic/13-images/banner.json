@@ -1,8 +1,11 @@
 {
-  "img": {
-    "landscape-16x9": {
-      "src": "/images/full-width-image.png",
-      "alt": "16x9 Image"
+  "bannerImage":{
+    "title":"Banner Image",
+    "img": {
+      "landscape-16x9": {
+        "src": "/images/full-width-image.png",
+        "alt": "16x9 Image"
+      }
     }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "categoryArticleThumbnail": {
+    "title": "Default thumbnail",
+    "img": {
+      "article-thumb": {
+        "src": "/images/article-thumbnail.png",
+        "alt": "Avatar"
+      }
+    }
+  },
+
+  "categoryArticleThumbnailSquare": {
+    "title": "Square thumbnail",
+    "img": {
+      "article-thumb": {
+        "src": "/images/article-thumbnail.png",
+        "alt": "Avatar"
+      }
+    }
+  },
+
+  "categoryArticleThumbnailRound": {
+    "title": "Round thumbnail",
+    "img": {
+      "article-thumb": {
+        "src": "/images/article-thumbnail.png",
+        "alt": "Avatar"
+      }
+    }
+  }
+
+}

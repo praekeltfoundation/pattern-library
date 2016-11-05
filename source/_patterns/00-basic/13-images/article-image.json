@@ -1,0 +1,29 @@
+{
+  "articleImage": {
+    "title": "Article Page Image",
+    "img": {
+      "landscape-16x9": {
+        "src": "/images/full-width-image.png",
+        "alt": "16x9 Image"
+      }
+    }
+  },
+  "articleListImage": {
+    "title": "Category/Subcategory - ArticleTeaser/ArticleHero Image",
+    "img": {
+      "landscape-16x9": {
+        "src": "/images/full-width-image.png",
+        "alt": "16x9 Image"
+      }
+    }
+  },
+  "articleListImageThumb": {
+    "title": "Article - Thumbnail",
+    "img": {
+      "article-thumb": {
+        "src": "/images/article-thumbnail.png",
+        "alt": "Avatar"
+      }
+    }
+  }
+}

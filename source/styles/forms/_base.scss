@@ -28,6 +28,17 @@ label.error {
   }
 }
 
+input[type="checkbox"],
+input[type="radio"]  {
+  display: line-block;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+}
+
 .label__required-asterisk {
   color: #909497;
   font-size: 13px;
