@@ -1,32 +1,54 @@
 <fieldset>
   <label>Name
-    <input name="name" type="text" placeholder="Name" value="Name" required="required" maxlength="100">
+    <input name="name" type="text" placeholder="Name" value="Name"  maxlength="100"/>
   </label>
 
   <label>Password
-    <input name="password" type="password" placeholder="Password" value="Password" required="required">
+    <input name="password" type="password" placeholder="Password" required="required"/>
   </label>
 
   <label>Email
-    <input name="email" type="email" placeholder="Email Address" value="Email Address" required="required">
+    <input name="email" type="email" placeholder="Email Address" required="required"/>
   </label>
 
   <label>Number
-    <input name="phone-number" type="number" placeholder="Phone No." value="Phone No." required="required" maxlength="10">
+    <input name="number" type="number" placeholder="Number" required="required" maxlength="10"/>
   </label>
 
   <label>Telephone
-    <input name="telephone" type="tel" placeholder="Telephone" value="Telephone" required="required" maxlength="10">
+    <input name="telephone" type="tel" placeholder="Telephone" required="required" maxlength="10"/>
   </label>
 
   <label>Search
-    <input name="search" type="tel" placeholder="Search" value="Search">
+    <input name="search" type="tel" placeholder="Search" value="Search"/>
   </label>
 
   <label>Multi-line message
       <textarea name="multiline-message" rows="5" wrap="hard"></textarea>
   </label>
 
+  <label>Enter Date
+    <input name="date" type="date" placeholder="yyyy-mm-dd" required="required"/>
+    <input name="datetime" type="datetime" placeholder="Y-m-d H:i:s" required="required"/>
+  </label>
+
+  <label>Enter Location URL
+    <input name="url" type="url" placeholder="Enter link"/>
+  </label>
+
+  <label>
+    Select Dropdown
+    <select name="select-drown">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </label>
+
+  <input type="reset" value="Reset" class="call-to-action__item-text">
+</fieldset>
+
+<fieldset>
   <legend>Choice between listed</legend>
   <label>Choice One
     <input name="choice" type="checkbox" value="1"/>
@@ -45,15 +67,37 @@
   <label>Choice two
     <input name="choice-one" type="radio" value="2"/>
   </label>
+</fieldset>
 
-  <label>
-    Select Dropdown
-    <select name="select-drown">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-    </select>
-    <output></output>
-    <optgroup></optgroup>
+<fieldset>
+  <label>Search
+    <input name="search" type="tel" placeholder="Search" value="Search"/>
+    {{> basic-submit-button:submit }}
+  </label>
+</fieldset>
+
+
+<fieldset>
+  <legend>Input Helper</legend>
+  <label>Name
+    <input name="name" type="text" placeholder="Name" value="Name"/>
+    <span class="label__hint-text">Enter your full names</span>
+  </label>
+</fieldset>
+
+<fieldset>
+  <legend>Input Error</legend>
+  <label>Name
+    <span class="label__required-asterisk">*</span>
+    <input name="name" type="text" placeholder="Name" value="Name"/>
+    <span class="label__hint-text">Enter your full names</span>
+    <span class="label__required--info">* Is a required field</span>
+  </label>
+
+  <label class="error">Email
+    <span class="label__required-asterisk">*</span>
+    <input name="email" type="email" placeholder="Email Address" value="Email Address"/>
+    <span class="label__hint-text">Enter your full names</span>
+    <span class="label__required--info">* Is a required field</span>
   </label>
 </fieldset>

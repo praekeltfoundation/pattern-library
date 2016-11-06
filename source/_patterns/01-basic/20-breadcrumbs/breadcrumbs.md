@@ -2,8 +2,8 @@
 title: "Breadcrumbs"
 state: inprogress
 ---
-Breadcrumb Trail
-Home / Section / Subsection / Articles
 
-The breadcrumbs trail is a graphical control element used as a navigational
-aid in Molo mobile website UI to help user keep track of their locations within an article
+
+Breadcrumb
+--
+Breadcrumbs are links used within the article so that the user can navigate backwards as well as to reveal the user’s location within a hierarchical structure of a site.

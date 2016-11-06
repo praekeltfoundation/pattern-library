@@ -1,4 +1,8 @@
 {
+  "title":"Breadcrumbs",
+  "headline": {
+    "medium":"The breadcrumb trail are links to reveal the user’s location within a hierarchical structure of the site and a navigational aid"
+  },
   "breadcrumbsList": [
     {"link": {
       "title":"Home",

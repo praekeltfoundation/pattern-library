@@ -3,7 +3,7 @@
   "key": "value",
   "key2": "use this for variables you want to load globally",
   "title": "Molo Design System - Pattern Library",
-  "breadcrumbs_list": [
+  "breadcrumbsList": [
     {"link": {
         "title":"Home",
         "src":"/home"
@@ -79,29 +79,15 @@
     "short": "20"
   },
   "seconds": "31",
-  "body_content": {
-    "content_0": {
-      "topic": "",
-      "discussion": ""
-    },
-    "content_1": {
-      "topic": "",
-      "discussion": ""
-    }
-  },
-  "body_content_1": {
-    "topic": "Content",
-    "discussion": "Content",
-    "discussion_points": {
-      "discussion_topic":"Content",
-      "points": {
-        "point_0": "Content",
-        "point_1": "Content",
-        "point_2": "Content",
-        "point_3": "Content"
-      }
-    }
-  },
+  "contentPoints":[{
+    "topic": "Plus other points",
+    "orderedList": [
+      {"text":"Feature phone friendly font e.g. Arial"},
+      {"text":"Left align everything - including buttons"},
+      {"text":"Form fields with text above the field (not inline)"},
+      {"text":"Use the word Menu instead of a hamburger icon"}
+    ]
+  }],
   "orderedList": [{
     "text":"List here"
   }],

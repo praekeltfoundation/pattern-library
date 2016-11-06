@@ -2,5 +2,5 @@
 el:   ".breadcrumbs"
 title: "Breadcrumbs"
 ---
-Breadcrumb Trail in Article
-Home / Section / Subsection / Articles
+
+Breadcrumb Trail example: Home > Category > Subcategory > Article

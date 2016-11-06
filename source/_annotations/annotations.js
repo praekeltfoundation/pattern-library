@@ -10,7 +10,7 @@
     {
       "el" : ".breadcrumbs",
       "title" : "When to use breadcrumbs",
-      "comment" : "Breadcrumbs are used withing an article to server directional navigation"
+      "comment" : "Breadcrumbs are used withing an article to serve as directional navigation"
     }
   ]
 }
