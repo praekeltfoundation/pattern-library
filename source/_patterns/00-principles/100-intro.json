@@ -1,10 +1,10 @@
 {
   "title":"Molo Design System",
   "headline": {
-    "medium": "Molo design system is a code guide and documentation for our mobile-websites code patterns in-order to keep designs and code base inline fore reuse and consistency across multiple devices."
+    "medium": "Pattern Library will help guide us to build cohesive, consistent user experience"
   },
   "excerpt":{
-    "short": "Pattern Library will help guide us to build cohesive, consistent user experience"
+    "short": " "
   },
   "orderedList": [
     {"text":"We will set our team’s workflow"},

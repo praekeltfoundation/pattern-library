@@ -1,4 +1,5 @@
 <h4 class="heading heading--small">Language Dropdown</h4>
+{{# languagesDropdownBlock}}
 <div class="languages">
   <div class="languages__bar">
     <div class="languages-current">
@@ -18,10 +19,14 @@
     </div>
    </div>
 </div>
+{{/ languagesDropdownBlock}}
 
-<br/><br/>
+<br/>
+<hr/>
+<br/>
 
 <h4 class="heading heading--small">Language Vertical List</h4>
+{{# languagesVerticalBlock}}
 <div class="languages">
 <ul class="language-list language-list--vertical">
 {{# languageList}}
@@ -31,10 +36,14 @@
 {{/ languageList}}
 </ul>
 </div>
+{{/ languagesVerticalBlock}}
 
+<br/>
+<hr/>
+<br/>
 
-<br/><br/>
 <h4 class="heading heading--small">Language Horizontal List</h4>
+{{# languagesHorizontalBlock}}
 <div class="languages">
 <ul class="language-list language-list--horizontal">
 {{# languageList}}
@@ -44,3 +53,4 @@
 {{/ languageList}}
 </ul>
 </div>
+{{/ languagesHorizontalBlock}}

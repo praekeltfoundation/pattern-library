@@ -7,14 +7,16 @@
 
 
 /**
-* Used To Style Pattern Lirary - Assets
+* Used To Style Pattern Library - Assets
+* Basic Elements
 */
-@import "typography/text";
-@import "breadcrumbs/breadcrumbs";
 
-@import "forms/forms";
-@import "images/images";
-@import "list/list-style";
+@import "basics-elements/typography/text";
+@import "basics-elements/breadcrumbs/breadcrumbs";
 
-@import "buttons/buttons";
-@import "principles/devices";
+@import "basics-elements/forms/forms";
+@import "basics-elements/images/images";
+@import "basics-elements/list/list-style";
+
+@import "basics-elements/buttons/buttons";
+@import "basics-elements/principles/devices";

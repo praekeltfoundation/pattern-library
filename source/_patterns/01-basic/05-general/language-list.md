@@ -5,6 +5,7 @@ state: "inreview"
 
 Typically you’ll see anything from 2 to 5 languages,
 but it’s also not uncommon to see as much as 9 different languages.
+--
 
 The position of the language selection list is usually at the top of the page to
 allow foreign speakers  to rapidly identify and switch to a mother tongue.

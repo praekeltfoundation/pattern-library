@@ -1,15 +1,19 @@
 {
   "title":"Ordered and Unordered List",
-  "orderedList": [
-    {"text":"Example of list"},
-    {"text":"Example of list"},
-    {"text":"Example of list"}
-  ],
-  "unorderedList": [
-    {"text":"Second example of list"},
-    {"text":"Second example of list"},
-    {"text":"Second example of list"},
-    {"text":"Second example of list"},
-    {"text":"Second example of list"}
-  ]
+  "orderedListBlock": {
+    "orderedList": [
+      {"text":"Example of list"},
+      {"text":"Example of list"},
+      {"text":"Example of list"}
+    ]
+  },
+  "unorderedListBlock": {
+    "unorderedList": [
+      {"text":"Second example of list"},
+      {"text":"Second example of list"},
+      {"text":"Second example of list"},
+      {"text":"Second example of list"},
+      {"text":"Second example of list"}
+    ]
+  }
 }

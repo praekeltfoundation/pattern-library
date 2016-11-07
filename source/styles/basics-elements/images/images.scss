@@ -4,8 +4,12 @@
 
 .article__image,
 .article-list__image {
+  width: 100%;
 }
 
+.article__image--thumbnail {
+  width: auto;
+}
 .article__image--link {
   display: block;
 }
