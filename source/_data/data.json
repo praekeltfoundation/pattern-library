@@ -31,6 +31,33 @@
       "alt": "16x9 Full Image"
     }
   },
+  "heading": "Welcome to Molo design pattern",
+  "headingElement": {
+    "h1": {
+      "tag":"h1",
+      "fontModifier": "xx-large"
+    },
+    "h2": {
+      "tag":"h2",
+      "fontModifier": "x-large"
+    },
+    "h3": {
+      "tag":"h3",
+      "fontModifier": "large"
+    },
+    "h4": {
+      "tag":"h4",
+      "fontModifier": "small"
+    },
+    "h5": {
+      "tag":"h5",
+      "fontModifier": "x-small"
+    },
+    "h6": {
+      "tag":"h6",
+      "fontModifier": "xx-small"
+    }
+  },
   "headline": {
     "short": "Lorizzle pimpin' dolizzle sit amet I",
     "medium": "Molo design system is a code guide and documentation for our mobile-websites code patterns in-order to keep designs and code base inline fore reuse and consistency across multiple devices."
