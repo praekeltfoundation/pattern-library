@@ -1,0 +1,28 @@
+
+#language-select {
+  visibility: hidden;
+  position: absolute;
+}
+
+.language-select__toggle-input {
+  display: none;
+}
+.language-select__toggle-input:not(checked) ~ .language-select {
+    display: none;
+}
+.language-select__toggle-input:checked ~ .language-select {
+    display: block;
+}
+
+.languages-current,
+.language-select {
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.language-list__item--active a {
+  text-decoration: underline;
+  &:after {
+    text-decoration: none;
+  }
+}

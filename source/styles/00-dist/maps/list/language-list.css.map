@@ -1,0 +1,1 @@
+{"version":3,"sources":["list/language-list.scss"],"names":[],"mappings":"AAgBA,qBACE,WAAY","file":"../../list/language-list.css","sourcesContent":[".language-list {\n\n}\n\n.language-list--dropdown {\n\n}\n\n.language-list--vertical {\n\n}\n\n.language-list--horizontal {\n\n}\n\n.language-list__item {\n  text-align: right;\n}\n"]}

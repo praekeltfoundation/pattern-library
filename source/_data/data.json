@@ -79,6 +79,11 @@
     "short": "20"
   },
   "seconds": "31",
+  "languageList":[{"language":"English"},
+    {"language":"Kiswahili"},
+    {"language":"Bahasa"},
+    {"language":"Arabic"}
+  ],
   "contentPoints":[{
     "topic": "Plus other points",
     "orderedList": [

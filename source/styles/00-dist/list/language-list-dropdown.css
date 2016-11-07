@@ -1,0 +1,2 @@
+#language-select{visibility:hidden;position:absolute}.language-select__toggle-input,.language-select__toggle-input:not(checked)~.language-select{display:none}.language-select__toggle-input:checked~.language-select{display:block}.language-select,.languages-current{padding:5px 10px;display:inline-block}.language-list__item--active a{text-decoration:underline}.language-list__item--active a:after{text-decoration:none}
+/*# sourceMappingURL=../maps/list/language-list-dropdown.css.map */
