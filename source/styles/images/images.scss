@@ -1,4 +1,21 @@
 
 @import "_mixin";
-@import "article";
 @import "banner";
+
+.article__image,
+.article-list__image {
+}
+
+.article__image--link {
+  display: block;
+}
+
+[data-image-type~="rectangle"] {
+  padding: 10px;
+}
+[data-image-type~="round"]  {
+  border-radius: 50%;
+}
+[data-image-type~="square"]  {
+  border-radius: 15px;
+}
