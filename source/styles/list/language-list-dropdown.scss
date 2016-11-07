@@ -14,10 +14,23 @@
     display: block;
 }
 
-.languages-current,
+.languages-current {
+  padding: 5px 20px 5px 0;
+  display: inline-block;
+}
+.languages-current__label {
+  font-weight: bold;
+  &:after {
+    content: ":";
+  }
+}
+.language-select__change-label {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+}
 .language-select {
   padding: 5px 10px;
-  display: inline-block;
 }
 
 .language-list__item--active a {
