@@ -3,30 +3,32 @@
   "headline": {
     "medium":"The breadcrumb trail are links to reveal the user’s location within a hierarchical structure of the site and a navigational aid"
   },
-  "breadcrumbsList": [
+  "breadcrumbsBlock": {
+    "breadcrumbsList": [
+      {"link": {
+        "title":"Home",
+        "src":"/home"
+      }
+    },
     {"link": {
-      "title":"Home",
-      "src":"/home"
-    }
-  },
-  {"link": {
-      "title":"Section name",
-      "src":"/section-name"
-    }
-  },
-  {"link": {
-      "title":"Subsection name",
-      "src":"/subsection-name"
-    }
-  },
-  {"link": {
-      "title":"Article name",
-      "src":"/article-name"
-    }
-  },
-  {"link": {
-      "title":"Other page name",
-      "src":"/other-page-name"
-    }
-  }]
+        "title":"Section name",
+        "src":"/section-name"
+      }
+    },
+    {"link": {
+        "title":"Subsection name",
+        "src":"/subsection-name"
+      }
+    },
+    {"link": {
+        "title":"Article name",
+        "src":"/article-name"
+      }
+    },
+    {"link": {
+        "title":"Other page name",
+        "src":"/other-page-name"
+      }
+    }]
+  }
 }

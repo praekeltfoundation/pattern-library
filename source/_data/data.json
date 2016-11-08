@@ -3,12 +3,14 @@
   "key": "value",
   "key2": "use this for variables you want to load globally",
   "title": "Molo Design System - Pattern Library",
+  "breadcrumbsBlock": {
   "breadcrumbsList": [
     {"link": {
         "title":"Home",
         "src":"/home"
       }
-    }],
+    }]
+  },
   "img": {
     "article-thumb": {
       "src": "",
