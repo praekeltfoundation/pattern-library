@@ -1,0 +1,25 @@
+
+.languages__bar {
+  width: 50%;
+}
+
+.language-list {}
+.language-list--dropdown {
+  .language-list__item {
+    padding-left: 32%;
+  }
+}
+
+.language-list--vertical {
+  display: block;
+}
+.language-list--horizontal {
+  .language-list__item {
+    display: inline-block;
+    color: #5a5d5e;
+    &:after {
+      content: "|";
+      padding: 0 5px;
+    }
+  }
+}

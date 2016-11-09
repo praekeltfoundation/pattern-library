@@ -1,0 +1,19 @@
+{
+  "largeImage":[
+    {"img":{"landscape-16x9": {
+      "src": "/images/full-width-image.png",
+      "alt": "Large 16x9 image",
+      "type": "rectangle"
+    }}},
+    {"img":{"landscape-16x9": {
+      "src": "/images/embed-image.png",
+      "alt": "Large 16x9 image",
+      "type": "rectangle"
+    }}},
+    {"img":{"landscape-16x9": {
+      "src": "/images/embed-image.png",
+      "alt": "Large 16x9 image",
+      "type": "square"
+    }}}
+  ]
+}
