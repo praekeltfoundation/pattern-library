@@ -1,6 +1,7 @@
 node_modules/*
 !node_modules/styleguidekit-assets-default/
 node_modules/styleguidekit-assets-default/node_modules/
+node_modules/styleguidekit-assets-default/.sass-cache/
 
 .DS_Store
 patternlab.json
@@ -10,4 +11,4 @@ Thumbs.db
 .idea/
 public
 
-LICENSE 
+LICENSE
