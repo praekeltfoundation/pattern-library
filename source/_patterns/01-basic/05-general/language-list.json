@@ -1,0 +1,27 @@
+{
+  "title": "Language Selection List",
+  "headline":{
+    "medium":"Molo sites are built to support multiple languages; if the site has more than one language then the language selection list appears"
+  },
+  "languagesDropdownBlock": {
+    "languageList":[{"language":"English"},
+      {"language":"Kiswahili"},
+      {"language":"Bahasa"},
+      {"language":"Arabic"}
+    ]
+  },
+  "languagesVerticalBlock": {
+    "languageList":[{"language":"English"},
+      {"language":"Kiswahili"},
+      {"language":"Bahasa"},
+      {"language":"Arabic"}
+    ]
+  },
+  "languagesHorizontalBlock": {
+    "languageList":[{"language":"English"},
+      {"language":"Kiswahili"},
+      {"language":"Bahasa"},
+      {"language":"Arabic"}
+    ]
+  }
+}
