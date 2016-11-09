@@ -1,0 +1,43 @@
+{{# formBlock}}
+  <fieldset>
+    {{# inputFields}}
+    <label>{{field.label}}
+      <{{field.element}} type="{{field.type}}"  name="{{field.label}}" placeholder="{{field.value}}" required="{{field.validate}}"/>
+    </label>
+    {{/ inputFields}}
+
+    <label>Multi-line message
+      <{{fieldTextarea.element}} name="multiline-message" rows="5" wrap="hard"></{{fieldTextarea.element}}>
+    </label>
+
+    <label>Select Dropdown
+      <{{fieldSelect.element}} name="select-drown">
+        {{# fieldSelect.options}}
+          <{{option.key}} value="{{option.value}}">{{option.value}}</{{option.key}}>
+        {{/ fieldSelect.options}}
+      </{{fieldSelect.element}}>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    {{# multipleChoice}}
+      <legend>{{legend}}</legend>
+      {{# fieldMultipleChoice}}
+        <label>{{field.label}}
+            <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
+        </label>
+      {{/ fieldMultipleChoice}}
+    {{/ multipleChoice}}
+  </fieldset>
+
+  <fieldset>
+    {{# chooseOneChoice}}
+      <legend>{{legend}}</legend>
+      {{# fieldchooseOneChoice}}
+        <label>{{field.label}}
+            <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
+        </label>
+      {{/ fieldchooseOneChoice}}
+    {{/ chooseOneChoice}}
+  </fieldset>
+{{/ formBlock}}

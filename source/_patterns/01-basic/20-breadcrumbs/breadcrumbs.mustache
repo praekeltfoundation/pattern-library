@@ -1,0 +1,17 @@
+{{# breadcrumbsBlock}}
+<div class="breadcrumbs">
+  <ul class="breadcrumbs-list">
+    {{# breadcrumbsList}}
+      <li class="breadcrumbs-list__item">
+        <a href="{{link.src}}" class="breadcrumbs-list__anchor breadcrumbs-list__anchor--is-active">
+          {{link.title}}
+        </a>
+      </li>
+    {{/ breadcrumbsList}}
+  </ul>
+</div>
+{{/ breadcrumbsBlock}}
+<!--
+  Note:
+  Get first index of breadcrumbsList - in Mustache 
+ -->

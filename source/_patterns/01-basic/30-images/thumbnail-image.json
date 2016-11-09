@@ -1,0 +1,14 @@
+{
+  "thumbnailImage":[
+    {"img":{"article-thumb": {
+      "src": "/images/article-thumbnail.png",
+      "alt": "Thumbnail image",
+      "type": "square"
+    }}},
+    {"img":{"article-thumb": {
+      "src": "/images/article-thumbnail.png",
+      "alt": "Thumbnail image",
+      "type": "round"
+    }}}
+  ]
+}
