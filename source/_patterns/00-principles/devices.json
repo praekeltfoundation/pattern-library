@@ -1,0 +1,14 @@
+{
+  "title": "List of devices",
+  "headline": {
+    "medium": "We intend to document the list of devices our users use based on Google Analytics statistics."
+  },
+  "contentPoints":[{
+    "topic": "UX for Phones consists of:",
+    "orderedList": [
+      {"text":"Feature phones"},
+      {"text":"Slow-end phones"},
+      {"text":"Smart phones"}
+    ]
+  }]
+}

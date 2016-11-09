@@ -1,0 +1,18 @@
+{
+  "title":"Designing for Feature Phones",
+  "headline": {
+    "medium": "Feature phones have limited capability compared to smartphones. This principle discusses how these limitations affect the services we provide, as well as guidelines on how to make the best of our services despite these limitations."
+  },
+  "excerpt":{
+    "medium": "Feature phones either won't understand or will incorrectly implement the fancy CSS and design, especially the low-end feature phones. The best approach is to send feature phone users a very simple design, using typography, vertical spacing, and a little colouring."
+  },
+  "contentPoints":[{
+    "topic": "Plus other points",
+    "orderedList": [
+      {"text":"Feature phone friendly font e.g. Arial"},
+      {"text":"Left align everything - including buttons"},
+      {"text":"Form fields with text above the field (not inline)"},
+      {"text":"Use the word Menu instead of a hamburger icon"}
+    ]
+  }]
+}

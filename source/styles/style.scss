@@ -1,0 +1,22 @@
+/*
+ * All Page Style
+ */
+
+@import "_base";
+@import "_pattern-scaffolding";
+
+
+/**
+* Used To Style Pattern Library - Assets
+* Basic Elements
+*/
+
+@import "basics-elements/typography/text";
+@import "basics-elements/breadcrumbs/breadcrumbs";
+
+@import "basics-elements/forms/forms";
+@import "basics-elements/images/images";
+@import "basics-elements/list/list-style";
+
+@import "basics-elements/buttons/buttons";
+@import "basics-elements/principles/devices";

@@ -1,0 +1,16 @@
+{
+  "title":"Molo Design System",
+  "headline": {
+    "medium": "Pattern Library will help guide us to build cohesive, consistent user experience"
+  },
+  "excerpt":{
+    "short": " "
+  },
+  "orderedList": [
+    {"text":"We will set our team’s workflow"},
+    {"text":"Establish common vocabulary between disciplines"},
+    {"text":"Establish browser, device, performance, and accessibility testing"},
+    {"text":"Encourage design and functionality familiarity withing the teams to speed up team production and QA"},
+    {"text":"Using a combination of BEM & SMACSS Methodology"}
+  ]
+}
