@@ -1,5 +1,11 @@
 {
+  "title": "Thumbnail Images",
   "thumbnailImage":[
+    {"img":{"article-thumb": {
+      "src": "/images/article-thumbnail.png",
+      "alt": "Thumbnail image",
+      "type": "default"
+    }}},
     {"img":{"article-thumb": {
       "src": "/images/article-thumbnail.png",
       "alt": "Thumbnail image",

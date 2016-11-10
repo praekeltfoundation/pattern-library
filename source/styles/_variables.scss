@@ -32,6 +32,7 @@ $heading-large: (
   $screen-xx-small: 18px,
   $screen-small: 21px,
 );
+
 @mixin heading-fontsize-scale($headingFontSizeMap) {
   @each $screen-breakpoint, $font-size in $headingFontSizeMap {
     @if $screen-breakpoint == null {
@@ -43,4 +44,14 @@ $heading-large: (
       }
     }
   }
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before{
+        display: block;
+        content: " ";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
 }

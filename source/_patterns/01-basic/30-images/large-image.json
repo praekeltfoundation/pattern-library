@@ -3,7 +3,7 @@
     {"img":{"landscape-16x9": {
       "src": "/images/full-width-image.png",
       "alt": "Large 16x9 image",
-      "type": "rectangle"
+      "type": "default"
     }}},
     {"img":{"landscape-16x9": {
       "src": "/images/embed-image.png",

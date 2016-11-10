@@ -1,6 +1,6 @@
-
-@import "_mixin";
-@import "banner";
+/**
+* Include this on MODULES/_M-THUMBNAIL-IMAGES.SCSS
+*/
 
 .article__image,
 .article-list__image {
