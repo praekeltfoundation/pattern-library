@@ -1,0 +1,23 @@
+.heading--xx-large {
+  @include font-size($heading-xx-large);
+}
+.heading--x-large {
+  font-size: $font-x-large;
+}
+.heading--large {
+  font-size: $font-large;
+  color: #5A5D5E;
+  font-weight: 300;
+  padding: 0 20% 0 0;
+}
+
+.heading--small {
+  font-size: $font-small;
+}
+.heading--x-small {
+  font-size: $font-x-small;
+}
+.heading--xx-small {
+  font-size: $font-xx-small ;
+  font-weight: 300;
+}

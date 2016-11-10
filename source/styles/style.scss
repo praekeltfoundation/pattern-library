@@ -2,6 +2,9 @@
  * All Page Style
  */
 
+@import "_variables";
+
+
 @import "_base";
 @import "_pattern-scaffolding";
 
@@ -11,12 +14,12 @@
 * Basic Elements
 */
 
-@import "basics-elements/typography/text";
-@import "basics-elements/breadcrumbs/breadcrumbs";
+@import "basics/typography/text";
+@import "basics/breadcrumbs/breadcrumbs";
 
-@import "basics-elements/forms/forms";
-@import "basics-elements/images/images";
-@import "basics-elements/list/list-style";
+@import "basics/forms/forms";
+@import "basics/images/images";
+@import "basics/list/list-style";
 
-@import "basics-elements/buttons/buttons";
-@import "basics-elements/principles/devices";
+@import "basics/buttons/buttons";
+@import "basics/principles/devices";

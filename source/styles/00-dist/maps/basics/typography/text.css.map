@@ -1,0 +1,1 @@
+{"version":3,"sources":["basics/typography/_base.scss"],"names":[],"mappings":"AAAA,GAAI,GAAI,GAKR,EACE,OAAQ,EANV,GAAI,GAAI,GAEN,QAAS,KAAA","file":"../../../basics/typography/text.css","sourcesContent":["h4, h5, h6 {\n  margin: 0;\n  padding: 10px 0;\n}\n\np {\n  margin: 0;\n}\n"]}

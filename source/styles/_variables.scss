@@ -1,0 +1,34 @@
+//FONT SIZES
+
+$font-xx-large    :     32px;
+$font-x-large     :     24px;
+$font-large       :     22px;
+$font-small       :     18px;
+$font-x-small     :     16px;
+$font-xx-small    :     13px;
+
+
+//BREAKPOINTS
+$screen-xx-small      :     240px;
+$screen-small         :     320px;
+$screen-medium        :     502px;
+$screen-large         :     897px;
+
+$heading-xx-large: (
+  null: 17px,
+  $screen-xx-small: 24px,
+  $screen-small: 32px,
+);
+
+@mixin heading-xx-large($headingFontSizeMap) {
+  @each $screen-breakpoint, $font-size in $headingFontSizeMap {
+    @if $screen-breakpoint == null {
+      font-size: $font-size;
+    }
+    @else {
+      @media screen and (min-width: $screen-breakpoint) {
+        font-size: $font-size;
+      }
+    }
+  }
+}
