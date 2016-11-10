@@ -127,5 +127,8 @@
   }],
   "unorderedList": [{
       "text":"List here"
-  }]
+  }],
+  "anchor_button": "a",
+  "button": "button",
+  "submit_button": "input"
 }
