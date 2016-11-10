@@ -6,13 +6,16 @@
 .language-list {}
 .language-list--dropdown {
   .language-list__item {
-    padding-left: 32%;
+    @media screen and (min-width: 535px) {
+      padding-left: 135px;
+    }
   }
 }
 
 .language-list--vertical {
   display: block;
 }
+
 .language-list--horizontal {
   .language-list__item {
     display: inline-block;

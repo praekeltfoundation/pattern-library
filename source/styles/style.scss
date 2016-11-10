@@ -2,9 +2,6 @@
  * All Page Style
  */
 
-@import "_variables";
-
-
 @import "_base";
 @import "_pattern-scaffolding";
 
@@ -19,7 +16,7 @@
 
 @import "basics/forms/forms";
 @import "basics/images/images";
-@import "basics/list/list-style";
+@import "basics/general/list";
 
 @import "basics/buttons/buttons";
 @import "basics/principles/devices";
