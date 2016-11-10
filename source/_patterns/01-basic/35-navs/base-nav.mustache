@@ -1,0 +1,25 @@
+<div class="navigation">
+  <ul class="nav-menu-list">
+    {{# navList}}
+      <li class="nav-menu-list__item">
+        <a href="{{link.href}}" class="nav-menu-list__achor">{{link.name}}</a>
+        <span class="nav-menu-list__desc">{{link.desc}}</span>
+      </li>
+    {{/ navList}}
+  </ul>
+
+  <h1 class="heading heading--xx-large">With Submenu</h1>
+  <ul class="nav-menu-list">
+    <li class="nav-menu-list__item">
+      <a href="#" class="nav-menu-list__achor">Your Words</a>
+      <span class="nav-menu-list__desc">{{link.desc}}</span>
+      <ul class="nav-submenu-list">
+        {{# nestedNavList}}
+          <li class="nav-submenu-list__item">
+            <a href="{{link.href}}" class="nav-submenu-list__achor">{{link.name}}</a>
+          </li>
+        {{/ nestedNavList}}
+      </ul>
+    </li>
+  </ul>
+</div>
