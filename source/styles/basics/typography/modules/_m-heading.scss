@@ -1,14 +1,17 @@
 .heading--xx-large {
-  @include heading-xx-large($heading-xx-large);
+  @include heading-fontsize-scale($heading-xx-large);
 }
 .heading--x-large {
-  font-size: $font-x-large;
+  @include heading-fontsize-scale($heading-x-large);
 }
 .heading--large {
-  font-size: $font-large;
+  @include heading-fontsize-scale($heading-large);
   color: #5A5D5E;
   font-weight: 300;
-  padding: 0 20% 0 0;
+  padding: 0;
+  @media screen and (min-width: $screen-small) {
+    padding: 0 20% 0 0;
+  }
 }
 
 .heading--small {
@@ -19,5 +22,4 @@
 }
 .heading--xx-small {
   font-size: $font-xx-small ;
-  font-weight: 300;
 }
