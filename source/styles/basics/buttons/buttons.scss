@@ -1,10 +1,7 @@
 
 /**
-* IMPORT ALL BASIC BUTTONS STYLES
+* BUTTONS STYLES
 */
 
-@import "call-to-action";
-@import "call-to-action-item";
-@import "call-to-action-item-text";
-@import "call-to-action-item-secondary";
-@import "call-to-action-item-search-submit";
+@import "modules/_m-call-to-action";
+@import "state/_s-call-to-action";
