@@ -1,0 +1,258 @@
+{
+  "title": "Colors List",
+  "headline": {
+    "medium": ""
+  },
+  "colorList": [
+  {
+    "name": "purple",
+    "variable": "$purple",
+    "colorHex": "7D26CD"
+  },
+  {
+    "name": "tiber",
+    "variable": "$tiber",
+    "colorHex": "07292F"
+  },
+  {
+    "name": "mecury",
+    "variable": "$mecury",
+    "colorHex": "eae9e9"
+  },
+  {
+    "name": "light_scampi",
+    "variable": "$light_scampi",
+    "colorHex": "685FA1"
+  },
+  {
+    "name": "dove_gray",
+    "variable": "$dove_gray",
+    "colorHex": "737373"
+  },
+  {
+    "name": "brown",
+    "variable": "$brown",
+    "colorHex": "a03321"
+  },
+  {
+    "name": "medium_red_violet",
+    "variable": "$medium_red_violet",
+    "colorHex": "B62A99"
+  },
+  {
+    "name": "dark_medium_red_violet",
+    "variable": "$dark_medium_red_violet",
+    "colorHex": "b43393"
+  },
+  {
+    "name": "violet_blue",
+    "variable": "$violet_blue",
+    "colorHex": "a54f9e"
+  },
+  {
+    "name": "mandy",
+    "variable": "$mandy",
+    "colorHex": "E24256"
+  },
+  {
+    "name": "plum",
+    "variable": "$plum",
+    "colorHex": "7e2268"
+  },
+  {
+    "name": "wisteria",
+    "variable": "$wisteria",
+    "colorHex": "8e68ad"
+  },
+  {
+    "name": "grape",
+    "variable": "$grape",
+    "colorHex": "541c56"
+  },
+  {
+    "name": "paris_m",
+    "variable": "$paris_m",
+    "colorHex": "202855"
+  },
+  {
+    "name": "east_bay",
+    "variable": "$east_bay",
+    "colorHex": "4E4682"
+  },
+  {
+    "name": "victoria",
+    "variable": "$victoria",
+    "colorHex": "4D4391"
+  },
+  {
+    "name": "scampi",
+    "variable": "$scampi",
+    "colorHex": "685FA1"
+  },
+  {
+    "name": "sandybrown",
+    "variable": "$sandybrown",
+    "colorHex": "EF9955"
+  },
+  {
+    "name": "sandybrown",
+    "variable": "$sandybrown",
+    "colorHex": "EF9955"
+  },
+  {
+    "name": "jaffa",
+    "variable": "$jaffa",
+    "colorHex": "ee8c39"
+  },
+  {
+    "name": "saffron",
+    "variable": "$saffron",
+    "colorHex": "F2B438"
+  },
+  {
+    "name": "saffron_light",
+    "variable": "$saffron_light",
+    "colorHex": "f2b437"
+  },
+  {
+    "name": "cinnabar",
+    "variable": "$cinnabar",
+    "colorHex": "EC3B3A"
+  },
+  {
+    "name": "cinnabar_dark",
+    "variable": "$cinnabar_dark",
+    "colorHex": "ee5523"
+  },
+  {
+    "name": "cardinal",
+    "variable": "$cardinal",
+    "colorHex": "bf2026"
+  },
+  {
+    "name": "pomegranate",
+    "variable": "$pomegranate",
+    "colorHex": "ed3330"
+  },
+  {
+    "name": "roman",
+    "variable": "$roman",
+    "colorHex": "DF6859"
+  },
+  {
+    "name": "mauvelous",
+    "variable": "$mauvelous",
+    "colorHex": "F38AA5"
+  },
+  {
+    "name": "beed_blush",
+    "variable": "$beed_blush",
+    "colorHex": "e764a0"
+  },
+  {
+    "name": "maxican_red",
+    "variable": "$maxican_red",
+    "colorHex": "a21d2e"
+  },
+  {
+    "name": "kobi",
+    "variable": "$kobi",
+    "colorHex": "d481b5"
+  },
+  {
+    "name": "illusion",
+    "variable": "$illusion",
+    "colorHex": "ee97ac"
+  },
+  {
+    "name": "celery",
+    "variable": "$celery",
+    "colorHex": "A4CE55"
+  },
+  {
+    "name": "de_york",
+    "variable": "$de_york",
+    "colorHex": "6EC17F"
+  },
+  {
+    "name": "eucalyptus",
+    "variable": "$eucalyptus",
+    "colorHex": "2A9B58"
+  },
+  {
+    "name": "tradewind",
+    "variable": "$tradewind",
+    "colorHex": "4bab99"
+  },
+  {
+    "name": "moss_green",
+    "variable": "$moss_green",
+    "colorHex": "b3d9a1"
+  },
+  {
+    "name": "danube",
+    "variable": "$danube",
+    "colorHex": "6093CD"
+  },
+  {
+    "name": "danube",
+    "variable": "$danube",
+    "colorHex": "6093CD"
+  },
+  {
+    "name": "light_danube",
+    "variable": "$light_danube",
+    "colorHex": "627abc"
+  },
+  {
+    "name": "indigo",
+    "variable": "$indigo",
+    "colorHex": "5F7AC9"
+  },
+  {
+    "name": "mariner",
+    "variable": "$mariner",
+    "colorHex": "4759a6"
+  },
+  {
+    "name": "robin_egg_blue",
+    "variable": "$robin_egg_blue",
+    "colorHex": "00BFC6"
+  },
+  {
+    "name": "pelorous",
+    "variable": "$pelorous",
+    "colorHex": "37BFBE"
+  },
+  {
+    "name": "iris_blue",
+    "variable": "$iris_blue",
+    "colorHex": "03acc3"
+  },
+  {
+    "name": "red_berry",
+    "variable": "$red_berry",
+    "colorHex": "711e29"
+  },
+  {
+    "name": "bay_of_may",
+    "variable": "$bay_of_may",
+    "colorHex": "2b378c"
+  },
+  {
+    "name": "viking",
+    "variable": "$viking",
+    "colorHex": "3bbfbd"
+  },
+  {
+    "name": "denim",
+    "variable": "$denim",
+    "colorHex": "127f99"
+  },
+  {
+    "name": "tory_blue",
+    "variable": "$tory_blue",
+    "colorHex": "134b90"
+  }
+  ]
+}
