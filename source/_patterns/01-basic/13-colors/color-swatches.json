@@ -253,6 +253,101 @@
     "name": "tory_blue",
     "variable": "$tory_blue",
     "colorHex": "134b90"
+  },
+  {
+    "name": "wild_sand",
+    "variable": "$wild_sand",
+    "colorHex": "f4f4f4"
+  },
+  {
+    "name": "alto",
+    "variable": "$alto",
+    "colorHex": "dddddd"
+  },
+  {
+    "name": "grey",
+    "variable": "$grey",
+    "colorHex": "333333"
+  },
+  {
+    "name": "dusty_grey",
+    "variable": "$dusty_grey",
+    "colorHex": "999999"
+  },
+  {
+    "name": "santas_gray",
+    "variable": "$santas_gray",
+    "colorHex": "a3a3a6"
+  },
+  {
+    "name": "light_gray",
+    "variable": "$light_gray",
+    "colorHex": "cacaca"
+  },
+  {
+    "name": "turquoise",
+    "variable": "$turquoise",
+    "colorHex": "21e0d8"
+  },
+  {
+    "name": "green",
+    "variable": "$green",
+    "colorHex": "124f52"
+  },
+  {
+    "name": "gold",
+    "variable": "$gold",
+    "colorHex": "fad400"
+  },
+  {
+    "name": "violet",
+    "variable": "$violet",
+    "colorHex": "d127fc"
+  },
+  {
+    "name": "violet_electric",
+    "variable": "$violet_electric",
+    "colorHex": "cf25f8"
+  },
+  {
+    "name": "purple_dark",
+    "variable": "$purple_dark",
+    "colorHex": "cd36f5"
+  },
+  {
+    "name": "purple_flirt",
+    "variable": "$purple_flirt",
+    "colorHex": "990099"
+  },
+  {
+    "name": "red",
+    "variable": "$red",
+    "colorHex": "f82353"
+  },
+  {
+    "name": "cardinal_red",
+    "variable": "$cardinal_red",
+    "colorHex": "ce1d43"
+  },
+  {
+    "name": "orange",
+    "variable": "$orange",
+    "colorHex": "ff8e1f"
+  },
+  {
+    "name": "dark_orange",
+    "variable": "$dark_orange",
+    "colorHex": "d46900"
+  },
+  {
+    "name": "rose_pink",
+    "variable": "$rose_pink",
+    "colorHex": "e60382"
+  },
+  {
+    "name": "meadow",
+    "variable": "$meadow",
+    "colorHex": "21E078"
   }
   ]
 }
