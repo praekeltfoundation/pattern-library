@@ -1,1 +1,0 @@
-{"version":3,"sources":["basics-elements/images/banner.scss"],"names":[],"mappings":"AACA,mBACE,QAAS,MAEX,cACE,UAAW,MACX,MAAO","file":"../../../basics-elements/images/banner.css","sourcesContent":["\n.banner__item-link {\n  display: block;\n}\n.banner__item {\n  max-width: 640px;\n  width: 100%;\n}\n"]}
