@@ -3,6 +3,17 @@
   "key": "value",
   "key2": "use this for variables you want to load globally",
   "title": "Molo Design System - Pattern Library",
+  "headline": {
+    "short": "Lorizzle pimpin' dolizzle sit amet I",
+    "medium": "Molo design system is a code guide and documentation for our mobile-websites code patterns in-order to keep designs and code base inline for reuse and consistency across multiple devices."
+  },
+  "excerpt": {
+    "short": "Shizz fo shizzle mah nizzle fo rizzle, mah home g-dizzle, gravida vizzle, arcu. Pellentesque crunk tortizzle. Sed erizzle. Black izzle sheezy telliv.",
+    "medium": "Izzle crazy tempizzle sizzle. We gonna chung gangsta get down get down fo shizzle turpizzle. Away break it down black. Pellentesque bling bling rhoncus fo shizzle. In hac the bizzle platea dictumst. Black dapibizzle. Crackalackin.",
+    "long": "Curabitizzle fo shizzle diam quizzle nisi nizzle mollizzle. Suspendisse boofron. Morbi odio. Sure pizzle. Crazy orci. Shut the shizzle up maurizzle get down get down, check out this a, go to hizzle sit amizzle, malesuada izzle, pede. Pellentesque gravida. Vestibulizzle check it out mi, volutpat izzle, shiz sed, shiznit sempizzle, da bomb. Funky fresh in ipsum. Da bomb volutpat felis vizzle daahng dawg. Crizzle quis dope izzle fo shizzle my ni."
+  },
+  "description": "Fizzle crazy tortor. Sed rizzle. Ass pimpin' dolor dapibizzle turpis tempizzle fo shizzle my nizzle. Maurizzle pellentesque its fo rizzle izzle turpis. Get down get down we gonna chung nizzle. Shizzlin dizzle eleifend rhoncizzle break it down. In yo ghetto platea dictumst. Bling bling dapibizzle. Curabitur break yo neck, yall fo, pretizzle eu, go to hizzle dope, own yo' vitae, nunc. Bizzle suscipizzle. Ass semper velit sizzle fo.",
+  "url": "http://lorizzle.nl/",
   "breadcrumbsBlock": {
   "breadcrumbsList": [
     {"link": {
@@ -91,17 +102,6 @@
       "fontModifier": "xx-small"
     }
   },
-  "headline": {
-    "short": "Lorizzle pimpin' dolizzle sit amet I",
-    "medium": "Molo design system is a code guide and documentation for our mobile-websites code patterns in-order to keep designs and code base inline fore reuse and consistency across multiple devices."
-  },
-  "excerpt": {
-    "short": "Shizz fo shizzle mah nizzle fo rizzle, mah home g-dizzle, gravida vizzle, arcu. Pellentesque crunk tortizzle. Sed erizzle. Black izzle sheezy telliv.",
-    "medium": "Izzle crazy tempizzle sizzle. We gonna chung gangsta get down get down fo shizzle turpizzle. Away break it down black. Pellentesque bling bling rhoncus fo shizzle. In hac the bizzle platea dictumst. Black dapibizzle. Crackalackin.",
-    "long": "Curabitizzle fo shizzle diam quizzle nisi nizzle mollizzle. Suspendisse boofron. Morbi odio. Sure pizzle. Crazy orci. Shut the shizzle up maurizzle get down get down, check out this a, go to hizzle sit amizzle, malesuada izzle, pede. Pellentesque gravida. Vestibulizzle check it out mi, volutpat izzle, shiz sed, shiznit sempizzle, da bomb. Funky fresh in ipsum. Da bomb volutpat felis vizzle daahng dawg. Crizzle quis dope izzle fo shizzle my ni."
-  },
-  "description": "Fizzle crazy tortor. Sed rizzle. Ass pimpin' dolor dapibizzle turpis tempizzle fo shizzle my nizzle. Maurizzle pellentesque its fo rizzle izzle turpis. Get down get down we gonna chung nizzle. Shizzlin dizzle eleifend rhoncizzle break it down. In yo ghetto platea dictumst. Bling bling dapibizzle. Curabitur break yo neck, yall fo, pretizzle eu, go to hizzle dope, own yo' vitae, nunc. Bizzle suscipizzle. Ass semper velit sizzle fo.",
-  "url": "http://lorizzle.nl/",
   "name": {
     "first": "Junius",
     "firsti": "J",
@@ -144,15 +144,29 @@
     {"language":"Bahasa"},
     {"language":"Arabic"}
   ],
-  "contentPoints":[{
-    "topic": "Plus other points",
-    "orderedList": [
-      {"text":"Feature phone friendly font e.g. Arial"},
-      {"text":"Left align everything - including buttons"},
-      {"text":"Form fields with text above the field (not inline)"},
-      {"text":"Use the word Menu instead of a hamburger icon"}
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "This site provides a range of resources for designers and developers, these includes:",
+      "orderedList": [
+        {"text":"Responsive component HTML mark-up"},
+        {"text":"Show Pattern Info: shows the component documentation, the Mustache code provided by Pattern Lab, HTML and CSS tabs"},
+        {"text":"Cross-browser compatible CSS"},
+        {"text":"Range of color vraibles, hex values used across our Molo mobi-sites"}
+      ]
+    },
+    {
+      "topic": "How will we use Molo Design System - Pattern Library?",
+      "orderedList": [
+        {"text":"We will set our team’s workflow"},
+        {"text":"Establish common vocabulary between disciplines"},
+        {"text":"Establish browser, device, performance, and accessibility testing"},
+        {"text":"Encourage design and functionality familiarity withing the teams to speed up team production and QA"},
+        {"text":"Using a combination of BEM & SMACSS Methodology"}
+      ]
+    }
     ]
-  }],
+  },
   "orderedList": [{
     "text":"List here"
   }],

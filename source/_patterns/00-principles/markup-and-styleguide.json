@@ -1,0 +1,39 @@
+{
+  "title":"Markup and Style",
+  "headline": {
+    "medium": "The Pattern library will be actively developed to enable developers to uniform applications while adhering to CSS best practices and conventions"
+  },
+  "sectionIntroduction": {
+  "content":[
+    {
+      "topic": "In order to achieve this, we have chosen to use very specific naming techniques",
+      "orderedList": [
+        {"text":"-------"}
+      ]
+    },
+    {
+      "topic": "BEM Naming",
+      "orderedList": [
+        {"text":"BEM is a known method of naming components — block, element, modifier. For those unfamiliar, let’s briefly look at how BEM works below."}
+      ]
+    },
+    {
+      "topic": "Block",
+      "orderedList": [
+        {"text":"A block represents the main component name. e.g. [ call-to-action ]"}
+      ]
+    },
+    {
+      "topic": "Element",
+      "orderedList": [
+        {"text":"An element represents a part of a component and is separated by two underscores. e.g. [call-to-action__green]"}
+      ]
+    },
+    {
+      "topic": "Modifier",
+      "orderedList": [
+        {"text":"A modifier is a component or element variation and is separated by two dashes. The variation can apply to the overall component or it can be applied to an element within the component. e.g. [call-to-action--main]"}
+      ]
+    }
+  ]}
+}
