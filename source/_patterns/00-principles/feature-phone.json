@@ -7,14 +7,14 @@
   "content":[
     {
       "topic": "Feature phones either won't understand or will incorrectly implement the fancy CSS and design, especially the low-end feature phones. The best approach is to send feature phone users a very simple design, using typography, vertical spacing, and a little colouring.",
-      "orderedList": [
+      "unorderedList": [
         {"text":"-------"}
       ]
     }
   ]},
   "contentPoints":[{
     "topic": "Plus other points",
-    "orderedList": [
+    "unorderedList": [
       {"text":"Feature phone friendly font e.g. Arial"},
       {"text":"Left align everything - including buttons"},
       {"text":"Form fields with text above the field (not inline)"},

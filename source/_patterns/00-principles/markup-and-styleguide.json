@@ -7,31 +7,31 @@
   "content":[
     {
       "topic": "In order to achieve this, we have chosen to use very specific naming techniques",
-      "orderedList": [
+      "unorderedList": [
         {"text":"-------"}
       ]
     },
     {
       "topic": "BEM Naming",
-      "orderedList": [
+      "unorderedList": [
         {"text":"BEM is a known method of naming components — block, element, modifier. For those unfamiliar, let’s briefly look at how BEM works below."}
       ]
     },
     {
       "topic": "Block",
-      "orderedList": [
+      "unorderedList": [
         {"text":"A block represents the main component name. e.g. [ call-to-action ]"}
       ]
     },
     {
       "topic": "Element",
-      "orderedList": [
+      "unorderedList": [
         {"text":"An element represents a part of a component and is separated by two underscores. e.g. [call-to-action__green]"}
       ]
     },
     {
       "topic": "Modifier",
-      "orderedList": [
+      "unorderedList": [
         {"text":"A modifier is a component or element variation and is separated by two dashes. The variation can apply to the overall component or it can be applied to an element within the component. e.g. [call-to-action--main]"}
       ]
     }

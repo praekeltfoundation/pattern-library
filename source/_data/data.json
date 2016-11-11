@@ -148,7 +148,7 @@
     "content":[
     {
       "topic": "This site provides a range of resources for designers and developers, these includes:",
-      "orderedList": [
+      "unorderedList": [
         {"text":"Responsive component HTML mark-up"},
         {"text":"Show Pattern Info: shows the component documentation, the Mustache code provided by Pattern Lab, HTML and CSS tabs"},
         {"text":"Cross-browser compatible CSS"},
@@ -157,7 +157,7 @@
     },
     {
       "topic": "How will we use Molo Design System - Pattern Library?",
-      "orderedList": [
+      "unorderedList": [
         {"text":"We will set our team’s workflow"},
         {"text":"Establish common vocabulary between disciplines"},
         {"text":"Establish browser, device, performance, and accessibility testing"},

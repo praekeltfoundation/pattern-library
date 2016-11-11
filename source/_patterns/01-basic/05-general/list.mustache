@@ -1,19 +1,22 @@
-{{# orderedListBlock}}
-  <ul class="default-ordered-list">
-    {{# orderedList}}
-    <li class="default-ordered-list__item">
-      <p>{{text}}</p>
-    </li>
-    {{/ orderedList}}
-  </ul>
-{{/ orderedListBlock}}
-
+<h3 class="heading heading--large">Bullet Unordered List</h3>
 {{# unorderedListBlock}}
-  <ol class="default-unordered-list__item">
+  <ul class="default-unordered-list">
     {{# unorderedList}}
     <li class="default-unordered-list__item">
       <p>{{text}}</p>
     </li>
     {{/ unorderedList}}
-  </ol>
+  </ul>
 {{/ unorderedListBlock}}
+
+<br/>
+<h3 class="heading heading--large">Numbered Ordered List</h3>
+{{# orderedListBlock}}
+  <ol class="default-ordered-list__item">
+    {{# orderedList}}
+    <li class="default-ordered-list__item">
+      <p>{{text}}</p>
+    </li>
+    {{/ orderedList}}
+  </ol>
+{{/ orderedListBlock}}

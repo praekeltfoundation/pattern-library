@@ -1,14 +1,24 @@
 {
   "title":"Ordered and Unordered List",
-  "orderedListBlock": {
-    "orderedList": [
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Lists are used to build up and manage items",
+      "unorderedList": [
+        {"text":"---"}
+      ]
+    }
+    ]
+  },
+  "unorderedListBlock": {
+    "unorderedList": [
       {"text":"Example of list"},
       {"text":"Example of list"},
       {"text":"Example of list"}
     ]
   },
-  "unorderedListBlock": {
-    "unorderedList": [
+  "orderedListBlock": {
+    "orderedList": [
       {"text":"Second example of list"},
       {"text":"Second example of list"},
       {"text":"Second example of list"},

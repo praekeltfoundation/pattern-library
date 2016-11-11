@@ -6,7 +6,7 @@
   "sectionIntroduction": {
   "content":[{
     "topic": "UX for Phones consists of:",
-    "orderedList": [
+    "unorderedList": [
       {"text":"Feature phones"},
       {"text":"Slow-end phones"},
       {"text":"Smart phones"}
