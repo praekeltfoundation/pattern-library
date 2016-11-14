@@ -1,0 +1,46 @@
+{
+  "title": "Navigation with Submenu List",
+  "headline": {
+    "medium": "The menu is located in the footer, so when the user taps the Menu link in the header they jump down to the bottom of the page."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "---",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "navList": [
+    {"link": {
+      "href": "#",
+      "name": "Yourwords",
+      "desc": "This is about something",
+      "subMenu": [
+        {"link": {
+          "href": "#",
+          "name": "Hot Topics"
+        }},
+        {"link": {
+          "href": "#",
+          "name": "True Stories"
+        }},
+        {"link": {
+          "href": "#",
+          "name": "Your body"
+        }},
+        {"link": {
+          "href": "#",
+          "name": "Sex"
+        }}
+      ]
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Health Issues",
+      "desc": "This is about something"
+    }}
+  ]
+}

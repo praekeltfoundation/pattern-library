@@ -1,0 +1,23 @@
+
+<h3 class="heading heading--large">Language List - Example Three</h3>
+{{# languagesDropdownBlock}}
+<div class="languages">
+  <div class="languages__bar">
+    <div class="languages-current">
+      <span class="languages-current__label">Language</span>
+      <span class="languages-current__selected">English</span>
+    </div>
+    <input id="language-select" class="language-select__toggle-input" type="checkbox">
+    <label class="language-select__change-label" for="language-select">Change Language</label>
+    <div role="languages__bar" class="language-select">
+      <ul class="language-list language-list--dropdown">
+      {{# languageList}}
+        <li class="language-list__item">
+          {{language}}
+        </li>
+      {{/ languageList}}
+      </ul>
+    </div>
+   </div>
+</div>
+{{/ languagesDropdownBlock}}

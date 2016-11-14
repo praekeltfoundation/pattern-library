@@ -1,0 +1,38 @@
+
+.language-select__toggle-input {
+  visibility: hidden;
+  position: absolute;
+  display: none;
+}
+.language-select__toggle-input:not(checked) ~ .language-select {
+    display: none;
+}
+.language-select__toggle-input:checked ~ .language-select {
+    display: block;
+}
+
+.languages-current {
+  padding: 5px 20px 5px 0;
+  display: inline-block;
+}
+.languages-current__label {
+  font-weight: bold;
+  &:after {
+    content: ":";
+  }
+}
+.language-select__change-label {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.language-select {
+  padding: 5px 10px;
+}
+
+.language-list__item--active a {
+  text-decoration: underline;
+  &:after {
+    text-decoration: none;
+  }
+}

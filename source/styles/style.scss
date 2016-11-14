@@ -1,0 +1,31 @@
+/*
+ * All Page Style
+ */
+
+@import "_base";
+@import "_pattern-scaffolding";
+
+
+/**
+* Used To Style Pattern Library - Assets
+* Basic Elements
+*/
+@import "basics/colors/colors";
+@import "basics/typography/text";
+@import "basics/breadcrumbs/breadcrumbs";
+@import "basics/navigation/nav";
+
+@import "basics/forms/forms";
+@import "basics/general/list";
+@import "basics/articles/articles";
+@import "basics/banner/banner";
+
+@import "basics/buttons/buttons";
+
+
+
+/**
+* Used To Style Pattern Library - Assets
+* Components Elements
+*/
+@import "components/header/header";

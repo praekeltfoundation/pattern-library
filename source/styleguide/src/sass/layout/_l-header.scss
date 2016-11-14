@@ -1,0 +1,12 @@
+
+.sg-header {
+    background: #242526;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Roboto, sans-serif;
+    text-transform: capitalize;
+    margin: 0 auto;
+    padding: 10px;
+    @media screen and (min-width: 42em) {
+      padding: 20px 15%;
+    }
+}
