@@ -17,53 +17,29 @@
     {"link": {
       "href": "#",
       "name": "Yourwords",
-      "desc": "This is about something"
+      "desc": "This is about something",
+      "subMenu": [
+        {"link": {
+          "href": "#",
+          "name": "Hot Topics"
+        }},
+        {"link": {
+          "href": "#",
+          "name": "True Stories"
+        }},
+        {"link": {
+          "href": "#",
+          "name": "Your body"
+        }},
+        {"link": {
+          "href": "#",
+          "name": "Sex"
+        }}
+      ]
     }},
     {"link": {
       "href": "#",
       "name": "Health Issues",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Know your body",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Mind blowing",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Your Peeps",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Rights On",
-      "desc": "This is about something"
-    }}
-  ],
-  "nestedNavList": [
-    {"link": {
-      "href": "#",
-      "name": "Hot Topics",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "True Stories",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Your body",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Sex",
       "desc": "This is about something"
     }}
   ]
