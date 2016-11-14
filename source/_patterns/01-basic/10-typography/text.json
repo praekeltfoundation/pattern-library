@@ -7,13 +7,13 @@
     "content":[
       {
         "topic": "Text is the primary way that users digest content and accomplish work, so it’s important to use good typographic principles to establish a clear visual hierarchy and to maximize legibility.",
-        "orderedList": [
+        "unorderedList": [
           {"text":"---"}
         ]
       },
       {
-        "topic": "Line Height",
-        "orderedList": [
+        "topic": "Line Heights",
+        "unorderedList": [
           {"text":"We take a pragmatic approach to spacing and line height by resetting all margins and paddings to 0, and allow line-height property on the body for all text to inherit a globally defined ratio of 1.3 of the text size."}
         ]
       }

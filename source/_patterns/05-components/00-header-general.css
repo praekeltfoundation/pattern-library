@@ -1,3 +1,26 @@
+
+/**
+* Include this on LAYOUT/_L-HEADER.SCSS
+*/
+.header {
+  font-family: 'Quicksand', sans-serif;
+  overflow: auto;
+  padding: 10px 15px;
+}
+
+.logo-container,
+.main-navigation {
+  display: inline-block;
+  vertical-align: middle;
+}
+.logo-container {
+  padding: 0 20px 0 0;
+}
+
+
+/**
+* Include this on MODULES/_M-MAIN-NAVIGATION-LIST.SCSS
+*/
 .main-navigation-list {
   position: relative;
 }

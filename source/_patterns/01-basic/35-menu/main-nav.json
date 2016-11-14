@@ -3,6 +3,16 @@
   "headline": {
     "medium": "The 3 main navigation links that we place in the header are Search, User Tools (Log In, Register, Profile), and Menu."
   },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "---",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
   "mainNavList": [
     {"link": {
       "href": "#",
@@ -11,13 +21,13 @@
     }},
     {"link": {
       "href": "#",
-      "name": "Search",
-      "id": "search"
+      "name": "Menu",
+      "id": ""
     }},
     {"link": {
       "href": "#",
-      "name": "Menu",
-      "id": ""
+      "name": "Search",
+      "id": "search"
     }}
   ]
 }

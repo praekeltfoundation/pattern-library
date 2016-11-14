@@ -1,7 +1,10 @@
 .header {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: auto;
   padding: 10px 15px;
+  @media screen and (min-width: 320px)  {
+    font-family: 'Quicksand', sans-serif;
+  }
 }
 
 .logo-container,

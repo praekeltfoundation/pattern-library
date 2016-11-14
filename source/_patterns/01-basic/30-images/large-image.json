@@ -1,5 +1,15 @@
 {
   "title": "Full Banner Images",
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "---",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
   "largeImage":[
     {"img":{"landscape-16x9": {
       "src": "/images/full-width-image.png",
