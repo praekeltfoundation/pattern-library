@@ -190,8 +190,7 @@ function reloadCSS() {
 
 
 function watch() {
-  gulp.watch(path.resolve(paths().source.css, '**/*.css'), { awaitWriteFinish: true }).on('change',
-  gulp.series('pl-copy:css', reloadCSS));
+  gulp.watch(path.resolve(paths().source.css, '**/*.css'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:css', reloadCSS));
   gulp.watch(path.resolve(paths().source.css, '**/*.scss')).on('change', gulp.series('pl-sass'));
   gulp.watch(path.resolve(paths().source.styleguide, '**/*.*'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:styleguide', 'pl-copy:styleguide-css', reloadCSS));
 
@@ -213,6 +212,7 @@ gulp.task('patternlab:connect', gulp.series(function(done) {
     server: {
       baseDir: path.resolve(paths().public.root)
     },
+    "open": false,
     snippetOptions: {
       // Ignore all HTML files within the templates folder
       blacklist: ['/index.html', '/', '/?*']
