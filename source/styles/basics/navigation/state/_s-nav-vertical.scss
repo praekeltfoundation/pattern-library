@@ -1,8 +1,7 @@
 
-.nav-menu-list__achor {
+.nav-menu-list__anchor {
   display: block;
   text-decoration: none;
-  display: inline-block;
   &:after {
     padding: 0 10px;
     @media screen and (min-width: 320px) {

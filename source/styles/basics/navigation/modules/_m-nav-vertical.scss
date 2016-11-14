@@ -4,7 +4,7 @@
   color: #07292F;
   padding: 10px 15px 15px 0;
 }
-.nav-menu-list__achor {
+.nav-menu-list__anchor {
   color: #07292F;
   display: inline-block;
   font-weight: bold;
@@ -16,13 +16,4 @@
   display: block;
   text-transform: initial;
   font-weight: normal;
-}
-
-.nav-submenu-list__achor {
-  display: block;
-  padding-left: 25px;
-  color: #727172;
-  @media screen and (min-width: 320px) {
-    text-decoration: none;
-  }
 }
