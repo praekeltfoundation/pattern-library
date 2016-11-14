@@ -1,8 +1,9 @@
 .nav-menu-list {}
 .nav-menu-list__item  {
   border-bottom: 1px solid #B0B9BB;
-  color: #07292F;
+  display: block;
   padding: 10px 15px 15px 0;
+  position: relative;
 }
 .nav-menu-list__anchor {
   color: #07292F;
