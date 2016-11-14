@@ -52,7 +52,7 @@
     "hay": false,
     "mqs": false,
     "find": false,
-    "views-all": false,
+    "views-all": true,
     "views-annotations": false,
     "views-code": false,
     "views-new": false,

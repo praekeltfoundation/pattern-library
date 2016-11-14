@@ -1,0 +1,16 @@
+{
+  "title": "Article Teasers Meta",
+  "headline": {
+    "medium": "When comments and/or likes are enable the article teasers meta components gets attached to the article teaser"
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  }
+}
