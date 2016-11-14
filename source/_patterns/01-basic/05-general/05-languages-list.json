@@ -1,5 +1,5 @@
 {
-  "title": "Language Selection List",
+  "title": "Language Lists",
   "headline":{
     "medium":"Molo sites are built to support multiple languages; if the site has more than one language then the language selection list appears"
   },
@@ -12,27 +12,6 @@
         {"text":"The list of languages are visually separated with a detail, or whitespace. (we use a css property called “:after” to achieve this, so it requires some CSS support.) The active language (the language in use) should be displayed less prominently than the other languages."}
       ]
     }
-    ]
-  },
-  "languagesDropdownBlock": {
-    "languageList":[{"language":"English"},
-      {"language":"Kiswahili"},
-      {"language":"Bahasa"},
-      {"language":"Arabic"}
-    ]
-  },
-  "languagesVerticalBlock": {
-    "languageList":[{"language":"English"},
-      {"language":"Kiswahili"},
-      {"language":"Bahasa"},
-      {"language":"Arabic"}
-    ]
-  },
-  "languagesHorizontalBlock": {
-    "languageList":[{"language":"English"},
-      {"language":"Kiswahili"},
-      {"language":"Bahasa"},
-      {"language":"Arabic"}
     ]
   }
 }

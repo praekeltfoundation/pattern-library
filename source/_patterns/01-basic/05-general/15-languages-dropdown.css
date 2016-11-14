@@ -14,21 +14,6 @@
   }
 }
 
-.language-list--vertical {
-  display: block;
-}
-
-.language-list--horizontal {
-  .language-list__item {
-    display: inline-block;
-    color: #5a5d5e;
-    &:after {
-      content: "|";
-      padding: 0 5px;
-    }
-  }
-}
-
 
 /**
 * Include this on STATE/_S-LANGUAGE-DROPDOWN

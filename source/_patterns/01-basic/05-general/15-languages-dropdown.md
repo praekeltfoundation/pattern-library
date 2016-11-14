@@ -1,5 +1,5 @@
 ---
-title: "Language selection list"
+title: "Language Dropdown List"
 state: "inreview"
 ---
 
@@ -12,6 +12,4 @@ allow foreign speakers  to rapidly identify and switch to a mother tongue.
 Once a user has selected a language they’ll always see the site in that language
 when they revisit. (Unless they’ve deleted their cookies, or are browsing in a private mode.
 
-
-The list of languages are visually separated with a detail, or whitespace. (we use a css property called “:after” to achieve this, so it requires some CSS support.)
-The active language (the language in use) should be displayed less prominently than the other languages.
+Another version allows the user to toggle the language list.

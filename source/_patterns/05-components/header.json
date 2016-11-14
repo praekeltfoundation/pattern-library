@@ -2,5 +2,16 @@
   "title":"Header",
   "headline": {
     "medium": ""
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "The majority of our headers follow two styles:",
+      "unorderedList": [
+        {"text":"Logo to the left, 3 main navigation links to the right: Search, User tools, and Menu."},
+        {"text":"Logo centered, main navigation links below and centered: Typically used when we have more than the 3 main links."}
+      ]
+    }
+    ]
   }
 }
