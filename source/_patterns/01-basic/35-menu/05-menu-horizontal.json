@@ -38,23 +38,5 @@
       "href": "#",
       "name": "Rights On"
     }}
-  ],
-  "nestedNavList": [
-    {"link": {
-      "href": "#",
-      "name": "Hot Topics"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "True Stories"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Your body"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Sex"
-    }}
   ]
 }
