@@ -44,27 +44,5 @@
       "name": "Rights On",
       "desc": "This is about something"
     }}
-  ],
-  "nestedNavList": [
-    {"link": {
-      "href": "#",
-      "name": "Hot Topics",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "True Stories",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Your body",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Sex",
-      "desc": "This is about something"
-    }}
   ]
 }
