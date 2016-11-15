@@ -1,0 +1,14 @@
+{
+  "title": "Article Teasers Meta",
+  "articleContent": [
+    {
+      "category":"Talking about health and homes",
+      "heading":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "excerpt":"Donec at elit eget ex vulputate pharetra eu maximus erat. In diam neque, molestie sit amet imperdiet ut, auctor eget quam. Praesent efficitur sagittis sollicitudin."
+    }
+  ],
+  "meta": {
+    "commentCounter": "64",
+    "likesCounter": "12 comments"
+  }
+}

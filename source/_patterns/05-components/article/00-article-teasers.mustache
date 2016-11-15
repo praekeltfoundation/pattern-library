@@ -3,9 +3,20 @@
   <li class="article-teaser-list__item">
     <div class="article-teaser">
       {{> basic-thumbnail-image}}
+      <h5 class="heading heading--x-small">{{category}}</h5>
       <h2 class="heading heading--x-large">{{heading}}</h2>
       <p>{{excerpt}}</p>
     </div>
+    {{# meta}}
+    <div class="article-teaser-list__meta">
+      <div class="article-teaser-list__likes-counter">
+        {{likesCounter}}
+      </div>
+      <div class="article-teaser-lis__comment-counter">
+        {{commentCounter}}
+      </div>
+    </div>
+    {{/ meta}}
   </li>
 {{/ articleContent}}
 </ul>
