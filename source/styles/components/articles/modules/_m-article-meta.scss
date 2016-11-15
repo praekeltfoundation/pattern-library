@@ -1,0 +1,45 @@
+
+.article-teaser-list__meta {
+  border-top: 1px solid #E5E7E9;
+  padding: 10px 0 35px;
+  margin: 5px 0 0;
+}
+
+.article-teaser-list__likes-counter {
+  padding: 5px 0;
+  @media screen and (min-width: 320px)  {
+    padding: 0 15px 0 10px;
+    float: left;
+  }
+  &:before {
+    content: "";
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    @media screen and (min-width: 320px)  {
+      background:  url('/images/icons/heart.svg') no-repeat 0 0 / auto 100%;
+      text-indent: -99em;
+
+    }
+  }
+}
+
+.article-teaser-list__comment-counter {
+  padding: 5px 0;
+  @media screen and (min-width: 320px)  {
+    padding: 0 10px 0 15px;
+    float: right;
+  }
+  &:before {
+    content: "";
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    @media screen and (min-width: 320px)  {
+      background:  url('/images/icons/bubble.svg') no-repeat 0 0 / auto 100%;
+      text-indent: -99em;
+    }
+  }
+}

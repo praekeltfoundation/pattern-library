@@ -12,5 +12,18 @@
       ]
     }
     ]
-  }
+  },
+  "articleContent": [
+    {
+      "heading":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "excerpt":"Donec at elit eget ex vulputate pharetra eu maximus erat. In diam neque, molestie sit amet imperdiet ut, auctor eget quam. Praesent efficitur sagittis sollicitudin."
+    }
+  ],
+  "largeImage":[
+    {"img":{"landscape-16x9": {
+      "src": "/images/full-width-image.png",
+      "alt": "Large 16x9 image",
+      "type": "default"
+    }}}
+  ]
 }

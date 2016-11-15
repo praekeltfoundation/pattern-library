@@ -1,0 +1,13 @@
+<ul class="article-teaser-list">
+{{# articleContent}}
+  <li class="article-teaser-list__item article-teaser-list__item--hero">
+    <div class="article-teaser article-teaser--hero">
+      {{> basic-large-image}}
+      <h5 class="heading heading--x-small">{{category}}</h5>
+      <h2 class="heading heading--x-large">{{heading}}</h2>
+      <p>{{excerpt}}</p>
+    </div>
+    {{> basic-article-teaser-meta}}
+  </li>
+{{/ articleContent}}
+</ul>

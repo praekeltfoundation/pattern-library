@@ -7,16 +7,7 @@
       <h2 class="heading heading--x-large">{{heading}}</h2>
       <p>{{excerpt}}</p>
     </div>
-    {{# meta}}
-    <div class="article-teaser-list__meta">
-      <div class="article-teaser-list__likes-counter">
-        {{likesCounter}}
-      </div>
-      <div class="article-teaser-lis__comment-counter">
-        {{commentCounter}}
-      </div>
-    </div>
-    {{/ meta}}
+    {{> basic-article-teaser-meta}}
   </li>
 {{/ articleContent}}
 </ul>
