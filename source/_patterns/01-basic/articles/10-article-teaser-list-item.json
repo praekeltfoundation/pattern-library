@@ -1,7 +1,7 @@
 {
-  "title": "Article Teasers Hero",
+  "title": "Article Teasers: List Items",
   "headline": {
-    "medium": "The article hero teaser component is only used on the home page and only one hero teaser can be displayed at a time."
+    "medium": "Instead of just adding a link to page, add suggested articles from related tags at the bottom the article."
   },
   "sectionIntroduction": {
     "content":[
@@ -11,6 +11,13 @@
         {"text":""}
       ]
     }
+    ]
+  },
+  "unorderedListBlock": {
+    "unorderedList": [
+      {"text":"Title case ideally less than 120 characters"},
+      {"text":"But there is no way to limit"},
+      {"text":"Another example of the an article title"}
     ]
   }
 }
