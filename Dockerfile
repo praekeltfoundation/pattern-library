@@ -1,16 +1,19 @@
-FROM node:6-onbuild
+FROM node:6
 MAINTAINER Praekelt.org <dev@praekelt.org>
 
-RUN mkdir /opt/pattern-lab
-COPY . /opt/pattern-lab/
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-WORKDIR /opt/pattern-lab
-RUN npm install --silent
+ARG NODE_ENV
+ENV NODE_ENV $NODE_ENV
 
-COPY /docker/plugin-node-tab/package.json /opt/pattern-lab/node_modules/plugin-node-tab/
+COPY package.json /usr/src/app/
+
+RUN npm install
+
+COPY . /usr/src/app
+COPY /docker/plugin-node-tab/package.json /usr/src/app/node_modules/plugin-node-tab/
 
 CMD ["./node_modules/.bin/gulp", "patternlab:serve"]
 
-# VOLUME /opt/pattern-lab/source
-
-EXPOSE 3000 3001
+EXPOSE 80
