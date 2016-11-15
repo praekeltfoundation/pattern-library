@@ -1,0 +1,42 @@
+{
+  "title": "Horizontal Navigation",
+  "headline": {
+    "medium": "The menu is located in the footer, so when the user taps the Menu link in the header they jump down to the bottom of the page."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "---",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "navList": [
+    {"link": {
+      "href": "#",
+      "name": "Yourwords"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Health Issues"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Know your body"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Mind blowing"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Your Peeps"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Rights On"
+    }}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Header Main Navigation - Search Toogle",
+  "headline": {
+    "medium": "The 3 main navigation links that we place in the header are Search, User Tools (Log In, Register, Profile), and Menu."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "---",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "mainNavList": [
+    {"link": {
+      "href": "#",
+      "name": "Sign up",
+      "id": "profiles"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Menu",
+      "id": ""
+    }}
+  ],
+  "searchToggle": {
+    "link": {
+      "href": "{{link.components-search}}",
+      "name": "Search",
+      "id": "search"
+    }
+  },
+  "inputFields": [
+    {"field": {
+      "type": "search",
+      "element": "input",
+      "label": "Please search the website here:",
+      "value": "Search",
+      "placeholder":"Search the site...",
+      "validate": "",
+      "maxlength": ""
+    }}
+  ]
+
+}

@@ -1,0 +1,601 @@
+{
+
+  "key": "value",
+  "key2": "use this for variables you want to load globally",
+  "title": "Molo Design System - Pattern Library",
+  "headline": {
+    "short": "Lorizzle pimpin' dolizzle sit amet I",
+    "medium": "Molo design system is a code guide and documentation for our mobile-websites code patterns in-order to keep designs and code base inline for reuse and consistency across multiple devices."
+  },
+  "excerpt": {
+    "short": "Shizz fo shizzle mah nizzle fo rizzle, mah home g-dizzle, gravida vizzle, arcu. Pellentesque crunk tortizzle. Sed erizzle. Black izzle sheezy telliv.",
+    "medium": "Izzle crazy tempizzle sizzle. We gonna chung gangsta get down get down fo shizzle turpizzle. Away break it down black. Pellentesque bling bling rhoncus fo shizzle. In hac the bizzle platea dictumst. Black dapibizzle. Crackalackin.",
+    "long": "Curabitizzle fo shizzle diam quizzle nisi nizzle mollizzle. Suspendisse boofron. Morbi odio. Sure pizzle. Crazy orci. Shut the shizzle up maurizzle get down get down, check out this a, go to hizzle sit amizzle, malesuada izzle, pede. Pellentesque gravida. Vestibulizzle check it out mi, volutpat izzle, shiz sed, shiznit sempizzle, da bomb. Funky fresh in ipsum. Da bomb volutpat felis vizzle daahng dawg. Crizzle quis dope izzle fo shizzle my ni."
+  },
+  "description": "Fizzle crazy tortor. Sed rizzle. Ass pimpin' dolor dapibizzle turpis tempizzle fo shizzle my nizzle. Maurizzle pellentesque its fo rizzle izzle turpis. Get down get down we gonna chung nizzle. Shizzlin dizzle eleifend rhoncizzle break it down. In yo ghetto platea dictumst. Bling bling dapibizzle. Curabitur break yo neck, yall fo, pretizzle eu, go to hizzle dope, own yo' vitae, nunc. Bizzle suscipizzle. Ass semper velit sizzle fo.",
+  "url": "http://lorizzle.nl/",
+  "breadcrumbsBlock": {
+  "breadcrumbsList": [
+    {"link": {
+        "title":"Home",
+        "src":"/home"
+      }
+    }]
+  },
+  "img": {
+    "article-thumb": {
+      "src": "",
+      "alt": "Avatar"
+    },
+    "square": {
+      "src": "",
+      "alt": "Square"
+    },
+    "rectangle": {
+      "src": "",
+      "alt": "Rectangle"
+    },
+    "landscape-4x3": {
+      "src": "",
+      "alt": "4x3 Image"
+    },
+    "landscape-16x9": {
+      "src": "/images/full-width-image.png",
+      "alt": "16x9 Full Image"
+    }
+  },
+  "logoImage":{
+    "img": {
+      "small": {
+        "src": "/images/logo-two.png",
+        "alt": "Small Logo",
+        "position": "centre"
+      },
+      "large": {
+        "src": "/images/logo.png",
+        "alt": "Large Logos",
+        "position": "left"
+      }
+    }
+  },
+  "mainNavList": [
+    {"link": {
+      "href": "#",
+      "name": "Sign up",
+      "id": "profiles"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Search",
+      "id": "search"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Menu",
+      "id": "menu"
+    }}
+  ],
+  "heading": "Welcome to Molo design pattern",
+  "headingElement": {
+    "h1": {
+      "tag":"h1",
+      "fontModifier": "xx-large"
+    },
+    "h2": {
+      "tag":"h2",
+      "fontModifier": "x-large"
+    },
+    "h3": {
+      "tag":"h3",
+      "fontModifier": "large"
+    },
+    "h4": {
+      "tag":"h4",
+      "fontModifier": "small"
+    },
+    "h5": {
+      "tag":"h5",
+      "fontModifier": "x-small"
+    },
+    "h6": {
+      "tag":"h6",
+      "fontModifier": "xx-small"
+    }
+  },
+  "name": {
+    "first": "Junius",
+    "firsti": "J",
+    "middle": "Marius",
+    "middlei": "M",
+    "last": "Koolen",
+    "lasti": "K"
+  },
+  "year": {
+    "long": "2013",
+    "short": "13"
+  },
+  "month": {
+    "long": "January",
+    "short": "Jan",
+    "digit": "01"
+  },
+  "dayofweek": {
+    "long": "Sunday",
+    "short": "Sun"
+  },
+  "day": {
+    "long": "01",
+    "short": "1",
+    "ordinal": "st"
+  },
+  "hour": {
+    "long": "06",
+    "short": "6",
+    "military": "06",
+    "ampm": "am"
+  },
+  "minute": {
+    "long": "20",
+    "short": "20"
+  },
+  "seconds": "31",
+  "languageList":[{"language":"English"},
+    {"language":"Kiswahili"},
+    {"language":"Bahasa"},
+    {"language":"Arabic"}
+  ],
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "This site provides a range of resources for designers and developers, these includes:",
+      "unorderedList": [
+        {"text":"Responsive component HTML mark-up"},
+        {"text":"Show Pattern Info: shows the component documentation, the Mustache code provided by Pattern Lab, HTML and CSS tabs"},
+        {"text":"Cross-browser compatible CSS"},
+        {"text":"Range of color vraibles, hex values used across our Molo mobi-sites"}
+      ]
+    },
+    {
+      "topic": "How will we use Molo Design System - Pattern Library?",
+      "unorderedList": [
+        {"text":"We will set our team’s workflow"},
+        {"text":"Establish common vocabulary between disciplines"},
+        {"text":"Establish browser, device, performance, and accessibility testing"},
+        {"text":"Encourage design and functionality familiarity withing the teams to speed up team production and QA"},
+        {"text":"Using a combination of BEM & SMACSS Methodology"}
+      ]
+    }
+    ]
+  },
+  "orderedList": [{
+    "text":"List here"
+  }],
+  "unorderedList": [{
+      "text":"List here"
+  }],
+  "anchor_button": "a",
+  "button": "button",
+  "submit_button": "input",
+  "navList": [
+    {"link": {
+      "href": "#",
+      "name": "Yourwords",
+      "desc": "This is about something"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Health Issues",
+      "desc": "This is about something"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Know your body",
+      "desc": "This is about something"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Mind blowing",
+      "desc": "This is about something"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Your Peeps",
+      "desc": "This is about something"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Rights On",
+      "desc": "This is about something"
+    }}
+  ],
+  "nestedNavList": [
+    {"link": {
+      "href": "#",
+      "name": "Hot Topics",
+      "desc": "This is about something"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "True Stories",
+      "desc": "This is about something"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Your body",
+      "desc": "This is about something"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Sex",
+      "desc": "This is about something"
+    }}
+  ],
+  "languagesDropdownBlock": {
+    "languageList":[{"language":"English"},
+      {"language":"Kiswahili"},
+      {"language":"Bahasa"},
+      {"language":"Arabic"}
+    ]
+  },
+  "languagesVerticalBlock": {
+    "languageList":[{"language":"English"},
+      {"language":"Kiswahili"},
+      {"language":"Bahasa"},
+      {"language":"Arabic"}
+    ]
+  },
+  "languagesHorizontalBlock": {
+    "languageList":[{"language":"English"},
+      {"language":"Kiswahili"},
+      {"language":"Bahasa"},
+      {"language":"Arabic"}
+    ]
+  },
+  "colorList": [
+  {
+    "name": "purple",
+    "variable": "$purple",
+    "colorHex": "7D26CD"
+  },
+  {
+    "name": "tiber",
+    "variable": "$tiber",
+    "colorHex": "07292F"
+  },
+  {
+    "name": "mecury",
+    "variable": "$mecury",
+    "colorHex": "eae9e9"
+  },
+  {
+    "name": "light_scampi",
+    "variable": "$light_scampi",
+    "colorHex": "685FA1"
+  },
+  {
+    "name": "dove_gray",
+    "variable": "$dove_gray",
+    "colorHex": "737373"
+  },
+  {
+    "name": "brown",
+    "variable": "$brown",
+    "colorHex": "a03321"
+  },
+  {
+    "name": "medium_red_violet",
+    "variable": "$medium_red_violet",
+    "colorHex": "B62A99"
+  },
+  {
+    "name": "dark_medium_red_violet",
+    "variable": "$dark_medium_red_violet",
+    "colorHex": "b43393"
+  },
+  {
+    "name": "violet_blue",
+    "variable": "$violet_blue",
+    "colorHex": "a54f9e"
+  },
+  {
+    "name": "mandy",
+    "variable": "$mandy",
+    "colorHex": "E24256"
+  },
+  {
+    "name": "plum",
+    "variable": "$plum",
+    "colorHex": "7e2268"
+  },
+  {
+    "name": "wisteria",
+    "variable": "$wisteria",
+    "colorHex": "8e68ad"
+  },
+  {
+    "name": "grape",
+    "variable": "$grape",
+    "colorHex": "541c56"
+  },
+  {
+    "name": "paris_m",
+    "variable": "$paris_m",
+    "colorHex": "202855"
+  },
+  {
+    "name": "east_bay",
+    "variable": "$east_bay",
+    "colorHex": "4E4682"
+  },
+  {
+    "name": "victoria",
+    "variable": "$victoria",
+    "colorHex": "4D4391"
+  },
+  {
+    "name": "scampi",
+    "variable": "$scampi",
+    "colorHex": "685FA1"
+  },
+  {
+    "name": "sandybrown",
+    "variable": "$sandybrown",
+    "colorHex": "EF9955"
+  },
+  {
+    "name": "sandybrown",
+    "variable": "$sandybrown",
+    "colorHex": "EF9955"
+  },
+  {
+    "name": "jaffa",
+    "variable": "$jaffa",
+    "colorHex": "ee8c39"
+  },
+  {
+    "name": "saffron",
+    "variable": "$saffron",
+    "colorHex": "F2B438"
+  },
+  {
+    "name": "saffron_light",
+    "variable": "$saffron_light",
+    "colorHex": "f2b437"
+  },
+  {
+    "name": "cinnabar",
+    "variable": "$cinnabar",
+    "colorHex": "EC3B3A"
+  },
+  {
+    "name": "cinnabar_dark",
+    "variable": "$cinnabar_dark",
+    "colorHex": "ee5523"
+  },
+  {
+    "name": "cardinal",
+    "variable": "$cardinal",
+    "colorHex": "bf2026"
+  },
+  {
+    "name": "pomegranate",
+    "variable": "$pomegranate",
+    "colorHex": "ed3330"
+  },
+  {
+    "name": "roman",
+    "variable": "$roman",
+    "colorHex": "DF6859"
+  },
+  {
+    "name": "mauvelous",
+    "variable": "$mauvelous",
+    "colorHex": "F38AA5"
+  },
+  {
+    "name": "beed_blush",
+    "variable": "$beed_blush",
+    "colorHex": "e764a0"
+  },
+  {
+    "name": "maxican_red",
+    "variable": "$maxican_red",
+    "colorHex": "a21d2e"
+  },
+  {
+    "name": "kobi",
+    "variable": "$kobi",
+    "colorHex": "d481b5"
+  },
+  {
+    "name": "illusion",
+    "variable": "$illusion",
+    "colorHex": "ee97ac"
+  },
+  {
+    "name": "celery",
+    "variable": "$celery",
+    "colorHex": "A4CE55"
+  },
+  {
+    "name": "de_york",
+    "variable": "$de_york",
+    "colorHex": "6EC17F"
+  },
+  {
+    "name": "eucalyptus",
+    "variable": "$eucalyptus",
+    "colorHex": "2A9B58"
+  },
+  {
+    "name": "tradewind",
+    "variable": "$tradewind",
+    "colorHex": "4bab99"
+  },
+  {
+    "name": "moss_green",
+    "variable": "$moss_green",
+    "colorHex": "b3d9a1"
+  },
+  {
+    "name": "danube",
+    "variable": "$danube",
+    "colorHex": "6093CD"
+  },
+  {
+    "name": "danube",
+    "variable": "$danube",
+    "colorHex": "6093CD"
+  },
+  {
+    "name": "light_danube",
+    "variable": "$light_danube",
+    "colorHex": "627abc"
+  },
+  {
+    "name": "indigo",
+    "variable": "$indigo",
+    "colorHex": "5F7AC9"
+  },
+  {
+    "name": "mariner",
+    "variable": "$mariner",
+    "colorHex": "4759a6"
+  },
+  {
+    "name": "robin_egg_blue",
+    "variable": "$robin_egg_blue",
+    "colorHex": "00BFC6"
+  },
+  {
+    "name": "pelorous",
+    "variable": "$pelorous",
+    "colorHex": "37BFBE"
+  },
+  {
+    "name": "iris_blue",
+    "variable": "$iris_blue",
+    "colorHex": "03acc3"
+  },
+  {
+    "name": "red_berry",
+    "variable": "$red_berry",
+    "colorHex": "711e29"
+  },
+  {
+    "name": "bay_of_may",
+    "variable": "$bay_of_may",
+    "colorHex": "2b378c"
+  },
+  {
+    "name": "viking",
+    "variable": "$viking",
+    "colorHex": "3bbfbd"
+  },
+  {
+    "name": "denim",
+    "variable": "$denim",
+    "colorHex": "127f99"
+  },
+  {
+    "name": "tory_blue",
+    "variable": "$tory_blue",
+    "colorHex": "134b90"
+  },
+  {
+    "name": "wild_sand",
+    "variable": "$wild_sand",
+    "colorHex": "f4f4f4"
+  },
+  {
+    "name": "alto",
+    "variable": "$alto",
+    "colorHex": "dddddd"
+  },
+  {
+    "name": "grey",
+    "variable": "$grey",
+    "colorHex": "333333"
+  },
+  {
+    "name": "dusty_grey",
+    "variable": "$dusty_grey",
+    "colorHex": "999999"
+  },
+  {
+    "name": "santas_gray",
+    "variable": "$santas_gray",
+    "colorHex": "a3a3a6"
+  },
+  {
+    "name": "light_gray",
+    "variable": "$light_gray",
+    "colorHex": "cacaca"
+  },
+  {
+    "name": "turquoise",
+    "variable": "$turquoise",
+    "colorHex": "21e0d8"
+  },
+  {
+    "name": "green",
+    "variable": "$green",
+    "colorHex": "124f52"
+  },
+  {
+    "name": "gold",
+    "variable": "$gold",
+    "colorHex": "fad400"
+  },
+  {
+    "name": "violet",
+    "variable": "$violet",
+    "colorHex": "d127fc"
+  },
+  {
+    "name": "violet_electric",
+    "variable": "$violet_electric",
+    "colorHex": "cf25f8"
+  },
+  {
+    "name": "purple_dark",
+    "variable": "$purple_dark",
+    "colorHex": "cd36f5"
+  },
+  {
+    "name": "purple_flirt",
+    "variable": "$purple_flirt",
+    "colorHex": "990099"
+  },
+  {
+    "name": "red",
+    "variable": "$red",
+    "colorHex": "f82353"
+  },
+  {
+    "name": "cardinal_red",
+    "variable": "$cardinal_red",
+    "colorHex": "ce1d43"
+  },
+  {
+    "name": "orange",
+    "variable": "$orange",
+    "colorHex": "ff8e1f"
+  },
+  {
+    "name": "dark_orange",
+    "variable": "$dark_orange",
+    "colorHex": "d46900"
+  },
+  {
+    "name": "rose_pink",
+    "variable": "$rose_pink",
+    "colorHex": "e60382"
+  },
+  {
+    "name": "meadow",
+    "variable": "$meadow",
+    "colorHex": "21E078"
+  }
+]
+}

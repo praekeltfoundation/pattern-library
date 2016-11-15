@@ -1,0 +1,18 @@
+/**
+* Include this on MODULES/_M-LANGUAGE-DROPDOWN
+*/
+
+.languages__bar {
+  width: 50%;
+}
+
+.language-list--horizontal {
+  .language-list__item {
+    display: inline-block;
+    color: #5a5d5e;
+    &:after {
+      content: "|";
+      padding: 0 5px;
+    }
+  }
+}

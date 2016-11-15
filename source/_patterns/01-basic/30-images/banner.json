@@ -1,0 +1,24 @@
+{
+  "title":"Banner Image",
+  "headline":{
+    "medium":"Banner image links to a page. The position of the banner is decided beforehand by the programmers."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "--",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "bannerImage":{
+    "img": {
+      "landscape-16x9": {
+        "src": "/images/full-width-image.png",
+        "alt": "16x9 Image"
+      }
+    }
+  }
+}

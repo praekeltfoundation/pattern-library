@@ -100,3 +100,45 @@ Note:
 
   LESSON
   IT WILL TAKE FURTHER ITERATIONS TO PRODUCE WORKABLE LEAN - THAT IS MORE MODULAR AND AGILE
+<<<<<<< HEAD
+=======
+
+  Pattern Lap | Testing
+
+  Test for:
+  -  code control
+  - for screen sizes
+  - user interaction methods
+  - different browsers
+  - devices capability
+
+  To Achieve
+  - document the design systems in one place
+  - break design into modular components
+  - offer an environmentfor testing and debugging bugs
+  - team collaboration
+
+- The PL must be repeatedly tested on a set of quality checks and steps to release and roll-out changes
+- The tests should be automated as part of a CI(continuous integration)  
+- Spot regression errors
+
+STEPS:
+  The entire system must be:
+  - Build [check]
+  - Testing
+  - Bundled [check]
+  - Versioned
+  - Documented [check]
+  - Deployed automatically [check]
+
+  How to do Testing
+  Outcomes displays on Github repository:
+  -  Build Status
+  - Test results
+  - Dependency status
+
+References
+  https://tinnedfruit.com/2016/09/12/why-and-how-to-test-your-pattern-library.html
+  https://tinnedfruit.com/2016/09/20/why-and-how-to-test-your-pattern-library-2.html
+  https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935#.pkds4iw3j
+  feature/PL-6-create-basic-components

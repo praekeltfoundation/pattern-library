@@ -1,0 +1,16 @@
+{
+  "title": "Article Teasers Hero",
+  "headline": {
+    "medium": "The article hero teaser component is only used on the home page and only one hero teaser can be displayed at a time."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  }
+}

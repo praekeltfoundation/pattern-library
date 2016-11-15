@@ -1,0 +1,75 @@
+/*------------------------------------*\
+#ISH STYLES
+\*------------------------------------*/
+
+
+
+
+
+
+
+
+.twitter-typeahead {
+    width: 100%;
+}
+
+.typeahead {
+    border: 0;
+    background: $sg-gray-dark;
+    color: $sg-gray;
+    width: 90%;
+    right: 0;
+    padding: 10px 10px 15px 10px;
+    text-transform: capitalize;
+    &:focus {
+      background: $sg-gray;
+      color: $sg-white;
+    }
+}
+
+.tt-input {
+    background: $sg-gray;
+    color: #ccc;
+    font-size: 15px;
+    text-transform: capitalize;
+    &:focus {
+        text-transform: capitalize;
+    }
+}
+
+.tt-hint {
+    text-transform: lowercase;
+    border-bottom-right-radius: $sg-border-radius-med;
+    border-bottom-left-radius: $sg-border-radius-med;
+}
+
+.tt-dropdown-menu {
+    text-transform: lowercase;
+    background-color: $sg-gray;
+    width: 100%;
+    border-bottom-right-radius: $sg-border-radius-med;
+    border-bottom-left-radius: $sg-border-radius-med;
+}
+
+.tt-suggestion {
+    color: $sg-gray-light;
+    font-size: 75%;
+    padding: 0.8em;
+}
+
+.tt-suggestion.tt-cursor {
+    color: $sg-white;
+    background: $sg-tint-2;
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+.sg-sub-nav {
+  list-style: none;
+  a {
+      text-transform: none;
+      padding-left: 1rem;
+  }
+}

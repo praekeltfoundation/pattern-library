@@ -1,0 +1,11 @@
+/**
+* Include this on MODULES/_M-BANNER.SCSS
+*/
+
+.banner__item-link {
+  display: block;
+}
+.banner__item {
+  max-width: 640px;
+  width: 100%;
+}

@@ -1,0 +1,8 @@
+.breadcrumbs-list__anchor {
+  &:hover, &focus {
+    text-decoration: underline;
+  }
+  &--#{is-active} {
+    text-decoration: underline;
+  }
+}

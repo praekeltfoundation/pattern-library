@@ -1,0 +1,29 @@
+{
+  "title": "Search Form",
+  "headline": {
+    "medium": "The position of the search query form varies. E.g Below the main navigation"
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "The position of the search query form varies. E.g Below the main navigation",
+      "unorderedList": [
+        {"text":"The position of the search query form varies. E.g Below the header navigation"},
+        {"text":"The search query can be positioned above or below the section navigation menu"},
+        {"text":"Or it can be positioned above the footer copyright content"}
+      ]
+    }
+    ]
+  },
+  "inputFields": [
+    {"field": {
+      "type": "search",
+      "element": "input",
+      "label": "Do you have questions on love, sex and relationships?",
+      "value": "Search",
+      "placeholder":"Search the site...",
+      "validate": "",
+      "maxlength": ""
+    }}
+  ]
+}
