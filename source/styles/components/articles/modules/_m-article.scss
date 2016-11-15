@@ -32,3 +32,19 @@
   border-top: 1px solid #E5E7E9;
   padding: 10px 0;
 }
+
+.article-teaser-list__likes-counter {
+  padding: 5px 0;
+  @media screen and (min-width: 320px)  {
+    padding: 0 15px 0 10px;
+    float: left;
+  }
+}
+
+.article-teaser-lis__comment-counter {
+  padding: 5px 0;
+  @media screen and (min-width: 320px)  {
+    padding: 0 10px 0 15px;
+    float: right;
+  }
+}
