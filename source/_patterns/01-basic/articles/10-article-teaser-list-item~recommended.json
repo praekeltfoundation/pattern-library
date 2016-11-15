@@ -1,0 +1,17 @@
+{
+  "title": "Article Teasers: List Items",
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "tagLabels": {
+    "label": "Recommended for you",
+    "tag_name": ""
+  }
+}
