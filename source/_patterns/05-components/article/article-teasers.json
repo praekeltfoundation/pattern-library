@@ -12,5 +12,11 @@
       ]
     }
     ]
-  }
+  },
+  "articleContent": [
+    {
+      "heading":"",
+      "excerpt":""
+    }
+  ]
 }
