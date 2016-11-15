@@ -1,0 +1,23 @@
+{
+  "title": "Verical Language List",
+  "headline":{
+    "medium":"Molo sites are built to support multiple languages; if the site has more than one language then the language selection list appears"
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "---",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "languagesVerticalBlock": {
+    "languageList":[{"language":"English"},
+      {"language":"Kiswahili"},
+      {"language":"Bahasa"},
+      {"language":"Arabic"}
+    ]
+  }
+}

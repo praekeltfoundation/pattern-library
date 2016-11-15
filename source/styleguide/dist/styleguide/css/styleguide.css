@@ -1,0 +1,1269 @@
+@charset "UTF-8";
+html {
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sg-header {
+  background: #242526;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Roboto, sans-serif;
+  text-transform: capitalize;
+  margin: 0 auto;
+  padding: 10px;
+}
+@media screen and (min-width: 42em) {
+  .sg-header {
+    padding: 20px 15%;
+  }
+}
+
+.sg-footer {
+  background-color: #fff;
+  border-top: 1px solid #d7dbdd;
+  font-family: Roboto, sans-serif;
+  padding: 15px 10px;
+  color: #242526;
+}
+@media screen and (min-width: 975px) {
+  .sg-footer {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 15px 15%;
+  }
+}
+.sg-footer p {
+  color: #5a5d5e;
+  font-size: 14px;
+  margin: 0;
+}
+
+#sg-cover {
+  position: absolute;
+}
+
+#sg-vp-wrap {
+  height: 100%;
+}
+
+.sg-gen-container {
+  padding-top: 40px;
+}
+
+#sg-viewport {
+  border: none;
+}
+
+/**
+* Annotations
+* 1) Annotation styles that appear in the modal
+*/
+/**
+* Annotated elements styles
+* 1) For elements in the DOM that have an annotation, we want to
+* provide styles that help the user understand that annotations are available.
+* We do this with some cursor helpers and a
+*/
+.has-annotation {
+  cursor: help !important;
+  -webkit-box-shadow: 0 0 10px #808080;
+          box-shadow: 0 0 10px #808080;
+}
+.has-annotation a, .has-annotation input {
+  cursor: help !important;
+}
+.has-annotation:hover {
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+.has-annotation.active {
+  -webkit-box-shadow: inset 0 0 20px #808080;
+          box-shadow: inset 0 0 20px #808080;
+}
+
+.annotation-tip {
+  display: block;
+  position: absolute;
+  margin-top: -5px !important;
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 13px !important;
+  text-align: center !important;
+  background: #444 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  z-index: 100;
+  right: 10px;
+}
+
+.sg-annotations {
+  margin: 1rem 0;
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+}
+
+.sg-annotations-title {
+  font-size: 1rem !important;
+  margin: 0 0 0.5rem;
+}
+
+.sg-annotations-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: the-count;
+}
+.sg-annotations-list > li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  -webkit-transition: background 0.1s ease;
+          transition: background 0.1s ease;
+}
+.sg-annotations-list > li:before {
+  content: counter(the-count);
+  counter-increment: the-count;
+  font-size: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  background: #ccc;
+  color: #222;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.sg-annotations-list > li.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.sg-annotations-list-title {
+  display: inline;
+  font-size: 100%;
+}
+.sg-annotations-list-title:after {
+  content: "—";
+}
+
+#sg-comments-container {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.sg-comment-container {
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.sg-comment-container p:last-child {
+  margin-bottom: 0;
+}
+.sg-comment-container h2 {
+  margin-bottom: 0.25em;
+}
+
+.sg-header .heading-logo {
+  font-weight: bold;
+  color: #fff;
+  font-size: 22px;
+  padding: 0;
+}
+@media screen and (min-width: 480px) {
+  .sg-header .heading-logo {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .sg-header .heading-logo {
+    font-size: 22px;
+  }
+}
+.sg-header .heading-logo:hover, .sg-header .heading-logo:focus, .sg-header .heading-logo.active {
+  color: #ccc;
+}
+.sg-header .heading-logo small {
+  font-size: 12px;
+  color: #A6ACAF;
+  font-weight: normal;
+  padding-left: 15px;
+  text-transform: capitalize;
+}
+.sg-header a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  padding: 0 5px;
+  -webkit-transition: background 0.1s ease-out;
+          transition: background 0.1s ease-out;
+  -webkit-transition: color 0.1s ease-out;
+          transition: color 0.1s ease-out;
+}
+.sg-header a:hover, .sg-header a:focus, .sg-header a.active {
+  color: #fff;
+  background: #222;
+}
+
+.sg-controls {
+  padding: 10px 0;
+  overflow: auto;
+}
+@media screen and (min-width: 800px) {
+  .sg-controls {
+    float: right;
+  }
+}
+.sg-controls ul.sg-control li.sg-size {
+  width: auto;
+}
+@media screen and (min-width: 42em) {
+  .sg-controls ul.sg-control li.sg-size {
+    float: left;
+  }
+}
+.sg-controls ul.sg-control li.sg-size .sg-current-size {
+  color: #ccc;
+  float: left;
+  padding-right: 15px;
+}
+.sg-controls ul.sg-control li.sg-size .sg-current-size #sg-form {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.sg-controls ul.sg-control li.sg-size .sg-current-size #sg-form .sg-input {
+  margin: 0;
+  padding: 0.1em;
+  border: 0;
+  border-radius: 3px;
+  background: #242526;
+  color: #ccc;
+  text-align: right;
+  -webkit-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out;
+  font-size: 13px;
+  width: 45px;
+}
+.sg-controls ul.sg-control li.sg-size .sg-current-size #sg-form .sg-input.sg-size-px {
+  width: 45px;
+}
+.sg-controls ul.sg-control li.sg-size .sg-current-size #sg-form .sg-input:hover {
+  color: #fff;
+  background: #242526;
+}
+.sg-controls ul.sg-control li.sg-size .sg-current-size #sg-form .sg-input:active, .sg-controls ul.sg-control li.sg-size .sg-current-size #sg-form .sg-input:focus {
+  outline: 0;
+  background: #808080;
+  color: #fff;
+}
+.sg-controls ul.sg-control li.sg-size ul.sg-size-options {
+  float: left;
+}
+.sg-controls ul.sg-control li.sg-size ul.sg-size-options li {
+  float: left;
+}
+.sg-controls ul.sg-control li.sg-size ul.sg-size-options li a {
+  color: #ccc;
+  font-size: 13px;
+}
+@media screen and (min-width: 42em) {
+  .sg-controls ul.sg-control li.sg-tools {
+    float: left;
+  }
+}
+.sg-controls ul.sg-control li.sg-tools .sg-tools-toggle {
+  background: transparent;
+  color: #ccc;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  padding: 3px 0;
+}
+.sg-controls ul.sg-control li.sg-tools .sg-tools-toggle:after {
+  display: none;
+  content: "";
+}
+.sg-controls ul.sg-control li.sg-tools .sg-checklist {
+  z-index: 99999;
+}
+@media screen and (min-width: 42em) {
+  .sg-controls ul.sg-control li.sg-tools .sg-checklist {
+    position: absolute;
+    left: auto;
+  }
+}
+.sg-controls ul.sg-control li.sg-tools .sg-checklist a {
+  padding: 10px;
+}
+.sg-controls .sg-find {
+  position: relative;
+}
+
+/*------------------------------------*\
+#MODAL
+\*------------------------------------*/
+/**
+* The modal appears when "show pattern info" is selected
+* on the pattern detail screen.
+*/
+.sg-modal {
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  line-height: 1.4;
+  font-size: 90%;
+  background: #000;
+  color: #ccc;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /**
+  * Pattern Breadcrumbs inside modal
+  */
+  /**
+  * Pattern Header inside modal
+  */
+  /**
+  * Pattern Title inside modal
+  */
+  /**
+  * Pattern Information inside modal
+  */
+  /**
+  * Pattern info links inside modal
+  */
+  /**
+  * Pattern Description inside modal
+  */
+  /**
+  * Pattern Annotations inside modal
+  */
+  /**
+  * Pattern tab panel inside modal
+  */
+}
+.sg-modal.anim-ready {
+  -webkit-transition: bottom 0.3s ease-out;
+          transition: bottom 0.3s ease-out;
+}
+.sg-modal .sg-pattern-breadcrumb {
+  color: #808080;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+.sg-modal .sg-pattern-head {
+  margin-bottom: 0.5rem;
+}
+.sg-modal .sg-pattern-title {
+  font-size: 1.4rem !important;
+  color: #eee;
+}
+.sg-modal .sg-pattern-extra {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-height: none;
+  padding: 0;
+}
+.sg-modal .sg-pattern-extra.active {
+  max-height: none;
+}
+.sg-modal .sg-pattern-extra-info a {
+  color: #ccc;
+}
+.sg-modal .sg-pattern-extra-info a:hover, .sg-modal .sg-pattern-extra-info a:focus {
+  color: #eee;
+}
+.sg-modal .sg-pattern-desc {
+  border-bottom-color: #808080;
+}
+.sg-modal .sg-annotations {
+  border-top-color: #808080;
+}
+.sg-modal .sg-tabs-content {
+  border: 0;
+}
+
+/**
+* Modal close button
+* 1) Closes the modal popup
+* 2) Reposition to jut out of modal if parent modal has class of active
+*/
+.sg-modal-close-btn {
+  font-size: 70%;
+  background: #000;
+  color: #808080;
+  border: 0;
+  border-radius: 6px 6px 0 0;
+  display: inline-block;
+  padding: 0.9em 0.7em 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  -webkit-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out;
+  /* 2 */
+}
+.sg-modal.active .sg-modal-close-btn {
+  top: -1.5rem;
+}
+.sg-modal-close-btn:hover, .sg-modal-close-btn:focus {
+  background: #222;
+  color: #eee;
+}
+
+/**
+* Modal Content
+*/
+.sg-modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/**
+* Modal Content Inner Wrapper
+*/
+.sg-modal-content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*------------------------------------*\
+#PATTERN LAB CONTENT
+\*------------------------------------*/
+/**
+* Pattern
+* 1) This is an individual pattern that appears in the "view all" template.
+* It contains pattern title and toggle to view more information, such as
+* description, lineage, code, etc.
+* 2) Prevents absolutely-positioned elements from floating to the top
+* 3) Prevents floated patterns from floating wraps
+*/
+.sg-pattern {
+  margin-bottom: 2em;
+  position: relative;
+  /* 2 */
+  clear: both;
+  /* 3 */
+}
+
+/**
+* Pattern Header
+*/
+.sg-pattern-head {
+  position: relative;
+  padding: 0.5rem 0 0;
+  line-height: 1.3;
+  font-size: 90%;
+  color: #808080;
+}
+.sg-pattern-head:empty {
+  padding: 0;
+}
+
+/**
+* Pattern Title
+*/
+.sg-pattern-title {
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif !important;
+  font-size: 14px;
+  font-weight: bold !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-transform: capitalize !important;
+  /**
+  * Pattern State that appears within a pattern title
+  */
+}
+.sg-pattern-title a {
+  display: inline-block;
+  padding: 10px 0 13px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.sg-pattern-title a:hover, .sg-pattern-title a:focus {
+  color: #000 !important;
+}
+.sg-pattern-title .sg-pattern-state {
+  font-size: 80%;
+  font-weight: normal;
+  color: #ccc;
+}
+
+/**
+* Pattern Extra Toggle Button
+* 1) This is the button that twirls down extra pattern info
+*/
+.sg-pattern-extra-toggle {
+  font-size: 9px;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  z-index: 1;
+  padding: 0.65em;
+  line-height: 1;
+  color: #808080;
+  font-weight: normal;
+  border: 1px solid #ddd;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-transition: background 0.1s ease-out;
+          transition: background 0.1s ease-out;
+}
+.sg-pattern-extra-toggle span {
+  display: inline-block;
+}
+.sg-pattern-extra-toggle:hover, .sg-pattern-extra-toggle:focus, .sg-pattern-extra-toggle.active {
+  background: #eee;
+  color: #000;
+}
+.sg-pattern-extra-toggle.active {
+  border-bottom-color: #eee;
+}
+.sg-pattern-extra-toggle.active span {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/**
+* Pattern Extra
+* 1) This is the info panel that contains extra pattern info
+* like pattern description, lineage, code, and more
+*/
+.sg-pattern-extra {
+  background: #eee;
+  border-top: 1px solid #ddd;
+  margin-bottom: 1em;
+  overflow: hidden;
+  max-height: 1px;
+  -webkit-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out;
+}
+.sg-pattern-extra a {
+  text-decoration: underline;
+  color: #222;
+}
+.sg-pattern-extra a:hover, .sg-pattern-extra a:focus {
+  color: #808080;
+}
+.sg-pattern-extra.active {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  border-top-right-radius: 0;
+  max-height: 50em;
+}
+
+/**
+* Pattern Extra
+* 1) This is the info panel that contains extra pattern info
+* like pattern description, lineage, code, and more
+*/
+@media all and (min-width: 42em) {
+  .sg-pattern-extra-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+
+/**
+* Pattern Extra Info
+* 1) This div contains pattern description, lineage, status, and other info
+*/
+.sg-pattern-extra-info {
+  padding: 0.5rem 0.5rem 0;
+  line-height: 1.4;
+  color: #808080;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sg-pattern-extra-info:empty {
+  padding: 0;
+}
+@media all and (min-width: 42em) {
+  .sg-pattern-extra-info {
+    padding: 1em;
+    width: 40%;
+  }
+}
+
+/**
+* Pattern Description
+*/
+.sg-pattern-desc {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.sg-pattern-desc p:last-child {
+  margin: 0;
+}
+
+/**
+* Pattern Lineage info
+*/
+.sg-pattern-lineage {
+  font-size: 90%;
+  font-style: italic;
+}
+
+/**
+* Pattern Code Container
+*/
+.sg-pattern-extra-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 90%;
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  /**
+  * Code blocks
+  */
+}
+.sg-pattern-extra-code pre {
+  overflow: scroll !important;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0.5rem 0.5rem !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  border-radius: 0 6px 6px 6px !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.sg-pattern-extra-code code {
+  display: block;
+  -moz-tab-size: 2 !important;
+    -o-tab-size: 2 !important;
+       tab-size: 2 !important;
+}
+@media all and (min-width: 42em) {
+  .sg-pattern-extra-code {
+    width: 60%;
+    padding: 1em;
+  }
+}
+
+/**
+* Pattern Category
+* 1) This appears in the index page and delineates a major section,
+*    such as "global", "blocks", "etc".
+* 2) The category contains a title and optional description
+*/
+.sg-pattern-category {
+  margin-top: 6rem;
+  font: "HelveticaNeue", "Helvetica", "Arial", sans-serif !important;
+}
+.sg-pattern-category:first-of-type {
+  margin-top: 2rem;
+}
+
+/**
+* Pattern Category Title
+*/
+.sg-pattern-category-title {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 3px;
+  text-transform: capitalize;
+}
+.sg-pattern-category-title a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: normal;
+  text-decoration: none;
+  -webkit-transition: color 0.1s ease-out;
+          transition: color 0.1s ease-out;
+}
+.sg-pattern-category-title a:hover, .sg-pattern-category-title afocus {
+  text-decoration: underline;
+}
+
+/**
+* Pattern Category Description
+* 1) This is an optional description that sits below the category title.
+*/
+.sg-pattern-category-body {
+  font-size: 80%;
+  line-height: 1.3;
+}
+.sg-pattern-category-body:empty {
+  display: none;
+}
+
+/**
+* Viewport wrapper div
+* 1) This wrapper div occupies all remaining viewport space after PL's header
+*/
+#sg-vp-wrap {
+  text-align: center;
+  width: 100%;
+  /*position: fixed;
+  top: 4.2em;
+  bottom: 0;
+  left: 0;*/
+  right: 0;
+  z-index: 0;
+}
+
+/**
+* Cover
+* 1) This is an invisible div that sits above the iframe and is
+* used in JS for manual viewport resizing purposes.
+*/
+#sg-cover {
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 20;
+  cursor: col-resize;
+}
+
+/**
+* Gen Cover
+* 1) This is
+*/
+#sg-gen-container {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+#sg-gen-container.hay-mode {
+  -webkit-transition: all 40s linear;
+          transition: all 40s linear;
+}
+#sg-gen-container:hover .right-pull {
+  opacity: 0.7;
+}
+
+/**
+* Viewport iframe
+* 1) this is the actual <iframe>
+*/
+#sg-viewport {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  /**
+  * Hay Mode transition
+  * 1) Hay Mode (disabled by default) starts with the smallest: viewport then slowly expands
+  */
+}
+#sg-viewport.hay-mode {
+  -webkit-transition: all 40s linear;
+          transition: all 40s linear;
+}
+
+/**
+* Right pull container
+* 1) Container used for manual resizing
+*/
+#sg-rightpull-container {
+  width: 14px;
+  float: right;
+  margin: 0;
+  height: 100%;
+  cursor: col-resize;
+}
+
+#sg-rightpull {
+  background: #f2f1f1;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background 0.1s ease-out;
+          transition: background 0.1s ease-out;
+}
+#sg-rightpull:hover, #sg-rightpull:active {
+  cursor: col-resize;
+}
+
+.right-pull {
+  opacity: 0.5;
+}
+
+.showViewport {
+  opacity: 1;
+}
+
+/**
+* VP animate
+* 1) This is an added class that is activated by JS to
+* transition the width of the viewport
+*/
+.vp-animate {
+  -webkit-transition: width 0.8s ease-out;
+          transition: width 0.8s ease-out;
+}
+
+.submenu-header {
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  border-bottom: 1px solid #D7DBDD;
+}
+@media screen and (min-width: 42em) {
+  .submenu-header {
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 69px;
+  }
+}
+.submenu-header .sg-nav-toggle {
+  color: #000;
+  display: block;
+  padding: 10px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media all and (min-width: 42em) {
+  .submenu-header .sg-nav-toggle {
+    display: none;
+  }
+}
+@media all and (max-width: 42em) {
+  .submenu-header .sg-nav-container {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height 0.1s ease-out;
+            transition: max-height 0.1s ease-out;
+  }
+  .submenu-header .sg-nav-container.active {
+    max-height: 50em;
+  }
+}
+
+.sg-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sg-nav li {
+  cursor: pointer;
+}
+@media all and (min-width: 42em) {
+  .sg-nav li {
+    border-bottom: 0;
+    float: left;
+    position: relative;
+  }
+}
+.sg-nav li a.sg-acc-handle,
+.sg-nav li a.sg-pop {
+  display: block;
+  font-size: 16px;
+  padding: 0 0 15px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+@media all and (min-width: 42em) {
+  .sg-nav li a.sg-acc-handle,
+  .sg-nav li a.sg-pop {
+    padding: 25px;
+  }
+}
+.sg-nav li:nth-child(1) a.sg-acc-handle {
+  padding-left: 0;
+}
+.sg-nav li a.sg-acc-handle:after {
+  content: '▼';
+  color: #ccc;
+  display: inline-block;
+  font-size: 7px;
+  position: relative;
+  top: -2px;
+  right: -3px;
+  -webkit-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out;
+}
+@media all and (min-width: 42em) {
+  .sg-nav li a.sg-acc-handle:after {
+    float: none;
+  }
+}
+.sg-nav li a.sg-acc-handle:hover, .sg-nav li a.sg-acc-handle:focus {
+  text-decoration: underline;
+}
+.sg-nav li a.sg-acc-handle.active:after {
+  top: -2px;
+  color: #808080;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.sg-acc-panel {
+  overflow: hidden;
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 10em;
+  -webkit-transition: max-height 0.1s ease-out;
+          transition: max-height 0.1s ease-out;
+}
+.sg-acc-panel li {
+  background: #242526;
+}
+.sg-acc-panel li:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.sg-acc-panel li:last-child a {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.sg-acc-panel a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+.sg-acc-panel.active {
+  max-height: 120em;
+}
+
+#pl-pattern-nav-target .sg-acc-panel {
+  position: absolute;
+  left: 0;
+  z-index: 9999999;
+}
+#pl-pattern-nav-target .sg-acc-panel li {
+  float: none;
+  display: block;
+}
+#pl-pattern-nav-target .sg-acc-panel li a {
+  padding: 10px;
+  color: #fff;
+}
+#pl-pattern-nav-target .sg-acc-panel li ol.sg-sub-nav {
+  position: relative;
+}
+#pl-pattern-nav-target .sg-acc-panel li ol.sg-sub-nav li {
+  float: none;
+}
+#pl-pattern-nav-target .sg-acc-panel li ol.sg-sub-nav li a {
+  padding: 10px 15px;
+  color: #A6ACAF;
+  font-size: 13px;
+}
+
+/*------------------------------------*\
+#TABS
+\*------------------------------------*/
+.sg-tabs {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font: "HelveticaNeue", "Helvetica", "Arial", sans-serif !important;
+}
+
+.sg-tabs-list {
+  overflow: hidden;
+  position: relative;
+  bottom: -1px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sg-tabs-list li {
+  float: left;
+  margin-right: 3px;
+}
+.sg-tabs-list a {
+  display: block;
+  font-size: 90%;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.5em 1em;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  color: #808080;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.sg-tabs-list a:hover {
+  color: #222;
+}
+
+/**
+* Active Tab
+* 1) Note: the active tab color corresponds with the Prism code block
+* background color.
+*/
+.sg-tab-title-active a {
+  background: #f5f2f0;
+  /* 1 */
+  color: #222;
+}
+.sg-tab-title-active a:hover, .sg-tab-title-active a:focus {
+  color: #222;
+}
+
+.sg-tabs-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 0 6px 6px 6px;
+  overflow: hidden;
+}
+
+.sg-tabs-panel {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+  min-height: 12em;
+}
+@media all and (min-width: 42em) {
+  .sg-tabs-panel {
+    min-height: 7em;
+  }
+}
+
+/*------------------------------------*\
+#ISH STYLES
+\*------------------------------------*/
+.twitter-typeahead {
+  width: 100%;
+}
+
+.typeahead {
+  border: 0;
+  background: #222;
+  color: #808080;
+  width: 90%;
+  right: 0;
+  padding: 10px 10px 15px 10px;
+  text-transform: capitalize;
+}
+.typeahead:focus {
+  background: #808080;
+  color: #fff;
+}
+
+.tt-input {
+  background: #808080;
+  color: #ccc;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.tt-input:focus {
+  text-transform: capitalize;
+}
+
+.tt-hint {
+  text-transform: lowercase;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.tt-dropdown-menu {
+  text-transform: lowercase;
+  background-color: #808080;
+  width: 100%;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.tt-suggestion {
+  color: #eee;
+  font-size: 75%;
+  padding: 0.8em;
+}
+
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+.sg-sub-nav {
+  list-style: none;
+}
+.sg-sub-nav a {
+  text-transform: none;
+  padding-left: 1rem;
+}
+
+/*------------------------------------*\
+#PATTERN STATES
+\*------------------------------------*/
+/**
+* Pattern states add color-coded dots next to patterns
+* in the dropdown navigation.
+*/
+.sg-pattern-state {
+  text-transform: none !important;
+}
+
+/**
+* Pattern State bullet
+*/
+.sg-pattern-state:before {
+  content: "\2022";
+  margin-right: 4px;
+  font-size: 18px;
+  vertical-align: bottom;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/**
+* when part of a lineage muck with the size
+*/
+.sg-pattern-lineage .sg-pattern-state:before {
+  font-size: 12px;
+}
+
+/**
+* when part of a view all view muck with the size
+*/
+#sg-patterns .sg-pattern-state:before {
+  font-size: 14px;
+}
+
+#sg-patterns .sg-pattern-state {
+  color: #666;
+}
+
+/**
+* Pattern States that appear in the dropdown nav
+*/
+.sg-nav .sg-pattern-state:before {
+  margin-top: -4px;
+  margin-bottom: 0;
+  margin-left: -4px;
+  height: 20px;
+  display: block;
+  float: left;
+}
+
+/**
+* In Progress state
+*/
+.inprogress:before {
+  color: #FF4136 !important;
+}
+
+/**
+* In Review state
+*/
+.inreview:before {
+  color: #FFCC00 !important;
+}
+
+/**
+* Complete state
+*/
+.complete:before {
+  color: #2ECC40 !important;
+}

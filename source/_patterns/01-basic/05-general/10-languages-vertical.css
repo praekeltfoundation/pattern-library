@@ -1,0 +1,11 @@
+/**
+* Include this on MODULES/_M-LANGUAGE-DROPDOWN
+*/
+
+.languages__bar {
+  width: 50%;
+}
+
+.language-list--vertical {
+  display: block;
+}

@@ -1,0 +1,181 @@
+{
+  "title":"Molo Form",
+  "headline":{"medium":"A combination of form elements and styling"},
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "---",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "formBlock": {
+    "inputFields": [
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Name",
+        "value": "Name",
+        "validate": "",
+        "maxlength": ""
+      }},
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Surname",
+        "value": "Surname",
+        "validate": "",
+        "maxlength": ""
+      }},
+      {"field": {
+        "type": "password",
+        "element": "input",
+        "label": "Password",
+        "value": "Password",
+        "validate": "required",
+        "maxlength": ""
+      }},
+      {"field": {
+        "type": "email",
+        "element": "input",
+        "label": "Email address",
+        "value": "Email address",
+        "validate": "required",
+        "maxlength": ""
+      }},
+      {"field": {
+        "type": "number",
+        "element": "input",
+        "label": "Enter number",
+        "value": "Enter number",
+        "validate": "",
+        "maxlength": ""
+      }},
+      {"field": {
+        "type": "tel",
+        "element": "input",
+        "label": "Phone no.",
+        "value": "Phone no.",
+        "validate": "required",
+        "maxlength": 10
+      }},
+      {"field": {
+        "type": "search",
+        "element": "input",
+        "label": "Search",
+        "value": "Search",
+        "validate": "",
+        "maxlength": ""
+      }},
+      {"field": {
+        "type": "date",
+        "element": "input",
+        "label": "Date",
+        "value": "yyyy-mm-dd",
+        "validate": "",
+        "maxlength": ""
+      }},
+      {"field": {
+        "type": "datetime",
+        "element": "input",
+        "label": "Date time",
+        "value": "Y-m-d H:i:s",
+        "validate": "",
+        "maxlength": ""
+      }},
+      {"field": {
+        "type": "url",
+        "element": "input",
+        "label": "URL",
+        "value": "url",
+        "validate": "",
+        "maxlength": ""
+      }}
+    ],
+    "multipleChoice": {
+      "legend": "Choice between listed",
+      "fieldMultipleChoice": [
+        {"field":{
+          "type": "checkbox",
+          "element": "input",
+          "name": "choice",
+          "label": "Choice one",
+          "value": "1"
+        }},
+        {"field":{
+          "type": "checkbox",
+          "element": "input",
+          "name": "choice",
+          "label": "Choice two",
+          "value": "2"
+        }},
+        {"field":{
+          "type": "checkbox",
+          "element": "input",
+          "name": "choice",
+          "label": "Choice three",
+          "value": "3"
+        }},
+        {"field":{
+          "type": "checkbox",
+          "element": "input",
+          "name": "choice",
+          "label": "Choice four",
+          "value": "4"
+        }},
+        {"field":{
+          "type": "checkbox",
+          "element": "input",
+          "name": "choice",
+          "label": "Choice five",
+          "value": "5"
+        }}
+      ]
+    },
+    "chooseOneChoice": {
+      "legend": "Are you depressed",
+      "fieldchooseOneChoice": [
+        {"field":{
+          "type": "radio",
+          "element": "input",
+          "name": "choice",
+          "label": "Yes",
+          "value": "yes"
+        }},
+        {"field":{
+          "type": "radio",
+          "element": "input",
+          "name": "choice",
+          "label": "No",
+          "value": "noe"
+        }},
+        {"field":{
+          "type": "radio",
+          "element": "input",
+          "name": "choice",
+          "label": "Maybe",
+          "value": "maybe"
+        }}
+      ]
+    },
+    "fieldTextarea": {
+      "element": "textarea"
+    },
+    "fieldSelect": {
+      "element": "select",
+      "options": [
+        {"option": {
+            "key": "option",
+            "value": 1
+        }},
+        {"option": {
+            "key": "option",
+            "value": 2
+        }}
+      ]
+    }
+
+  }
+}

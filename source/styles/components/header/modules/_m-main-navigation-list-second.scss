@@ -1,0 +1,10 @@
+.header__navigation--second-instance {
+  .main-navigation-list__anchor {
+    text-transform: capitalize;
+    text-decoration: underline;
+    @media screen and (min-width: 320px)  {
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}

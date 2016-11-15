@@ -1,0 +1,11 @@
+.DS_Store
+.git
+.gitignore
+.eslintrc
+.editorconfig
+LICENSE
+README.md
+public
+patternlab.json
+node_modules
+

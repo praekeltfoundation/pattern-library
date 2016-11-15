@@ -1,0 +1,22 @@
+
+.nav-menu-list__anchor {
+  color: #07292F;
+  display: block;
+  text-decoration: underline;
+  @media screen and (min-width: 320px) {
+    text-decoration: none;
+  }
+  &:after {
+    padding: 0 10px;
+    text-align: right;
+    @media screen and (min-width: 320px) {
+      position: absolute;
+      right: 0;
+      top: 23px;
+      content: ">";
+    }
+    @media screen and (min-width: 490px) {
+      content: "❯";
+    }
+  }
+}
