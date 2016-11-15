@@ -15,17 +15,17 @@
   },
   "mainNavList": [
     {"link": {
-      "href": "#",
+      "href": "{{ link.components-search }}",
       "name": "Sign up",
       "id": "profiles"
     }},
     {"link": {
-      "href": "#",
+      "href": "{{ link.components-search }}",
       "name": "Menu",
       "id": ""
     }},
     {"link": {
-      "href": "#",
+      "href": "{{ link.components-search }}",
       "name": "Search",
       "id": "search"
     }}

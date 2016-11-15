@@ -1,0 +1,7 @@
+.nav-menu-list__anchor--submenu-list {
+  &:after {
+    @media screen and (min-width: 320px) {
+      content: "";
+    }
+  }
+}

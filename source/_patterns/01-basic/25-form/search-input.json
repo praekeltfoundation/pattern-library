@@ -12,5 +12,16 @@
       ]
     }
     ]
-  }
+  },
+  "inputFields": [
+    {"field": {
+      "type": "search",
+      "element": "input",
+      "label": "Search",
+      "value": "Search",
+      "placeholder":"Search the site...",
+      "validate": "",
+      "maxlength": ""
+    }}
+  ]
 }

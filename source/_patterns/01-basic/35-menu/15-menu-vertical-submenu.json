@@ -18,6 +18,8 @@
       "href": "#",
       "name": "Yourwords",
       "desc": "This is about something",
+      "color": "light_danube",
+      "colorHex": "#627abc",
       "subMenu": [
         {"link": {
           "href": "#",
@@ -40,7 +42,23 @@
     {"link": {
       "href": "#",
       "name": "Health Issues",
-      "desc": "This is about something"
+      "desc": "This is about something",
+      "color": "turquoise",
+      "colorHex": "#21e0d8"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Know your Body",
+      "desc": "This is about something",
+      "color": "turquoise",
+      "colorHex": "#21e0d8"
+    }},
+    {"link": {
+      "href": "#",
+      "name": "Rights On",
+      "desc": "This is about something",
+      "color": "turquoise",
+      "colorHex": "#21e0d8"
     }}
   ]
 }

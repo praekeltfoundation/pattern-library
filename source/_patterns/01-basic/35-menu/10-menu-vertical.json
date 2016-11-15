@@ -1,5 +1,5 @@
 {
-  "title": "Base Navigation",
+  "title": "Vertical Navigation",
   "headline": {
     "medium": "The menu is located in the footer, so when the user taps the Menu link in the header they jump down to the bottom of the page."
   },
@@ -17,54 +17,44 @@
     {"link": {
       "href": "#",
       "name": "Yourwords",
-      "desc": "This is about something"
+      "desc": "This is about something",
+      "color": "dark_medium_red_violet",
+      "colorHex": "#b43393"
     }},
     {"link": {
       "href": "#",
       "name": "Health Issues",
-      "desc": "This is about something"
+      "desc": "This is about something",
+      "color": "purple",
+      "colorHex": "#7D26CD"
     }},
     {"link": {
       "href": "#",
       "name": "Know your body",
-      "desc": "This is about something"
+      "desc": "This is about something",
+      "color": "mandy",
+      "colorHex": "#E24256"
     }},
     {"link": {
       "href": "#",
       "name": "Mind blowing",
-      "desc": "This is about something"
+      "desc": "This is about something",
+      "color": "saffron",
+      "colorHex": "F2B438"
     }},
     {"link": {
       "href": "#",
       "name": "Your Peeps",
-      "desc": "This is about something"
+      "desc": "This is about something",
+      "color": "mauvelous",
+      "colorHex": "#F38AA5"
     }},
     {"link": {
       "href": "#",
       "name": "Rights On",
-      "desc": "This is about something"
-    }}
-  ],
-  "nestedNavList": [
-    {"link": {
-      "href": "#",
-      "name": "Hot Topics",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "True Stories",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Your body",
-      "desc": "This is about something"
-    }},
-    {"link": {
-      "href": "#",
-      "name": "Sex",
-      "desc": "This is about something"
+      "desc": "This is about something",
+      "color": "celery",
+      "colorHex": "#A4CE55"
     }}
   ]
 }
