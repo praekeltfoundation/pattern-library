@@ -1,0 +1,23 @@
+{
+  "title": "Article Teaser Info",
+  "headline": {
+    "medium": "The article info can consists of the Category and Sub-category link the article title and the date."
+  },
+
+  "articleContent": [
+    {
+      "year": {
+        "long": "2016"
+      },
+      "month": {
+        "long": "January"
+      },
+      "day": {
+        "long": "01"
+      },
+      "category":"Category name here: sub-category",
+      "heading":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "excerpt":"Donec at elit eget ex vulputate pharetra eu maximus erat. In diam neque, molestie sit amet imperdiet ut, auctor eget quam. Praesent efficitur sagittis sollicitudin."
+    }
+  ]
+}
