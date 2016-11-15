@@ -1,0 +1,16 @@
+<div class="navigation">
+  <ul class="nav-menu-list">
+    {{# navList}}
+      <li class="nav-menu-list__item">
+        <a href="{{link.href}}" class="nav-menu-list__anchor nav-menu-list__anchor--submenu-list">{{link.name}}</a>
+        <ul class="nav-submenu-list">
+          {{# link.subMenu}}
+            <li class="nav-submenu-list__item">
+              <a href="{{link.href}}" class="nav-submenu-list__anchor">{{link.name}}</a>
+            </li>
+          {{/ link.subMenu}}
+        </ul>
+      </li>
+    {{/ navList}}
+  </ul>
+</div>

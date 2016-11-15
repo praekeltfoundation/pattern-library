@@ -1,0 +1,12 @@
+<div class="search search--{{styleModifier}}">
+  <form action="{{ link.components-search }}">
+  {{# inputFields}}
+  <fieldset>
+    <label>{{field.label}}
+        <{{field.element}} type="{{field.type}}"  name="{{field.label}}" placeholder="{{field.placeholder}}" />
+      {{> basic-submit-button:search-submit }}
+    </label>
+  </fieldset>
+  {{/ inputFields}}
+  </form>
+</div>

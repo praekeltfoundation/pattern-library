@@ -1,0 +1,28 @@
+.header__navigation--third-instance {
+  .main-navigation-list__anchor {
+    text-transform: capitalize;
+    text-decoration: underline;
+    @media screen and (min-width: 320px)  {
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  #search,
+  #profiles,
+  #menu  {
+    a {
+      width: 15px;
+    }
+  }
+
+  #search > .main-navigation-list__anchor {
+    @media screen and (min-width: 320px) {
+      background:  url('/images/icons/search.svg') no-repeat 0 0 / auto 100%;
+      text-indent: -99em;
+      position: absolute;
+      left: 145px;
+      top: 10%;
+    }
+  }
+}
