@@ -36,8 +36,7 @@
     text-align: center;
     margin: 0 auto;
     -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     &.hay-mode {
         transition: all 40s linear;
     }

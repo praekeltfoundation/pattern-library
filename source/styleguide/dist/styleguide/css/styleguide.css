@@ -805,8 +805,7 @@ ul {
   text-align: center;
   margin: 0 auto;
   -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 #sg-gen-container.hay-mode {
   -webkit-transition: all 40s linear;
