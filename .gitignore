@@ -1,7 +1,7 @@
 node_modules/*
 **node_modules**
-s
-**..DS_Store
+
+**.DS_Store**
 patternlab.json
 **.sass-cache**
 **.Thumbs.db
@@ -9,9 +9,3 @@ patternlab.json
 public
 
 LICENSE
-.DS_Store
-source/_patterns/.DS_Store
-source/_patterns/00-principles/.DS_Store
-source/_patterns/00-principles/devices/.DS_Store
-source/images/.DS_Store
-source/images/icons/.DS_Store
