@@ -1,14 +1,14 @@
 {
   "title": "Article Teasers: List Items",
   "headline": {
-    "medium": "Instead of just adding a link to page, add suggested articles from related tags at the bottom the article."
+    "medium": "A Article Teaser List can be used at the end of an article page to show articles that are related to the current article. It is best if the articles in the list are closely related to topic of article, so rather from the same tag than a category."
   },
   "sectionIntroduction": {
     "content":[
     {
-      "topic": "",
+      "topic": "Instead of just adding a link to page, add suggested articles from related tags at the bottom the article.",
       "unorderedList": [
-        {"text":""}
+        {"text":"---"}
       ]
     }
     ]
@@ -19,5 +19,9 @@
       {"text":"But there is no way to limit"},
       {"text":"Another example of the an article title"}
     ]
+  },
+  "tagLabels": {
+    "label": "More in:",
+    "tag_name": "Tag name"
   }
 }
