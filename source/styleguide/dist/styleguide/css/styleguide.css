@@ -1006,6 +1006,11 @@ ul {
   left: 0;
   z-index: 9999999;
 }
+@media screen and (min-width: 320px) {
+  #pl-pattern-nav-target .sg-acc-panel {
+    min-width: 300px;
+  }
+}
 #pl-pattern-nav-target .sg-acc-panel li {
   float: none;
   display: block;
@@ -1013,6 +1018,7 @@ ul {
 #pl-pattern-nav-target .sg-acc-panel li a {
   padding: 10px;
   color: #fff;
+  text-transform: uppercase;
 }
 #pl-pattern-nav-target .sg-acc-panel li ol.sg-sub-nav {
   position: relative;
@@ -1022,8 +1028,14 @@ ul {
 }
 #pl-pattern-nav-target .sg-acc-panel li ol.sg-sub-nav li a {
   padding: 10px 15px;
-  color: #A6ACAF;
+  color: #d9dbde;
   font-size: 13px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 320px) {
+  #pl-pattern-nav-target .sg-acc-panel li ol.sg-sub-nav li a {
+    padding: 10px 25px;
+  }
 }
 
 /*------------------------------------*\
@@ -1198,20 +1210,12 @@ ul {
 #PATTERN STATES
 \*------------------------------------*/
 /**
-* Pattern states add color-coded dots next to patterns
-* in the dropdown navigation.
-*/
-.sg-pattern-state {
-  text-transform: none !important;
-}
-
-/**
 * Pattern State bullet
 */
 .sg-pattern-state:before {
   content: "\2022";
-  margin-right: 4px;
-  font-size: 18px;
+  margin-right: 5px;
+  font-size: 30px;
   vertical-align: bottom;
   display: inline-block;
   text-decoration: none;
@@ -1239,7 +1243,7 @@ ul {
 * Pattern States that appear in the dropdown nav
 */
 .sg-nav .sg-pattern-state:before {
-  margin-top: -4px;
+  margin-top: -10px;
   margin-bottom: 0;
   margin-left: -4px;
   height: 20px;

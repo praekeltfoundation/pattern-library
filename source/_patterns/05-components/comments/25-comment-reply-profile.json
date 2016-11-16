@@ -1,12 +1,12 @@
 {
-  "title":"Comments",
+  "title":"Comments Reply",
   "headline": {
-    "medium": "Comments are only ever associated against an article page. A user must be logged in to submit a comment."
+    "medium": "This is a new nested workflow for viewing replies / adding a reply to a comment. Although we hadn’t supported this before because of feature phones, it is definitely the correct way forward."
   },
   "sectionIntroduction": {
     "content":[
     {
-      "topic": "Because we’re dealing with phones we usually don’t show more than 10 comments at a time; we include comment pagination to view older comments.",
+      "topic": "Regina has created this amazing nested workflow for viewing replies / adding a reply to a comment",
       "unorderedList": [
         {"text":""}
       ]
@@ -18,16 +18,18 @@
     "comments": [{
       "username": "PrettyPeaches",
       "dateInDays":"1 day ago",
+      "profileImage":"/images/icons/profiles.svg",
+      "profileAlt": "Profile Pic",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet ullamcorper arcu, nec tristique lacus suscipit vel. Integer luctus nulla elementum diam blandit, vitae egestas felis malesuada."
     }]
   },
   "meta": {
-    "commentCounter": {
+    "replyCounter": {
       "count": "14",
-      "label": "comments"
+      "label": "replies"
     },
     "likesCounter": {
-      "count": "14",
+      "count": "64",
       "label": "likes"
     }
   }

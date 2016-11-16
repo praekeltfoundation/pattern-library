@@ -3,21 +3,12 @@
 \*------------------------------------*/
 
 /**
-* Pattern states add color-coded dots next to patterns
-* in the dropdown navigation.
-*/
-
-.sg-pattern-state {
-    text-transform: none !important;
-}
-
-/**
 * Pattern State bullet
 */
 .sg-pattern-state:before {
     content: "\2022";
-    margin-right: 4px;
-    font-size: 18px;
+    margin-right: 5px;
+    font-size: 30px;
     vertical-align: bottom;
     display: inline-block;
     text-decoration: none;
@@ -45,7 +36,7 @@
 * Pattern States that appear in the dropdown nav
 */
 .sg-nav .sg-pattern-state:before {
-    margin-top: -4px;
+    margin-top: -10px;
     margin-bottom: 0;
     margin-left: -4px;
     height: 20px;

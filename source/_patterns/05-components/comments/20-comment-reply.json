@@ -12,5 +12,23 @@
       ]
     }
     ]
+  },
+  "commentsList": {
+    "title":"Comments",
+    "comments": [{
+      "username": "PrettyPeaches",
+      "dateInDays":"1 day ago",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet ullamcorper arcu, nec tristique lacus suscipit vel. Integer luctus nulla elementum diam blandit, vitae egestas felis malesuada."
+    }]
+  },
+  "meta": {
+    "replyCounter": {
+      "count": "14",
+      "label": "replies"
+    },
+    "likesCounter": {
+      "count": "64",
+      "label": "likes"
+    }
   }
 }
