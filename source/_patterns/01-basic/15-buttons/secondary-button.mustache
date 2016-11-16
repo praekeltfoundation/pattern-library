@@ -1,5 +1,6 @@
 
 <div class="call-to-action">
-  <{{anchor_button}} href="#" class="call-to-action__item-secondary call-to-action__item-secondary{{ styleModifier}}">Call to action</{{anchor_button}}>
-  <{{button}} class="call-to-action__item-secondary call-to-action__item-secondary{{ styleModifier}}">Call to action</{{button}}>
+  {{# call_to_action_secondary}}
+    <{{type}} {{href}}="{{link}}" class="call-to-action__item-secondary call-to-action__item-secondary{{ styleModifier}}">{{name}}</{{type}}>
+  {{/ call_to_action_secondary}}
 </div>

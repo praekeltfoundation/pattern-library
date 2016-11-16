@@ -12,5 +12,11 @@
       ]
     }
     ]
-  }
+  },
+  "call_to_action_secondary":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Call to action"
+  }]
 }

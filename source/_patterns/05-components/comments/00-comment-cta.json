@@ -1,0 +1,26 @@
+{
+  "title":"Comments Call To Action",
+  "headline": {
+    "medium": "Comments are only ever associated against an article page. A user must be logged in to submit a comment."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Because we’re dealing with phones we usually don’t show more than 10 comments at a time; we include comment pagination to view older comments.",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "commentLogin": {
+    "title":"Comments",
+    "call_to_action_message": "You have to be signed in to comment"
+  },
+  "call_to_action":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Log in"
+  }]
+}

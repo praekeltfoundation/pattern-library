@@ -1,14 +1,12 @@
 
-.call-to-action {
-  font-family: 'Quicksand', sans-serif;
-  padding: 10px 0;
-}
+/*
+* SECONDARY BUTTON LINK
+*/
 
-
-.call-to-action__item {
+.call-to-action__item-secondary {
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
-  padding: 10px 5px 0 0;
+  padding: 10px 15px;
   margin: 10px 0;
   background: none;
   border: none;
@@ -21,13 +19,9 @@
   text-transform: uppercase;
 
   @media screen and (min-width: 320px) {
-    background: #000;
-    color: #fff;
-
-    border-radius: 3px;
-    padding: 10px;
+    border: 2px solid blue;
+    color: blue;
     text-align: center;
-    font-weight: normal;
     text-decoration: none;
   }
 }

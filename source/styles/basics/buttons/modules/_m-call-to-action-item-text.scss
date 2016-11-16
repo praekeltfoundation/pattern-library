@@ -1,0 +1,22 @@
+
+/*
+* TEXT LINK
+*/
+
+.call-to-action__item-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px 0;
+  color: #000;
+  display: block;
+
+  font-weight: 700;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.call-to-action__item-text--upper {
+  text-transform: uppercase;
+  font-weight: bold;
+}
