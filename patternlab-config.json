@@ -66,7 +66,7 @@
     }
   },
   "ishMinimum": "150",
-  "ishMaximum": "897",
+  "ishMaximum": "1000",
   "patternStateCascade": [
     "inprogress",
     "inreview",

@@ -6,7 +6,8 @@
 
 (function (w) {
 
-  var sw = document.body.clientWidth, //Viewport Width
+  var vpWapper = $("#sg-vp-wrap").width(), //Added this hardcoded width size with SASS
+    sw = document.body.clientWidth, //Viewport Width - This effectively gets overidded on bigger screensizes
     sh = $(document).height(), //Viewport Height
     minViewportWidth = parseInt(config.ishMinimum), //Minimum Size for Viewport
     maxViewportWidth = parseInt(config.ishMaximum), //Maxiumum Size for Viewport
@@ -20,8 +21,6 @@
     discoMode = false,
     fullMode = true,
     hayMode = false;
-
-
 
   //Update dimensions on resize
   $(w).resize(function() {
@@ -456,7 +455,6 @@
     });
     $(this).addClass('showViewport');
     return false;
-
   });
 
   // on "mouseup" we unbind the "mousemove" event and hide the cover again
@@ -501,6 +499,7 @@
   } else if (trackViewportWidth && (vpWidth = DataSaver.findValue("vpWidth"))) {
     updateViewportWidth(vpWidth);
   }
+
 
   // set up the defaults for the
   var baseIframePath = window.location.protocol+"//"+window.location.host+window.location.pathname.replace("index.html","");
