@@ -1,5 +1,5 @@
 {
-  "title":"Write Comment",
+  "title":"Write Comment - on User Profile",
   "headline": {
     "medium": "Comments are only ever associated against an article page. A user must be logged in to submit a comment."
   },
@@ -21,19 +21,14 @@
   },
   "commentPanel": {
     "title":"Comments",
-    "username": "Display name",
-    "profileImage":""
+    "username": "PrettyPeach",
+    "profileImage":"/images/article-thumbnail.png",
+    "profileAlt": "Profile Pic"
   },
   "call_to_action":[{
     "type":"a",
     "href":"href",
     "link":"#",
     "name":"Comment"
-  }],
-  "call_to_action_secondary":[{
-    "type":"a",
-    "href":"href",
-    "link":"#",
-    "name":"Comment Anonymously"
   }]
 }
