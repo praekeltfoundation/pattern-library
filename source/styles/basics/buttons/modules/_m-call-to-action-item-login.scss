@@ -1,4 +1,9 @@
 .call-to-action__item--login {
-  padding: 10px 30px;
+  padding: 0;
   display: inline-block;
+  text-transform: capitalize;
+  font-size: 16px;
+  @media screen and (min-width: 320px) {
+    padding: 8px 30px;
+  }
 }

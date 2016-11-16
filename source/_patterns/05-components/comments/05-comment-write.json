@@ -13,17 +13,23 @@
     }
     ]
   },
+  "formBlock": {
+    "fieldTextarea": {
+      "label":" ",
+      "element": "textarea"
+    }
+  },
   "commentPanel": {
     "title":"Comments",
-    "username":""
+    "username": "Display name"
   },
   "call_to_action":[{
     "type":"a",
     "href":"href",
     "link":"#",
     "name":"Comment"
-  },
-  {
+  }],
+  "call_to_action_secondary":[{
     "type":"a",
     "href":"href",
     "link":"#",

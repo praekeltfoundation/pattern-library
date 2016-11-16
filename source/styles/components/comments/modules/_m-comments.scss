@@ -1,0 +1,23 @@
+
+.comment {
+  .heading {
+    padding-bottom: 0;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+  }
+  label {
+    padding: 0;
+  }
+  .call-to-action {
+    padding: 0;
+  }
+}
+
+.comment__call-to-action-message {
+  .heading {
+    font-weight: normal;
+  }
+}

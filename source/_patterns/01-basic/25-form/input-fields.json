@@ -161,6 +161,7 @@
       ]
     },
     "fieldTextarea": {
+      "label": "Multi-line message",
       "element": "textarea"
     },
     "fieldSelect": {
@@ -176,6 +177,5 @@
         }}
       ]
     }
-
   }
 }
