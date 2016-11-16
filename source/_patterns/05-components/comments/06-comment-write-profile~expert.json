@@ -1,0 +1,9 @@
+{
+  "title":"Write Comment - on User Profile: Moderator",
+  "commentPanel": {
+    "title":"Comments",
+    "username": "Moderator or Expert",
+    "profileImage":"/images/icons/user-check.svg",
+    "profileAlt": "Profile Pic"
+  }
+}

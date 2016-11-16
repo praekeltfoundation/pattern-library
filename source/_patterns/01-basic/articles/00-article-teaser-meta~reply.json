@@ -1,0 +1,13 @@
+{
+  "title": "Article Teaser Meta with Replies",
+  "meta": {
+    "commentCounter": {
+      "count": "14",
+      "label": "comments"
+    },
+    "likesCounter": {
+      "count": "62",
+      "label": "likes"
+    }
+  }
+}
