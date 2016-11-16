@@ -25,7 +25,7 @@ ul {
   margin: 0 auto;
   padding: 10px;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 900px) {
   .sg-header {
     padding: 20px 15%;
   }
@@ -56,8 +56,27 @@ ul {
   position: absolute;
 }
 
+/**
+* Viewport wrapper div
+* 1) This wrapper div occupies all remaining viewport space after PL's header
+*/
 #sg-vp-wrap {
   height: 100%;
+  text-align: center;
+  width: 100%;
+  /*position: fixed;
+  top: 4.2em;
+  bottom: 0;
+  left: 0;*/
+  right: 0;
+  z-index: 0;
+  padding: 0 5px;
+}
+@media screen and (min-width: 1224px) {
+  #sg-vp-wrap {
+    margin: 0 auto;
+    width: 1000px;
+  }
 }
 
 .sg-gen-container {
@@ -768,21 +787,6 @@ ul {
 }
 
 /**
-* Viewport wrapper div
-* 1) This wrapper div occupies all remaining viewport space after PL's header
-*/
-#sg-vp-wrap {
-  text-align: center;
-  width: 100%;
-  /*position: fixed;
-  top: 4.2em;
-  bottom: 0;
-  left: 0;*/
-  right: 0;
-  z-index: 0;
-}
-
-/**
 * Cover
 * 1) This is an invisible div that sits above the iframe and is
 * used in JS for manual viewport resizing purposes.
@@ -881,11 +885,11 @@ ul {
   position: relative;
   border-bottom: 1px solid #D7DBDD;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 900px) {
   .submenu-header {
     padding-left: 15%;
     padding-right: 15%;
-    height: 69px;
+    height: 70px;
   }
 }
 .submenu-header .sg-nav-toggle {
