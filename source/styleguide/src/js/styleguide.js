@@ -22,8 +22,6 @@
     fullMode = true,
     hayMode = false;
 
-    console.log("Original size", sw);
-
   //Update dimensions on resize
   $(w).resize(function() {
     sw = document.body.clientWidth;
