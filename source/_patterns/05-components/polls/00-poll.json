@@ -14,7 +14,7 @@
     ]
   },
   "pollContent": {
-  "pollTitle":"Polls",
+  "poll_title":"Polls",
   "formBlock": {
     "chooseOneChoice": {
     "legend": "Do you love bananas?",
