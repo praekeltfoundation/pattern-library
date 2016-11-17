@@ -12,5 +12,17 @@
       ]
     }
     ]
-  }
+  },
+  "call_to_action":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Call to action"
+  },
+  {
+    "type":"button",
+    "href":"type",
+    "link":"submit",
+    "name":"Action button"
+  }]
 }

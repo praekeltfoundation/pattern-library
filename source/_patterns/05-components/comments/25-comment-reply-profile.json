@@ -1,0 +1,36 @@
+{
+  "title":"Comments Reply",
+  "headline": {
+    "medium": "This is a new nested workflow for viewing replies / adding a reply to a comment. Although we hadn’t supported this before because of feature phones, it is definitely the correct way forward."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Regina has created this amazing nested workflow for viewing replies / adding a reply to a comment",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "commentsList": {
+    "title":"Comments",
+    "comments": [{
+      "username": "PrettyPeaches",
+      "dateInDays":"1 day ago",
+      "profileImage":"/images/icons/profiles.svg",
+      "profileAlt": "Profile Pic",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet ullamcorper arcu, nec tristique lacus suscipit vel. Integer luctus nulla elementum diam blandit, vitae egestas felis malesuada."
+    }]
+  },
+  "meta": {
+    "replyCounter": {
+      "count": "14",
+      "label": "replies"
+    },
+    "likesCounter": {
+      "count": "64",
+      "label": "likes"
+    }
+  }
+}

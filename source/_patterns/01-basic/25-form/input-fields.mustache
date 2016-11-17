@@ -1,43 +1,52 @@
 {{# formBlock}}
-  <fieldset>
+
     {{# inputFields}}
-    <label>{{field.label}}
-      <{{field.element}} type="{{field.type}}"  name="{{field.label}}" placeholder="{{field.value}}" required="{{field.validate}}"/>
-    </label>
+      <fieldset>
+        <label>{{field.label}}
+          <{{field.element}} type="{{field.type}}"  name="{{field.label}}" placeholder="{{field.value}}" required="{{field.validate}}"/>
+        </label>
+      </fieldset>
     {{/ inputFields}}
 
-    <label>Multi-line message
+
+  <fieldset>
+    <label>{{label}}
       <{{fieldTextarea.element}} name="multiline-message" rows="5" wrap="hard"></{{fieldTextarea.element}}>
     </label>
-
-    <label>Select Dropdown
-      <{{fieldSelect.element}} name="select-drown">
-        {{# fieldSelect.options}}
-          <{{option.key}} value="{{option.value}}">{{option.value}}</{{option.key}}>
-        {{/ fieldSelect.options}}
-      </{{fieldSelect.element}}>
-    </label>
   </fieldset>
 
+
+  {{# fieldSelect}}
+    <fieldset>
+      <label>Select Dropdown
+        <{{element}} name="select-drown">
+          {{# fieldSelect.options}}
+            <{{option.key}} value="{{option.value}}">{{option.value}}</{{option.key}}>
+          {{/ fieldSelect.options}}
+        </{{element}}>
+      </label>
+    </fieldset>
+  {{/ fieldSelect}}
+
+  {{# multipleChoice}}
   <fieldset>
-    {{# multipleChoice}}
-      <legend>{{legend}}</legend>
-      {{# fieldMultipleChoice}}
-        <label>{{field.label}}
-            <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
-        </label>
-      {{/ fieldMultipleChoice}}
-    {{/ multipleChoice}}
+    <legend>{{legend}}</legend>
+    {{# fieldMultipleChoice}}
+      <label>{{field.label}}
+          <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
+      </label>
+    {{/ fieldMultipleChoice}}
   </fieldset>
+  {{/ multipleChoice}}
 
+  {{# chooseOneChoice}}
   <fieldset>
-    {{# chooseOneChoice}}
-      <legend>{{legend}}</legend>
-      {{# fieldchooseOneChoice}}
-        <label>{{field.label}}
-            <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
-        </label>
-      {{/ fieldchooseOneChoice}}
-    {{/ chooseOneChoice}}
+    <legend>{{legend}}</legend>
+    {{# fieldchooseOneChoice}}
+      <label>{{field.label}}
+          <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
+      </label>
+    {{/ fieldchooseOneChoice}}
   </fieldset>
+  {{/ chooseOneChoice}}
 {{/ formBlock}}

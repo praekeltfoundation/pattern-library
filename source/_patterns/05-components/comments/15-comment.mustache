@@ -1,0 +1,18 @@
+<div class="comments-list">
+  {{# commentsList}}
+    <h5 class="heading heading--x-small">
+      <span class="comment-list__title">{{title}}</span>
+    </h5>
+
+    {{# comments}}
+    <h5 class="heading heading--x-small heading--username">
+      {{username}}
+    </h5>
+    <span class="comment-list__date">{{dateInDays}}</span>
+    <div class="comment-list__content">
+        <p>{{content}}</p>
+    </div>
+    {{> basic-article-teaser-meta}}
+    {{/ comments}}
+  {{/ commentsList}}
+</div>

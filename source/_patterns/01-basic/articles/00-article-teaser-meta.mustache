@@ -1,10 +1,10 @@
 {{# meta}}
 <div class="article-teaser-list__meta">
   <div class="article-teaser-list__likes-counter">
-    {{likesCounter}}
+    {{likesCounter.count}}<span class="article-teaser-list__liked-label">{{likesCounter.label}}</span>
   </div>
   <div class="article-teaser-list__comment-counter">
-    {{commentCounter}}<span class="article-teaser-list__comment-label">comments</span>
+    {{commentCounter.count}}<span class="article-teaser-list__comment-label">{{commentCounter.label}}</span>
   </div>
 </div>
 {{/ meta}}

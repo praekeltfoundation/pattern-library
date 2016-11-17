@@ -1,0 +1,22 @@
+{
+  "title":"Comment - Success Page",
+  "headline": {
+    "medium": "When a user clicks comment submit button, they are taken to a successs page with a thank you message and a button option to return back to the article"
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "call_to_action_text":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Back to articles"
+  }]
+}

@@ -14,7 +14,13 @@
     ]
   },
   "meta": {
-    "commentCounter": "12",
-    "likesCounter": "64"
+    "commentCounter": {
+      "count": "14",
+      "label": "comments"
+    },
+    "likesCounter": {
+      "count": "64",
+      "label": "likes"
+    }
   }
 }

@@ -7,23 +7,24 @@
 
 .article-teaser-list__likes-counter {
   padding: 5px 0;
+  display: inline-block;
+  vertical-align: middle;
   @media screen and (min-width: 320px)  {
     padding: 0 15px 0 10px;
     float: left;
+    display: flex;
+    flex-direction: row-reverse;
   }
-  &:before {
-    content: "";
-    width: 30px;
-    height: 25px;
-    display: none;
-    vertical-align: middle;
+}
+.article-teaser-list__liked-label {
+    display: inline-block;
+    padding: 0 5px;
     @media screen and (min-width: 320px)  {
       background:  url('/images/icons/heart.svg') no-repeat 0 0 / auto 100%;
-      display: inline-block;
       text-indent: -99em;
-
+      width: 30px;
+      height: 25px;
     }
-  }
 }
 
 .article-teaser-list__comment-counter {
@@ -48,4 +49,15 @@
     height: 25px;
     padding: 0;
   }
+}
+
+.article-teaser-list__reply-counter {
+  @media screen and (min-width: 320px)  {
+    padding: 0 15px 0 10px;
+    float: right;
+  }
+}
+
+.article-teaser-list__reply-label {
+  padding: 0 5px 0;
 }

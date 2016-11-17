@@ -1,0 +1,17 @@
+<div class="comment">
+  {{# commentPanel}}
+    <h5 class="heading heading--x-small">
+      <span class="comment__title">{{title}}</span>
+    </h5>
+    <div class="comment__call-to-action-message">
+      <h5 class="heading heading--x-small">
+        {{username}}
+      </h5>
+    </div>
+    <div class="call-to-action">
+      {{> basic-input-fields}}
+      {{> basic-base:login}}
+      {{> basic-secondary-button:anonymous}}
+    </div>
+  {{/ commentPanel}}
+</div>

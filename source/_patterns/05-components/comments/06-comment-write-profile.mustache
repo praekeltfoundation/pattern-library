@@ -1,0 +1,19 @@
+<div class="comment">
+  {{# commentPanel}}
+    <h5 class="heading heading--x-small">
+      <span class="comment__title">{{title}}</span>
+    </h5>
+    <div class="comment__call-to-action-message">
+      <h5 class="heading heading--x-small">
+        <span class="comment__profile">
+          <img src="{{profileImage}}" alt="{{profileAlt}}" class="comment__profile-image"/>
+        </span>
+        {{username}}
+      </h5>
+    </div>
+    <div class="call-to-action">
+      {{> basic-input-fields}}
+      {{> basic-base:login}}
+    </div>
+  {{/ commentPanel}}
+</div>

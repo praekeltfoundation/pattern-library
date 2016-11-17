@@ -1,0 +1,16 @@
+{
+  "title":"Comments Report",
+  "headline": {
+    "medium": "Sometimes people write things that are offensive. When you report a comment you’re taken to another screen that provides you with a list of options as to why the comment was reported:"
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Regina has created this amazing nested workflow for viewing replies / adding a reply to a comment",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  }
+}

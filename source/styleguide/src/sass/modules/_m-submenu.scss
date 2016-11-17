@@ -128,6 +128,9 @@
     position: absolute;
     left: 0;
     z-index: 9999999;
+    @media screen and (min-width: 320px) {
+      min-width: 300px;
+    }
     li {
       float: none;
       display: block;
@@ -135,16 +138,21 @@
     a {
       padding: 10px;
       color: #fff;
+      text-transform: uppercase;
     }
     //Third Nested Menu List
     ol.sg-sub-nav {
-      position: relative;;
+      position: relative;
         li {
           float: none;
           a {
             padding: 10px 15px;
-            color: #A6ACAF;
+            color: #d9dbde;
             font-size: 13px;
+            text-transform: uppercase;
+            @media screen and (min-width: 320px) {
+              padding: 10px 25px;
+            }
           }
         }
       }

@@ -1,0 +1,36 @@
+{
+  "title":"Comments Profile",
+  "headline": {
+    "medium": "Comments are only ever associated against an article page. A user must be logged in to submit a comment."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Because we’re dealing with phones we usually don’t show more than 10 comments at a time; we include comment pagination to view older comments.",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "commentsList": {
+    "title":"Comments",
+    "comments": [{
+      "username": "PrettyPeaches",
+      "dateInDays":"1 day ago",
+      "profileImage":"/images/icons/profiles.svg",
+      "profileAlt": "Profile Pic",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet ullamcorper arcu, nec tristique lacus suscipit vel. Integer luctus nulla elementum diam blandit, vitae egestas felis malesuada."
+    }]
+  },
+  "meta": {
+    "commentCounter": {
+      "count": "14",
+      "label": "comments"
+    },
+    "likesCounter": {
+      "count": "64",
+      "label": "likes"
+    }
+  }
+}

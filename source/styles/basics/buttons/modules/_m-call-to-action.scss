@@ -1,10 +1,7 @@
 
 .call-to-action {
   font-family: 'Quicksand', sans-serif;
-  padding: 10px 5px;
-  @media screen and (min-width: 320px) {
-    padding: 10px 20px;
-  }
+  padding: 10px 0;
 }
 
 
@@ -32,78 +29,5 @@
     text-align: center;
     font-weight: normal;
     text-decoration: none;
-  }
-}
-
-
-/*
-* TEXT LINK
-*/
-
-.call-to-action__item-text {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 14px;
-  padding: 10px;
-  margin: 10px 0;
-  color: #000;
-  display: block;
-
-  font-weight: 700;
-  text-align: left;
-  text-decoration: underline;
-}
-
-.call-to-action__item-text--upper {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-/*
-* SECONDARY BUTTON LINK
-*/
-
-.call-to-action__item-secondary {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 14px;
-  padding: 10px 15px;
-  margin: 10px 0;
-  background: none;
-  border: none;
-  color: #000;
-  display: block;
-
-  font-weight: 700;
-  text-align: left;
-  text-decoration: underline;
-  text-transform: uppercase;
-
-  @media screen and (min-width: 320px) {
-    border: 2px solid blue;
-    color: blue;
-    text-align: center;
-    text-decoration: none;
-  }
-}
-
-/*
-* SEARCH SUBMIT LINK
-*/
-.call-to-action__item--search-submit {
-  font-family: 'Quicksand', sans-serif;
-  color: rgba(0, 0, 0, 0.5);
-  border: none;
-  font-size: 14px;
-  padding: 10px 25px 10px 10px;
-  text-decoration: underline;
-  text-transform: uppercase;
-  @media screen and (min-width: 320px) {
-    background:  url('/images/icons/search.svg') no-repeat 0 0 / auto 100%;
-    text-indent: -99em;
-
-    height: 21px;
-    width: 21px;
-    position: absolute;
-    right: 10%;
-    top: 35%;
   }
 }

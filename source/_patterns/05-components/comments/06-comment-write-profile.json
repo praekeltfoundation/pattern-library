@@ -1,0 +1,34 @@
+{
+  "title":"Write Comment - on User Profile",
+  "headline": {
+    "medium": "Comments are only ever associated against an article page. A user must be logged in to submit a comment."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Because we’re dealing with phones we usually don’t show more than 10 comments at a time; we include comment pagination to view older comments.",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "formBlock": {
+    "fieldTextarea": {
+      "label":" ",
+      "element": "textarea"
+    }
+  },
+  "commentPanel": {
+    "title":"Comments",
+    "username": "PrettyPeach",
+    "profileImage":"/images/article-thumbnail.png",
+    "profileAlt": "Profile Pic"
+  },
+  "call_to_action":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Comment"
+  }]
+}
