@@ -2,6 +2,8 @@
 fieldset {
   font-family: 'Quicksand', sans-serif;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 legend {
@@ -38,6 +40,7 @@ label.error {
 input[type="checkbox"],
 input[type="radio"]  {
   display: line-block;
+  margin-right: 10px;
 }
 
 select {

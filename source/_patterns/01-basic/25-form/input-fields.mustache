@@ -8,12 +8,13 @@
       </fieldset>
     {{/ inputFields}}
 
-
-  <fieldset>
-    <label>{{label}}
-      <{{fieldTextarea.element}} name="multiline-message" rows="5" wrap="hard"></{{fieldTextarea.element}}>
-    </label>
-  </fieldset>
+  {{# fieldTextarea}}
+    <fieldset>
+      <label>{{label}}
+        <{{element}} name="multiline-message" rows="5" wrap="hard"></{{element}}>
+      </label>
+    </fieldset>
+  {{/ fieldTextarea}}
 
 
   {{# fieldSelect}}
@@ -32,8 +33,9 @@
   <fieldset>
     <legend>{{legend}}</legend>
     {{# fieldMultipleChoice}}
-      <label>{{field.label}}
+      <label>
           <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
+          {{field.label}}
       </label>
     {{/ fieldMultipleChoice}}
   </fieldset>
@@ -43,8 +45,9 @@
   <fieldset>
     <legend>{{legend}}</legend>
     {{# fieldchooseOneChoice}}
-      <label>{{field.label}}
+      <label>
           <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
+          {{field.label}}
       </label>
     {{/ fieldchooseOneChoice}}
   </fieldset>
