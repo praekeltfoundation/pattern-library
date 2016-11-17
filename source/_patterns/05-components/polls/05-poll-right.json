@@ -1,0 +1,52 @@
+{
+  "title":"Polls - Right Aligned Example e.g. GEM",
+  "headline": {
+    "medium":"Polls typically appear on the homepage, but can also be used in a section page list, and a page."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "pollContent": {
+  "pollTitle":"Apa Pendapatmu?",
+  "formBlock": {
+    "chooseOneChoice": {
+    "legend": "Apa rencana libur Lebaranmu",
+    "fieldchooseOneChoice": [
+      {"field":{
+        "type": "radio",
+        "element": "input",
+        "name": "choice",
+        "label": "Di rumah aja",
+        "value": "yes"
+      }},
+      {"field":{
+        "type": "radio",
+        "element": "input",
+        "name": "choice",
+        "label": "Jalan sama temen-temen",
+        "value": "noe"
+      }},
+      {"field":{
+        "type": "radio",
+        "element": "input",
+        "name": "choice",
+        "label": "Meluangkan waktu sama keluarga",
+        "value": "maybe"
+      }}
+    ]
+  }},
+  "call_to_action":[{
+    "type":"button",
+    "href":"href",
+    "link":"#",
+    "name":"Untuk menjawab"
+  }]
+  }
+}

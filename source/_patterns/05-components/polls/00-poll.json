@@ -14,11 +14,10 @@
     ]
   },
   "pollContent": {
-    "question": "Do you love bananas?"
-  },
+  "pollTitle":"Polls",
   "formBlock": {
     "chooseOneChoice": {
-    "legend": "",
+    "legend": "Do you love bananas?",
     "fieldchooseOneChoice": [
       {"field":{
         "type": "radio",
@@ -49,4 +48,5 @@
     "link":"#",
     "name":"Vote"
   }]
+  }
 }
