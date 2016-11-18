@@ -1,0 +1,55 @@
+{
+  "title":"Polls",
+  "headline": {
+    "medium":"Polls typically appear on the homepage, but can also be used in a section page list, and a page."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "pollContent": {
+  "poll_title":"What's your opinion?",
+  "poll_image_src":"/images/icons/chart.svg",
+  "poll_image_alt":"chart",
+  "poll_image_title":"Have your say",
+  "formBlock": {
+    "chooseOneChoice": {
+    "legend": "Do you love bananas?",
+    "fieldchooseOneChoice": [
+      {"field":{
+        "type": "radio",
+        "element": "input",
+        "name": "choice",
+        "label": "Yes",
+        "value": "yes"
+      }},
+      {"field":{
+        "type": "radio",
+        "element": "input",
+        "name": "choice",
+        "label": "No",
+        "value": "noe"
+      }},
+      {"field":{
+        "type": "radio",
+        "element": "input",
+        "name": "choice",
+        "label": "Maybe",
+        "value": "maybe"
+      }}
+    ]
+  }},
+  "call_to_action":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Vote"
+  }]
+  }
+}
