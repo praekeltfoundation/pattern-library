@@ -17,7 +17,6 @@
     </fieldset>
   {{/ fieldTextarea}}
 
-
   {{# fieldSelect}}
     <fieldset>
       <label>Select Dropdown
@@ -29,6 +28,37 @@
       </label>
     </fieldset>
   {{/ fieldSelect}}
+
+  {{# dateFieldSelect}}
+    <fieldset class="fieldset__date">
+      <label>
+        <{{element}} name="month" class="select__month">
+        {{# dateSelect}}
+          {{# options}}
+            <{{month.key}} value="{{month.value}}">{{month.value}}</{{month.key}}>
+          {{/ options}}
+        {{/ dateSelect}}
+        </{{element}}>
+
+        <{{element}} name="date" class="select__date">
+        {{# dateSelect}}
+          {{# options}}
+            <{{date.key}} value="{{date.value}}">{{date.value}}</{{date.key}}>
+          {{/ options}}
+        {{/ dateSelect}}
+        </{{element}}>
+
+        <{{element}} name="year" class="select__year">
+        {{# dateSelect}}
+          {{# options}}
+            <{{year.key}} value="{{year.value}}">{{year.value}}</{{year.key}}>
+          {{/ options}}
+        {{/ dateSelect}}
+        </{{element}}>
+      </label>
+    </fieldset>
+  {{/ dateFieldSelect}}
+
 
   {{# chooseOneChoice}}
   <fieldset>

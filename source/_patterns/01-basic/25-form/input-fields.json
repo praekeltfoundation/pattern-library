@@ -186,6 +186,53 @@
             "value": 2
         }}
       ]
+    },
+    "dateFieldSelect": {
+      "element": "select",
+      "dateSelect": [
+        {"options": [
+          {"month": {
+              "key": "option",
+              "value": "January"
+          }},
+          {"month": {
+              "key": "option",
+              "value": "Februay"
+          }},
+          {"month": {
+              "key": "option",
+              "value": "March"
+          }}
+        ]},
+        {"options": [
+          {"date": {
+              "key": "option",
+              "value": "1"
+          }},
+          {"date": {
+              "key": "option",
+              "value": "2"
+          }},
+          {"date": {
+              "key": "option",
+              "value": "3"
+          }}
+        ]},
+        {"options": [
+          {"year": {
+              "key": "option",
+              "value": "1989"
+          }},
+          {"year": {
+              "key": "option",
+              "value": "1990"
+          }},
+          {"year": {
+              "key": "option",
+              "value": "1991"
+          }}
+        ]}
+      ]
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "title":"User Profiles - Sign up Registration",
+  "headline": {
+    "medium": "Our users are required to register when they either vote on a poll, submit Your-words stories, or leave comments on articles."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Profiles includes: Login, Registration, Forgot Password, Change Password, and Profile.",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "call_to_action": {
+    "heading":"Sign up",
+    "challenge_title":"Not a member yet? Join by signing up below. Or log in now if you've already joined "
+  },
+  "call_to_action_bottom": {
+    "heading":"Already a member?",
+    "challenge_title":" "
+  },
+  "call_to_action_buttons":[{
+    "type": "a",
+    "href": "href",
+    "link": "#",
+    "name": "Log in"
+  }],
+  "formBlock": {
+    "inputFields": [
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Choose Username",
+        "value": "Username",
+        "validate": "",
+        "maxlength": "",
+        "hint":""
+      }},
+      {"field": {
+        "type": "password",
+        "element": "input",
+        "label": "Choose a 4-digit pin",
+        "value": "Pin",
+        "validate": "required",
+        "maxlength": "",
+        "hint": "e.g. 2036"
+      }}
+    ],
+    "multipleChoice": {
+      "legend": "",
+      "fieldMultipleChoice": [
+        {"field":{
+          "type": "checkbox",
+          "element": "input",
+          "name": "choice",
+          "label": "I accept Terms and Conditions",
+          "value": "1"
+        }}
+      ]
+    }
+  }
+
+}

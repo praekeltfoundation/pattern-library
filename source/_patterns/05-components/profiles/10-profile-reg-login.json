@@ -23,6 +23,12 @@
     "link": "#",
     "name": "Register"
   }],
+  "call_to_action_text_buttons":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Forgotten you password?"
+  }],
   "formBlock": {
     "inputFields": [
       {"field": {
@@ -44,12 +50,5 @@
         "hint": "e.g. 2086"
       }}
     ]
-  },
-  "call_to_action_text_buttons":[{
-    "type":"a",
-    "href":"href",
-    "link":"#",
-    "name":"Forgotten you password?"
-  }]
-
+  }
 }
