@@ -4,6 +4,7 @@
       <fieldset>
         <label>{{field.label}}
           <{{field.element}} type="{{field.type}}"  name="{{field.label}}" placeholder="{{field.value}}" required="{{field.validate}}"/>
+          <span class="input-field__hint">{{hint}}</span>
         </label>
       </fieldset>
     {{/ inputFields}}
@@ -29,18 +30,6 @@
     </fieldset>
   {{/ fieldSelect}}
 
-  {{# multipleChoice}}
-  <fieldset>
-    <legend>{{legend}}</legend>
-    {{# fieldMultipleChoice}}
-      <label>
-          <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
-          {{field.label}}
-      </label>
-    {{/ fieldMultipleChoice}}
-  </fieldset>
-  {{/ multipleChoice}}
-
   {{# chooseOneChoice}}
   <fieldset>
     <legend>{{legend}}</legend>
@@ -52,4 +41,16 @@
     {{/ fieldchooseOneChoice}}
   </fieldset>
   {{/ chooseOneChoice}}
+
+  {{# multipleChoice}}
+  <fieldset>
+    <legend>{{legend}}</legend>
+    {{# fieldMultipleChoice}}
+      <label>
+          <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
+          {{field.label}}
+      </label>
+    {{/ fieldMultipleChoice}}
+  </fieldset>
+  {{/ multipleChoice}}
 {{/ formBlock}}

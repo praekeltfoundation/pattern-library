@@ -62,6 +62,25 @@
         "hint":""
       }}
     ],
+    "chooseOneChoice": {
+      "legend": "Gender",
+      "fieldchooseOneChoice": [
+        {"field":{
+          "type": "radio",
+          "element": "input",
+          "name": "choice",
+          "label": "Female",
+          "value": "yes"
+        }},
+        {"field":{
+          "type": "radio",
+          "element": "input",
+          "name": "choice",
+          "label": "Male",
+          "value": "noe"
+        }}
+      ]
+    },
     "multipleChoice": {
       "legend": "",
       "fieldMultipleChoice": [

@@ -19,7 +19,8 @@
         "label": "Name",
         "value": "Name",
         "validate": "",
-        "maxlength": ""
+        "maxlength": "",
+        "hint": ""
       }},
       {"field": {
         "type": "text",
@@ -27,7 +28,8 @@
         "label": "Surname",
         "value": "Surname",
         "validate": "",
-        "maxlength": ""
+        "maxlength": "",
+        "hint": ""
       }},
       {"field": {
         "type": "password",
@@ -35,7 +37,8 @@
         "label": "Password",
         "value": "Password",
         "validate": "required",
-        "maxlength": ""
+        "maxlength": "",
+        "hint": "e.g. 2086"
       }},
       {"field": {
         "type": "email",
@@ -43,7 +46,8 @@
         "label": "Email address",
         "value": "Email address",
         "validate": "required",
-        "maxlength": ""
+        "maxlength": "",
+        "hint": ""
       }},
       {"field": {
         "type": "number",
@@ -51,7 +55,8 @@
         "label": "Enter number",
         "value": "Enter number",
         "validate": "",
-        "maxlength": ""
+        "maxlength": "",
+        "hint": ""
       }},
       {"field": {
         "type": "tel",
@@ -59,7 +64,8 @@
         "label": "Phone no.",
         "value": "Phone no.",
         "validate": "required",
-        "maxlength": 10
+        "maxlength": "10",
+        "hint": ""
       }},
       {"field": {
         "type": "search",
@@ -67,7 +73,8 @@
         "label": "Search",
         "value": "Search",
         "validate": "",
-        "maxlength": ""
+        "maxlength": "",
+        "hint": ""
       }},
       {"field": {
         "type": "date",
@@ -75,7 +82,8 @@
         "label": "Date",
         "value": "yyyy-mm-dd",
         "validate": "",
-        "maxlength": ""
+        "maxlength": "",
+        "hint": ""
       }},
       {"field": {
         "type": "datetime",
@@ -83,7 +91,8 @@
         "label": "Date time",
         "value": "Y-m-d H:i:s",
         "validate": "",
-        "maxlength": ""
+        "maxlength": "",
+        "hint": ""
       }},
       {"field": {
         "type": "url",
@@ -91,7 +100,8 @@
         "label": "URL",
         "value": "url",
         "validate": "",
-        "maxlength": ""
+        "maxlength": "",
+        "hint": ""
       }}
     ],
     "multipleChoice": {

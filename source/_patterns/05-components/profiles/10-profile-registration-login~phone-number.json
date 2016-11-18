@@ -1,0 +1,34 @@
+{
+  "title":"User Profiles - Login",
+  "formBlock": {
+    "inputFields": [
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Username",
+        "value": "admin",
+        "validate": "",
+        "maxlength": "",
+        "hint":""
+      }},
+      {"field": {
+        "type": "password",
+        "element": "input",
+        "label": "Choose a 4-digit pin",
+        "value": "Pin",
+        "validate": "required",
+        "maxlength": "",
+        "hint": "e.g. 2086"
+      }},
+      {"field": {
+        "type": "tel",
+        "element": "input",
+        "label": "Mobile no.",
+        "value": "Mobile no.",
+        "validate": "required",
+        "maxlength": "10",
+        "hint": "e.g. 2086"
+      }}
+    ]
+  }
+}
