@@ -15,13 +15,41 @@
   },
   "call_to_action": {
     "heading":"Log in",
-    "challenge_title":"Not a member yet?",
-    "call_to_action_buttons":[{
-      "type": "a",
-      "href": "href",
-      "link": "#",
-      "name": "Register"
-    }]
-  }
+    "challenge_title":"Not a member yet?"
+  },
+  "call_to_action_buttons":[{
+    "type": "a",
+    "href": "href",
+    "link": "#",
+    "name": "Register"
+  }],
+  "formBlock": {
+    "inputFields": [
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Username",
+        "value": "admin",
+        "validate": "",
+        "maxlength": "",
+        "hint":""
+      }},
+      {"field": {
+        "type": "password",
+        "element": "input",
+        "label": "Choose a 4-digit pin",
+        "value": "Pin",
+        "validate": "required",
+        "maxlength": "",
+        "hint": "e.g. 2086"
+      }}
+    ]
+  },
+  "call_to_action_text_buttons":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Forgotten you password?"
+  }]
 
 }
