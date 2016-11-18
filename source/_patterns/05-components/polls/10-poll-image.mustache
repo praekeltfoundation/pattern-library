@@ -1,0 +1,14 @@
+
+{{# pollContent}}
+  <div class="polls polls-image-banner">
+    <div class="poll__inner poll__inner-image-banner">
+      <h3 class="heading heading--large heading--image-banner">{{poll_title}}</h3>
+      <div class="poll__banner">
+        <a href="#"><img src="{{poll_image_src}}" alt="{{poll_image_alt}}" class="poll-banner-image"/></a>
+        <h6 class="heading heading--xx-small heading--poll-banner"><a href="#">{{poll_image_title}}</a></h6>
+      </div>
+      {{> basic-input-fields}}
+      {{> basic-base:poll-image-summit}}
+    </div>
+  </div>
+{{/ pollContent}}
