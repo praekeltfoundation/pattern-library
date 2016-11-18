@@ -1,5 +1,5 @@
 {
-  "title":"User Profiles -After Registration is done",
+  "title":"User Profiles - Edit My Profile",
   "headline": {
     "medium": "Our users are required to register when they either vote on a poll, submit Your-words stories, or leave comments on articles."
   },
@@ -30,6 +30,17 @@
     "name":"Skip"
   }],
   "formBlock": {
+    "inputFields": [
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Type new display name to appear when you comment:",
+        "value": "Nickname",
+        "validate": "",
+        "maxlength": "",
+        "hint":""
+      }}
+    ],
     "dateFieldSelect": {
       "element": "select",
       "label": "Update your date of birth:",

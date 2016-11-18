@@ -176,6 +176,7 @@
     },
     "fieldSelect": {
       "element": "select",
+      "label": "Select Dropdown",
       "options": [
         {"option": {
             "key": "option",
@@ -189,6 +190,7 @@
     },
     "dateFieldSelect": {
       "element": "select",
+      "label": "DOB Dropdown:",
       "dateSelect": [
         {"options": [
           {"month": {

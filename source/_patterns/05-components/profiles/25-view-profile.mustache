@@ -1,0 +1,14 @@
+{{# profile_content}}
+<div class="profiles">
+  <h1 class="heading headin--xx-large">{{heading}}</h1>
+    {{# profile_info}}
+      <fieldset class="profile-user-info__fieldset">
+        <label class="profile-user-info__label">{{label}}</label>
+        <h6 class="heading heading--xx-small profile-user-info__heading">{{value}}</h6>
+      </fieldset>
+    {{/ profile_info}}
+    {{> basic-base(message: "Log out")}}
+    {{> basic-base(message: "Edit My Profile")}}
+    {{> basic-base(message: "Change My Password")}}
+</div>
+{{/ profile_content}}
