@@ -173,11 +173,11 @@
   "unorderedList": [{
       "text":"List here"
   }],
-  "call_to_action":[{
-    "type":"",
+  "call_to_action_buttons":[{
+    "type":"a",
     "href":"href",
-    "link":"link",
-    "name":""
+    "link":"#",
+    "name":"Call to action"
   }],
   "submit_button": "input",
   "navList": [

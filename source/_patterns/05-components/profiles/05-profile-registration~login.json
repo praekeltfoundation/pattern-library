@@ -1,0 +1,27 @@
+{
+  "title":"User Profiles - Or Logins",
+  "headline": {
+    "medium": "Our users are required to register when they either vote on a poll, submit Your-words stories, or leave comments on articles."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Profiles includes: Login, Registration, Forgot Password, Change Password, and Profile.",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "call_to_action": {
+    "heading":"Log in",
+    "challenge_title":"Not a member yet?",
+    "call_to_action_buttons":[{
+      "type": "a",
+      "href": "href",
+      "link": "#",
+      "name": "Register"
+    }]
+  }
+
+}

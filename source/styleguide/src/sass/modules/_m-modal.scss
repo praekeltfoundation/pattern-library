@@ -64,19 +64,6 @@
     }
 
     /**
-    * Pattern info links inside modal
-    */
-    .sg-pattern-extra-info {
-        a {
-            color: $sg-gray-light-3;
-
-            &:hover, &:focus {
-                color: $sg-gray-light;
-            }
-        }
-    }
-
-    /**
     * Pattern Description inside modal
     */
     .sg-pattern-desc {
