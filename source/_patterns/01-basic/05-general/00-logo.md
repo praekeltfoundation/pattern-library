@@ -3,10 +3,7 @@ title: "Logo"
 state: "inprogress"
 ---
 
-
-There are two styles of Logo
+Logo Positioning
 --
 
-Logo to the left
-
-Logo centered
+A logo can be positioned and pinned top left of centered

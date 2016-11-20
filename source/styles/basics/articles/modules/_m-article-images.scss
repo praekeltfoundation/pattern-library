@@ -5,7 +5,10 @@
 }
 
 .article__image--thumbnail {
-  width: auto;
+  width: 100%;
+  @media screen and (min-width: 180px) {
+    width: auto;
+  }
 }
 .article__image--link {
   display: block;

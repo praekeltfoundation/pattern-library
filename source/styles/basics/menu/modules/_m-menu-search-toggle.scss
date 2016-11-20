@@ -5,6 +5,7 @@
 
 .search--toggling {
   display: none;
+  padding: 15px 0 0 0; //NOTE: This only modify pattern-group inside a component 
 }
 .search-toggling__button:not(checked) ~ .search--toggling {
     display: none;

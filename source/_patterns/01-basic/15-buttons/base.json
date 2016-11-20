@@ -17,12 +17,12 @@
     "type":"a",
     "href":"href",
     "link":"#",
-    "name":"Call to action"
+    "message":"Call to action"
   },
   {
     "type":"button",
     "href":"type",
     "link":"submit",
-    "name":"Action button"
+    "message":"Action button"
   }]
 }

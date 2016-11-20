@@ -18,5 +18,11 @@
     "href":"href",
     "link":"#",
     "name":"Call to action"
+  },
+  {
+    "type":"button",
+    "href":"href",
+    "link":"#",
+    "name":"Call to action button"
   }]
 }
