@@ -54,7 +54,8 @@
       .sg-current-size {
         color: #ccc;
         float: left;
-        padding-right: 15px;
+        padding-right: 30px;
+        padding-top: 2px;
         #sg-form {
           font-size: 13px;
           text-transform: uppercase;
@@ -86,13 +87,14 @@
         }
       }
 
-
-
       ul.sg-size-options {
         float: left;
         li {
           float: left;
-          a {color: #ccc;font-size: 13px;}
+          a {color: #ccc;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
         }
       }
     }
@@ -108,16 +110,33 @@
           border: 0;
           cursor: pointer;
           padding: 3px 0;
+          font-weight: bold;
           &:after {
               display: none;
               content: "";
           }
+          &:hover {
+            background: #ccc;
+            color: #242526;
+            border: 1px solid #242526;
+          }
+        @media screen and (min-width: 320px) {
+          position: absolute;
+          right: 20px;
+          text-transform: uppercase;
+          top: 27px;
+          padding: 5px 15px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+        }
       }
       .sg-checklist {
         z-index: 99999;
         @media screen and (min-width: 42em) {
           position: absolute;
           left: auto;
+          right: 0;
+          top: 65px;
         }
         a {
           padding: 10px;

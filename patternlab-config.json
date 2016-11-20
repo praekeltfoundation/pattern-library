@@ -29,8 +29,8 @@
     }
   },
   "styleGuideExcludes": [],
-  "defaultPattern": "all",
-  "defaultShowPatternInfo": false,
+  "defaultPattern": "principles-pages-welcome",
+  "defaultShowPatternInfo": true,
   "cleanPublic": true,
   "patternExtension": "mustache",
   "ignored-extensions": [

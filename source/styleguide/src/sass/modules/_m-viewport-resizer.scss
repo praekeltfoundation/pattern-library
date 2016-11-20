@@ -1,13 +1,3 @@
-/*------------------------------------*\
-#ISH STYLES
-\*------------------------------------*/
-
-
-
-
-
-
-
 
 .twitter-typeahead {
     width: 100%;
@@ -17,10 +7,9 @@
     border: 0;
     background: $sg-gray-dark;
     color: $sg-gray;
-    width: 90%;
+    width: 100%;
     right: 0;
     padding: 10px 10px 15px 10px;
-    text-transform: capitalize;
     &:focus {
       background: $sg-gray;
       color: $sg-white;
@@ -31,21 +20,18 @@
     background: $sg-gray;
     color: #ccc;
     font-size: 15px;
-    text-transform: capitalize;
-    &:focus {
-        text-transform: capitalize;
-    }
 }
 
 .tt-hint {
     text-transform: lowercase;
     border-bottom-right-radius: $sg-border-radius-med;
     border-bottom-left-radius: $sg-border-radius-med;
+    font-size: 15px;
 }
 
 .tt-dropdown-menu {
     text-transform: lowercase;
-    background-color: $sg-gray;
+    background-color: #242526;
     width: 100%;
     border-bottom-right-radius: $sg-border-radius-med;
     border-bottom-left-radius: $sg-border-radius-med;
@@ -53,8 +39,8 @@
 
 .tt-suggestion {
     color: $sg-gray-light;
-    font-size: 75%;
-    padding: 0.8em;
+    font-size: 14px;
+    padding: 16px;
 }
 
 .tt-suggestion.tt-cursor {
