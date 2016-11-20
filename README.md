@@ -139,3 +139,6 @@ References
   https://tinnedfruit.com/2016/09/12/why-and-how-to-test-your-pattern-library.html
   https://tinnedfruit.com/2016/09/20/why-and-how-to-test-your-pattern-library-2.html
   https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935#.pkds4iw3j
+
+Rebuild NodeSass
+npm rebuild node-sass

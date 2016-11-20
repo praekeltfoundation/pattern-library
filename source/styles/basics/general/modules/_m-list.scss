@@ -1,16 +1,19 @@
 
 .default-unordered-list {
-  list-style: disc;
-  padding-left: 20px;
-  .default-ordered-list__item {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  .default-unordered-list__item {
     padding: 5px 0;
-    list-style: disc;
+    &:first-child {
+      list-style: none;
+    }
   }
 }
 
 .default-ordered-list {
+  list-style: decimal;
+  padding-bottom: 20px;
   .default-ordered-list__item {
-    list-style: decimal;
     padding: 5px 0;
   }
 }

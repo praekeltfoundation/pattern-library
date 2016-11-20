@@ -1,6 +1,8 @@
-<div class="styleguide">
+
   <h1 class="heading heading--xx-large">{{title}}</h1>
-  <h3 class="heading heading--large">{{headline.medium}}</h3>
+  {{# headline}}
+    <h3 class="heading heading--large">{{medium}}</h3>
+  {{/ headline}}
   {{# sectionIntroduction}}
     {{# content}}
       <h4 class="heading heading--small">{{ topic }}</h4>
@@ -13,4 +15,3 @@
       </ul>
     {{/ content}}
   {{/ sectionIntroduction}}
-</div>

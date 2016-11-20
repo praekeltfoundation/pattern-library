@@ -1,4 +1,17 @@
-
+<h1 class="heading heading--xx-large">{{title}}</h1>
+<h3 class="heading heading--large">{{headline.medium}}</h3>
+{{# sectionIntroduction}}
+  {{# content}}
+    <h4 class="heading heading--small">{{ topic }}</h4>
+    <ul class="default-unordered-list">
+      {{# unorderedList}}
+      <li class="default-unordered-list__item">
+        <p>{{text}}</p>
+      </li>
+      {{/ unorderedList}}
+    </ul>
+  {{/ content}}
+{{/ sectionIntroduction}}
   <h5 class="heading heading--x-small">We shouldn’t design with widths bigger than ~320 pixels</h5>
   <p>Feature phone screens start at about 128 x 160 and only go up to about 240 x 320.</p>
   <br/>

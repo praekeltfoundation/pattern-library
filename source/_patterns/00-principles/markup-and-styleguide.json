@@ -1,14 +1,30 @@
 {
-  "title":"Markup and Style",
+  "title":"Markup and Style Guide",
   "headline": {
     "medium": "The Pattern library will be actively developed to enable developers to uniform applications while adhering to CSS best practices and conventions"
   },
+
+  "pageIntroduction": {
+  "content":[
+    {
+      "topic": "Why design a Pattern Library Markup?",
+      "orderedList": [
+        {"text":"  Design Systems entail that your prototype is built from functioning HTML, CSS and JavaScript code, which means QA iteration and vetting has taken place, this minimises bugs and time taken to do bug fixes as parties get familiar with the product"},
+        {
+          "text": "This increases FED and the rest of the engineering productivity"
+        },
+        {
+          "text": "  Streamline and automate the project project setup to maximum and enforce standards and minimised errors"
+        }
+      ]
+    }
+  ]},
   "sectionIntroduction": {
   "content":[
     {
       "topic": "In order to achieve this, we have chosen to use very specific naming techniques",
       "unorderedList": [
-        {"text":"-------"}
+        {"text":"---"}
       ]
     },
     {

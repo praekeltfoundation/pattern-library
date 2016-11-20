@@ -30,7 +30,7 @@
   },
   "styleGuideExcludes": [],
   "defaultPattern": "principles-pages-welcome",
-  "defaultShowPatternInfo": true,
+  "defaultShowPatternInfo": false,
   "cleanPublic": true,
   "patternExtension": "mustache",
   "ignored-extensions": [
