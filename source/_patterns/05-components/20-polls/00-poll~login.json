@@ -1,6 +1,6 @@
 {
   "title":"Polls - Login before Voting",
-  "call_to_action":[{
+  "call_to_action_buttons":[{
     "type":"a",
     "href":"href",
     "link":"#",

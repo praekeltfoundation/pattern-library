@@ -18,7 +18,14 @@
 .logo-container {
   padding: 0 20px 0 0;
 }
+.header__navigation--general,
+.header__navigation--second-instance,
+.header__navigation--third-instance {
+  .logo img, .pattern-group {
+    display: inline-block;
+  }
 
+}
 .header__navigation--fourth-instance {
   text-align: center;
 }
