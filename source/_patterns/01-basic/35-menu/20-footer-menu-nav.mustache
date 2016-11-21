@@ -1,0 +1,24 @@
+<div class="pattern-group">
+    {{# navList}}
+    <div class="footer-alternate-menu">
+      <div class="footer-alternate-menu__left-column">
+        <ul class="footer-alternate-menu-list">
+            {{# left_column}}
+            <li class="footer-alternate-menu__item">
+              <a href="{{link.href}}" class="footer-alternate-menu__anchor">{{link.name}}</a>
+            </li>
+            {{/ left_column}}
+        </ul>
+      </div>
+      <div class="footer-alternate-menu__right-column">
+        <ul class="footer-alternate-menu-list">
+          {{# right_column}}
+            <li class="footer-alternate-menu__item">
+              <a href="{{link.href}}" class="footer-alternate-menu__anchor">{{link.name}}</a>
+            </li>
+            {{/ right_column}}
+        </ul>
+      </div>
+    </div>
+    {{/ navList}}
+</div>

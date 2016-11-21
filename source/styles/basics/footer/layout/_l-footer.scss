@@ -1,3 +1,6 @@
 .footer {
   color: #5a5d5e;
+  .pattern-group {
+    @include pattern-group-undo;
+  }
 }

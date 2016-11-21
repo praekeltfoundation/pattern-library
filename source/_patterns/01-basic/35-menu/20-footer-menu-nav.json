@@ -1,0 +1,103 @@
+{
+  "title": "Footer Navigation",
+  "headline": {
+    "medium": "The footer navigation component is an additional way to navigate the website."
+  },
+  "navList": [
+  {
+    "left_column": [
+      {"link": {
+        "href": "#",
+        "name": "Yourwords",
+        "desc": "This is about something",
+        "color": "light_danube",
+        "colorHex": "#627abc"
+      }},
+      {"link": {
+        "href": "#",
+        "name": "Health Issues",
+        "desc": "This is about something",
+        "color": "turquoise",
+        "colorHex": "#21e0d8"
+      }},
+      {"link": {
+        "href": "#",
+        "name": "Know your Body",
+        "desc": "This is about something",
+        "color": "turquoise",
+        "colorHex": "#21e0d8"
+      }},
+      {"link": {
+        "href": "#",
+        "name": "Rights On",
+        "desc": "This is about something",
+        "color": "turquoise",
+        "colorHex": "#21e0d8"
+      }}
+    ],
+    "right_column": [
+      {"link": {
+        "href": "#",
+        "name": "Yourwords",
+        "desc": "This is about something",
+        "color": "light_danube",
+        "colorHex": "#627abc"
+      }},
+      {"link": {
+        "href": "#",
+        "name": "Health Issues",
+        "desc": "This is about something",
+        "color": "turquoise",
+        "colorHex": "#21e0d8"
+      }},
+      {"link": {
+        "href": "#",
+        "name": "Know your Body",
+        "desc": "This is about something",
+        "color": "turquoise",
+        "colorHex": "#21e0d8"
+      }},
+      {"link": {
+        "href": "#",
+        "name": "Rights On",
+        "desc": "This is about something",
+        "color": "turquoise",
+        "colorHex": "#21e0d8"
+      }}
+    ]
+  },
+  {
+    "left_column": [
+      {"link": {
+        "href": "#",
+        "name": "Home",
+        "desc": "",
+        "color": "light_danube",
+        "colorHex": "#627abc"
+      }},
+      {"link": {
+        "href": "#",
+        "name": "About",
+        "desc": "",
+        "color": "turquoise",
+        "colorHex": "#21e0d8"
+      }}
+    ],
+    "right_column": [
+      {"link": {
+        "href": "#",
+        "name": "Login",
+        "desc": "",
+        "color": "light_danube",
+        "colorHex": "#627abc"
+      }},
+      {"link": {
+        "href": "#",
+        "name": "Sign up",
+        "desc": "",
+        "color": "turquoise",
+        "colorHex": "#21e0d8"
+      }}
+    ]
+  }]
+}
