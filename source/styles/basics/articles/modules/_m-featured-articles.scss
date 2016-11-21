@@ -1,0 +1,13 @@
+.featured-article-teaser {
+  .pattern-group {
+    @include pattern-group-undo;
+  }
+
+  .article-tag {
+    background: transparent;
+    padding: 0;
+  }
+  .article-tag__label {
+    padding: 0;
+  }
+}

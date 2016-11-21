@@ -1,0 +1,10 @@
+{
+  "title": "Related Content - More in: tag",
+  "headline": {
+    "medium": "A way to tag related article content and pages"
+  },
+  "tag_labels": {
+    "label": "More in:",
+    "tag_name": "Tag name"
+  }
+}
