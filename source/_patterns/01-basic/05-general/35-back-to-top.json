@@ -1,0 +1,9 @@
+{
+  "title": "Back to Top",
+  "headline":{
+    "medium":"The back to top component is on every page in the site and is an easy way to get back to the menu."
+  },
+  "back_to_top_link": {
+    "title": "Back to Top"
+  }
+}
