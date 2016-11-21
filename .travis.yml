@@ -7,8 +7,7 @@ cache:
     - node_modules
 
 before_install:
-  - /usr/bin/expect 'git checkout -B $TRAVIS_BRANCH' \n expect "ace, pipe or comma. Example: js css >>>" \n send "css\r"
-  
+  - 'git checkout -B $TRAVIS_BRANCH' # Reconcile detached HEAD
 
 script:
   - npm run gulp patternlab:build
