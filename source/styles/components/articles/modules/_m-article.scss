@@ -8,11 +8,14 @@
   overflow: auto;
   padding-bottom: 20px;
   .heading--x-large {
-    margin-top: 0;
+    margin: 0;
   }
   .heading--x-small {
     font-weight: normal;
     padding-bottom: 5px;
+    @media screen and (min-width: 320px) {
+      color: #017AF5;
+    }
   }
 
   .article__image--link {
@@ -58,9 +61,8 @@
 }
 
 .article-teaser__publish-date {
-  font-family: 'Quicksand', sans-serif;
   color: #94989B;
   padding: 0 0 10px;
   display: block;
-  font-size: $font-xx-small;
+  font-size: 15px;
 }

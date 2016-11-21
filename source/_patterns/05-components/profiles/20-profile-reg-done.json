@@ -3,16 +3,6 @@
   "headline": {
     "medium": "Our users are required to register when they either vote on a poll, submit Your-words stories, or leave comments on articles."
   },
-  "sectionIntroduction": {
-    "content":[
-    {
-      "topic": "",
-      "unorderedList": [
-        {"text":""}
-      ]
-    }
-    ]
-  },
   "profile_content": {
     "heading":"Thank you for joining",
     "challenge_title":"Let us know your birthday to get access to exclusive content."

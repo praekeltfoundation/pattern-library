@@ -3,16 +3,6 @@
   "headline": {
     "medium":"Polls typically appear on the homepage, but can also be used in a section page list, and a page."
   },
-  "sectionIntroduction": {
-    "content":[
-    {
-      "topic": "",
-      "unorderedList": [
-        {"text":""}
-      ]
-    }
-    ]
-  },
   "pollContent": {
   "poll_title":"Polls",
   "formBlock": {

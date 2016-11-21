@@ -3,16 +3,6 @@
   "headline": {
     "medium": "The article teaser component is the content building block of a Molo Website. Teasers can consist of, minimum, a title and link, but also a thumbnail image, category tag, subtitle, and the teaser meta component."
   },
-  "sectionIntroduction": {
-    "content":[
-    {
-      "topic": "",
-      "unorderedList": [
-        {"text":""}
-      ]
-    }
-    ]
-  },
   "articleContent": [
     {
       "heading":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
