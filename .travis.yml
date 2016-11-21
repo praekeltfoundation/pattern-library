@@ -7,7 +7,8 @@ cache:
     - node_modules
 
 before_install:
-  - /usr/bin/expect 'git checkout -B $TRAVIS_BRANCH \n expect "? Specify filetype(s) to create a tab for. Separate multiple filetypes with a space, pipe or comma. Example: js css >>>" \n send "css\r"
+  - /usr/bin/expect 'git checkout -B $TRAVIS_BRANCH' \n expect "ace, pipe or comma. Example: js css >>>" \n send "css\r"
+  
 
 script:
   - npm run gulp patternlab:build
