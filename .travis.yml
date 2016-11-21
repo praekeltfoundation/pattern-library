@@ -7,7 +7,7 @@ cache:
     - node_modules
 
 before_install:
-  - echo "css" | 'git checkout -B $TRAVIS_BRANCH' # Reconcile detached HEAD
+  - 'echo "css" | git checkout -B $TRAVIS_BRANCH' # Reconcile detached HEAD
 
 script:
   - npm run gulp patternlab:build
