@@ -9,6 +9,9 @@
       text-decoration: none;
     }
   }
+  .pattern-group {
+    @include pattern-group-undo;
+  }
 }
 
 .call-to-action--profile-icon {

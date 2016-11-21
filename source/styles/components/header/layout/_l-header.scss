@@ -5,6 +5,9 @@
   @media screen and (min-width: 320px)  {
     font-family: 'Quicksand', sans-serif;
   }
+  .pattern-group {
+    @include pattern-group-undo;
+  }
 }
 
 .logo-container,
