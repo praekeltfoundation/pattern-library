@@ -61,3 +61,11 @@ $heading-large: (
         padding-top: ($height / $width) * 100%;
     }
 }
+
+@mixin pattern-group-undo {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    width: auto;
+}

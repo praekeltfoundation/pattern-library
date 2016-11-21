@@ -13,6 +13,9 @@
   .call-to-action {
     padding: 0;
   }
+  .pattern-group {
+    @include pattern-group-undo;
+  }
 }
 
 .comment__call-to-action-message {
@@ -22,6 +25,9 @@
 }
 
 .comments-list {
+  .pattern-group {
+    @include pattern-group-undo;
+  }
   .heading--username {
     font-weight: normal;
     padding-bottom: 0;

@@ -1,4 +1,28 @@
-.logo {
+.logo img {
   display: block;
   padding: 10px 0;
+}
+
+.logo__big {
+  width: 100%;
+  @media screen and (min-width: 240px) {
+    width: auto;
+  }
+}
+
+.logo__small {
+  width: 100%;
+  @media screen and (min-width: 225px) {
+    width: auto;
+  }
+}
+
+
+.logo__big--center,
+.logo__small--center {
+  margin: 0 auto;
+}
+.logo__big--left,
+.logo__small--lefts {
+  margin: 0;
 }

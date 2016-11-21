@@ -109,7 +109,7 @@ gulp.task('svg-sprites', function() {
 ******************************************************/
 //read all paths from our namespaced config file
 var config = require('./patternlab-config.json'),
-  patternlab = require('patternlab-node')(config);
+  patternLab = require('patternlab-node')(config);
 
 function paths() {
   return config.paths;
@@ -120,7 +120,7 @@ function getConfiguredCleanOption() {
 }
 
 function build(done) {
-  patternlab.build(done, getConfiguredCleanOption());
+  patternLab.build(done, getConfiguredCleanOption());
 }
 
 gulp.task('pl-assets', gulp.series(

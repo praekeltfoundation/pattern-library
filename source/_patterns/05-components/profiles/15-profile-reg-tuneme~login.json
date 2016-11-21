@@ -1,0 +1,17 @@
+{
+  "title":"User Profiles - Sign up Registration and Login",
+  "call_to_action": {
+    "heading":"Log in",
+    "challenge_title":"Don't have an account yet?"
+  },
+  "call_to_action_bottom": {
+    "heading":"Don't have an account yet?",
+    "challenge_title":" "
+  },
+  "call_to_action_buttons":[{
+    "type": "a",
+    "href": "href",
+    "link": "#",
+    "name": "Sign up"
+  }]
+}

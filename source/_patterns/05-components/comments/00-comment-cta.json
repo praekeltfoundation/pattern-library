@@ -17,7 +17,7 @@
     "title":"Comments",
     "call_to_action_message": "You have to be signed in to comment"
   },
-  "call_to_action":[{
+  "call_to_action_buttons":[{
     "type":"a",
     "href":"href",
     "link":"#",

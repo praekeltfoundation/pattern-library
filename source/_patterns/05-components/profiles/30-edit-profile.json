@@ -1,0 +1,94 @@
+{
+  "title":"User Profiles - Edit My Profile",
+  "headline": {
+    "medium": "Our users are required to register when they either vote on a poll, submit Your-words stories, or leave comments on articles."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "profile_content": {
+    "heading":"Thank you for joining",
+    "challenge_title":"Let us know your birthday to get access to exclusive content."
+  },
+  "call_to_action_buttons":[{
+    "type": "a",
+    "href": "href",
+    "link": "#",
+    "name": "Log in"
+  }],
+  "call_to_action_text_buttons":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Skip"
+  }],
+  "formBlock": {
+    "inputFields": [
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Type new display name to appear when you comment:",
+        "value": "Nickname",
+        "validate": "",
+        "maxlength": "",
+        "hint":""
+      }}
+    ],
+    "dateFieldSelect": {
+      "element": "select",
+      "label": "Update your date of birth:",
+      "dateSelect": [
+        {"options": [
+          {"month": {
+              "key": "option",
+              "value": "January"
+          }},
+          {"month": {
+              "key": "option",
+              "value": "Februay"
+          }},
+          {"month": {
+              "key": "option",
+              "value": "March"
+          }}
+        ]},
+        {"options": [
+          {"date": {
+              "key": "option",
+              "value": "1"
+          }},
+          {"date": {
+              "key": "option",
+              "value": "2"
+          }},
+          {"date": {
+              "key": "option",
+              "value": "3"
+          }}
+        ]},
+        {"options": [
+          {"year": {
+              "key": "option",
+              "value": "1989"
+          }},
+          {"year": {
+              "key": "option",
+              "value": "1990"
+          }},
+          {"year": {
+              "key": "option",
+              "value": "1991"
+          }}
+        ]}
+      ]
+    }
+  }
+
+}

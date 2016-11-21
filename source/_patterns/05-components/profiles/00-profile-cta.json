@@ -1,0 +1,23 @@
+{
+  "title":"User Profiles - Call To Action with Icon",
+  "headline": {
+    "medium": "Our users are required to register when they either vote on a poll, submit Your-words stories, or leave comments on articles."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Profiles includes: Login, Registration, Forgot Password, Change Password, and Profile.",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "call_to_action_class": "profile-text",
+  "call_to_action_text_buttons":[{
+    "type": "a",
+    "href": "href",
+    "link": "#",
+    "name": "Log in"
+  }]
+}

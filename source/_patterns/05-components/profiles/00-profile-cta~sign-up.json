@@ -1,0 +1,10 @@
+{
+  "title":"User Profiles - Call To Action Sign up",
+  "call_to_action_class": "profile-text",
+  "call_to_action_text_buttons":[{
+    "type": "a",
+    "href": "href",
+    "link": "#",
+    "name": "Sign up"
+  }]
+}

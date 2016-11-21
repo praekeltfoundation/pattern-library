@@ -1,4 +1,12 @@
+.polls {
+  .pattern-group {
+    @include pattern-group-undo;
+  }
+}
 
 .poll__inner {
+  .pattern-group {
+    @include pattern-group-undo;
+  }
   padding: 0 10px;
 }

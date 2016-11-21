@@ -1,0 +1,98 @@
+{
+  "title":"User Profiles - Registration",
+  "headline": {
+    "medium": "Our users are required to register when they either vote on a poll, submit Your-words stories, or leave comments on articles."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Profiles includes: Login, Registration, Forgot Password, Change Password, and Profile.",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "call_to_action": {
+    "heading":"Register",
+    "challenge_title":"Already a member?"
+  },
+  "call_to_action_buttons":[{
+    "type": "a",
+    "href": "href",
+    "link": "#",
+    "name": "Log in"
+  }],
+  "formBlock": {
+    "inputFields": [
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Choose Username",
+        "value": "Username",
+        "validate": "",
+        "maxlength": "",
+        "hint":""
+      }},
+      {"field": {
+        "type": "password",
+        "element": "input",
+        "label": "Choose a 4-digit pin",
+        "value": "Pin",
+        "validate": "required",
+        "maxlength": "",
+        "hint": "e.g. 2036"
+      }},
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "How old are you?",
+        "value": "How old are you?",
+        "validate": "",
+        "maxlength": "100",
+        "hint":""
+      }},
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Where do you live?",
+        "value": "Where do you live?",
+        "validate": "",
+        "maxlength": "200",
+        "hint":""
+      }}
+    ],
+    "chooseOneChoice": {
+      "legend": "Gender",
+      "fieldchooseOneChoice": [
+        {"field":{
+          "type": "radio",
+          "element": "input",
+          "name": "choice",
+          "label": "Female",
+          "value": "yes"
+        }},
+        {"field":{
+          "type": "radio",
+          "element": "input",
+          "name": "choice",
+          "label": "Male",
+          "value": "noe"
+        }}
+      ]
+    },
+    "multipleChoice": {
+      "legend": "",
+      "fieldMultipleChoice": [
+        {"field":{
+          "type": "checkbox",
+          "element": "input",
+          "name": "choice",
+          "label": "I accept Terms and Conditions",
+          "value": "1"
+        }}
+      ]
+    }
+  }
+
+}

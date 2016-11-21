@@ -13,10 +13,16 @@
     }
     ]
   },
-  "call_to_action_secondary":[{
+  "call_to_action_secondary_buttons":[{
     "type":"a",
     "href":"href",
     "link":"#",
     "name":"Call to action"
+  },
+  {
+    "type":"button",
+    "href":"href",
+    "link":"#",
+    "name":"Call to action button"
   }]
 }

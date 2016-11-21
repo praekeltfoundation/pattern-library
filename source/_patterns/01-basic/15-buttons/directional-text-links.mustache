@@ -1,6 +1,5 @@
-
-<div class="call-to-action">
-  <{{anchor_button}} href="#" class="call-to-action__item-text call-to-action__item-text{{ styleModifier}}" data-call-to-action-dir="right">Call to action</{{anchor_button}}>
-
-  <{{anchor_button}} href="#" class="call-to-action__item-text call-to-action__item-text{{ styleModifier}}" data-call-to-action-dir="left">Call to action</{{anchor_button}}>
+<div class="pattern-group">
+{{# call_to_action_text_dir_buttons}}
+  <{{type}} {{href}}="{{link}}" class="call-to-action__item-text call-to-action__item-text--{{ styleModifier}}" data-direction="{{dir}}">{{name}}</{{type}}>
+{{/ call_to_action_text_dir_buttons}}
 </div>

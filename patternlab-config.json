@@ -29,7 +29,7 @@
     }
   },
   "styleGuideExcludes": [],
-  "defaultPattern": "all",
+  "defaultPattern": "principles-pages-welcome",
   "defaultShowPatternInfo": false,
   "cleanPublic": true,
   "patternExtension": "mustache",
@@ -66,7 +66,7 @@
     }
   },
   "ishMinimum": "150",
-  "ishMaximum": "1000",
+  "ishMaximum": "1215",
   "patternStateCascade": [
     "inprogress",
     "inreview",

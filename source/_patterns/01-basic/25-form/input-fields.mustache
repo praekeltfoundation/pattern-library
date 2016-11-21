@@ -1,9 +1,11 @@
+<div class="pattern-group">
 {{# formBlock}}
 
     {{# inputFields}}
       <fieldset>
         <label>{{field.label}}
           <{{field.element}} type="{{field.type}}"  name="{{field.label}}" placeholder="{{field.value}}" required="{{field.validate}}"/>
+          <span class="input-field__hint">{{hint}}</span>
         </label>
       </fieldset>
     {{/ inputFields}}
@@ -16,10 +18,9 @@
     </fieldset>
   {{/ fieldTextarea}}
 
-
   {{# fieldSelect}}
     <fieldset>
-      <label>Select Dropdown
+      <label>{{label}}
         <{{element}} name="select-drown">
           {{# fieldSelect.options}}
             <{{option.key}} value="{{option.value}}">{{option.value}}</{{option.key}}>
@@ -29,17 +30,38 @@
     </fieldset>
   {{/ fieldSelect}}
 
-  {{# multipleChoice}}
-  <fieldset>
-    <legend>{{legend}}</legend>
-    {{# fieldMultipleChoice}}
-      <label>
-          <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
-          {{field.label}}
+  {{# dateFieldSelect}}
+    <fieldset class="fieldset__date">
+      <label>{{label}}
+        <div class="fieldset__dob-dropdown">
+          <{{element}} name="month" class="select__month">
+          {{# dateSelect}}
+            {{# options}}
+              <{{month.key}} value="{{month.value}}">{{month.value}}</{{month.key}}>
+            {{/ options}}
+          {{/ dateSelect}}
+          </{{element}}>
+
+          <{{element}} name="date" class="select__date">
+          {{# dateSelect}}
+            {{# options}}
+              <{{date.key}} value="{{date.value}}">{{date.value}}</{{date.key}}>
+            {{/ options}}
+          {{/ dateSelect}}
+          </{{element}}>
+
+          <{{element}} name="year" class="select__year">
+          {{# dateSelect}}
+            {{# options}}
+              <{{year.key}} value="{{year.value}}">{{year.value}}</{{year.key}}>
+            {{/ options}}
+          {{/ dateSelect}}
+          </{{element}}>
+        </div>
       </label>
-    {{/ fieldMultipleChoice}}
-  </fieldset>
-  {{/ multipleChoice}}
+    </fieldset>
+  {{/ dateFieldSelect}}
+
 
   {{# chooseOneChoice}}
   <fieldset>
@@ -52,4 +74,17 @@
     {{/ fieldchooseOneChoice}}
   </fieldset>
   {{/ chooseOneChoice}}
+
+  {{# multipleChoice}}
+  <fieldset>
+    <legend>{{legend}}</legend>
+    {{# fieldMultipleChoice}}
+      <label>
+          <{{field.element}} type="{{field.type}}" name="{{field.name}}" value="{{field.values}}" />
+          {{field.label}}
+      </label>
+    {{/ fieldMultipleChoice}}
+  </fieldset>
+  {{/ multipleChoice}}
 {{/ formBlock}}
+</div>

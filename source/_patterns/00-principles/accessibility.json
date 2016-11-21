@@ -1,0 +1,24 @@
+{
+  "title": "What is Accessibility?",
+  "headline": [
+    {
+      "medium": "The Molo Design System enables accessible development by providing a set of semantically correct components, each with appropriate ARIA markup so they can be identified correctly."
+    },
+    {
+      "medium":"This means properly identifying all form fields and buttons, providing text based alternatives for all images, videos, icons and SVGs, as well as building components that properly convey their identity."
+    }
+  ],
+  "sectionIntroduction": {
+  "content":[{
+    "topic": "Standards Compliant Markup:",
+    "unorderedList": [
+      {"text":"The semantic markup in our components are based on W3C standards and industry best practices."}
+    ]
+  },
+  {"topic": "Appropriate use of color:",
+    "unorderedList": [
+      {"text":"We provide the basic combinations of text and their background colors for slow end feature phones and build our way up to smart-phones"}
+    ]
+  }]
+  }
+}

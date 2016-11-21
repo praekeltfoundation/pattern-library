@@ -13,7 +13,7 @@
     }
     ]
   },
-  "call_to_action_text":[{
+  "call_to_action_text_buttons":[{
     "type":"a",
     "href":"href",
     "link":"#",

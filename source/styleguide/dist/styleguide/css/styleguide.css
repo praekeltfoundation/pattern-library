@@ -7,7 +7,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -64,10 +64,6 @@ ul {
   height: 100%;
   text-align: center;
   width: 100%;
-  /*position: fixed;
-  top: 4.2em;
-  bottom: 0;
-  left: 0;*/
   right: 0;
   z-index: 0;
   padding: 0 5px;
@@ -75,7 +71,8 @@ ul {
 @media screen and (min-width: 1224px) {
   #sg-vp-wrap {
     margin: 0 auto;
-    width: 1000px;
+    width: 1220px;
+    padding-left: 14%;
   }
 }
 
@@ -269,7 +266,8 @@ ul {
 .sg-controls ul.sg-control li.sg-size .sg-current-size {
   color: #ccc;
   float: left;
-  padding-right: 15px;
+  padding-right: 30px;
+  padding-top: 2px;
 }
 .sg-controls ul.sg-control li.sg-size .sg-current-size #sg-form {
   font-size: 13px;
@@ -308,7 +306,8 @@ ul {
 }
 .sg-controls ul.sg-control li.sg-size ul.sg-size-options li a {
   color: #ccc;
-  font-size: 13px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 42em) {
   .sg-controls ul.sg-control li.sg-tools {
@@ -322,10 +321,27 @@ ul {
   border: 0;
   cursor: pointer;
   padding: 3px 0;
+  font-weight: bold;
 }
 .sg-controls ul.sg-control li.sg-tools .sg-tools-toggle:after {
   display: none;
   content: "";
+}
+.sg-controls ul.sg-control li.sg-tools .sg-tools-toggle:hover {
+  background: #ccc;
+  color: #242526;
+  border: 1px solid #242526;
+}
+@media screen and (min-width: 320px) {
+  .sg-controls ul.sg-control li.sg-tools .sg-tools-toggle {
+    position: absolute;
+    right: 20px;
+    text-transform: uppercase;
+    top: 27px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
 }
 .sg-controls ul.sg-control li.sg-tools .sg-checklist {
   z-index: 99999;
@@ -334,6 +350,8 @@ ul {
   .sg-controls ul.sg-control li.sg-tools .sg-checklist {
     position: absolute;
     left: auto;
+    right: 0;
+    top: 65px;
   }
 }
 .sg-controls ul.sg-control li.sg-tools .sg-checklist a {
@@ -383,9 +401,6 @@ ul {
   * Pattern Information inside modal
   */
   /**
-  * Pattern info links inside modal
-  */
-  /**
   * Pattern Description inside modal
   */
   /**
@@ -420,12 +435,6 @@ ul {
 }
 .sg-modal .sg-pattern-extra.active {
   max-height: none;
-}
-.sg-modal .sg-pattern-extra-info a {
-  color: #ccc;
-}
-.sg-modal .sg-pattern-extra-info a:hover, .sg-modal .sg-pattern-extra-info a:focus {
-  color: #eee;
 }
 .sg-modal .sg-pattern-desc {
   border-bottom-color: #808080;
@@ -539,8 +548,7 @@ ul {
 * Pattern Title
 */
 .sg-pattern-title {
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif !important;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -552,13 +560,14 @@ ul {
 .sg-pattern-title a {
   display: inline-block;
   padding: 10px 0 13px;
-  color: #000;
+  color: #242526;
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
 }
 .sg-pattern-title a:hover, .sg-pattern-title a:focus {
-  color: #000 !important;
+  color: #242526;
+  text-decoration: underline;
 }
 .sg-pattern-title .sg-pattern-state {
   font-size: 80%;
@@ -657,7 +666,7 @@ ul {
 .sg-pattern-extra-info {
   padding: 0.5rem 0.5rem 0;
   line-height: 1.4;
-  color: #808080;
+  color: #a6acaf;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -670,13 +679,19 @@ ul {
     width: 40%;
   }
 }
+.sg-pattern-extra-info a {
+  color: #ccc;
+}
+.sg-pattern-extra-info a:hover, .sg-pattern-extra-info a:focus {
+  color: #eee;
+}
 
 /**
 * Pattern Description
 */
 .sg-pattern-desc {
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 8px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #ccc;
 }
 .sg-pattern-desc p:last-child {
@@ -703,7 +718,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 90%;
-  padding: 0.5rem;
+  padding: 8px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -714,7 +729,7 @@ ul {
 .sg-pattern-extra-code pre {
   overflow: scroll !important;
   -webkit-overflow-scrolling: touch;
-  padding: 0 0.5rem 0.5rem !important;
+  padding: 0 8px 8px !important;
   margin: 0 !important;
   line-height: 1 !important;
   -webkit-box-flex: 1;
@@ -759,18 +774,19 @@ ul {
 */
 .sg-pattern-category-title {
   font-size: 22px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #017af5;
   margin: 0 0 3px;
   text-transform: capitalize;
 }
 .sg-pattern-category-title a {
-  color: rgba(0, 0, 0, 0.5);
+  color: #017af5;
   font-weight: normal;
   text-decoration: none;
   -webkit-transition: color 0.1s ease-out;
           transition: color 0.1s ease-out;
 }
 .sg-pattern-category-title a:hover, .sg-pattern-category-title afocus {
+  color: rgba(1, 122, 245, 0.8);
   text-decoration: underline;
 }
 
@@ -1142,9 +1158,6 @@ ul {
   }
 }
 
-/*------------------------------------*\
-#ISH STYLES
-\*------------------------------------*/
 .twitter-typeahead {
   width: 100%;
 }
@@ -1153,10 +1166,9 @@ ul {
   border: 0;
   background: #222;
   color: #808080;
-  width: 90%;
+  width: 100%;
   right: 0;
   padding: 10px 10px 15px 10px;
-  text-transform: capitalize;
 }
 .typeahead:focus {
   background: #808080;
@@ -1167,21 +1179,18 @@ ul {
   background: #808080;
   color: #ccc;
   font-size: 15px;
-  text-transform: capitalize;
-}
-.tt-input:focus {
-  text-transform: capitalize;
 }
 
 .tt-hint {
   text-transform: lowercase;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
+  font-size: 15px;
 }
 
 .tt-dropdown-menu {
   text-transform: lowercase;
-  background-color: #808080;
+  background-color: #242526;
   width: 100%;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -1189,8 +1198,8 @@ ul {
 
 .tt-suggestion {
   color: #eee;
-  font-size: 75%;
-  padding: 0.8em;
+  font-size: 14px;
+  padding: 16px;
 }
 
 .tt-suggestion.tt-cursor {

@@ -1,0 +1,5 @@
+.search  {
+  .pattern-group {
+    @include pattern-group-undo;
+  }
+}

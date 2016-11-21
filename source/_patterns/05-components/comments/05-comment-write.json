@@ -24,13 +24,13 @@
     "username": "Display name",
     "profileImage":""
   },
-  "call_to_action":[{
+  "call_to_action_buttons":[{
     "type":"a",
     "href":"href",
     "link":"#",
     "name":"Comment"
   }],
-  "call_to_action_secondary":[{
+  "call_to_action_secondary_buttons":[{
     "type":"a",
     "href":"href",
     "link":"#",

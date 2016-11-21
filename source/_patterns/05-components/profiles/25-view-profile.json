@@ -1,0 +1,33 @@
+{
+  "title":"User Profiles - View Profile",
+  "headline": {
+    "medium": "Our users are required to register when they either vote on a poll, submit Your-words stories, or leave comments on articles."
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "Profiles includes: Login, Registration, Forgot Password, Change Password, and Profile.",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+
+  "profile_content": {
+    "heading":"Hello User",
+    "profile_info":[
+      {"label": "As you type your name comment will appear as:",
+       "value": "Anonymous"
+     },
+     {"label": "Date of Birth:",
+      "value": "Not set"
+     }]
+  },
+  "call_to_action_buttons":[{
+    "type": "a",
+    "href": "href",
+    "link": "#",
+    "name": "Log in"
+  }]
+}

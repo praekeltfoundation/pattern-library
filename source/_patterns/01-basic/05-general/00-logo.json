@@ -13,18 +13,13 @@
     }
     ]
   },
-  "logoImage":{
-    "img": {
-      "small": {
-        "src": "/images/logo-two.png",
-        "alt": "Small Logo",
-        "position": "centre"
-      },
-      "large": {
-        "src": "/images/logo.png",
-        "alt": "Large Logos",
-        "position": "left"
-      }
+  "logoImage": [
+    {
+      "src": "/images/logo-two.png",
+      "alt": "Large Logos",
+      "position": "center",
+      "size": "small"
     }
-  }
+  ]
+
 }

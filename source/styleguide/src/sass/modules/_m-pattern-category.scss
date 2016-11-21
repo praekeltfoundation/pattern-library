@@ -40,8 +40,7 @@
 * Pattern Title
 */
 .sg-pattern-title {
-    font-family: $sg-font !important;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -50,14 +49,15 @@
     a {
         display: inline-block;
         padding: 10px 0 13px;
-        color: #000;
+        color: rgba(36,37,38,1);
         text-decoration: none;
         cursor: pointer;
         font-weight: bold;
 
 
         &:hover, &:focus {
-            color: $sg-black  !important;
+            color: rgba(36,37,38,08);
+            text-decoration: underline;
         }
     }
 
@@ -162,7 +162,7 @@
 .sg-pattern-extra-info {
     padding: 0.5rem 0.5rem 0;
     line-height: 1.4;
-    color: $sg-gray;
+    color: #a6acaf;
     overflow: auto; //allows scrolling on modals with extra long descriptions
     -webkit-overflow-scrolling: touch;
 
@@ -174,16 +174,23 @@
         padding: $sg-pad;
         width: 40%;
     }
+
+  a {
+      color: $sg-gray-light-3;
+
+      &:hover, &:focus {
+          color: $sg-gray-light;
+      }
+  }
 }
 
 /**
 * Pattern Description
 */
 .sg-pattern-desc {
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 8px;
+    padding-bottom: 30px;
     border-bottom: 1px solid $sg-gray-light-3;
-
     p:last-child {
         margin: 0;
     }
@@ -204,7 +211,7 @@
     display: flex;
     flex-direction: column;
     font-size: 90%;
-    padding: 0.5rem;
+    padding: 8px;
     flex: 1 1 auto;
 
     /**
@@ -213,7 +220,7 @@
     pre {
         overflow: scroll !important;
         -webkit-overflow-scrolling: touch;
-        padding: 0 0.5rem 0.5rem !important;
+        padding: 0 8px 8px !important;
         margin: 0 !important;
         line-height: 1 !important;
         flex: 1 1 auto;
@@ -256,15 +263,16 @@
 */
 .sg-pattern-category-title {
     font-size: 22px;
-    color: rgba(0,0,0,.5);
+    color: rgba(1,122,245,1);
     margin: 0 0 3px;
     text-transform: capitalize;
     a {
-        color: rgba(0,0,0,.5);
+        color: rgba(1,122,245,1);
         font-weight: normal;
         text-decoration: none;
         transition: color $sg-animate-quick ease-out;
         &:hover, &focus {
+          color: rgba(1,122,245,0.8);
             text-decoration: underline;
         }
     }
