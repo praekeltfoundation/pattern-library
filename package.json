@@ -38,5 +38,8 @@
   "engines": {
     "node": ">=5.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp-jshint": "^2.0.4",
+    "jshint-stylish": "^2.2.1"
+  }
 }

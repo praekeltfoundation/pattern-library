@@ -12,7 +12,8 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   svgSprites = require('gulp-svg-sprite'),
   browserSync = require('browser-sync').create(),
-  argv = require('minimist')(process.argv.slice(2));
+  argv = require('minimist')(process.argv.slice(2)),
+  jshint = require('gulp-jshint');
 
 /******************************************************
  * COPY TASKS - stream assets from source to destination
@@ -248,4 +249,8 @@ gulp.task('default', gulp.series('patternlab:build'));
 gulp.task('patternlab:watch', gulp.series('patternlab:build', watch));
 gulp.task('patternlab:serve', gulp.series('patternlab:build', 'patternlab:connect', watch));
 
-gulp.task('ci', ['lint', 'mocha', 'build']);
+gulp.task('lint', function() {
+  return gulp.src('./lib/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
