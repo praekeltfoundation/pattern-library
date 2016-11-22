@@ -1,0 +1,59 @@
+{
+  "title":"Yourwords example form Gem layout",
+  "headline":{
+    "medium": "We're often looking for a user generated content and ideas so we encourage users to submit stories of their own based on a theme"
+  },
+  "your_words_content": [{
+    "page_title":"Share your story",
+    "yw_heading":"Girls vs Boys",
+    "yw_subtitle":"Tell us Your Story and Stand to Win k50"
+  }],
+  "formBlock": {
+    "inputFields": [
+      {"field": {
+        "type": "text",
+        "element": "input",
+        "label": "Title of your story (max 60 characters)",
+        "value": "Title",
+        "validate": "",
+        "maxlength": "",
+        "hint": ""
+      }}
+    ],
+    "fieldTextarea": {
+      "label": "Tell us your story here",
+      "element": "textarea"
+    },
+    "multipleChoice": {
+      "legend": "",
+      "fieldMultipleChoice": [
+        {"field":{
+          "type": "checkbox",
+          "element": "input",
+          "name": "I accept the Terms and Conditions",
+          "label": "I accept the Terms and Conditions",
+          "value": "1"
+        }},
+        {"field":{
+          "type": "checkbox",
+          "element": "input",
+          "name": "Share my story anonymously",
+          "label": "Share my story anonymously",
+          "value": "1"
+        }}
+      ]
+    }
+  },
+  "call_to_action_buttons":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "message":"Sumit your story"
+  }],
+  "call_to_action_text_buttons":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "name":"Back home"
+  }]
+}

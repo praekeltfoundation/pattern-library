@@ -22,6 +22,9 @@
       }
     }]
   },
+  "back_to_top_link": {
+    "title": "Back to Top"
+  },
   "img": {
     "article-thumb": {
       "src": "",

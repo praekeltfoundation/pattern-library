@@ -1,0 +1,43 @@
+{
+  "title":"Yourwords Article",
+  "headline":{
+    "medium": "We're often looking for a user generated content and ideas so we encourage users to submit stories of their own based on a theme"
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "The component that makes this possible is 'Your Words'; below is a page that includes a your words component",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "your_words_content": [{
+    "page_title":"Share your story",
+    "yw_heading":"Girls vs Boys",
+    "yw_subtitle":"Tell us Your Story and Stand to Win k50",
+    "yw_text": [
+      {"paraphraph": "Are guys and girls really all that different? Is is a physical thing, or the way they think?"},
+      {"paraphraph":"Tell us what makes you different. What's the one thing you just can't figure out about the opposite sex? Whats worries you about them? What is mysterious?"}
+    ],
+    "yw_instruction": {
+      "title":"How to Enter",
+      "orderedList": [
+        {"text": "Make sure you update your profile so it includes your mobile no. inorder for us to award your airtime"},
+        {"text": "Come back to this page via the banner and tell your story below"},
+        {"text": "We are looking for a full story - not a one-line comment. So include all the details and write a few paraphraphs"},
+        {"text": "please use plain English and not txt spk"}
+      ]
+    },
+    "yw_terms": {
+      "terms_title": {
+        "href":"#",
+        "label": "Terms & Conditions"
+      },
+      "terms_content": [
+        {"desc":"Please remember to only enter once you have updated your profile to include your mobile number."}
+      ]
+    }
+  }]
+}

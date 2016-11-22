@@ -1,0 +1,32 @@
+<div class="pattern-group">
+  <div class="yourwords yourwords__article">
+    {{# your_words_content}}
+    <div class="yourwords__heading-block">
+      <h3 class="heading heading--large heading--yourwords-article">{{page_title}}</h3>
+      <h1 class="heading heading--xx-large heading--yourwords-article-large">{{yw_heading}}</h1>
+      <h5 class="heading heading--x-small yourwords__subtitle">{{yw_subtitle}}</h5>
+    </div>
+      {{# yw_text}}
+        <p>{{paraphraph}}</p>
+      {{/ yw_text}}
+
+      {{# yw_instruction}}
+        <span class="yourwords__terms-title">{{title}}</span>
+        <ul class="default-ordered-list">
+          {{# orderedList}}
+            <li class="default-ordered-list__item">{{text}}</li>
+          {{/ orderedList}}
+        </ul>
+      {{/ yw_instruction}}
+
+      {{# yw_terms}}
+        {{# terms_title}}
+          <a href="{{href}}" alt="Terms and Conditions" class="yourwords__terms-anchor">{{label}}</a>
+          {{# terms_content}}
+            <p>{{desc}}</p>
+          {{/ terms_content}}
+        {{/ terms_title}}
+      {{/ yw_terms}}
+    {{/ your_words_content}}
+  </div>
+</div>
