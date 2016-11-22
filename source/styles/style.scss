@@ -23,6 +23,9 @@
 @import "basics/general/list";
 @import "basics/articles/articles";
 @import "basics/banner/banner";
+@import "basics/pagination/pagination";
+@import "basics/categories/category";
+@import "basics/tags/tags";
 
 @import "basics/buttons/buttons";
 @import "basics/footer/footer";
@@ -38,3 +41,11 @@
 @import "components/comments/comments";
 @import "components/polls/poll";
 @import "components/profiles/profile";
+@import "components/yourwords/yourwords";
+
+/**
+* Used To Style Pattern Library - Assets
+* Templates Elements
+*/
+
+@import "templates/modules/_m-home-temp";

@@ -1,0 +1,16 @@
+<div class="pattern-group">
+<ul class="article-teaser-list">
+{{# articleContent}}
+  <li class="article-teaser-list__item">
+    <div class="article-teaser">
+      {{> basic-thumbnail-image}}
+      <h5 class="heading heading--x-small">{{category}}</h5>
+      <h2 class="heading heading--x-large">{{heading}}</h2>
+      <span class="article-teaser__publish-date">{{month.long}} {{day.long}}, {{year.long}}</span>
+      <p>{{excerpt}}</p>
+    </div>
+    {{> basic-article-teaser-meta}}
+  </li>
+{{/ articleContent}}
+</ul>
+</div>

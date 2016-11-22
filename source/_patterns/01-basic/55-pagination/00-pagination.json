@@ -1,0 +1,20 @@
+{
+  "title": "Pagination",
+  "headline": {
+    "medium": "The pagination component is used whenever there are too much content display at one time - usually for comments and on category pages."
+  },
+  "call_to_action_text_dir_buttons":[{
+    "type":"button",
+    "href":"type",
+    "link":"submit",
+    "message":"Older",
+    "dir": "left"
+  },
+  {
+    "type":"button",
+    "href":"type",
+    "link":"submit",
+    "message":"Newer",
+    "dir": "right"
+  }]
+}

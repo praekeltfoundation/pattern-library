@@ -1,16 +1,6 @@
 {
   "title":"Molo Form",
   "headline":{"medium":"A combination of form elements and styling"},
-  "sectionIntroduction": {
-    "content":[
-    {
-      "topic": "---",
-      "unorderedList": [
-        {"text":""}
-      ]
-    }
-    ]
-  },
   "formBlock": {
     "inputFields": [
       {"field": {

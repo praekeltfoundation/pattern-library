@@ -3,16 +3,6 @@
   "headline":{
     "medium":"Terms and Conditions, Private Policy pages and copyright are typically at the bottom of the page, copyright also contains the year, the copyright unicode symbol, and the copyright owner"
   },
-  "sectionIntroduction": {
-    "content":[
-    {
-      "topic": "---",
-      "unorderedList": [
-        {"text":""}
-      ]
-    }
-    ]
-  },
   "footerNavList": [
     {"link": {
       "href": "#",

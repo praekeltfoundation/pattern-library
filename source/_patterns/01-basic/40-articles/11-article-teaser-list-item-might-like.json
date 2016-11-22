@@ -1,0 +1,17 @@
+{
+  "title": "Article Teasers: List Items",
+  "headline": {
+    "medium": "A Article Teaser List can be used at the end of an article page to show articles that are related to the current article. It is best if the articles in the list are closely related to topic of article, so rather from the same tag than a category."
+  },
+  "unorderedListBlock": {
+    "unorderedList": [
+      {"text":"Title case ideally less than 120 characters"},
+      {"text":"But there is no way to limit"},
+      {"text":"Another example of the an article title"}
+    ]
+  },
+  "tag_labels": {
+    "label": "You Might Also Like...",
+    "tag_name": ""
+  }
+}

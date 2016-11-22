@@ -1,9 +1,0 @@
-{
-  "title":"Polls - Login before Voting",
-  "call_to_action":[{
-    "type":"a",
-    "href":"href",
-    "link":"#",
-    "name":"Login"
-  }]
-}

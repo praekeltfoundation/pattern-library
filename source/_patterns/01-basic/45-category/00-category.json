@@ -1,0 +1,17 @@
+{
+  "title": "Category Name",
+  "headline": {
+    "medium": "Website category headers are on the category page and consist of minimum a title, but also an icon"
+  },
+  "categories": [{
+    "title": "Category Name",
+    "description":"Shizz fo shizzle mah nizzle fo rizzle, mah home g-dizzle, gravida vizzle, arcu. Pellentesque crunk tortizzle. Sed erizzle. Black izzle sheezy telliv.",
+    "image":{
+      "src":"/images/article-thumbnail.png",
+      "alt":"Thumbnail image",
+      "class":"default"
+    },
+    "sub_category":"",
+    "link":""
+  }]
+}

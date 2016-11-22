@@ -1,0 +1,16 @@
+<div class="pattern-group">
+  {{# categories}}
+    <div class="category-articles">
+      <div class="category-article__list">
+        <a href="#" class="category-article__image-link">
+          {{# image}}
+            <img class="category-article__image category-article--{{class}}-thumbnail" src="{{src}}" alt="{{alt}}"/>
+          {{/ image}}
+        </a>
+        <h3 class="heading heading--large heading--article-subcat">{{sub_category}}</h3>
+        <h1 class="heading headin--xx-large heading--article-cat">{{title}}</h1>
+        <p class="category-article__description">{{description}}</p>
+      </div>
+    </div>
+  {{/ categories}}
+</div>

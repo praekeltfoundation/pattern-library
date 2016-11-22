@@ -3,16 +3,6 @@
   "headline": {
     "medium":"The breadcrumb trail are links to reveal the user’s location within a hierarchical structure of the site and a navigational aid"
   },
-  "sectionIntroduction": {
-    "content":[
-    {
-      "topic": "---",
-      "unorderedList": [
-        {"text":""}
-      ]
-    }
-    ]
-  },
   "breadcrumbsBlock": {
     "breadcrumbsList": [
       {"link": {

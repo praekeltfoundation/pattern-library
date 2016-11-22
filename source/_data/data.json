@@ -22,6 +22,9 @@
       }
     }]
   },
+  "back_to_top_link": {
+    "title": "Back to Top"
+  },
   "img": {
     "article-thumb": {
       "src": "",
@@ -44,17 +47,19 @@
       "alt": "16x9 Full Image"
     }
   },
-  "logoImage":{
+  "logoImage":[
+    {
+      "src": "/images/logo-two.png",
+      "alt": "Logo",
+      "position": "left",
+      "size": "small"
+    }
+  ],
+  "bannerImage":{
     "img": {
-      "small": {
-        "src": "/images/logo-two.png",
-        "alt": "Small Logo",
-        "position": "centre"
-      },
-      "large": {
-        "src": "/images/logo.png",
-        "alt": "Large Logos",
-        "position": "left"
+      "landscape-16x9": {
+        "src": "/images/full-width-image.png",
+        "alt": "16x9 Image"
       }
     }
   },
@@ -167,6 +172,12 @@
     }
     ]
   },
+  "articleContent": [
+    {
+      "heading":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "excerpt":"Donec at elit eget ex vulputate pharetra eu maximus erat. In diam neque, molestie sit amet imperdiet ut, auctor eget quam. Praesent efficitur sagittis sollicitudin."
+    }
+  ],
   "orderedList": [{
     "text":"List here"
   }],

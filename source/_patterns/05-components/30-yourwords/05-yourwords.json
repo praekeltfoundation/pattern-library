@@ -1,0 +1,27 @@
+{
+  "title":"Yourwords",
+  "headline":{
+    "medium": "We're often looking for a user generated content and ideas so we encourage users to submit stories of their own based on a theme"
+  },
+  "sectionIntroduction": {
+    "content":[
+    {
+      "topic": "The component that makes this possible is 'Your Words'; below is a page that includes a your words component",
+      "unorderedList": [
+        {"text":""}
+      ]
+    }
+    ]
+  },
+  "your_words_content": [{
+    "page_title":"Share your story",
+    "yw_heading":"Girls vs Boys",
+    "yw_subtitle":"Tell us Your Story and Stand to Win k50"
+  }],
+  "call_to_action_buttons":[{
+    "type":"a",
+    "href":"href",
+    "link":"#",
+    "message":"Log in to enter"
+  }]
+}

@@ -1,0 +1,5 @@
+.home-template {
+  .pattern-group {
+    @include pattern-group-undo;
+  }
+}

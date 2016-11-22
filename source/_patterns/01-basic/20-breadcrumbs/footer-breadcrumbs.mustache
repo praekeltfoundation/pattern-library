@@ -1,0 +1,15 @@
+<div class="pattern-group">
+{{# breadcrumbsBlock}}
+<div class="footer__breadcrumbs">
+  <ul class="footer-breadcrumbs-list">
+    {{# breadcrumbsList}}
+      <li class="footer-breadcrumbs-list__item">
+        <a href="{{link.src}}" class="footer-breadcrumbs-list__anchor footer-breadcrumbs-list__anchor--is-active">
+          {{link.title}}
+        </a>
+      </li>
+    {{/ breadcrumbsList}}
+  </ul>
+</div>
+{{/ breadcrumbsBlock}}
+</div>

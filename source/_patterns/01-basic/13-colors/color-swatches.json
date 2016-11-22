@@ -3,16 +3,6 @@
   "headline": {
     "medium": ""
   },
-  "sectionIntroduction": {
-    "content":[
-    {
-      "topic": "---",
-      "unorderedList": [
-        {"text":""}
-      ]
-    }
-    ]
-  },
   "colorList": [
   {
     "name": "purple",

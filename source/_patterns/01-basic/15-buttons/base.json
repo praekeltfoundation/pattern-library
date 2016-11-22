@@ -3,16 +3,6 @@
   "headline": {
     "medium": "The main reason for using action buttons is that because of their visual appearance, they get more attention and become visually distinct from normal text links. This is what is needed for important tasks"
   },
-  "sectionIntroduction": {
-    "content":[
-    {
-      "topic": "",
-      "unorderedList": [
-        {"text":""}
-      ]
-    }
-    ]
-  },
   "call_to_action_buttons":[{
     "type":"a",
     "href":"href",

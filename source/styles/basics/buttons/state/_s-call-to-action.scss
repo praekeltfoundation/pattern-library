@@ -1,40 +1,4 @@
 
-[data-direction~="right"],
-[data-direction~="left"] {
-    &:after {
-      color: #000;
-    }
-}
-
-[data-direction~="right"]  {
-  &:after {
-    display: inline-block;
-    padding-left: 10px;
-    text-decoration: none !important;
-    @media only screen and (min-width: 320px) {
-      content: ">";
-    }
-    @media only screen and (min-width: 490px) {
-      content: "❯";
-    }
-  }
-}
-
-[data-direction~="left"]  {
-  &:before {
-    display: inline-block;
-    padding-right: 10px;
-    text-decoration: none !important;
-    @media only screen and (min-width: 320px) {
-      content: "<";
-    }
-    @media only screen and (min-width: 490px) {
-       content: "❮";
-    }
-  }
-}
-
-
 [data-state~="disabled"] {
   font-weight: bold;
   background-color: #D7DBDD;
