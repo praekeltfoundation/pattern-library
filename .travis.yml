@@ -10,6 +10,7 @@ before_install:
   - 'git checkout -B $TRAVIS_BRANCH' # Reconcile detached HEAD
 
 script:
+  - gulp ci
   - npm run gulp patternlab:build
 
 after_success:
