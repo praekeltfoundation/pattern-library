@@ -13,7 +13,8 @@ var gulp = require('gulp'),
   svgSprites = require('gulp-svg-sprite'),
   browserSync = require('browser-sync').create(),
   argv = require('minimist')(process.argv.slice(2)),
-  jshint = require('gulp-jshint');
+  jshint = require('gulp-jshint'),
+  sassLint = require('gulp-sass-lint');
 
 /******************************************************
  * COPY TASKS - stream assets from source to destination
@@ -249,8 +250,24 @@ gulp.task('default', gulp.series('patternlab:build'));
 gulp.task('patternlab:watch', gulp.series('patternlab:build', watch));
 gulp.task('patternlab:serve', gulp.series('patternlab:build', 'patternlab:connect', watch));
 
-gulp.task('lint', function() {
-  return gulp.src('./lib/*.js')
+/******************************************************
+ * LINTING TASKS
+******************************************************/
+gulp.task('lint:js', function() {
+  return gulp.src(['./*.js', './source/js/*.js', './source/styleguide/*.js'])
     .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+    .pipe(jshint.reporter('default'))
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError());
+});
+gulp.task('lint:sass', function() {
+  return gulp.src(['./source/styles/**/*.s+(a|c)ss','./source/styleguide/src/sass/**/*.s+(a|c)ss'])
+    .pipe(sassLint({
+      options: {
+        formatter: 'stylish',
+        'merge-default-rules': false
+      },
+      }))
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError());
 });
