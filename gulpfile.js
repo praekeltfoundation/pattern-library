@@ -256,9 +256,7 @@ gulp.task('patternlab:serve', gulp.series('patternlab:build', 'patternlab:connec
 gulp.task('lint:js', function() {
   return gulp.src(['./*.js', './source/js/*.js', './source/styleguide/*.js'])
     .pipe(jshint())
-    .pipe(jshint.reporter('default'))
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError());
+    .pipe(jshint.reporter('default'));
 });
 gulp.task('lint:sass', function() {
   return gulp.src(['./source/styles/**/*.s+(a|c)ss','./source/styleguide/src/sass/**/*.s+(a|c)ss'])
