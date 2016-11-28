@@ -142,3 +142,15 @@ References
 
 Rebuild NodeSass
 npm rebuild node-sass
+
+**Install Tab plugin
+Add the Tab Plugin to the project using npm
+
+    npm install plugin-node-tab --save
+
+The plugin installation will prompt you for the filetypes, type `css`
+
+```
+$ Specify filetype(s) to create a tab for. Separate multiple filetypes with a space, pipe or comma. Example: js css >>> css
+```
+

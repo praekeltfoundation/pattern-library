@@ -1,4 +1,4 @@
-gulp.task('release', funciton() {
+gulp.task('release', function() {
   return gulp.src(config.versioning.files)
         .pipe(bump({
           type: gulp.env.type || 'patch'
@@ -16,21 +16,21 @@ gulp.task('release', funciton() {
 var sassDest = {
   production: path.resolve(paths().source.cssProd),
   development: path.resolve(paths().source.cssDev)
-}
+};
 
 function styles(env) {
   var source = path.resolve(paths().source.css, '**/*.scss');
   var isDev = env === development;
 
     if (isDev) source = source
-    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init());
 
     source = source
     .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSSMinify())
+    .pipe(cleanCSSMinify());
 
     if (isDev) source = source
-      .pipe(sourcemaps.write('/maps'))
+      .pipe(sourcemaps.write('/maps'));
       return source
       .pipe(gulp.dest(sassDest[env]))
       .pipe(browserSync.stream());

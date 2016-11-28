@@ -26,17 +26,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/pattern-lab/edition-node-gulp.git"
+    "url": "git://github.com/praekelt/pattern-library.git"
   },
-  "bugs": "https://github.com/pattern-lab/edition-node-gulp/issues",
-  "author": "Brian Muenzenmeyer",
+  "bugs": "https://github.com/praekelt/pattern-library/issues",
+  "author": "Praekelt.org",
   "scripts": {
     "postinstall": "node scripts/postinstall.js",
     "gulp": "gulp -- "
   },
-  "license": "MIT",
   "engines": {
     "node": ">=5.0"
   },
-  "devDependencies": {}
+  "devDependencies": {    
+    "jshint": "^2.9.4",
+    "gulp-jshint": "^2.0.4",
+    "gulp-sass-lint": "^1.3.2"
+  }
 }
